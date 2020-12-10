@@ -34,3 +34,14 @@ D:\GithubRepositories\Dormitory-management-Solution\Student_Log_In\obj\Debug\Stu
 D:\GithubRepositories\Dormitory-management-Solution\Student_Log_In\obj\Debug\Student_Log_In.csproj.CopyComplete
 D:\GithubRepositories\Dormitory-management-Solution\Student_Log_In\obj\Debug\Student_Log_In.exe
 D:\GithubRepositories\Dormitory-management-Solution\Student_Log_In\obj\Debug\Student_Log_In.pdb
+D:\GitHub\Dormitory-management-Solution\Student_Log_In\bin\Debug\Student_Log_In.exe.config
+D:\GitHub\Dormitory-management-Solution\Student_Log_In\bin\Debug\Student_Log_In.exe
+D:\GitHub\Dormitory-management-Solution\Student_Log_In\bin\Debug\Student_Log_In.pdb
+D:\GitHub\Dormitory-management-Solution\Student_Log_In\obj\Debug\Student_Log_In.csprojAssemblyReference.cache
+D:\GitHub\Dormitory-management-Solution\Student_Log_In\obj\Debug\Student_Log_In.studentlogin.resources
+D:\GitHub\Dormitory-management-Solution\Student_Log_In\obj\Debug\Student_Log_In.Properties.Resources.resources
+D:\GitHub\Dormitory-management-Solution\Student_Log_In\obj\Debug\Student_Log_In.csproj.GenerateResource.cache
+D:\GitHub\Dormitory-management-Solution\Student_Log_In\obj\Debug\Student_Log_In.csproj.CoreCompileInputs.cache
+D:\GitHub\Dormitory-management-Solution\Student_Log_In\obj\Debug\Student_Log_In.csproj.CopyComplete
+D:\GitHub\Dormitory-management-Solution\Student_Log_In\obj\Debug\Student_Log_In.exe
+D:\GitHub\Dormitory-management-Solution\Student_Log_In\obj\Debug\Student_Log_In.pdb

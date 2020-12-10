@@ -61,5 +61,10 @@ namespace Student_Log_In
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
