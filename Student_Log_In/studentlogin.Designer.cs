@@ -58,11 +58,11 @@ namespace Student_Log_In
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("JetBrains Mono", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
             this.label2.Location = new System.Drawing.Point(410, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(361, 43);
+            this.label2.Size = new System.Drawing.Size(318, 37);
             this.label2.TabIndex = 2;
             this.label2.Text = "Welcome to the DMS";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -70,11 +70,11 @@ namespace Student_Log_In
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
             this.label1.Location = new System.Drawing.Point(435, 111);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(296, 17);
+            this.label1.Size = new System.Drawing.Size(225, 16);
             this.label1.TabIndex = 3;
             this.label1.Text = "If you have a student account in DMS";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -82,21 +82,21 @@ namespace Student_Log_In
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
             this.label3.Location = new System.Drawing.Point(435, 128);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(208, 17);
+            this.label3.Size = new System.Drawing.Size(157, 16);
             this.label3.TabIndex = 4;
             this.label3.Text = "Please Sign in the below.";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(434, 190);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(210, 21);
+            this.label4.Size = new System.Drawing.Size(158, 20);
             this.label4.TabIndex = 5;
             this.label4.Text = "Email or User Name :";
             // 
@@ -114,7 +114,7 @@ namespace Student_Log_In
             this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F);
+            this.guna2TextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F);
             this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
@@ -132,10 +132,10 @@ namespace Student_Log_In
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(440, 277);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 21);
+            this.label5.Size = new System.Drawing.Size(86, 20);
             this.label5.TabIndex = 7;
             this.label5.Text = "Password :";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -154,7 +154,7 @@ namespace Student_Log_In
             this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F);
+            this.guna2TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F);
             this.guna2TextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
@@ -195,10 +195,10 @@ namespace Student_Log_In
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(474, 358);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(96, 17);
+            this.label6.Size = new System.Drawing.Size(98, 16);
             this.label6.TabIndex = 10;
             this.label6.Text = "Remember me";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -240,7 +240,7 @@ namespace Student_Log_In
             this.guna2TextBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
             this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F);
+            this.guna2TextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F);
             this.guna2TextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
@@ -259,10 +259,10 @@ namespace Student_Log_In
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(367, 485);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(422, 483);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(288, 17);
+            this.label9.Size = new System.Drawing.Size(216, 16);
             this.label9.TabIndex = 15;
             this.label9.Text = "Don’t have an account Click here to";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -273,7 +273,7 @@ namespace Student_Log_In
             this.guna2TileButton1.CheckedState.Parent = this.guna2TileButton1;
             this.guna2TileButton1.CustomImages.Parent = this.guna2TileButton1;
             this.guna2TileButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
-            this.guna2TileButton1.Font = new System.Drawing.Font("JetBrains Mono Medium", 15.75F, System.Drawing.FontStyle.Bold);
+            this.guna2TileButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.guna2TileButton1.ForeColor = System.Drawing.Color.White;
             this.guna2TileButton1.HoverState.Parent = this.guna2TileButton1;
             this.guna2TileButton1.Location = new System.Drawing.Point(536, 410);
@@ -290,7 +290,7 @@ namespace Student_Log_In
             this.guna2TileButton2.CheckedState.Parent = this.guna2TileButton2;
             this.guna2TileButton2.CustomImages.Parent = this.guna2TileButton2;
             this.guna2TileButton2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2TileButton2.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F);
+            this.guna2TileButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F);
             this.guna2TileButton2.ForeColor = System.Drawing.Color.Black;
             this.guna2TileButton2.HoverState.Parent = this.guna2TileButton2;
             this.guna2TileButton2.Location = new System.Drawing.Point(607, 355);
@@ -350,15 +350,15 @@ namespace Student_Log_In
             this.guna2TileButton3.CheckedState.Parent = this.guna2TileButton3;
             this.guna2TileButton3.CustomImages.Parent = this.guna2TileButton3;
             this.guna2TileButton3.FillColor = System.Drawing.Color.Transparent;
-            this.guna2TileButton3.Font = new System.Drawing.Font("JetBrains Mono Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TileButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TileButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
             this.guna2TileButton3.HoverState.Parent = this.guna2TileButton3;
-            this.guna2TileButton3.Location = new System.Drawing.Point(640, 471);
+            this.guna2TileButton3.Location = new System.Drawing.Point(621, 469);
             this.guna2TileButton3.Name = "guna2TileButton3";
             this.guna2TileButton3.ShadowDecoration.Parent = this.guna2TileButton3;
             this.guna2TileButton3.Size = new System.Drawing.Size(127, 46);
             this.guna2TileButton3.TabIndex = 21;
-            this.guna2TileButton3.Text = "Sign Up now";
+            this.guna2TileButton3.Text = "Sign Up now >";
             // 
             // studentlogin
             // 
