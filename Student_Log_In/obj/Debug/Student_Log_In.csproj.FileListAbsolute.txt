@@ -22,3 +22,15 @@ D:\GithubRepositories\Student_Log_In\obj\Debug\Student_Log_In.csproj.CoreCompile
 D:\GithubRepositories\Student_Log_In\obj\Debug\Student_Log_In.csproj.CopyComplete
 D:\GithubRepositories\Student_Log_In\obj\Debug\Student_Log_In.exe
 D:\GithubRepositories\Student_Log_In\obj\Debug\Student_Log_In.pdb
+D:\GithubRepositories\Dormitory-management-Solution\Student_Log_In\bin\Debug\Student_Log_In.exe.config
+D:\GithubRepositories\Dormitory-management-Solution\Student_Log_In\bin\Debug\Student_Log_In.exe
+D:\GithubRepositories\Dormitory-management-Solution\Student_Log_In\bin\Debug\Student_Log_In.pdb
+D:\GithubRepositories\Dormitory-management-Solution\Student_Log_In\bin\Debug\Guna.UI2.dll
+D:\GithubRepositories\Dormitory-management-Solution\Student_Log_In\obj\Debug\Student_Log_In.csprojAssemblyReference.cache
+D:\GithubRepositories\Dormitory-management-Solution\Student_Log_In\obj\Debug\Student_Log_In.studentlogin.resources
+D:\GithubRepositories\Dormitory-management-Solution\Student_Log_In\obj\Debug\Student_Log_In.Properties.Resources.resources
+D:\GithubRepositories\Dormitory-management-Solution\Student_Log_In\obj\Debug\Student_Log_In.csproj.GenerateResource.cache
+D:\GithubRepositories\Dormitory-management-Solution\Student_Log_In\obj\Debug\Student_Log_In.csproj.CoreCompileInputs.cache
+D:\GithubRepositories\Dormitory-management-Solution\Student_Log_In\obj\Debug\Student_Log_In.csproj.CopyComplete
+D:\GithubRepositories\Dormitory-management-Solution\Student_Log_In\obj\Debug\Student_Log_In.exe
+D:\GithubRepositories\Dormitory-management-Solution\Student_Log_In\obj\Debug\Student_Log_In.pdb

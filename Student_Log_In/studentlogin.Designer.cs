@@ -38,12 +38,12 @@ namespace Student_Log_In
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CustomCheckBox1 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.guna2TileButton1 = new Guna.UI2.WinForms.Guna2TileButton();
+            this.guna2TileButton2 = new Guna.UI2.WinForms.Guna2TileButton();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -191,16 +191,6 @@ namespace Student_Log_In
             this.label6.Text = "Remember me";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(643, 364);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(128, 18);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Forget Password";
-            // 
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.Image = global::Student_Log_In.Properties.Resources.Line_3;
@@ -283,15 +273,31 @@ namespace Student_Log_In
             this.guna2TileButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.guna2TileButton1.Click += new System.EventHandler(this.guna2TileButton1_Click);
             // 
+            // guna2TileButton2
+            // 
+            this.guna2TileButton2.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2TileButton2.CheckedState.Parent = this.guna2TileButton2;
+            this.guna2TileButton2.CustomImages.Parent = this.guna2TileButton2;
+            this.guna2TileButton2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2TileButton2.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F);
+            this.guna2TileButton2.ForeColor = System.Drawing.Color.Black;
+            this.guna2TileButton2.HoverState.Parent = this.guna2TileButton2;
+            this.guna2TileButton2.Location = new System.Drawing.Point(644, 359);
+            this.guna2TileButton2.Name = "guna2TileButton2";
+            this.guna2TileButton2.ShadowDecoration.Parent = this.guna2TileButton2;
+            this.guna2TileButton2.Size = new System.Drawing.Size(125, 23);
+            this.guna2TileButton2.TabIndex = 17;
+            this.guna2TileButton2.Text = "Forget Password";
+            // 
             // studentlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.guna2TileButton2);
             this.Controls.Add(this.guna2TileButton1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.guna2TextBox3);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.guna2CustomCheckBox1);
             this.Controls.Add(this.guna2TextBox2);
@@ -326,11 +332,11 @@ namespace Student_Log_In
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI2.WinForms.Guna2CustomCheckBox guna2CustomCheckBox1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2TileButton guna2TileButton1;
+        private Guna.UI2.WinForms.Guna2TileButton guna2TileButton2;
     }
 }
 
