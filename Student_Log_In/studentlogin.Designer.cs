@@ -244,7 +244,7 @@ namespace Student_Log_In
             this.guna2TextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(499, 408);
+            this.guna2TextBox3.Location = new System.Drawing.Point(494, 407);
             this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PasswordChar = '\0';
@@ -276,7 +276,7 @@ namespace Student_Log_In
             this.guna2TileButton1.Font = new System.Drawing.Font("JetBrains Mono Medium", 15.75F, System.Drawing.FontStyle.Bold);
             this.guna2TileButton1.ForeColor = System.Drawing.Color.White;
             this.guna2TileButton1.HoverState.Parent = this.guna2TileButton1;
-            this.guna2TileButton1.Location = new System.Drawing.Point(541, 411);
+            this.guna2TileButton1.Location = new System.Drawing.Point(536, 410);
             this.guna2TileButton1.Name = "guna2TileButton1";
             this.guna2TileButton1.ShadowDecoration.Parent = this.guna2TileButton1;
             this.guna2TileButton1.Size = new System.Drawing.Size(102, 36);
