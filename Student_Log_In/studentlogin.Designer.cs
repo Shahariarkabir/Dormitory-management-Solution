@@ -171,7 +171,7 @@ namespace Student_Log_In
             this.remeberCheckBox.CheckedState.BorderColor = System.Drawing.Color.Black;
             this.remeberCheckBox.CheckedState.BorderRadius = 1;
             this.remeberCheckBox.CheckedState.BorderThickness = 2;
-            this.remeberCheckBox.CheckedState.FillColor = System.Drawing.Color.Green;
+            this.remeberCheckBox.CheckedState.FillColor = System.Drawing.Color.White;
             this.remeberCheckBox.CheckedState.Parent = this.remeberCheckBox;
             this.remeberCheckBox.CheckMarkColor = System.Drawing.Color.Black;
             this.remeberCheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
