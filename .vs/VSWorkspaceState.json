@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Student_Log_In"
+    "\\Student_Log_In",
+    "\\Student_Registration"
   ],
-  "SelectedNode": "\\Student_Log_In\\Student_Log_In.sln",
+  "SelectedNode": "\\Student_Registration\\Registration.sln",
   "PreviewInSolutionExplorer": false
 }

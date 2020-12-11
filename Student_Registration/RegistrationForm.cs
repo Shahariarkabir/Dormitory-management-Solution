@@ -26,5 +26,10 @@ namespace Registration
         {
 
         }
+
+        private void RegistrationForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
