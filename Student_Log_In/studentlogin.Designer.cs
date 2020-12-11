@@ -37,7 +37,7 @@ namespace Student_Log_In
             this.userNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.passwordLabel = new System.Windows.Forms.Label();
             this.userPasswordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2CustomCheckBox1 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.remeberCheckBox = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.rememberLabel = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.donothaveLabel = new System.Windows.Forms.Label();
@@ -164,28 +164,27 @@ namespace Student_Log_In
             this.userPasswordTextBox.TabIndex = 8;
             this.userPasswordTextBox.UseSystemPasswordChar = true;
             // 
-            // guna2CustomCheckBox1
+            // remeberCheckBox
             // 
-            this.guna2CustomCheckBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Cursor;
-            this.guna2CustomCheckBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CustomCheckBox1.CheckedState.BorderColor = System.Drawing.Color.Black;
-            this.guna2CustomCheckBox1.CheckedState.BorderRadius = 1;
-            this.guna2CustomCheckBox1.CheckedState.BorderThickness = 2;
-            this.guna2CustomCheckBox1.CheckedState.FillColor = System.Drawing.Color.Green;
-            this.guna2CustomCheckBox1.CheckedState.Parent = this.guna2CustomCheckBox1;
-            this.guna2CustomCheckBox1.CheckMarkColor = System.Drawing.Color.Black;
-            this.guna2CustomCheckBox1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.guna2CustomCheckBox1.Location = new System.Drawing.Point(448, 358);
-            this.guna2CustomCheckBox1.Name = "guna2CustomCheckBox1";
-            this.guna2CustomCheckBox1.ShadowDecoration.Parent = this.guna2CustomCheckBox1;
-            this.guna2CustomCheckBox1.Size = new System.Drawing.Size(20, 20);
-            this.guna2CustomCheckBox1.TabIndex = 9;
-            this.guna2CustomCheckBox1.UncheckedState.BorderColor = System.Drawing.Color.Black;
-            this.guna2CustomCheckBox1.UncheckedState.BorderRadius = 1;
-            this.guna2CustomCheckBox1.UncheckedState.BorderThickness = 2;
-            this.guna2CustomCheckBox1.UncheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2CustomCheckBox1.UncheckedState.Parent = this.guna2CustomCheckBox1;
-            this.guna2CustomCheckBox1.UseWaitCursor = true;
+            this.remeberCheckBox.AccessibleRole = System.Windows.Forms.AccessibleRole.Cursor;
+            this.remeberCheckBox.BackColor = System.Drawing.Color.Transparent;
+            this.remeberCheckBox.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.remeberCheckBox.CheckedState.BorderRadius = 1;
+            this.remeberCheckBox.CheckedState.BorderThickness = 2;
+            this.remeberCheckBox.CheckedState.FillColor = System.Drawing.Color.Green;
+            this.remeberCheckBox.CheckedState.Parent = this.remeberCheckBox;
+            this.remeberCheckBox.CheckMarkColor = System.Drawing.Color.Black;
+            this.remeberCheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.remeberCheckBox.Location = new System.Drawing.Point(448, 358);
+            this.remeberCheckBox.Name = "remeberCheckBox";
+            this.remeberCheckBox.ShadowDecoration.Parent = this.remeberCheckBox;
+            this.remeberCheckBox.Size = new System.Drawing.Size(20, 20);
+            this.remeberCheckBox.TabIndex = 9;
+            this.remeberCheckBox.UncheckedState.BorderColor = System.Drawing.Color.Black;
+            this.remeberCheckBox.UncheckedState.BorderRadius = 1;
+            this.remeberCheckBox.UncheckedState.BorderThickness = 2;
+            this.remeberCheckBox.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.remeberCheckBox.UncheckedState.Parent = this.remeberCheckBox;
             // 
             // rememberLabel
             // 
@@ -333,7 +332,7 @@ namespace Student_Log_In
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.donothaveLabel);
             this.Controls.Add(this.rememberLabel);
-            this.Controls.Add(this.guna2CustomCheckBox1);
+            this.Controls.Add(this.remeberCheckBox);
             this.Controls.Add(this.userPasswordTextBox);
             this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.userNameTextBox);
@@ -363,7 +362,7 @@ namespace Student_Log_In
         private Guna.UI2.WinForms.Guna2TextBox userNameTextBox;
         private System.Windows.Forms.Label passwordLabel;
         private Guna.UI2.WinForms.Guna2TextBox userPasswordTextBox;
-        private Guna.UI2.WinForms.Guna2CustomCheckBox guna2CustomCheckBox1;
+        private Guna.UI2.WinForms.Guna2CustomCheckBox remeberCheckBox;
         private System.Windows.Forms.Label rememberLabel;
         private System.Windows.Forms.Label donothaveLabel;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
