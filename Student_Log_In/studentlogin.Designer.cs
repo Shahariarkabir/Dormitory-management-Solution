@@ -30,144 +30,139 @@ namespace Student_Log_In
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.welcomeLabel = new System.Windows.Forms.Label();
+            this.statementLabel = new System.Windows.Forms.Label();
+            this.statement2Label = new System.Windows.Forms.Label();
+            this.userNameLabel = new System.Windows.Forms.Label();
+            this.userNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.passwordLabel = new System.Windows.Forms.Label();
+            this.userPasswordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CustomCheckBox1 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.rememberLabel = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.guna2TileButton1 = new Guna.UI2.WinForms.Guna2TileButton();
+            this.donothaveLabel = new System.Windows.Forms.Label();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ResizeForm1 = new Guna.UI2.WinForms.Guna2ResizeForm(this.components);
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.signupLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.forgetPasswordLinkLabel = new System.Windows.Forms.LinkLabel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.userSignInButton = new Guna.UI2.WinForms.Guna2Button();
+            this.clickhereLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label2
+            // welcomeLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("JetBrains Mono", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
-            this.label2.Location = new System.Drawing.Point(410, 55);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(361, 43);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Welcome to the DMS";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.welcomeLabel.AutoSize = true;
+            this.welcomeLabel.Font = new System.Drawing.Font("JetBrains Mono", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.welcomeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
+            this.welcomeLabel.Location = new System.Drawing.Point(410, 55);
+            this.welcomeLabel.Name = "welcomeLabel";
+            this.welcomeLabel.Size = new System.Drawing.Size(362, 44);
+            this.welcomeLabel.TabIndex = 2;
+            this.welcomeLabel.Text = "Welcome to the DMS";
             // 
-            // label1
+            // statementLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("JetBrains Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
-            this.label1.Location = new System.Drawing.Point(435, 111);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(296, 17);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "If you have a student account in DMS";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.statementLabel.AutoSize = true;
+            this.statementLabel.Font = new System.Drawing.Font("JetBrains Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statementLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
+            this.statementLabel.Location = new System.Drawing.Point(435, 111);
+            this.statementLabel.Name = "statementLabel";
+            this.statementLabel.Size = new System.Drawing.Size(296, 18);
+            this.statementLabel.TabIndex = 3;
+            this.statementLabel.Text = "If you have a student account in DMS";
             // 
-            // label3
+            // statement2Label
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("JetBrains Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
-            this.label3.Location = new System.Drawing.Point(435, 128);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(208, 17);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Please Sign in the below.";
+            this.statement2Label.AutoSize = true;
+            this.statement2Label.Font = new System.Drawing.Font("JetBrains Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statement2Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
+            this.statement2Label.Location = new System.Drawing.Point(435, 128);
+            this.statement2Label.Name = "statement2Label";
+            this.statement2Label.Size = new System.Drawing.Size(208, 18);
+            this.statement2Label.TabIndex = 4;
+            this.statement2Label.Text = "Please Sign in the below.";
             // 
-            // label4
+            // userNameLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(434, 190);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(210, 21);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Email or User Name :";
+            this.userNameLabel.AutoSize = true;
+            this.userNameLabel.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userNameLabel.Location = new System.Drawing.Point(434, 190);
+            this.userNameLabel.Name = "userNameLabel";
+            this.userNameLabel.Size = new System.Drawing.Size(210, 21);
+            this.userNameLabel.TabIndex = 5;
+            this.userNameLabel.Text = "Email or User Name :";
             // 
-            // guna2TextBox1
+            // userNameTextBox
             // 
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.BorderRadius = 20;
-            this.guna2TextBox1.BorderThickness = 2;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F);
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(429, 225);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(302, 43);
-            this.guna2TextBox1.TabIndex = 6;
-            this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
+            this.userNameTextBox.BorderColor = System.Drawing.Color.Black;
+            this.userNameTextBox.BorderRadius = 20;
+            this.userNameTextBox.BorderThickness = 2;
+            this.userNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.userNameTextBox.DefaultText = "";
+            this.userNameTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.userNameTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.userNameTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.userNameTextBox.DisabledState.Parent = this.userNameTextBox;
+            this.userNameTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.userNameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.userNameTextBox.FocusedState.Parent = this.userNameTextBox;
+            this.userNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F);
+            this.userNameTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
+            this.userNameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.userNameTextBox.HoverState.Parent = this.userNameTextBox;
+            this.userNameTextBox.Location = new System.Drawing.Point(429, 225);
+            this.userNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.userNameTextBox.Name = "userNameTextBox";
+            this.userNameTextBox.PasswordChar = '\0';
+            this.userNameTextBox.PlaceholderText = "";
+            this.userNameTextBox.SelectedText = "";
+            this.userNameTextBox.ShadowDecoration.Parent = this.userNameTextBox;
+            this.userNameTextBox.Size = new System.Drawing.Size(302, 43);
+            this.userNameTextBox.TabIndex = 6;
             // 
-            // label5
+            // passwordLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(440, 277);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 21);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Password :";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.passwordLabel.AutoSize = true;
+            this.passwordLabel.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordLabel.Location = new System.Drawing.Point(440, 277);
+            this.passwordLabel.Name = "passwordLabel";
+            this.passwordLabel.Size = new System.Drawing.Size(110, 21);
+            this.passwordLabel.TabIndex = 7;
+            this.passwordLabel.Text = "Password :";
             // 
-            // guna2TextBox2
+            // userPasswordTextBox
             // 
-            this.guna2TextBox2.BorderColor = System.Drawing.Color.Black;
-            this.guna2TextBox2.BorderRadius = 20;
-            this.guna2TextBox2.BorderThickness = 2;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F);
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(429, 308);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(302, 43);
-            this.guna2TextBox2.TabIndex = 8;
-            this.guna2TextBox2.UseSystemPasswordChar = true;
-            this.guna2TextBox2.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
+            this.userPasswordTextBox.BorderColor = System.Drawing.Color.Black;
+            this.userPasswordTextBox.BorderRadius = 20;
+            this.userPasswordTextBox.BorderThickness = 2;
+            this.userPasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.userPasswordTextBox.DefaultText = "";
+            this.userPasswordTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.userPasswordTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.userPasswordTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.userPasswordTextBox.DisabledState.Parent = this.userPasswordTextBox;
+            this.userPasswordTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.userPasswordTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.userPasswordTextBox.FocusedState.Parent = this.userPasswordTextBox;
+            this.userPasswordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F);
+            this.userPasswordTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
+            this.userPasswordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.userPasswordTextBox.HoverState.Parent = this.userPasswordTextBox;
+            this.userPasswordTextBox.Location = new System.Drawing.Point(429, 308);
+            this.userPasswordTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.userPasswordTextBox.Name = "userPasswordTextBox";
+            this.userPasswordTextBox.PasswordChar = '\0';
+            this.userPasswordTextBox.PlaceholderText = "";
+            this.userPasswordTextBox.SelectedText = "";
+            this.userPasswordTextBox.ShadowDecoration.Parent = this.userPasswordTextBox;
+            this.userPasswordTextBox.Size = new System.Drawing.Size(302, 43);
+            this.userPasswordTextBox.TabIndex = 8;
+            this.userPasswordTextBox.UseSystemPasswordChar = true;
             // 
             // guna2CustomCheckBox1
             // 
@@ -192,16 +187,15 @@ namespace Student_Log_In
             this.guna2CustomCheckBox1.UncheckedState.Parent = this.guna2CustomCheckBox1;
             this.guna2CustomCheckBox1.UseWaitCursor = true;
             // 
-            // label6
+            // rememberLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("JetBrains Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(474, 359);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(96, 17);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Remember me";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.rememberLabel.AutoSize = true;
+            this.rememberLabel.Font = new System.Drawing.Font("JetBrains Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rememberLabel.Location = new System.Drawing.Point(474, 359);
+            this.rememberLabel.Name = "rememberLabel";
+            this.rememberLabel.Size = new System.Drawing.Size(96, 18);
+            this.rememberLabel.TabIndex = 10;
+            this.rememberLabel.Text = "Remember me";
             // 
             // guna2PictureBox1
             // 
@@ -214,63 +208,16 @@ namespace Student_Log_In
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // guna2TextBox3
+            // donothaveLabel
             // 
-            this.guna2TextBox3.BorderColor = System.Drawing.Color.Black;
-            this.guna2TextBox3.BorderRadius = 20;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F);
-            this.guna2TextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(494, 407);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Size = new System.Drawing.Size(187, 43);
-            this.guna2TextBox3.TabIndex = 13;
-            this.guna2TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.guna2TextBox3.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("JetBrains Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(395, 486);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(288, 17);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "Don’t have an account Click here to";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label9.Click += new System.EventHandler(this.label9_Click);
-            // 
-            // guna2TileButton1
-            // 
-            this.guna2TileButton1.CheckedState.Parent = this.guna2TileButton1;
-            this.guna2TileButton1.CustomImages.Parent = this.guna2TileButton1;
-            this.guna2TileButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
-            this.guna2TileButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.guna2TileButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2TileButton1.HoverState.Parent = this.guna2TileButton1;
-            this.guna2TileButton1.Location = new System.Drawing.Point(536, 410);
-            this.guna2TileButton1.Name = "guna2TileButton1";
-            this.guna2TileButton1.ShadowDecoration.Parent = this.guna2TileButton1;
-            this.guna2TileButton1.Size = new System.Drawing.Size(102, 36);
-            this.guna2TileButton1.TabIndex = 16;
-            this.guna2TileButton1.Text = "Sign In";
-            this.guna2TileButton1.Click += new System.EventHandler(this.guna2TileButton1_Click);
+            this.donothaveLabel.AutoSize = true;
+            this.donothaveLabel.Font = new System.Drawing.Font("JetBrains Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.donothaveLabel.Location = new System.Drawing.Point(493, 472);
+            this.donothaveLabel.Name = "donothaveLabel";
+            this.donothaveLabel.Size = new System.Drawing.Size(184, 18);
+            this.donothaveLabel.TabIndex = 15;
+            this.donothaveLabel.Text = "Don’t have an account ";
+            this.donothaveLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2DragControl1
             // 
@@ -314,65 +261,92 @@ namespace Student_Log_In
             this.guna2ControlBox3.Size = new System.Drawing.Size(29, 29);
             this.guna2ControlBox3.TabIndex = 20;
             // 
-            // linkLabel1
+            // signupLinkLabel
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.linkLabel1.Font = new System.Drawing.Font("JetBrains Mono", 9.75F);
-            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(41)))));
-            this.linkLabel1.Location = new System.Drawing.Point(679, 486);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(64, 17);
-            this.linkLabel1.TabIndex = 21;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Sign Up";
+            this.signupLinkLabel.AutoSize = true;
+            this.signupLinkLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.signupLinkLabel.Font = new System.Drawing.Font("JetBrains Mono", 9.75F);
+            this.signupLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(41)))));
+            this.signupLinkLabel.Location = new System.Drawing.Point(606, 493);
+            this.signupLinkLabel.Name = "signupLinkLabel";
+            this.signupLinkLabel.Size = new System.Drawing.Size(64, 18);
+            this.signupLinkLabel.TabIndex = 21;
+            this.signupLinkLabel.TabStop = true;
+            this.signupLinkLabel.Text = "Sign Up";
             // 
-            // linkLabel2
+            // forgetPasswordLinkLabel
             // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.linkLabel2.Font = new System.Drawing.Font("JetBrains Mono", 9.75F);
-            this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(41)))));
-            this.linkLabel2.Location = new System.Drawing.Point(592, 359);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(128, 17);
-            this.linkLabel2.TabIndex = 22;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Forgot Password";
+            this.forgetPasswordLinkLabel.AutoSize = true;
+            this.forgetPasswordLinkLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.forgetPasswordLinkLabel.Font = new System.Drawing.Font("JetBrains Mono", 9.75F);
+            this.forgetPasswordLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(41)))));
+            this.forgetPasswordLinkLabel.Location = new System.Drawing.Point(592, 359);
+            this.forgetPasswordLinkLabel.Name = "forgetPasswordLinkLabel";
+            this.forgetPasswordLinkLabel.Size = new System.Drawing.Size(128, 18);
+            this.forgetPasswordLinkLabel.TabIndex = 22;
+            this.forgetPasswordLinkLabel.TabStop = true;
+            this.forgetPasswordLinkLabel.Text = "Forgot Password";
             // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 20;
             this.guna2Elipse1.TargetControl = this;
             // 
+            // userSignInButton
+            // 
+            this.userSignInButton.BorderRadius = 20;
+            this.userSignInButton.CheckedState.Parent = this.userSignInButton;
+            this.userSignInButton.CustomImages.Parent = this.userSignInButton;
+            this.userSignInButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(41)))));
+            this.userSignInButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userSignInButton.ForeColor = System.Drawing.Color.White;
+            this.userSignInButton.HoverState.Parent = this.userSignInButton;
+            this.userSignInButton.Location = new System.Drawing.Point(507, 410);
+            this.userSignInButton.Name = "userSignInButton";
+            this.userSignInButton.ShadowDecoration.Parent = this.userSignInButton;
+            this.userSignInButton.Size = new System.Drawing.Size(151, 43);
+            this.userSignInButton.TabIndex = 23;
+            this.userSignInButton.Text = "Sign In";
+            // 
+            // clickhereLabel
+            // 
+            this.clickhereLabel.AutoSize = true;
+            this.clickhereLabel.Font = new System.Drawing.Font("JetBrains Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clickhereLabel.Location = new System.Drawing.Point(493, 493);
+            this.clickhereLabel.Name = "clickhereLabel";
+            this.clickhereLabel.Size = new System.Drawing.Size(112, 18);
+            this.clickhereLabel.TabIndex = 24;
+            this.clickhereLabel.Text = "Click here to";
+            this.clickhereLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // studentlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.clickhereLabel);
+            this.Controls.Add(this.userSignInButton);
+            this.Controls.Add(this.forgetPasswordLinkLabel);
+            this.Controls.Add(this.signupLinkLabel);
             this.Controls.Add(this.guna2ControlBox3);
             this.Controls.Add(this.guna2ControlBox2);
             this.Controls.Add(this.guna2ControlBox1);
-            this.Controls.Add(this.guna2TileButton1);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.guna2TextBox3);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.donothaveLabel);
+            this.Controls.Add(this.rememberLabel);
             this.Controls.Add(this.guna2CustomCheckBox1);
-            this.Controls.Add(this.guna2TextBox2);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.userPasswordTextBox);
+            this.Controls.Add(this.passwordLabel);
+            this.Controls.Add(this.userNameTextBox);
+            this.Controls.Add(this.userNameLabel);
+            this.Controls.Add(this.statement2Label);
+            this.Controls.Add(this.statementLabel);
+            this.Controls.Add(this.welcomeLabel);
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "studentlogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Log In";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.studentlogin_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -382,26 +356,26 @@ namespace Student_Log_In
         #endregion
 
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private System.Windows.Forms.Label welcomeLabel;
+        private System.Windows.Forms.Label statementLabel;
+        private System.Windows.Forms.Label statement2Label;
+        private System.Windows.Forms.Label userNameLabel;
+        private Guna.UI2.WinForms.Guna2TextBox userNameTextBox;
+        private System.Windows.Forms.Label passwordLabel;
+        private Guna.UI2.WinForms.Guna2TextBox userPasswordTextBox;
         private Guna.UI2.WinForms.Guna2CustomCheckBox guna2CustomCheckBox1;
-        private System.Windows.Forms.Label label6;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private System.Windows.Forms.Label label9;
-        private Guna.UI2.WinForms.Guna2TileButton guna2TileButton1;
+        private System.Windows.Forms.Label rememberLabel;
+        private System.Windows.Forms.Label donothaveLabel;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ResizeForm guna2ResizeForm1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.LinkLabel signupLinkLabel;
+        private System.Windows.Forms.LinkLabel forgetPasswordLinkLabel;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Button userSignInButton;
+        private System.Windows.Forms.Label clickhereLabel;
     }
 }
 

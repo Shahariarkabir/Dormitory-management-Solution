@@ -56,3 +56,4 @@ D:\Githiub\Dormitory-management-Solution\Student_Log_In\obj\Debug\Student_Log_In
 D:\Githiub\Dormitory-management-Solution\Student_Log_In\obj\Debug\Student_Log_In.csproj.CopyComplete
 D:\Githiub\Dormitory-management-Solution\Student_Log_In\obj\Debug\Student_Log_In.exe
 D:\Githiub\Dormitory-management-Solution\Student_Log_In\obj\Debug\Student_Log_In.pdb
+D:\Github\Dormitory-management-Solution\Student_Log_In\bin\Debug\Guna.UI2.dll
