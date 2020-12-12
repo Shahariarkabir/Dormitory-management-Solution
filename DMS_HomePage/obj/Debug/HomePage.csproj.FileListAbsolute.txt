@@ -1,0 +1,12 @@
+C:\Users\rakib\source\repos\HomePage\bin\Debug\HomePage.exe.config
+C:\Users\rakib\source\repos\HomePage\bin\Debug\HomePage.exe
+C:\Users\rakib\source\repos\HomePage\bin\Debug\HomePage.pdb
+C:\Users\rakib\source\repos\HomePage\bin\Debug\Guna.UI2.dll
+C:\Users\rakib\source\repos\HomePage\obj\Debug\HomePage.csprojAssemblyReference.cache
+C:\Users\rakib\source\repos\HomePage\obj\Debug\HomePage.WelcomePage.resources
+C:\Users\rakib\source\repos\HomePage\obj\Debug\HomePage.Properties.Resources.resources
+C:\Users\rakib\source\repos\HomePage\obj\Debug\HomePage.csproj.GenerateResource.cache
+C:\Users\rakib\source\repos\HomePage\obj\Debug\HomePage.csproj.CoreCompileInputs.cache
+C:\Users\rakib\source\repos\HomePage\obj\Debug\HomePage.csproj.CopyComplete
+C:\Users\rakib\source\repos\HomePage\obj\Debug\HomePage.exe
+C:\Users\rakib\source\repos\HomePage\obj\Debug\HomePage.pdb
