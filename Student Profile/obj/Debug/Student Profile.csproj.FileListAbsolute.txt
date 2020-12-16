@@ -1,0 +1,34 @@
+C:\Users\oyshi\source\repos\Student Profile\bin\Debug\Student Profile.exe.config
+C:\Users\oyshi\source\repos\Student Profile\bin\Debug\Student Profile.exe
+C:\Users\oyshi\source\repos\Student Profile\bin\Debug\Student Profile.pdb
+C:\Users\oyshi\source\repos\Student Profile\bin\Debug\Guna.UI2.dll
+C:\Users\oyshi\source\repos\Student Profile\obj\Debug\Student Profile.csprojAssemblyReference.cache
+C:\Users\oyshi\source\repos\Student Profile\obj\Debug\Student_Profile.Form1.resources
+C:\Users\oyshi\source\repos\Student Profile\obj\Debug\Student_Profile.Properties.Resources.resources
+C:\Users\oyshi\source\repos\Student Profile\obj\Debug\Student Profile.csproj.GenerateResource.cache
+C:\Users\oyshi\source\repos\Student Profile\obj\Debug\Student Profile.csproj.CoreCompileInputs.cache
+C:\Users\oyshi\source\repos\Student Profile\obj\Debug\Student Profile.csproj.CopyComplete
+C:\Users\oyshi\source\repos\Student Profile\obj\Debug\Student Profile.exe
+C:\Users\oyshi\source\repos\Student Profile\obj\Debug\Student Profile.pdb
+C:\Users\rakib\Downloads\Student Profile\bin\Debug\Student Profile.exe.config
+C:\Users\rakib\Downloads\Student Profile\bin\Debug\Student Profile.exe
+C:\Users\rakib\Downloads\Student Profile\bin\Debug\Student Profile.pdb
+C:\Users\rakib\Downloads\Student Profile\obj\Debug\Student Profile.csprojAssemblyReference.cache
+C:\Users\rakib\Downloads\Student Profile\obj\Debug\Student_Profile.Form1.resources
+C:\Users\rakib\Downloads\Student Profile\obj\Debug\Student_Profile.Properties.Resources.resources
+C:\Users\rakib\Downloads\Student Profile\obj\Debug\Student Profile.csproj.GenerateResource.cache
+C:\Users\rakib\Downloads\Student Profile\obj\Debug\Student Profile.csproj.CoreCompileInputs.cache
+C:\Users\rakib\Downloads\Student Profile\obj\Debug\Student Profile.csproj.CopyComplete
+C:\Users\rakib\Downloads\Student Profile\obj\Debug\Student Profile.exe
+C:\Users\rakib\Downloads\Student Profile\obj\Debug\Student Profile.pdb
+F:\Fall 20-21\Student Profile\bin\Debug\Student Profile.exe.config
+F:\Fall 20-21\Student Profile\bin\Debug\Student Profile.exe
+F:\Fall 20-21\Student Profile\bin\Debug\Student Profile.pdb
+F:\Fall 20-21\Student Profile\obj\Debug\Student Profile.csprojAssemblyReference.cache
+F:\Fall 20-21\Student Profile\obj\Debug\Student_Profile.CreateStudentProfile.resources
+F:\Fall 20-21\Student Profile\obj\Debug\Student_Profile.Properties.Resources.resources
+F:\Fall 20-21\Student Profile\obj\Debug\Student Profile.csproj.GenerateResource.cache
+F:\Fall 20-21\Student Profile\obj\Debug\Student Profile.csproj.CoreCompileInputs.cache
+F:\Fall 20-21\Student Profile\obj\Debug\Student Profile.csproj.CopyComplete
+F:\Fall 20-21\Student Profile\obj\Debug\Student Profile.exe
+F:\Fall 20-21\Student Profile\obj\Debug\Student Profile.pdb
