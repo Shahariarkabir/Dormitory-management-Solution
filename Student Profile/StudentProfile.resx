@@ -123,43 +123,10 @@
   <metadata name="guna2DragControl2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>202, 150</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="StudentPictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAASJJREFUSEvdlcENwjAMRTsCIxXR5txjj4zABrAB3QQ2CC0DMAIjdARjB1cJ6k+a
-        Hrj0S09Cif0dnGCKbYtsuSNbnWgwN+rNm/qalJdbs/VRQ9eLrGmor8bANMZ7dSE+3RUYpXmas6anJYHQ
-        IAc+mNpgyVeFiWvg1qrdXBwQXuSMttk70F7AKI9DLb1yTl+WpQPt/cAvT229aKj4KYLggPwC5q62XryR
-        bI+QXYC91NYLBLl+T6YxYneitl4oqG2waYjEoFy19eLFP7fo75csQw0FB+QXALPJTc6F4Sb9jvXcY+bt
-        mUT2wBMUJa1gabJykQ4m5mCri9qkJYHQIIWtO03P03c2/fyLxeDhlpigS3KFHvyEH8HvRD7Lmrw8NDk3
-        pKL4AI0uswR8F13KAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="RoomPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAASJJREFUSEvdlcENwjAMRTsCIxXR5txjj4zABrAB3QQ2CC0DMAIjdARjB1cJ6k+a
-        Hrj0S09Cif0dnGCKbYtsuSNbnWgwN+rNm/qalJdbs/VRQ9eLrGmor8bANMZ7dSE+3RUYpXmas6anJYHQ
-        IAc+mNpgyVeFiWvg1qrdXBwQXuSMttk70F7AKI9DLb1yTl+WpQPt/cAvT229aKj4KYLggPwC5q62XryR
-        bI+QXYC91NYLBLl+T6YxYneitl4oqG2waYjEoFy19eLFP7fo75csQw0FB+QXALPJTc6F4Sb9jvXcY+bt
-        mUT2wBMUJa1gabJykQ4m5mCri9qkJYHQIIWtO03P03c2/fyLxeDhlpigS3KFHvyEH8HvRD7Lmrw8NDk3
-        pKL4AI0uswR8F13KAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="ExpensePictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAASJJREFUSEvdlcENwjAMRTsCIxXR5txjj4zABrAB3QQ2CC0DMAIjdARjB1cJ6k+a
-        Hrj0S09Cif0dnGCKbYtsuSNbnWgwN+rNm/qalJdbs/VRQ9eLrGmor8bANMZ7dSE+3RUYpXmas6anJYHQ
-        IAc+mNpgyVeFiWvg1qrdXBwQXuSMttk70F7AKI9DLb1yTl+WpQPt/cAvT229aKj4KYLggPwC5q62XryR
-        bI+QXYC91NYLBLl+T6YxYneitl4oqG2waYjEoFy19eLFP7fo75csQw0FB+QXALPJTc6F4Sb9jvXcY+bt
-        mUT2wBMUJa1gabJykQ4m5mCri9qkJYHQIIWtO03P03c2/fyLxeDhlpigS3KFHvyEH8HvRD7Lmrw8NDk3
-        pKL4AI0uswR8F13KAAAAAElFTkSuQmCC
-</value>
-  </data>
   <metadata name="guna2Elipse2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>362, 150</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="guna2PictureBox8.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABsAAAAYCAYAAAALQIb7AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -226,5 +193,8 @@
   </metadata>
   <metadata name="guna2Elipse3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>610, 150</value>
+  </metadata>
+  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>734, 150</value>
   </metadata>
 </root>

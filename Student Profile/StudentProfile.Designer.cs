@@ -67,20 +67,17 @@ namespace Student_Profile
             this.EmergencyPhoneNumberLabel = new System.Windows.Forms.Label();
             this.RelationTextBox = new System.Windows.Forms.Label();
             this.RoomNumberLabel = new System.Windows.Forms.Label();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.RoomNumberComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.CreateProfileButton = new Guna.UI2.WinForms.Guna2Button();
             this.PixelzWarriorsLinkLabel1 = new System.Windows.Forms.LinkLabel();
             this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.StudentButton = new Guna.UI2.WinForms.Guna2Button();
-            this.RoomButton = new Guna.UI2.WinForms.Guna2Button();
-            this.ExpenseButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.StudentPictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.RoomPictureBox = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.ExpensePictureBox = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.LogOutButton = new Guna.UI2.WinForms.Guna2Button();
@@ -102,18 +99,16 @@ namespace Student_Profile
             this.guna2PictureBox10 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2PictureBox9 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox16 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.UpdatePhotoPictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.BloodGroupComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.GenderComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2PictureBox9 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox16 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.UpdatePhotoPictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StudentPictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RoomPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ExpensePictureBox)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox13)).BeginInit();
@@ -167,7 +162,7 @@ namespace Student_Profile
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(519, 40);
             this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Creat a Student Profile";
+            this.textBox1.Text = "Create a Student Profile";
             // 
             // PhoneNumberTextBox
             // 
@@ -777,31 +772,34 @@ namespace Student_Profile
             this.RoomNumberLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RoomNumberLabel.Location = new System.Drawing.Point(1115, 331);
             this.RoomNumberLabel.Name = "RoomNumberLabel";
-            this.RoomNumberLabel.Size = new System.Drawing.Size(84, 15);
+            this.RoomNumberLabel.Size = new System.Drawing.Size(70, 15);
             this.RoomNumberLabel.TabIndex = 38;
-            this.RoomNumberLabel.Text = "Room Number";
+            this.RoomNumberLabel.Text = "Room Type";
             // 
-            // guna2ComboBox1
+            // RoomNumberComboBox
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.guna2ComboBox1.BorderRadius = 4;
-            this.guna2ComboBox1.BorderThickness = 2;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(1108, 349);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(112, 36);
-            this.guna2ComboBox1.TabIndex = 43;
+            this.RoomNumberComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.RoomNumberComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.RoomNumberComboBox.BorderRadius = 4;
+            this.RoomNumberComboBox.BorderThickness = 2;
+            this.RoomNumberComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.RoomNumberComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.RoomNumberComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.RoomNumberComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.RoomNumberComboBox.FocusedState.Parent = this.RoomNumberComboBox;
+            this.RoomNumberComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.RoomNumberComboBox.ForeColor = System.Drawing.Color.Black;
+            this.RoomNumberComboBox.HoverState.Parent = this.RoomNumberComboBox;
+            this.RoomNumberComboBox.ItemHeight = 30;
+            this.RoomNumberComboBox.Items.AddRange(new object[] {
+            "Single",
+            "Double"});
+            this.RoomNumberComboBox.ItemsAppearance.Parent = this.RoomNumberComboBox;
+            this.RoomNumberComboBox.Location = new System.Drawing.Point(1108, 349);
+            this.RoomNumberComboBox.Name = "RoomNumberComboBox";
+            this.RoomNumberComboBox.ShadowDecoration.Parent = this.RoomNumberComboBox;
+            this.RoomNumberComboBox.Size = new System.Drawing.Size(112, 36);
+            this.RoomNumberComboBox.TabIndex = 43;
             // 
             // CreateProfileButton
             // 
@@ -815,7 +813,7 @@ namespace Student_Profile
             this.CreateProfileButton.Font = new System.Drawing.Font("JetBrains Mono", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateProfileButton.ForeColor = System.Drawing.Color.White;
             this.CreateProfileButton.HoverState.Parent = this.CreateProfileButton;
-            this.CreateProfileButton.Location = new System.Drawing.Point(1094, 478);
+            this.CreateProfileButton.Location = new System.Drawing.Point(1097, 492);
             this.CreateProfileButton.Name = "CreateProfileButton";
             this.CreateProfileButton.ShadowDecoration.Parent = this.CreateProfileButton;
             this.CreateProfileButton.Size = new System.Drawing.Size(145, 40);
@@ -855,20 +853,51 @@ namespace Student_Profile
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(237)))));
+            this.guna2Panel2.Controls.Add(this.guna2Button7);
+            this.guna2Panel2.Controls.Add(this.guna2Button1);
             this.guna2Panel2.Controls.Add(this.StudentButton);
-            this.guna2Panel2.Controls.Add(this.RoomButton);
-            this.guna2Panel2.Controls.Add(this.ExpenseButton);
             this.guna2Panel2.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel2.Controls.Add(this.guna2ControlBox2);
             this.guna2Panel2.Controls.Add(this.guna2ControlBox1);
-            this.guna2Panel2.Controls.Add(this.StudentPictureBox2);
-            this.guna2Panel2.Controls.Add(this.RoomPictureBox);
-            this.guna2Panel2.Controls.Add(this.ExpensePictureBox);
             this.guna2Panel2.Location = new System.Drawing.Point(135, -1);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(1115, 67);
             this.guna2Panel2.TabIndex = 46;
+            // 
+            // guna2Button7
+            // 
+            this.guna2Button7.CheckedState.Parent = this.guna2Button7;
+            this.guna2Button7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button7.CustomImages.Parent = this.guna2Button7;
+            this.guna2Button7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(237)))));
+            this.guna2Button7.Font = new System.Drawing.Font("JetBrains Mono", 15.75F);
+            this.guna2Button7.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button7.HoverState.Parent = this.guna2Button7;
+            this.guna2Button7.Image = global::Student_Profile.Properties.Resources.Group_129__1_;
+            this.guna2Button7.Location = new System.Drawing.Point(600, 37);
+            this.guna2Button7.Name = "guna2Button7";
+            this.guna2Button7.ShadowDecoration.Parent = this.guna2Button7;
+            this.guna2Button7.Size = new System.Drawing.Size(116, 22);
+            this.guna2Button7.TabIndex = 53;
+            this.guna2Button7.Text = "Expense";
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(237)))));
+            this.guna2Button1.Font = new System.Drawing.Font("JetBrains Mono", 15.75F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Image = global::Student_Profile.Properties.Resources.Group_129__1_;
+            this.guna2Button1.Location = new System.Drawing.Point(712, 37);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(116, 22);
+            this.guna2Button1.TabIndex = 13;
+            this.guna2Button1.Text = "Room";
             // 
             // StudentButton
             // 
@@ -876,47 +905,16 @@ namespace Student_Profile
             this.StudentButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.StudentButton.CustomImages.Parent = this.StudentButton;
             this.StudentButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(237)))));
-            this.StudentButton.Font = new System.Drawing.Font("JetBrains Mono", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentButton.Font = new System.Drawing.Font("JetBrains Mono", 15.75F);
             this.StudentButton.ForeColor = System.Drawing.Color.Black;
             this.StudentButton.HoverState.Parent = this.StudentButton;
-            this.StudentButton.Location = new System.Drawing.Point(866, 37);
+            this.StudentButton.Image = global::Student_Profile.Properties.Resources.Group_129__1_;
+            this.StudentButton.Location = new System.Drawing.Point(815, 37);
             this.StudentButton.Name = "StudentButton";
             this.StudentButton.ShadowDecoration.Parent = this.StudentButton;
-            this.StudentButton.Size = new System.Drawing.Size(107, 22);
+            this.StudentButton.Size = new System.Drawing.Size(147, 22);
             this.StudentButton.TabIndex = 12;
             this.StudentButton.Text = "Student";
-            // 
-            // RoomButton
-            // 
-            this.RoomButton.CheckedState.Parent = this.RoomButton;
-            this.RoomButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.RoomButton.CustomImages.Parent = this.RoomButton;
-            this.RoomButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(237)))));
-            this.RoomButton.Font = new System.Drawing.Font("JetBrains Mono", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RoomButton.ForeColor = System.Drawing.Color.Black;
-            this.RoomButton.HoverState.Parent = this.RoomButton;
-            this.RoomButton.Location = new System.Drawing.Point(756, 37);
-            this.RoomButton.Name = "RoomButton";
-            this.RoomButton.ShadowDecoration.Parent = this.RoomButton;
-            this.RoomButton.Size = new System.Drawing.Size(71, 22);
-            this.RoomButton.TabIndex = 11;
-            this.RoomButton.Text = "Room";
-            // 
-            // ExpenseButton
-            // 
-            this.ExpenseButton.CheckedState.Parent = this.ExpenseButton;
-            this.ExpenseButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ExpenseButton.CustomImages.Parent = this.ExpenseButton;
-            this.ExpenseButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(237)))));
-            this.ExpenseButton.Font = new System.Drawing.Font("JetBrains Mono", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExpenseButton.ForeColor = System.Drawing.Color.Black;
-            this.ExpenseButton.HoverState.Parent = this.ExpenseButton;
-            this.ExpenseButton.Location = new System.Drawing.Point(619, 36);
-            this.ExpenseButton.Name = "ExpenseButton";
-            this.ExpenseButton.ShadowDecoration.Parent = this.ExpenseButton;
-            this.ExpenseButton.Size = new System.Drawing.Size(107, 22);
-            this.ExpenseButton.TabIndex = 10;
-            this.ExpenseButton.Text = "Expense";
             // 
             // guna2PictureBox2
             // 
@@ -939,39 +937,6 @@ namespace Student_Profile
             this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.Size = new System.Drawing.Size(18, 18);
             this.guna2ControlBox1.TabIndex = 2;
-            // 
-            // StudentPictureBox2
-            // 
-            this.StudentPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("StudentPictureBox2.Image")));
-            this.StudentPictureBox2.Location = new System.Drawing.Point(836, 34);
-            this.StudentPictureBox2.Name = "StudentPictureBox2";
-            this.StudentPictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.StudentPictureBox2.ShadowDecoration.Parent = this.StudentPictureBox2;
-            this.StudentPictureBox2.Size = new System.Drawing.Size(24, 24);
-            this.StudentPictureBox2.TabIndex = 3;
-            this.StudentPictureBox2.TabStop = false;
-            // 
-            // RoomPictureBox
-            // 
-            this.RoomPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("RoomPictureBox.Image")));
-            this.RoomPictureBox.Location = new System.Drawing.Point(733, 34);
-            this.RoomPictureBox.Name = "RoomPictureBox";
-            this.RoomPictureBox.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.RoomPictureBox.ShadowDecoration.Parent = this.RoomPictureBox;
-            this.RoomPictureBox.Size = new System.Drawing.Size(24, 24);
-            this.RoomPictureBox.TabIndex = 4;
-            this.RoomPictureBox.TabStop = false;
-            // 
-            // ExpensePictureBox
-            // 
-            this.ExpensePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("ExpensePictureBox.Image")));
-            this.ExpensePictureBox.Location = new System.Drawing.Point(598, 33);
-            this.ExpensePictureBox.Name = "ExpensePictureBox";
-            this.ExpensePictureBox.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.ExpensePictureBox.ShadowDecoration.Parent = this.ExpensePictureBox;
-            this.ExpensePictureBox.Size = new System.Drawing.Size(24, 24);
-            this.ExpensePictureBox.TabIndex = 2;
-            this.ExpensePictureBox.TabStop = false;
             // 
             // guna2Elipse2
             // 
@@ -1231,36 +1196,6 @@ namespace Student_Profile
             this.guna2Elipse1.BorderRadius = 20;
             this.guna2Elipse1.TargetControl = this;
             // 
-            // guna2PictureBox9
-            // 
-            this.guna2PictureBox9.Image = global::Student_Profile.Properties.Resources.Menu_icn__1_;
-            this.guna2PictureBox9.Location = new System.Drawing.Point(1057, 111);
-            this.guna2PictureBox9.Name = "guna2PictureBox9";
-            this.guna2PictureBox9.ShadowDecoration.Parent = this.guna2PictureBox9;
-            this.guna2PictureBox9.Size = new System.Drawing.Size(28, 28);
-            this.guna2PictureBox9.TabIndex = 48;
-            this.guna2PictureBox9.TabStop = false;
-            // 
-            // guna2PictureBox16
-            // 
-            this.guna2PictureBox16.Image = global::Student_Profile.Properties.Resources.Down_Arrow;
-            this.guna2PictureBox16.Location = new System.Drawing.Point(1196, 123);
-            this.guna2PictureBox16.Name = "guna2PictureBox16";
-            this.guna2PictureBox16.ShadowDecoration.Parent = this.guna2PictureBox16;
-            this.guna2PictureBox16.Size = new System.Drawing.Size(13, 10);
-            this.guna2PictureBox16.TabIndex = 50;
-            this.guna2PictureBox16.TabStop = false;
-            // 
-            // UpdatePhotoPictureBox1
-            // 
-            this.UpdatePhotoPictureBox1.Image = global::Student_Profile.Properties.Resources.circle;
-            this.UpdatePhotoPictureBox1.Location = new System.Drawing.Point(1108, 145);
-            this.UpdatePhotoPictureBox1.Name = "UpdatePhotoPictureBox1";
-            this.UpdatePhotoPictureBox1.ShadowDecoration.Parent = this.UpdatePhotoPictureBox1;
-            this.UpdatePhotoPictureBox1.Size = new System.Drawing.Size(129, 131);
-            this.UpdatePhotoPictureBox1.TabIndex = 37;
-            this.UpdatePhotoPictureBox1.TabStop = false;
-            // 
             // BloodGroupComboBox
             // 
             this.BloodGroupComboBox.BackColor = System.Drawing.Color.Transparent;
@@ -1317,24 +1252,59 @@ namespace Student_Profile
             this.GenderComboBox.ShadowDecoration.Parent = this.GenderComboBox;
             this.GenderComboBox.Size = new System.Drawing.Size(209, 36);
             this.GenderComboBox.TabIndex = 52;
+            this.GenderComboBox.SelectedIndexChanged += new System.EventHandler(this.GenderComboBox_SelectedIndexChanged);
             // 
-            // guna2Button1
+            // guna2PictureBox9
             // 
-            this.guna2Button1.BorderColor = System.Drawing.Color.DarkBlue;
-            this.guna2Button1.BorderRadius = 4;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.guna2Button1.Font = new System.Drawing.Font("JetBrains Mono", 11.25F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(1114, 282);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(123, 33);
-            this.guna2Button1.TabIndex = 53;
-            this.guna2Button1.Text = "Update Photo";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.guna2PictureBox9.Image = global::Student_Profile.Properties.Resources.Menu_icn__1_;
+            this.guna2PictureBox9.Location = new System.Drawing.Point(1057, 111);
+            this.guna2PictureBox9.Name = "guna2PictureBox9";
+            this.guna2PictureBox9.ShadowDecoration.Parent = this.guna2PictureBox9;
+            this.guna2PictureBox9.Size = new System.Drawing.Size(28, 28);
+            this.guna2PictureBox9.TabIndex = 48;
+            this.guna2PictureBox9.TabStop = false;
+            // 
+            // guna2PictureBox16
+            // 
+            this.guna2PictureBox16.Image = global::Student_Profile.Properties.Resources.Down_Arrow;
+            this.guna2PictureBox16.Location = new System.Drawing.Point(1196, 123);
+            this.guna2PictureBox16.Name = "guna2PictureBox16";
+            this.guna2PictureBox16.ShadowDecoration.Parent = this.guna2PictureBox16;
+            this.guna2PictureBox16.Size = new System.Drawing.Size(13, 10);
+            this.guna2PictureBox16.TabIndex = 50;
+            this.guna2PictureBox16.TabStop = false;
+            // 
+            // UpdatePhotoPictureBox1
+            // 
+            this.UpdatePhotoPictureBox1.Image = global::Student_Profile.Properties.Resources.circle;
+            this.UpdatePhotoPictureBox1.Location = new System.Drawing.Point(1108, 145);
+            this.UpdatePhotoPictureBox1.Name = "UpdatePhotoPictureBox1";
+            this.UpdatePhotoPictureBox1.ShadowDecoration.Parent = this.UpdatePhotoPictureBox1;
+            this.UpdatePhotoPictureBox1.Size = new System.Drawing.Size(129, 131);
+            this.UpdatePhotoPictureBox1.TabIndex = 37;
+            this.UpdatePhotoPictureBox1.TabStop = false;
+            this.UpdatePhotoPictureBox1.Click += new System.EventHandler(this.UpdatePhotoPictureBox1_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // guna2Button9
+            // 
+            this.guna2Button9.BorderColor = System.Drawing.Color.Navy;
+            this.guna2Button9.BorderRadius = 4;
+            this.guna2Button9.CheckedState.Parent = this.guna2Button9;
+            this.guna2Button9.CustomImages.Parent = this.guna2Button9;
+            this.guna2Button9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.guna2Button9.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button9.ForeColor = System.Drawing.Color.White;
+            this.guna2Button9.HoverState.Parent = this.guna2Button9;
+            this.guna2Button9.Location = new System.Drawing.Point(1100, 275);
+            this.guna2Button9.Name = "guna2Button9";
+            this.guna2Button9.ShadowDecoration.Parent = this.guna2Button9;
+            this.guna2Button9.Size = new System.Drawing.Size(150, 45);
+            this.guna2Button9.TabIndex = 53;
+            this.guna2Button9.Text = "Upload Photo";
             // 
             // CreateStudentProfile
             // 
@@ -1342,7 +1312,7 @@ namespace Student_Profile
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1250, 666);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.guna2Button9);
             this.Controls.Add(this.GenderComboBox);
             this.Controls.Add(this.BloodGroupComboBox);
             this.Controls.Add(this.PixelzWarriorsLinkLabel1);
@@ -1351,7 +1321,7 @@ namespace Student_Profile
             this.Controls.Add(this.guna2PictureBox16);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.CreateProfileButton);
-            this.Controls.Add(this.guna2ComboBox1);
+            this.Controls.Add(this.RoomNumberComboBox);
             this.Controls.Add(this.RoomNumberLabel);
             this.Controls.Add(this.UpdatePhotoPictureBox1);
             this.Controls.Add(this.RelationTextBox);
@@ -1395,9 +1365,6 @@ namespace Student_Profile
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CreateStudentProfile_FormClosing);
             this.guna2Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StudentPictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RoomPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ExpensePictureBox)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox13)).EndInit();
@@ -1457,12 +1424,9 @@ namespace Student_Profile
         private System.Windows.Forms.Label RelationTextBox;
         private Guna.UI2.WinForms.Guna2PictureBox UpdatePhotoPictureBox1;
         private System.Windows.Forms.Label RoomNumberLabel;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox RoomNumberComboBox;
         private Guna.UI2.WinForms.Guna2Button CreateProfileButton;
         private System.Windows.Forms.LinkLabel PixelzWarriorsLinkLabel1;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox ExpensePictureBox;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox StudentPictureBox2;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox RoomPictureBox;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox9;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
@@ -1492,12 +1456,13 @@ namespace Student_Profile
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox10;
         private Guna.UI2.WinForms.Guna2Button StudentButton;
-        private Guna.UI2.WinForms.Guna2Button RoomButton;
-        private Guna.UI2.WinForms.Guna2Button ExpenseButton;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private Guna.UI2.WinForms.Guna2ComboBox BloodGroupComboBox;
         private Guna.UI2.WinForms.Guna2ComboBox GenderComboBox;
+        private Guna.UI2.WinForms.Guna2Button guna2Button7;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button9;
     }
 }
 

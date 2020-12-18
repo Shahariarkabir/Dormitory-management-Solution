@@ -272,7 +272,12 @@ namespace Student_Log_In
             this.userSignInButton.ShadowDecoration.Parent = this.userSignInButton;
             this.userSignInButton.Size = new System.Drawing.Size(151, 43);
             this.userSignInButton.TabIndex = 23;
+<<<<<<< Updated upstream
             this.userSignInButton.Text = "Log In";
+=======
+            this.userSignInButton.Text = "Sign In";
+            this.userSignInButton.Click += new System.EventHandler(this.userSignInButton_Click);
+>>>>>>> Stashed changes
             // 
             // clickhereLabel
             // 

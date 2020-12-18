@@ -10,3 +10,14 @@ C:\Users\rakib\source\repos\Registration\obj\Debug\Registration.csproj.CopyCompl
 C:\Users\rakib\source\repos\Registration\obj\Debug\Registration.exe
 C:\Users\rakib\source\repos\Registration\obj\Debug\Registration.pdb
 C:\Users\rakib\source\repos\Registration\obj\Debug\Registration.RegistrationForm.resources
+D:\Github\Dormitory-management-Solution\Student_Registration\bin\Debug\Registration.exe.config
+D:\Github\Dormitory-management-Solution\Student_Registration\bin\Debug\Registration.exe
+D:\Github\Dormitory-management-Solution\Student_Registration\bin\Debug\Registration.pdb
+D:\Github\Dormitory-management-Solution\Student_Registration\obj\Debug\Registration.csprojAssemblyReference.cache
+D:\Github\Dormitory-management-Solution\Student_Registration\obj\Debug\Registration.RegistrationForm.resources
+D:\Github\Dormitory-management-Solution\Student_Registration\obj\Debug\Registration.Properties.Resources.resources
+D:\Github\Dormitory-management-Solution\Student_Registration\obj\Debug\Registration.csproj.GenerateResource.cache
+D:\Github\Dormitory-management-Solution\Student_Registration\obj\Debug\Registration.csproj.CoreCompileInputs.cache
+D:\Github\Dormitory-management-Solution\Student_Registration\obj\Debug\Registration.csproj.CopyComplete
+D:\Github\Dormitory-management-Solution\Student_Registration\obj\Debug\Registration.exe
+D:\Github\Dormitory-management-Solution\Student_Registration\obj\Debug\Registration.pdb

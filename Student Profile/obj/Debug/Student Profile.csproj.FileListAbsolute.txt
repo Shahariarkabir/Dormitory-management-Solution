@@ -32,3 +32,14 @@ F:\Fall 20-21\Student Profile\obj\Debug\Student Profile.csproj.CoreCompileInputs
 F:\Fall 20-21\Student Profile\obj\Debug\Student Profile.csproj.CopyComplete
 F:\Fall 20-21\Student Profile\obj\Debug\Student Profile.exe
 F:\Fall 20-21\Student Profile\obj\Debug\Student Profile.pdb
+D:\Github\Dormitory-management-Solution\Student Profile\bin\Debug\Student Profile.exe.config
+D:\Github\Dormitory-management-Solution\Student Profile\bin\Debug\Student Profile.exe
+D:\Github\Dormitory-management-Solution\Student Profile\bin\Debug\Student Profile.pdb
+D:\Github\Dormitory-management-Solution\Student Profile\obj\Debug\Student Profile.csprojAssemblyReference.cache
+D:\Github\Dormitory-management-Solution\Student Profile\obj\Debug\Student_Profile.CreateStudentProfile.resources
+D:\Github\Dormitory-management-Solution\Student Profile\obj\Debug\Student_Profile.Properties.Resources.resources
+D:\Github\Dormitory-management-Solution\Student Profile\obj\Debug\Student Profile.csproj.GenerateResource.cache
+D:\Github\Dormitory-management-Solution\Student Profile\obj\Debug\Student Profile.csproj.CoreCompileInputs.cache
+D:\Github\Dormitory-management-Solution\Student Profile\obj\Debug\Student Profile.csproj.CopyComplete
+D:\Github\Dormitory-management-Solution\Student Profile\obj\Debug\Student Profile.exe
+D:\Github\Dormitory-management-Solution\Student Profile\obj\Debug\Student Profile.pdb
