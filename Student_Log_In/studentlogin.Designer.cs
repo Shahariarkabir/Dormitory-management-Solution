@@ -37,8 +37,6 @@ namespace Student_Log_In
             this.userNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.passwordLabel = new System.Windows.Forms.Label();
             this.userPasswordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.remeberCheckBox = new Guna.UI2.WinForms.Guna2CustomCheckBox();
-            this.rememberLabel = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.donothaveLabel = new System.Windows.Forms.Label();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
@@ -51,6 +49,7 @@ namespace Student_Log_In
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.userSignInButton = new Guna.UI2.WinForms.Guna2Button();
             this.clickhereLabel = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,31 +60,31 @@ namespace Student_Log_In
             this.welcomeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
             this.welcomeLabel.Location = new System.Drawing.Point(410, 55);
             this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(362, 44);
+            this.welcomeLabel.Size = new System.Drawing.Size(361, 43);
             this.welcomeLabel.TabIndex = 2;
             this.welcomeLabel.Text = "Welcome to the DMS";
             // 
             // statementLabel
             // 
             this.statementLabel.AutoSize = true;
-            this.statementLabel.Font = new System.Drawing.Font("JetBrains Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statementLabel.Font = new System.Drawing.Font("JetBrains Mono", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.statementLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
             this.statementLabel.Location = new System.Drawing.Point(435, 111);
             this.statementLabel.Name = "statementLabel";
-            this.statementLabel.Size = new System.Drawing.Size(296, 18);
+            this.statementLabel.Size = new System.Drawing.Size(270, 19);
             this.statementLabel.TabIndex = 3;
-            this.statementLabel.Text = "If you have a student account in DMS";
+            this.statementLabel.Text = "If you have an account in DMS";
             // 
             // statement2Label
             // 
             this.statement2Label.AutoSize = true;
-            this.statement2Label.Font = new System.Drawing.Font("JetBrains Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statement2Label.Font = new System.Drawing.Font("JetBrains Mono", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.statement2Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
-            this.statement2Label.Location = new System.Drawing.Point(435, 128);
+            this.statement2Label.Location = new System.Drawing.Point(435, 131);
             this.statement2Label.Name = "statement2Label";
-            this.statement2Label.Size = new System.Drawing.Size(208, 18);
+            this.statement2Label.Size = new System.Drawing.Size(225, 19);
             this.statement2Label.TabIndex = 4;
-            this.statement2Label.Text = "Please Sign in the below.";
+            this.statement2Label.Text = "Please Log in the below.";
             // 
             // userNameLabel
             // 
@@ -93,9 +92,9 @@ namespace Student_Log_In
             this.userNameLabel.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userNameLabel.Location = new System.Drawing.Point(434, 190);
             this.userNameLabel.Name = "userNameLabel";
-            this.userNameLabel.Size = new System.Drawing.Size(210, 21);
+            this.userNameLabel.Size = new System.Drawing.Size(90, 21);
             this.userNameLabel.TabIndex = 5;
-            this.userNameLabel.Text = "Email or User Name :";
+            this.userNameLabel.Text = "Username";
             // 
             // userNameTextBox
             // 
@@ -131,9 +130,9 @@ namespace Student_Log_In
             this.passwordLabel.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordLabel.Location = new System.Drawing.Point(440, 277);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(110, 21);
+            this.passwordLabel.Size = new System.Drawing.Size(90, 21);
             this.passwordLabel.TabIndex = 7;
-            this.passwordLabel.Text = "Password :";
+            this.passwordLabel.Text = "Password";
             // 
             // userPasswordTextBox
             // 
@@ -164,38 +163,6 @@ namespace Student_Log_In
             this.userPasswordTextBox.TabIndex = 8;
             this.userPasswordTextBox.UseSystemPasswordChar = true;
             // 
-            // remeberCheckBox
-            // 
-            this.remeberCheckBox.AccessibleRole = System.Windows.Forms.AccessibleRole.Cursor;
-            this.remeberCheckBox.BackColor = System.Drawing.Color.Transparent;
-            this.remeberCheckBox.CheckedState.BorderColor = System.Drawing.Color.Black;
-            this.remeberCheckBox.CheckedState.BorderRadius = 1;
-            this.remeberCheckBox.CheckedState.BorderThickness = 2;
-            this.remeberCheckBox.CheckedState.FillColor = System.Drawing.Color.White;
-            this.remeberCheckBox.CheckedState.Parent = this.remeberCheckBox;
-            this.remeberCheckBox.CheckMarkColor = System.Drawing.Color.Black;
-            this.remeberCheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.remeberCheckBox.Location = new System.Drawing.Point(448, 358);
-            this.remeberCheckBox.Name = "remeberCheckBox";
-            this.remeberCheckBox.ShadowDecoration.Parent = this.remeberCheckBox;
-            this.remeberCheckBox.Size = new System.Drawing.Size(20, 20);
-            this.remeberCheckBox.TabIndex = 9;
-            this.remeberCheckBox.UncheckedState.BorderColor = System.Drawing.Color.Black;
-            this.remeberCheckBox.UncheckedState.BorderRadius = 1;
-            this.remeberCheckBox.UncheckedState.BorderThickness = 2;
-            this.remeberCheckBox.UncheckedState.FillColor = System.Drawing.Color.White;
-            this.remeberCheckBox.UncheckedState.Parent = this.remeberCheckBox;
-            // 
-            // rememberLabel
-            // 
-            this.rememberLabel.AutoSize = true;
-            this.rememberLabel.Font = new System.Drawing.Font("JetBrains Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rememberLabel.Location = new System.Drawing.Point(474, 359);
-            this.rememberLabel.Name = "rememberLabel";
-            this.rememberLabel.Size = new System.Drawing.Size(96, 18);
-            this.rememberLabel.TabIndex = 10;
-            this.rememberLabel.Text = "Remember me";
-            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = global::Student_Log_In.Properties.Resources.Group_12;
@@ -213,7 +180,7 @@ namespace Student_Log_In
             this.donothaveLabel.Font = new System.Drawing.Font("JetBrains Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.donothaveLabel.Location = new System.Drawing.Point(493, 472);
             this.donothaveLabel.Name = "donothaveLabel";
-            this.donothaveLabel.Size = new System.Drawing.Size(184, 18);
+            this.donothaveLabel.Size = new System.Drawing.Size(184, 17);
             this.donothaveLabel.TabIndex = 15;
             this.donothaveLabel.Text = "Don’t have an account ";
             this.donothaveLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -268,7 +235,7 @@ namespace Student_Log_In
             this.signupLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(41)))));
             this.signupLinkLabel.Location = new System.Drawing.Point(606, 493);
             this.signupLinkLabel.Name = "signupLinkLabel";
-            this.signupLinkLabel.Size = new System.Drawing.Size(64, 18);
+            this.signupLinkLabel.Size = new System.Drawing.Size(64, 17);
             this.signupLinkLabel.TabIndex = 21;
             this.signupLinkLabel.TabStop = true;
             this.signupLinkLabel.Text = "Sign Up";
@@ -279,9 +246,9 @@ namespace Student_Log_In
             this.forgetPasswordLinkLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.forgetPasswordLinkLabel.Font = new System.Drawing.Font("JetBrains Mono", 9.75F);
             this.forgetPasswordLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(41)))));
-            this.forgetPasswordLinkLabel.Location = new System.Drawing.Point(592, 359);
+            this.forgetPasswordLinkLabel.Location = new System.Drawing.Point(592, 360);
             this.forgetPasswordLinkLabel.Name = "forgetPasswordLinkLabel";
-            this.forgetPasswordLinkLabel.Size = new System.Drawing.Size(128, 18);
+            this.forgetPasswordLinkLabel.Size = new System.Drawing.Size(128, 17);
             this.forgetPasswordLinkLabel.TabIndex = 22;
             this.forgetPasswordLinkLabel.TabStop = true;
             this.forgetPasswordLinkLabel.Text = "Forgot Password";
@@ -297,7 +264,7 @@ namespace Student_Log_In
             this.userSignInButton.CheckedState.Parent = this.userSignInButton;
             this.userSignInButton.CustomImages.Parent = this.userSignInButton;
             this.userSignInButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(41)))));
-            this.userSignInButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userSignInButton.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userSignInButton.ForeColor = System.Drawing.Color.White;
             this.userSignInButton.HoverState.Parent = this.userSignInButton;
             this.userSignInButton.Location = new System.Drawing.Point(507, 410);
@@ -305,7 +272,7 @@ namespace Student_Log_In
             this.userSignInButton.ShadowDecoration.Parent = this.userSignInButton;
             this.userSignInButton.Size = new System.Drawing.Size(151, 43);
             this.userSignInButton.TabIndex = 23;
-            this.userSignInButton.Text = "Sign In";
+            this.userSignInButton.Text = "Log In";
             // 
             // clickhereLabel
             // 
@@ -313,16 +280,28 @@ namespace Student_Log_In
             this.clickhereLabel.Font = new System.Drawing.Font("JetBrains Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clickhereLabel.Location = new System.Drawing.Point(493, 493);
             this.clickhereLabel.Name = "clickhereLabel";
-            this.clickhereLabel.Size = new System.Drawing.Size(112, 18);
+            this.clickhereLabel.Size = new System.Drawing.Size(112, 17);
             this.clickhereLabel.TabIndex = 24;
             this.clickhereLabel.Text = "Click here to";
             this.clickhereLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("JetBrains Mono", 9.75F);
+            this.checkBox1.Location = new System.Drawing.Point(444, 359);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(115, 21);
+            this.checkBox1.TabIndex = 25;
+            this.checkBox1.Text = "Remember me";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // studentlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.clickhereLabel);
             this.Controls.Add(this.userSignInButton);
             this.Controls.Add(this.forgetPasswordLinkLabel);
@@ -331,8 +310,6 @@ namespace Student_Log_In
             this.Controls.Add(this.guna2ControlBox2);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.donothaveLabel);
-            this.Controls.Add(this.rememberLabel);
-            this.Controls.Add(this.remeberCheckBox);
             this.Controls.Add(this.userPasswordTextBox);
             this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.userNameTextBox);
@@ -362,8 +339,6 @@ namespace Student_Log_In
         private Guna.UI2.WinForms.Guna2TextBox userNameTextBox;
         private System.Windows.Forms.Label passwordLabel;
         private Guna.UI2.WinForms.Guna2TextBox userPasswordTextBox;
-        private Guna.UI2.WinForms.Guna2CustomCheckBox remeberCheckBox;
-        private System.Windows.Forms.Label rememberLabel;
         private System.Windows.Forms.Label donothaveLabel;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
@@ -375,6 +350,7 @@ namespace Student_Log_In
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Button userSignInButton;
         private System.Windows.Forms.Label clickhereLabel;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
