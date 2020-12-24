@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Student_Log_In.BusinessLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,7 +25,28 @@ namespace Student_Log_In
 
         private void userSignInButton_Click(object sender, EventArgs e)
         {
+            if (userNameTextBox.Text == "" || userPasswordTextBox.Text == "")
+            {
+                MessageBox.Show("Username or password can not be empty");
+            }
+            else
+            {
+                UserService userService = new UserService();
+                bool result = userService.LoginValidation(userNameTextBox.Text, userPasswordTextBox.Text);
+                if (result)
+                {
+                    //DashBoard dashBoard = new DashBoard();
+                    //dashBoard.Show();
+                    //this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Username or password");
+                }
+            }
 
         }
+
+
     }
 }

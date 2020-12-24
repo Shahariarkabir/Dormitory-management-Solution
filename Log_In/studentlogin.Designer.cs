@@ -60,7 +60,7 @@ namespace Student_Log_In
             this.welcomeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
             this.welcomeLabel.Location = new System.Drawing.Point(410, 55);
             this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(361, 43);
+            this.welcomeLabel.Size = new System.Drawing.Size(362, 44);
             this.welcomeLabel.TabIndex = 2;
             this.welcomeLabel.Text = "Welcome to the DMS";
             // 
@@ -71,7 +71,7 @@ namespace Student_Log_In
             this.statementLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
             this.statementLabel.Location = new System.Drawing.Point(435, 111);
             this.statementLabel.Name = "statementLabel";
-            this.statementLabel.Size = new System.Drawing.Size(270, 19);
+            this.statementLabel.Size = new System.Drawing.Size(270, 20);
             this.statementLabel.TabIndex = 3;
             this.statementLabel.Text = "If you have an account in DMS";
             // 
@@ -82,7 +82,7 @@ namespace Student_Log_In
             this.statement2Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
             this.statement2Label.Location = new System.Drawing.Point(435, 131);
             this.statement2Label.Name = "statement2Label";
-            this.statement2Label.Size = new System.Drawing.Size(225, 19);
+            this.statement2Label.Size = new System.Drawing.Size(225, 20);
             this.statement2Label.TabIndex = 4;
             this.statement2Label.Text = "Please Log in the below.";
             // 
@@ -180,7 +180,7 @@ namespace Student_Log_In
             this.donothaveLabel.Font = new System.Drawing.Font("JetBrains Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.donothaveLabel.Location = new System.Drawing.Point(493, 472);
             this.donothaveLabel.Name = "donothaveLabel";
-            this.donothaveLabel.Size = new System.Drawing.Size(184, 17);
+            this.donothaveLabel.Size = new System.Drawing.Size(184, 18);
             this.donothaveLabel.TabIndex = 15;
             this.donothaveLabel.Text = "Don’t have an account ";
             this.donothaveLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -235,7 +235,7 @@ namespace Student_Log_In
             this.signupLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(41)))));
             this.signupLinkLabel.Location = new System.Drawing.Point(606, 493);
             this.signupLinkLabel.Name = "signupLinkLabel";
-            this.signupLinkLabel.Size = new System.Drawing.Size(64, 17);
+            this.signupLinkLabel.Size = new System.Drawing.Size(64, 18);
             this.signupLinkLabel.TabIndex = 21;
             this.signupLinkLabel.TabStop = true;
             this.signupLinkLabel.Text = "Sign Up";
@@ -248,7 +248,7 @@ namespace Student_Log_In
             this.forgetPasswordLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(41)))));
             this.forgetPasswordLinkLabel.Location = new System.Drawing.Point(592, 360);
             this.forgetPasswordLinkLabel.Name = "forgetPasswordLinkLabel";
-            this.forgetPasswordLinkLabel.Size = new System.Drawing.Size(128, 17);
+            this.forgetPasswordLinkLabel.Size = new System.Drawing.Size(128, 18);
             this.forgetPasswordLinkLabel.TabIndex = 22;
             this.forgetPasswordLinkLabel.TabStop = true;
             this.forgetPasswordLinkLabel.Text = "Forgot Password";
@@ -272,12 +272,8 @@ namespace Student_Log_In
             this.userSignInButton.ShadowDecoration.Parent = this.userSignInButton;
             this.userSignInButton.Size = new System.Drawing.Size(151, 43);
             this.userSignInButton.TabIndex = 23;
-<<<<<<< Updated upstream
             this.userSignInButton.Text = "Log In";
-=======
-            this.userSignInButton.Text = "Sign In";
-            this.userSignInButton.Click += new System.EventHandler(this.userSignInButton_Click);
->>>>>>> Stashed changes
+           // this.userSignInButton.Click += new System.EventHandler(this.userSignInButton_Click_1);
             // 
             // clickhereLabel
             // 
@@ -285,7 +281,7 @@ namespace Student_Log_In
             this.clickhereLabel.Font = new System.Drawing.Font("JetBrains Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clickhereLabel.Location = new System.Drawing.Point(493, 493);
             this.clickhereLabel.Name = "clickhereLabel";
-            this.clickhereLabel.Size = new System.Drawing.Size(112, 17);
+            this.clickhereLabel.Size = new System.Drawing.Size(112, 18);
             this.clickhereLabel.TabIndex = 24;
             this.clickhereLabel.Text = "Click here to";
             this.clickhereLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -296,7 +292,7 @@ namespace Student_Log_In
             this.checkBox1.Font = new System.Drawing.Font("JetBrains Mono", 9.75F);
             this.checkBox1.Location = new System.Drawing.Point(444, 359);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(115, 21);
+            this.checkBox1.Size = new System.Drawing.Size(115, 22);
             this.checkBox1.TabIndex = 25;
             this.checkBox1.Text = "Remember me";
             this.checkBox1.UseVisualStyleBackColor = true;
