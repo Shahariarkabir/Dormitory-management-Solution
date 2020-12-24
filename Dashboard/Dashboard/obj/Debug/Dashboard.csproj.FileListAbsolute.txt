@@ -1,0 +1,12 @@
+C:\Users\rakib\Downloads\Dashboard (1)\Dashboard\bin\Debug\Student Profile.exe.config
+C:\Users\rakib\Downloads\Dashboard (1)\Dashboard\bin\Debug\Student Profile.exe
+C:\Users\rakib\Downloads\Dashboard (1)\Dashboard\bin\Debug\Student Profile.pdb
+C:\Users\rakib\Downloads\Dashboard (1)\Dashboard\bin\Debug\Guna.UI2.dll
+C:\Users\rakib\Downloads\Dashboard (1)\Dashboard\obj\Debug\Dashboard.csprojAssemblyReference.cache
+C:\Users\rakib\Downloads\Dashboard (1)\Dashboard\obj\Debug\Student_Profile.Dashboard.resources
+C:\Users\rakib\Downloads\Dashboard (1)\Dashboard\obj\Debug\Student_Profile.Properties.Resources.resources
+C:\Users\rakib\Downloads\Dashboard (1)\Dashboard\obj\Debug\Dashboard.csproj.GenerateResource.cache
+C:\Users\rakib\Downloads\Dashboard (1)\Dashboard\obj\Debug\Dashboard.csproj.CoreCompileInputs.cache
+C:\Users\rakib\Downloads\Dashboard (1)\Dashboard\obj\Debug\Dashboard.csproj.CopyComplete
+C:\Users\rakib\Downloads\Dashboard (1)\Dashboard\obj\Debug\Student Profile.exe
+C:\Users\rakib\Downloads\Dashboard (1)\Dashboard\obj\Debug\Student Profile.pdb
