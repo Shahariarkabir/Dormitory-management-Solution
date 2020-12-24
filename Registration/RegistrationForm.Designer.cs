@@ -116,10 +116,10 @@
             this.registration.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(41)))));
             this.registration.Location = new System.Drawing.Point(66, 90);
             this.registration.Name = "registration";
-            this.registration.Size = new System.Drawing.Size(364, 64);
+            this.registration.Size = new System.Drawing.Size(363, 62);
             this.registration.TabIndex = 8;
             this.registration.Text = "Registration";
-           // this.registration.Click += new System.EventHandler(this.label2_Click);
+            this.registration.Click += new System.EventHandler(this.label2_Click);
             // 
             // regPassword
             // 
@@ -153,7 +153,7 @@
             this.regEmail.Size = new System.Drawing.Size(70, 21);
             this.regEmail.TabIndex = 11;
             this.regEmail.Text = "E-mail";
-            //this.regEmail.Click += new System.EventHandler(this.label5_Click);
+            this.regEmail.Click += new System.EventHandler(this.label5_Click);
             // 
             // regBtnUsername
             // 
@@ -195,7 +195,6 @@
             this.regCreateAnAccount.Size = new System.Drawing.Size(302, 43);
             this.regCreateAnAccount.TabIndex = 16;
             this.regCreateAnAccount.Text = "Create an account";
-            this.regCreateAnAccount.Click += new System.EventHandler(this.regCreateAnAccount_Click);
             // 
             // guna2DragControl1
             // 
@@ -305,7 +304,7 @@
             this.Name = "RegistrationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegistrationForm";
-           // this.Load += new System.EventHandler(this.RegistrationForm_Load);
+            this.Load += new System.EventHandler(this.RegistrationForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.regPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
