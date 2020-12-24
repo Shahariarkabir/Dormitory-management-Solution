@@ -1,0 +1,13 @@
+D:\Github\Dormitory-management-Solution\Log_In\bin\Debug\Student_Log_In.exe.config
+D:\Github\Dormitory-management-Solution\Log_In\bin\Debug\Student_Log_In.exe
+D:\Github\Dormitory-management-Solution\Log_In\bin\Debug\Student_Log_In.pdb
+D:\Github\Dormitory-management-Solution\Log_In\bin\Debug\Guna.UI2.dll
+D:\Github\Dormitory-management-Solution\Log_In\obj\Debug\DormitoryManagement.csprojAssemblyReference.cache
+D:\Github\Dormitory-management-Solution\Log_In\obj\Debug\Student_Log_In.studentlogin.resources
+D:\Github\Dormitory-management-Solution\Log_In\obj\Debug\Student_Profile.CreateStudentProfile.resources
+D:\Github\Dormitory-management-Solution\Log_In\obj\Debug\Student_Log_In.Properties.Resources.resources
+D:\Github\Dormitory-management-Solution\Log_In\obj\Debug\DormitoryManagement.csproj.GenerateResource.cache
+D:\Github\Dormitory-management-Solution\Log_In\obj\Debug\DormitoryManagement.csproj.CoreCompileInputs.cache
+D:\Github\Dormitory-management-Solution\Log_In\obj\Debug\DormitoryManagement.csproj.CopyComplete
+D:\Github\Dormitory-management-Solution\Log_In\obj\Debug\Student_Log_In.exe
+D:\Github\Dormitory-management-Solution\Log_In\obj\Debug\Student_Log_In.pdb

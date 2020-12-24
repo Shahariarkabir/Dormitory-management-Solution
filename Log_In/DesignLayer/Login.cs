@@ -1,4 +1,5 @@
 ﻿using Student_Log_In.BusinessLayer;
+using Student_Profile;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,7 +24,7 @@ namespace Student_Log_In
             Application.Exit();
         }
 
-        private void userSignInButton_Click(object sender, EventArgs e)
+        private void btnSignin_Click(object sender, EventArgs e)
         {
             if (userNameTextBox.Text == "" || userPasswordTextBox.Text == "")
             {
@@ -35,18 +36,23 @@ namespace Student_Log_In
                 bool result = userService.LoginValidation(userNameTextBox.Text, userPasswordTextBox.Text);
                 if (result)
                 {
-                    //DashBoard dashBoard = new DashBoard();
-                    //dashBoard.Show();
-                    //this.Hide();
+                    CreateStudentProfile studentProfile = new CreateStudentProfile();
+                    studentProfile.Show();
+                    this.Hide();
                 }
                 else
                 {
                     MessageBox.Show("Invalid Username or password");
                 }
             }
-
         }
 
-
+        private void signupLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            CreateStudentProfile studentProfile = new CreateStudentProfile();
+            studentProfile.Show();
+            this.Hide();
+        }
     }
 }
+

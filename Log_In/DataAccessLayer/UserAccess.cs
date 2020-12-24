@@ -17,7 +17,7 @@ namespace Student_Log_In.DataAccessLayer
         }
         public bool LoginValidation(string username, string password)
         {
-            string sql = "SELECT * FROM t_users WHERE Username='" + username + "' AND Password='" + password + "'";
+            string sql = "SELECT * FROM student_user_create WHERE UserName='" + username + "' AND Password='" + password + "'";
             SqlDataReader reader = dataAccess.GetData(sql);
             if (reader.Read())
             {

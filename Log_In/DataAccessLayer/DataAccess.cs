@@ -16,7 +16,7 @@ namespace Student_Log_In.DataAccessLayer
             SqlCommand command;
             public DataAccess()
             {
-                this.connection = new SqlConnection(ConfigurationManager.ConnectionStrings["User"].ConnectionString);
+                this.connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DormitoryManagement"].ConnectionString);
                 this.connection.Open();
             }
 
@@ -42,4 +42,4 @@ namespace Student_Log_In.DataAccessLayer
             }
         }
     }
-}
+
