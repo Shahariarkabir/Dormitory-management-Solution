@@ -299,10 +299,10 @@ namespace Student_Profile
             this.guna2Panel1.Controls.Add(this.guna2PictureBox12);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox11);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox4);
-            this.guna2Panel1.Location = new System.Drawing.Point(1, -2);
+            this.guna2Panel1.Location = new System.Drawing.Point(-2, -3);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(135, 671);
+            this.guna2Panel1.Size = new System.Drawing.Size(134, 672);
             this.guna2Panel1.TabIndex = 45;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 

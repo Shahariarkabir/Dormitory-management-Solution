@@ -56,17 +56,35 @@
     <Compile Include="BusinessLayer\UserService.cs" />
     <Compile Include="DataAccessLayer\DataAccess.cs" />
     <Compile Include="DataAccessLayer\UserAccess.cs" />
+    <Compile Include="DesignLayer\Bed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignLayer\Bed.Designer.cs">
+      <DependentUpon>Bed.cs</DependentUpon>
+    </Compile>
     <Compile Include="DesignLayer\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DesignLayer\Dashboard.designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="DesignLayer\Expense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignLayer\Expense.Designer.cs">
+      <DependentUpon>Expense.cs</DependentUpon>
+    </Compile>
     <Compile Include="DesignLayer\StudentProfile.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DesignLayer\StudentProfile.designer.cs">
       <DependentUpon>StudentProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignLayer\Tenants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignLayer\Tenants.Designer.cs">
+      <DependentUpon>Tenants.cs</DependentUpon>
     </Compile>
     <Compile Include="Entities\User.cs" />
     <Compile Include="DesignLayer\Login.cs">
@@ -77,14 +95,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DesignLayer\Bed.resx">
+      <DependentUpon>Bed.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DesignLayer\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignLayer\Expense.resx">
+      <DependentUpon>Expense.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DesignLayer\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DesignLayer\StudentProfile.resx">
       <DependentUpon>StudentProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignLayer\Tenants.resx">
+      <DependentUpon>Tenants.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
