@@ -100,5 +100,15 @@ namespace Student_Profile
                 }
             }
         }
+
+        private void guna2Button9_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog opf = new OpenFileDialog();
+            opf.Filter = "Select Image(*.jpg;*.png)|*.jpg;*.png ";
+            if (opf.ShowDialog() == DialogResult.OK)
+            {
+                UpdatePhotoPictureBox.Image = Image.FromFile(opf.FileName);
+            }
+        }
     }
 }

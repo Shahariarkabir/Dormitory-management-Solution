@@ -68,7 +68,6 @@ namespace Student_Profile
             this.RoomNumberLabel = new System.Windows.Forms.Label();
             this.RoomTypeComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.CreateProfileButton = new Guna.UI2.WinForms.Guna2Button();
-            this.PixelzWarriorsLinkLabel1 = new System.Windows.Forms.LinkLabel();
             this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
@@ -82,7 +81,8 @@ namespace Student_Profile
             this.GenderComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.UpdatePhotoPictureBox = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2PictureBox9 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
@@ -101,10 +101,10 @@ namespace Student_Profile
             this.guna2PictureBox12 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UpdatePhotoPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -114,7 +114,6 @@ namespace Student_Profile
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // userNameTextBox
@@ -352,7 +351,6 @@ namespace Student_Profile
             this.ConfirmPasswordTextBox.Size = new System.Drawing.Size(258, 51);
             this.ConfirmPasswordTextBox.TabIndex = 10;
             this.ConfirmPasswordTextBox.UseSystemPasswordChar = true;
-          //  this.ConfirmPasswordTextBox.TextChanged += new System.EventHandler(this.ConfirmPasswordTextBox_TextChanged);
             // 
             // IdNumberTextBox
             // 
@@ -814,18 +812,6 @@ namespace Student_Profile
             this.CreateProfileButton.Text = "Create Profile";
             this.CreateProfileButton.Click += new System.EventHandler(this.CreateProfileButton_Click);
             // 
-            // PixelzWarriorsLinkLabel1
-            // 
-            this.PixelzWarriorsLinkLabel1.AutoSize = true;
-            this.PixelzWarriorsLinkLabel1.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PixelzWarriorsLinkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(90)))), ((int)(((byte)(153)))));
-            this.PixelzWarriorsLinkLabel1.Location = new System.Drawing.Point(1094, 117);
-            this.PixelzWarriorsLinkLabel1.Name = "PixelzWarriorsLinkLabel1";
-            this.PixelzWarriorsLinkLabel1.Size = new System.Drawing.Size(113, 16);
-            this.PixelzWarriorsLinkLabel1.TabIndex = 49;
-            this.PixelzWarriorsLinkLabel1.TabStop = true;
-            this.PixelzWarriorsLinkLabel1.Text = "Pixelz Warriors";
-            // 
             // guna2DragControl2
             // 
             this.guna2DragControl2.ContainerControl = this;
@@ -995,16 +981,22 @@ namespace Student_Profile
             this.guna2Button9.Size = new System.Drawing.Size(150, 45);
             this.guna2Button9.TabIndex = 53;
             this.guna2Button9.Text = "Upload Photo";
+            this.guna2Button9.Click += new System.EventHandler(this.guna2Button9_Click);
             // 
-            // guna2CirclePictureBox1
+            // errorProvider1
             // 
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(1100, 139);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(138, 128);
-            this.guna2CirclePictureBox1.TabIndex = 54;
-            this.guna2CirclePictureBox1.TabStop = false;
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // UpdatePhotoPictureBox
+            // 
+            this.UpdatePhotoPictureBox.FillColor = System.Drawing.Color.DarkGray;
+            this.UpdatePhotoPictureBox.Location = new System.Drawing.Point(1100, 139);
+            this.UpdatePhotoPictureBox.Name = "UpdatePhotoPictureBox";
+            this.UpdatePhotoPictureBox.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.UpdatePhotoPictureBox.ShadowDecoration.Parent = this.UpdatePhotoPictureBox;
+            this.UpdatePhotoPictureBox.Size = new System.Drawing.Size(138, 128);
+            this.UpdatePhotoPictureBox.TabIndex = 54;
+            this.UpdatePhotoPictureBox.TabStop = false;
             // 
             // guna2PictureBox9
             // 
@@ -1251,21 +1243,16 @@ namespace Student_Profile
             this.guna2PictureBox4.TabIndex = 0;
             this.guna2PictureBox4.TabStop = false;
             // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
             // CreateStudentProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1250, 666);
-            this.Controls.Add(this.guna2CirclePictureBox1);
+            this.Controls.Add(this.UpdatePhotoPictureBox);
             this.Controls.Add(this.guna2Button9);
             this.Controls.Add(this.GenderComboBox);
             this.Controls.Add(this.BloodGroupComboBox);
-            this.Controls.Add(this.PixelzWarriorsLinkLabel1);
             this.Controls.Add(this.guna2PictureBox9);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2PictureBox16);
@@ -1315,7 +1302,8 @@ namespace Student_Profile
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UpdatePhotoPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
@@ -1325,7 +1313,6 @@ namespace Student_Profile
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1371,7 +1358,6 @@ namespace Student_Profile
         private System.Windows.Forms.Label RoomNumberLabel;
         private Guna.UI2.WinForms.Guna2ComboBox RoomTypeComboBox;
         private Guna.UI2.WinForms.Guna2Button CreateProfileButton;
-        private System.Windows.Forms.LinkLabel PixelzWarriorsLinkLabel1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox9;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
@@ -1403,7 +1389,7 @@ namespace Student_Profile
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private Guna.UI2.WinForms.Guna2Button guna2Button9;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox UpdatePhotoPictureBox;
         private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
