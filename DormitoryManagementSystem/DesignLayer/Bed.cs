@@ -21,5 +21,10 @@ namespace Student_Log_In.DesignLayer
         {
 
         }
+
+        private void ExpenseBuuton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
