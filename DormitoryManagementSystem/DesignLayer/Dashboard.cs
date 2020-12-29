@@ -1,4 +1,5 @@
 ﻿using Student_Log_In;
+using Student_Log_In.DesignLayer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,90 +19,12 @@ namespace Student_Profile
             InitializeComponent();
         }
 
-        private void guna2TextBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2CirclePictureBox14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2Button7_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void guna2PictureBox3_Click_1(object sender, EventArgs e)
         {
             
-            studentlogin login = new studentlogin();
+            HomePage login = new HomePage();
             login.Show();
             this.Hide();
 
@@ -110,6 +33,53 @@ namespace Student_Profile
         private void EmojiBox_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Thanks For Using Our System");
+        }
+
+        private void DashBoardButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RoomButton_Click(object sender, EventArgs e)
+        {
+            Room room = new Room();
+            room.Show();
+            this.Hide();
+        }
+
+        private void BedButton_Click(object sender, EventArgs e)
+        {
+            Bed bed = new Bed();
+            bed.Show();
+            this.Hide();
+        }
+
+        private void TenantsButton_Click(object sender, EventArgs e)
+        {
+            Tenants tenants = new Tenants();
+            tenants.Show();
+            this.Hide();
+        }
+
+        private void ExpenseButton_Click(object sender, EventArgs e)
+        {
+            Expense expense = new Expense();
+            expense.Show();
+            this.Hide();
+        }
+
+        private void SettingsButton_Click(object sender, EventArgs e)
+        {
+            Setting setting = new Setting();
+            setting.Show();
+            this.Hide();
+        }
+
+        private void AboutUsButton_Click(object sender, EventArgs e)
+        {
+            AboutUs aboutUs = new AboutUs();
+            aboutUs.Show();
+            this.Hide();
         }
     }
 }

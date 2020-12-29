@@ -56,6 +56,12 @@
     <Compile Include="BusinessLayer\UserService.cs" />
     <Compile Include="DataAccessLayer\DataAccess.cs" />
     <Compile Include="DataAccessLayer\UserAccess.cs" />
+    <Compile Include="DesignLayer\AboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignLayer\AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
     <Compile Include="DesignLayer\Bed.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,21 @@
     <Compile Include="DesignLayer\Tenants.Designer.cs">
       <DependentUpon>Tenants.cs</DependentUpon>
     </Compile>
+    <Compile Include="DormitoryManagementDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DormitoryManagementDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DormitoryManagementDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DormitoryManagementDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DormitoryManagementDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DormitoryManagementDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Entities\User.cs" />
     <Compile Include="DesignLayer\Login.cs">
       <SubType>Form</SubType>
@@ -107,6 +128,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DesignLayer\AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DesignLayer\Bed.resx">
       <DependentUpon>Bed.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +165,39 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DormitoryManagementDataSet.xsc">
+      <DependentUpon>DormitoryManagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DormitoryManagementDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DormitoryManagementDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DormitoryManagementDataSet.xss">
+      <DependentUpon>DormitoryManagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DormitoryManagementDataSet1.xsc">
+      <DependentUpon>DormitoryManagementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DormitoryManagementDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DormitoryManagementDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DormitoryManagementDataSet1.xss">
+      <DependentUpon>DormitoryManagementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DormitoryManagementDataSet2.xsc">
+      <DependentUpon>DormitoryManagementDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DormitoryManagementDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DormitoryManagementDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DormitoryManagementDataSet2.xss">
+      <DependentUpon>DormitoryManagementDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -205,6 +262,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Group 187.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15378291991558965373-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_call_322424.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Welcome Page 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_search_1608826.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

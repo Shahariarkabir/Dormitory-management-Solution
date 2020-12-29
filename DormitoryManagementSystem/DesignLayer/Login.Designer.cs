@@ -1,7 +1,7 @@
 ﻿
 namespace Student_Log_In
 {
-    partial class studentlogin
+    partial class HomePage
     {
         /// <summary>
         /// Required designer variable.
@@ -300,7 +300,7 @@ namespace Student_Log_In
             this.btnSignin.Text = "Sign In";
             this.btnSignin.Click += new System.EventHandler(this.btnSignin_Click);
             // 
-            // studentlogin
+            // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -323,7 +323,7 @@ namespace Student_Log_In
             this.Controls.Add(this.welcomeLabel);
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "studentlogin";
+            this.Name = "HomePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Log In";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.studentlogin_FormClosing);

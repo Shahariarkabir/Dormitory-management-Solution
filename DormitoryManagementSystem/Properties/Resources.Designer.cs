@@ -63,6 +63,16 @@ namespace Student_Log_In.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _15378291991558965373_128 {
+            get {
+                object obj = ResourceManager.GetObject("15378291991558965373-128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap circle {
             get {
                 object obj = ResourceManager.GetObject("circle", resourceCulture);
@@ -136,6 +146,26 @@ namespace Student_Log_In.Properties {
         internal static System.Drawing.Bitmap home {
             get {
                 object obj = ResourceManager.GetObject("home", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_call_322424 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_call_322424", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_search_1608826 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_search_1608826", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -226,6 +256,16 @@ namespace Student_Log_In.Properties {
         internal static System.Drawing.Bitmap Vector__10_ {
             get {
                 object obj = ResourceManager.GetObject("Vector (10)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Welcome_Page_1 {
+            get {
+                object obj = ResourceManager.GetObject("Welcome Page 1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

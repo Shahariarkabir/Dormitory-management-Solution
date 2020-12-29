@@ -16,7 +16,7 @@ namespace Student_Log_In
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new studentlogin());
+            Application.Run(new HomePage());
         }
     }
 }

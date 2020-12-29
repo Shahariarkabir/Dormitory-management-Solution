@@ -85,10 +85,10 @@ namespace Student_Log_In.DesignLayer
             this.guna2Panel1.Controls.Add(this.LogoutButton);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Controls.Add(this.AboutUsButton);
+            this.guna2Panel1.Controls.Add(this.BedButton);
             this.guna2Panel1.Controls.Add(this.SettingsButton);
             this.guna2Panel1.Controls.Add(this.ExpenseButton);
             this.guna2Panel1.Controls.Add(this.TenantsButton);
-            this.guna2Panel1.Controls.Add(this.BedButton);
             this.guna2Panel1.Controls.Add(this.RoomButton);
             this.guna2Panel1.Controls.Add(this.DashBoardButton);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox14);
@@ -209,7 +209,7 @@ namespace Student_Log_In.DesignLayer
             this.BedButton.HoverState.Parent = this.BedButton;
             this.BedButton.Image = global::Student_Log_In.Properties.Resources.terrain;
             this.BedButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BedButton.Location = new System.Drawing.Point(3, 216);
+            this.BedButton.Location = new System.Drawing.Point(3, 219);
             this.BedButton.Name = "BedButton";
             this.BedButton.ShadowDecoration.Parent = this.BedButton;
             this.BedButton.Size = new System.Drawing.Size(129, 22);
@@ -235,6 +235,7 @@ namespace Student_Log_In.DesignLayer
             this.RoomButton.TabIndex = 140;
             this.RoomButton.Text = "Room";
             this.RoomButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.RoomButton.Click += new System.EventHandler(this.RoomButton_Click);
             // 
             // DashBoardButton
             // 
@@ -255,6 +256,7 @@ namespace Student_Log_In.DesignLayer
             this.DashBoardButton.TabIndex = 18;
             this.DashBoardButton.Text = "Dashboard";
             this.DashBoardButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.DashBoardButton.Click += new System.EventHandler(this.DashBoardButton_Click);
             // 
             // guna2PictureBox14
             // 
@@ -398,6 +400,7 @@ namespace Student_Log_In.DesignLayer
             this.EmojiPictureBox.TabIndex = 4;
             this.EmojiPictureBox.TabStop = false;
             this.EmojiPictureBox.UseTransparentBackground = true;
+            this.EmojiPictureBox.Click += new System.EventHandler(this.EmojiPictureBox_Click);
             // 
             // guna2ControlBox2
             // 

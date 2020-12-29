@@ -47,7 +47,7 @@ namespace Student_Profile
                 MessageBox.Show("Error in Creation.");
             }
 
-            studentlogin studentlogin = new studentlogin();
+            HomePage studentlogin = new HomePage();
             studentlogin.Show();
             this.Hide();
 
@@ -74,7 +74,7 @@ namespace Student_Profile
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
 
-                guna2Button1.Image = new Bitmap(openFileDialog.FileName);
+                RoomBox.Image = new Bitmap(openFileDialog.FileName);
             }
         }
 
@@ -109,6 +109,16 @@ namespace Student_Profile
             {
                 UpdatePhotoPictureBox.Image = Image.FromFile(opf.FileName);
             }
+        }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+           
+        }
+
+        private void EmojiBox_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thanks for Using Our System");
         }
     }
 }

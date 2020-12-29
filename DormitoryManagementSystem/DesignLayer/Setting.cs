@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Student_Profile;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,18 @@ namespace Student_Log_In.DesignLayer
         public Setting()
         {
             InitializeComponent();
+        }
+
+        private void EmojiPictureBox_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thanks for Using Our System");
+        }
+
+        private void DashBoardButton_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Hide();
         }
     }
 }

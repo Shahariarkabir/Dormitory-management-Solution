@@ -254,6 +254,7 @@ namespace Student_Log_In.DesignLayer
             this.DashBoardButton.TabIndex = 18;
             this.DashBoardButton.Text = "Dashboard";
             this.DashBoardButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.DashBoardButton.Click += new System.EventHandler(this.DashBoardButton_Click);
             // 
             // guna2PictureBox14
             // 
@@ -388,6 +389,7 @@ namespace Student_Log_In.DesignLayer
             this.EmojiPictureBox.TabIndex = 4;
             this.EmojiPictureBox.TabStop = false;
             this.EmojiPictureBox.UseTransparentBackground = true;
+            this.EmojiPictureBox.Click += new System.EventHandler(this.EmojiPictureBox_Click);
             // 
             // guna2ControlBox2
             // 

@@ -1,4 +1,5 @@
 ﻿using Student_Log_In.BusinessLayer;
+using Student_Log_In.DesignLayer;
 using Student_Profile;
 using System;
 using System.Collections.Generic;
@@ -12,9 +13,9 @@ using System.Windows.Forms;
 
 namespace Student_Log_In
 {
-    public partial class studentlogin : Form
+    public partial class HomePage : Form
     {
-        public studentlogin()
+        public HomePage()
         {
             InitializeComponent();
         }
@@ -36,8 +37,8 @@ namespace Student_Log_In
                 bool result = userService.LoginValidation(userNameTextBox.Text, userPasswordTextBox.Text);
                 if (result)
                 {
-                    CreateStudentProfile studentProfile = new CreateStudentProfile();
-                    studentProfile.Show();
+                    Room room = new Room();
+                    room.Show();
                     this.Hide();
                 }
                 else
@@ -49,6 +50,7 @@ namespace Student_Log_In
 
         private void signupLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            
             CreateStudentProfile studentProfile = new CreateStudentProfile();
             studentProfile.Show();
             this.Hide();
