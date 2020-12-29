@@ -16,5 +16,10 @@ namespace Student_Log_In.DesignLayer
         {
             InitializeComponent();
         }
+
+        private void EmojiButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thanks For Using Our System");
+        }
     }
 }

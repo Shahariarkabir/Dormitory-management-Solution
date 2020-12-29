@@ -106,5 +106,10 @@ namespace Student_Profile
             this.Hide();
 
         }
+
+        private void EmojiBox_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thanks For Using Our System");
+        }
     }
 }
