@@ -14,7 +14,7 @@ using System.Windows.Forms;
 namespace Student_Log_In.DesignLayer
 
 {
-   
+
     public partial class Room : Form
     {
         Function fn = new Function();
@@ -58,7 +58,7 @@ namespace Student_Log_In.DesignLayer
 
         }
 
-       
+
         private void Room_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dormitoryManagementDataSet2.rooms' table. You can move, or remove it, as needed.
@@ -115,14 +115,9 @@ namespace Student_Log_In.DesignLayer
             this.Hide();
         }
 
-<<<<<<< HEAD
-        private void RoomButton_Click(object sender, EventArgs e)
-        {
-
-=======
         private void AddRoomButton_Click(object sender, EventArgs e)
         {
-            query = "SELECT * FROM rooms WHERE RoomNumber ="+AddRoomTextBox.Text+"";
+            query = "SELECT * FROM rooms WHERE RoomNumber =" + AddRoomTextBox.Text + "";
             DataSet ds = fn.getData(query);
             if (ds.Tables[0].Rows.Count == 0)
             {
@@ -136,7 +131,7 @@ namespace Student_Log_In.DesignLayer
                     status = "No";
                 }
                 labelRoom.Visible = false;
-                query = "INSERT INTO rooms(RoomNumber,RoomType,Booked)VALUES("+AddRoomTextBox.Text+",'"+AddRoomComboBox.Text+"','"+status+"')";
+                query = "INSERT INTO rooms(RoomNumber,RoomType,Booked)VALUES(" + AddRoomTextBox.Text + ",'" + AddRoomComboBox.Text + "','" + status + "')";
                 fn.setData(query, "Room Added");
                 Room_Load(this, null);
 
@@ -184,13 +179,14 @@ namespace Student_Log_In.DesignLayer
             {
                 status = "No";
             }
-            query="UPDATE rooms set Booked='"+status+"'WHERE RoomNumber="+UpdateDeleteTextBox.Text+"";
+            query = "UPDATE rooms set Booked='" + status + "'WHERE RoomNumber=" + UpdateDeleteTextBox.Text + "";
             fn.setData(query, "Booking Updated..");
-            Room_Load(this, null);      }
+            Room_Load(this, null);
+        }
 
         private void DeleteRoomButton_Click(object sender, EventArgs e)
         {
-            if(labelRoomExist.Text== "Room Found!!!")
+            if (labelRoomExist.Text == "Room Found!!!")
             {
                 query = "DELETE FROM rooms WHERE RoomNumber=" + UpdateDeleteTextBox.Text + "";
                 fn.setData(query, "Delete SuccessFully");
@@ -200,17 +196,17 @@ namespace Student_Log_In.DesignLayer
             {
                 MessageBox.Show("Trying To Delete Something Which Doesn't Exist!!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
->>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
+
         }
 
         private void StudentButton_Click(object sender, EventArgs e)
         {
-            CreateStudentProfile studentProfile = new CreateStudentProfile();
-            studentProfile.Show();
+            CreateStudentProfile profile = new CreateStudentProfile();
+            profile.Show();
             this.Hide();
-
         }
     }
-}
+    }
+
 
 
