@@ -327,6 +327,7 @@ namespace Student_Log_In
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Log In";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.studentlogin_FormClosing);
+            this.Load += new System.EventHandler(this.HomePage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

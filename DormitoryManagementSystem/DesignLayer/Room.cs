@@ -113,6 +113,11 @@ namespace Student_Log_In.DesignLayer
             homePage.Show();
             this.Hide();
         }
+
+        private void RoomButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

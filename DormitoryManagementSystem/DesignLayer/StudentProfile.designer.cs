@@ -1115,6 +1115,7 @@ namespace Student_Profile
             this.AboutUsButton.TabIndex = 141;
             this.AboutUsButton.Text = "About us";
             this.AboutUsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.AboutUsButton.Click += new System.EventHandler(this.AboutUsButton_Click);
             // 
             // BedButton
             // 
@@ -1134,6 +1135,7 @@ namespace Student_Profile
             this.BedButton.TabIndex = 140;
             this.BedButton.Text = "Bed";
             this.BedButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.BedButton.Click += new System.EventHandler(this.BedButton_Click);
             // 
             // SettingsButton
             // 
@@ -1153,6 +1155,7 @@ namespace Student_Profile
             this.SettingsButton.TabIndex = 140;
             this.SettingsButton.Text = "Settings";
             this.SettingsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
             // 
             // ExpenseButton
             // 
@@ -1172,6 +1175,7 @@ namespace Student_Profile
             this.ExpenseButton.TabIndex = 140;
             this.ExpenseButton.Text = "Expense";
             this.ExpenseButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ExpenseButton.Click += new System.EventHandler(this.ExpenseButton_Click);
             // 
             // TenantsButton
             // 
@@ -1191,6 +1195,7 @@ namespace Student_Profile
             this.TenantsButton.TabIndex = 140;
             this.TenantsButton.Text = "Tenants";
             this.TenantsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TenantsButton.Click += new System.EventHandler(this.TenantsButton_Click);
             // 
             // RoomButton
             // 
@@ -1210,6 +1215,7 @@ namespace Student_Profile
             this.RoomButton.TabIndex = 140;
             this.RoomButton.Text = "Room";
             this.RoomButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.RoomButton.Click += new System.EventHandler(this.RoomButton_Click);
             // 
             // DashBoardButton
             // 
@@ -1230,6 +1236,7 @@ namespace Student_Profile
             this.DashBoardButton.TabIndex = 18;
             this.DashBoardButton.Text = "Dashboard";
             this.DashBoardButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.DashBoardButton.Click += new System.EventHandler(this.DashBoardButton_Click);
             // 
             // guna2PictureBox14
             // 

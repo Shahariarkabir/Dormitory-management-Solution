@@ -1,4 +1,5 @@
 ﻿using Student_Log_In;
+using Student_Log_In.DesignLayer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -119,6 +120,55 @@ namespace Student_Profile
         private void EmojiBox_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Thanks for Using Our System");
+        }
+
+        private void DashBoardButton_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Hide();
+        }
+
+        private void RoomButton_Click(object sender, EventArgs e)
+        {
+            Room room = new Room();
+            room.Show();
+            this.Hide();
+        }
+
+        private void BedButton_Click(object sender, EventArgs e)
+        {
+            Bed bed = new Bed();
+            bed.Show();
+            this.Hide();
+        }
+
+        private void TenantsButton_Click(object sender, EventArgs e)
+        {
+            Tenants tenants = new Tenants();
+            tenants.Show();
+            this.Hide();
+        }
+
+        private void ExpenseButton_Click(object sender, EventArgs e)
+        {
+            Expense expense = new Expense();
+            expense.Show();
+            this.Hide();
+        }
+
+        private void SettingsButton_Click(object sender, EventArgs e)
+        {
+            Setting setting = new Setting();
+            setting.Show();
+            this.Hide();
+        }
+
+        private void AboutUsButton_Click(object sender, EventArgs e)
+        {
+            AboutUs aboutUs = new AboutUs();
+            aboutUs.Show();
+            this.Hide();
         }
     }
 }

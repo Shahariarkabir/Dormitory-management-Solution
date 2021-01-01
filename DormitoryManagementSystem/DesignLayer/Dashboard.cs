@@ -38,6 +38,9 @@ namespace Student_Profile
         private void DashBoardButton_Click(object sender, EventArgs e)
         {
 
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Hide();
         }
 
         private void RoomButton_Click(object sender, EventArgs e)

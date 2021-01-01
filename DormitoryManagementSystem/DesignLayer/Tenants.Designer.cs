@@ -34,10 +34,10 @@ namespace Student_Log_In.DesignLayer
             this.LogoutButton = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.AboutUsButton = new Guna.UI2.WinForms.Guna2Button();
+            this.BedButton = new Guna.UI2.WinForms.Guna2Button();
             this.SettingsButton = new Guna.UI2.WinForms.Guna2Button();
             this.ExpenseButton = new Guna.UI2.WinForms.Guna2Button();
             this.TenantsButton = new Guna.UI2.WinForms.Guna2Button();
-            this.BedButton = new Guna.UI2.WinForms.Guna2Button();
             this.RoomButton = new Guna.UI2.WinForms.Guna2Button();
             this.DashBoardButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox14 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -112,6 +112,7 @@ namespace Student_Log_In.DesignLayer
             this.LogoutButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.LogoutButton.TabIndex = 140;
             this.LogoutButton.TabStop = false;
+            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
             // guna2PictureBox1
             // 
@@ -140,63 +141,7 @@ namespace Student_Log_In.DesignLayer
             this.AboutUsButton.TabIndex = 141;
             this.AboutUsButton.Text = "About us";
             this.AboutUsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // SettingsButton
-            // 
-            this.SettingsButton.CheckedState.Parent = this.SettingsButton;
-            this.SettingsButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SettingsButton.CustomImages.Parent = this.SettingsButton;
-            this.SettingsButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.SettingsButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SettingsButton.ForeColor = System.Drawing.Color.Black;
-            this.SettingsButton.HoverState.Parent = this.SettingsButton;
-            this.SettingsButton.Image = global::Student_Log_In.Properties.Resources.options1;
-            this.SettingsButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.SettingsButton.Location = new System.Drawing.Point(2, 365);
-            this.SettingsButton.Name = "SettingsButton";
-            this.SettingsButton.ShadowDecoration.Parent = this.SettingsButton;
-            this.SettingsButton.Size = new System.Drawing.Size(127, 22);
-            this.SettingsButton.TabIndex = 140;
-            this.SettingsButton.Text = "Settings";
-            this.SettingsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // ExpenseButton
-            // 
-            this.ExpenseButton.CheckedState.Parent = this.ExpenseButton;
-            this.ExpenseButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ExpenseButton.CustomImages.Parent = this.ExpenseButton;
-            this.ExpenseButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.ExpenseButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExpenseButton.ForeColor = System.Drawing.Color.Black;
-            this.ExpenseButton.HoverState.Parent = this.ExpenseButton;
-            this.ExpenseButton.Image = global::Student_Log_In.Properties.Resources.Vector;
-            this.ExpenseButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.ExpenseButton.Location = new System.Drawing.Point(3, 315);
-            this.ExpenseButton.Name = "ExpenseButton";
-            this.ExpenseButton.ShadowDecoration.Parent = this.ExpenseButton;
-            this.ExpenseButton.Size = new System.Drawing.Size(129, 22);
-            this.ExpenseButton.TabIndex = 140;
-            this.ExpenseButton.Text = "Expense";
-            this.ExpenseButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // TenantsButton
-            // 
-            this.TenantsButton.CheckedState.Parent = this.TenantsButton;
-            this.TenantsButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TenantsButton.CustomImages.Parent = this.TenantsButton;
-            this.TenantsButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.TenantsButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TenantsButton.ForeColor = System.Drawing.Color.Black;
-            this.TenantsButton.HoverState.Parent = this.TenantsButton;
-            this.TenantsButton.Image = global::Student_Log_In.Properties.Resources.profile;
-            this.TenantsButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TenantsButton.Location = new System.Drawing.Point(3, 265);
-            this.TenantsButton.Name = "TenantsButton";
-            this.TenantsButton.ShadowDecoration.Parent = this.TenantsButton;
-            this.TenantsButton.Size = new System.Drawing.Size(129, 22);
-            this.TenantsButton.TabIndex = 140;
-            this.TenantsButton.Text = "Tenants";
-            this.TenantsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.AboutUsButton.Click += new System.EventHandler(this.AboutUsButton_Click);
             // 
             // BedButton
             // 
@@ -216,6 +161,67 @@ namespace Student_Log_In.DesignLayer
             this.BedButton.TabIndex = 140;
             this.BedButton.Text = "Bed";
             this.BedButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.BedButton.Click += new System.EventHandler(this.BedButton_Click);
+            // 
+            // SettingsButton
+            // 
+            this.SettingsButton.CheckedState.Parent = this.SettingsButton;
+            this.SettingsButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SettingsButton.CustomImages.Parent = this.SettingsButton;
+            this.SettingsButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.SettingsButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SettingsButton.ForeColor = System.Drawing.Color.Black;
+            this.SettingsButton.HoverState.Parent = this.SettingsButton;
+            this.SettingsButton.Image = global::Student_Log_In.Properties.Resources.options1;
+            this.SettingsButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.SettingsButton.Location = new System.Drawing.Point(2, 365);
+            this.SettingsButton.Name = "SettingsButton";
+            this.SettingsButton.ShadowDecoration.Parent = this.SettingsButton;
+            this.SettingsButton.Size = new System.Drawing.Size(127, 22);
+            this.SettingsButton.TabIndex = 140;
+            this.SettingsButton.Text = "Settings";
+            this.SettingsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
+            // 
+            // ExpenseButton
+            // 
+            this.ExpenseButton.CheckedState.Parent = this.ExpenseButton;
+            this.ExpenseButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExpenseButton.CustomImages.Parent = this.ExpenseButton;
+            this.ExpenseButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.ExpenseButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExpenseButton.ForeColor = System.Drawing.Color.Black;
+            this.ExpenseButton.HoverState.Parent = this.ExpenseButton;
+            this.ExpenseButton.Image = global::Student_Log_In.Properties.Resources.Vector;
+            this.ExpenseButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ExpenseButton.Location = new System.Drawing.Point(3, 315);
+            this.ExpenseButton.Name = "ExpenseButton";
+            this.ExpenseButton.ShadowDecoration.Parent = this.ExpenseButton;
+            this.ExpenseButton.Size = new System.Drawing.Size(129, 22);
+            this.ExpenseButton.TabIndex = 140;
+            this.ExpenseButton.Text = "Expense";
+            this.ExpenseButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ExpenseButton.Click += new System.EventHandler(this.ExpenseButton_Click);
+            // 
+            // TenantsButton
+            // 
+            this.TenantsButton.CheckedState.Parent = this.TenantsButton;
+            this.TenantsButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TenantsButton.CustomImages.Parent = this.TenantsButton;
+            this.TenantsButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.TenantsButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TenantsButton.ForeColor = System.Drawing.Color.Black;
+            this.TenantsButton.HoverState.Parent = this.TenantsButton;
+            this.TenantsButton.Image = global::Student_Log_In.Properties.Resources.profile;
+            this.TenantsButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TenantsButton.Location = new System.Drawing.Point(3, 265);
+            this.TenantsButton.Name = "TenantsButton";
+            this.TenantsButton.ShadowDecoration.Parent = this.TenantsButton;
+            this.TenantsButton.Size = new System.Drawing.Size(129, 22);
+            this.TenantsButton.TabIndex = 140;
+            this.TenantsButton.Text = "Tenants";
+            this.TenantsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TenantsButton.Click += new System.EventHandler(this.TenantsButton_Click);
             // 
             // RoomButton
             // 

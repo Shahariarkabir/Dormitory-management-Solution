@@ -37,6 +37,7 @@ namespace Student_Log_In.DesignLayer
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.EmojiPictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.StudentBox = new Guna.UI2.WinForms.Guna2Button();
             this.RoomBox = new Guna.UI2.WinForms.Guna2Button();
             this.ExpenseBuuton = new Guna.UI2.WinForms.Guna2Button();
@@ -58,11 +59,11 @@ namespace Student_Log_In.DesignLayer
             this.guna2PictureBox12 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.EmojiPictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmojiButton)).BeginInit();
             this.guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoutButton)).BeginInit();
@@ -72,7 +73,6 @@ namespace Student_Log_In.DesignLayer
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EmojiPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -204,6 +204,19 @@ namespace Student_Log_In.DesignLayer
             this.guna2Panel2.Size = new System.Drawing.Size(1125, 67);
             this.guna2Panel2.TabIndex = 48;
             // 
+            // EmojiPictureBox
+            // 
+            this.EmojiPictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.EmojiPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.EmojiPictureBox.Image = global::Student_Log_In.Properties.Resources.Group__1_;
+            this.EmojiPictureBox.Location = new System.Drawing.Point(1025, 6);
+            this.EmojiPictureBox.Name = "EmojiPictureBox";
+            this.EmojiPictureBox.ShadowDecoration.Parent = this.EmojiPictureBox;
+            this.EmojiPictureBox.Size = new System.Drawing.Size(18, 18);
+            this.EmojiPictureBox.TabIndex = 50;
+            this.EmojiPictureBox.TabStop = false;
+            this.EmojiPictureBox.UseTransparentBackground = true;
+            // 
             // StudentBox
             // 
             this.StudentBox.CheckedState.Parent = this.StudentBox;
@@ -334,6 +347,7 @@ namespace Student_Log_In.DesignLayer
             this.LogoutButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.LogoutButton.TabIndex = 140;
             this.LogoutButton.TabStop = false;
+            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
             // guna2PictureBox4
             // 
@@ -362,6 +376,7 @@ namespace Student_Log_In.DesignLayer
             this.AboutUsButton.TabIndex = 141;
             this.AboutUsButton.Text = "About us";
             this.AboutUsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.AboutUsButton.Click += new System.EventHandler(this.AboutUsButton_Click);
             // 
             // SettingsButton
             // 
@@ -381,6 +396,7 @@ namespace Student_Log_In.DesignLayer
             this.SettingsButton.TabIndex = 140;
             this.SettingsButton.Text = "Settings";
             this.SettingsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
             // 
             // ExpenseButton
             // 
@@ -400,6 +416,7 @@ namespace Student_Log_In.DesignLayer
             this.ExpenseButton.TabIndex = 140;
             this.ExpenseButton.Text = "Expense";
             this.ExpenseButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ExpenseButton.Click += new System.EventHandler(this.ExpenseButton_Click);
             // 
             // TenantsButton
             // 
@@ -419,6 +436,7 @@ namespace Student_Log_In.DesignLayer
             this.TenantsButton.TabIndex = 140;
             this.TenantsButton.Text = "Tenants";
             this.TenantsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TenantsButton.Click += new System.EventHandler(this.TenantsButton_Click);
             // 
             // BedButton
             // 
@@ -438,6 +456,7 @@ namespace Student_Log_In.DesignLayer
             this.BedButton.TabIndex = 140;
             this.BedButton.Text = "Bed";
             this.BedButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.BedButton.Click += new System.EventHandler(this.BedButton_Click);
             // 
             // RoomButton
             // 
@@ -457,6 +476,7 @@ namespace Student_Log_In.DesignLayer
             this.RoomButton.TabIndex = 140;
             this.RoomButton.Text = "Room";
             this.RoomButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.RoomButton.Click += new System.EventHandler(this.RoomButton_Click);
             // 
             // DashBoardButton
             // 
@@ -477,6 +497,7 @@ namespace Student_Log_In.DesignLayer
             this.DashBoardButton.TabIndex = 18;
             this.DashBoardButton.Text = "Dashboard";
             this.DashBoardButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.DashBoardButton.Click += new System.EventHandler(this.DashBoardButton_Click);
             // 
             // guna2PictureBox14
             // 
@@ -525,19 +546,6 @@ namespace Student_Log_In.DesignLayer
             this.guna2PictureBox5.TabIndex = 0;
             this.guna2PictureBox5.TabStop = false;
             // 
-            // EmojiPictureBox
-            // 
-            this.EmojiPictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.EmojiPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.EmojiPictureBox.Image = global::Student_Log_In.Properties.Resources.Group__1_;
-            this.EmojiPictureBox.Location = new System.Drawing.Point(1025, 6);
-            this.EmojiPictureBox.Name = "EmojiPictureBox";
-            this.EmojiPictureBox.ShadowDecoration.Parent = this.EmojiPictureBox;
-            this.EmojiPictureBox.Size = new System.Drawing.Size(18, 18);
-            this.EmojiPictureBox.TabIndex = 50;
-            this.EmojiPictureBox.TabStop = false;
-            this.EmojiPictureBox.UseTransparentBackground = true;
-            // 
             // AboutUs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -562,6 +570,7 @@ namespace Student_Log_In.DesignLayer
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmojiButton)).EndInit();
             this.guna2Panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LogoutButton)).EndInit();
@@ -571,7 +580,6 @@ namespace Student_Log_In.DesignLayer
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EmojiPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

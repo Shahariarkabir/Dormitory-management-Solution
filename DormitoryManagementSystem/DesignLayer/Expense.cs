@@ -64,5 +64,15 @@ namespace Student_Log_In.DesignLayer
             aboutUs.Show();
             this.Hide();
         }
+
+        private void ExpenseButton_Click(object sender, EventArgs e)
+        {
+            Expense expense = new Expense();
+            expense.Show();
+            this.Hide();
+        }
+
+       
+
     }
 }
