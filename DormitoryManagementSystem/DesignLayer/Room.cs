@@ -196,6 +196,14 @@ namespace Student_Log_In.DesignLayer
                 MessageBox.Show("Trying To Delete Something Which Doesn't Exist!!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void StudentButton_Click(object sender, EventArgs e)
+        {
+            CreateStudentProfile studentProfile = new CreateStudentProfile();
+            studentProfile.Show();
+            this.Hide();
+
+        }
     }
 }
 

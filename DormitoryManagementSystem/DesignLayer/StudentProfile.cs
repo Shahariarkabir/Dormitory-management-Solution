@@ -34,26 +34,22 @@ namespace Student_Profile
 
         private void CreateProfileButton_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DormitoryManagement"].ConnectionString);
-            connection.Open();
-            string sql = "INSERT INTO New_student(UserName,FullName,Password,BloodGroup,DateOfBirth,PhoneNumber,Email,Gender,Address,EmergencyContactName,EmergencyPhoneNumber,EmergencyRelationship,VerficationId)VALUES('" + userNameTextBox.Text + "','" + FullNameTextBox.Text + "','" + PasswordTextBox.Text + "','" + BloodGroupComboBox.Text + "','" + DateTimePicker.Text + "'," + PhoneNumberTextBox.Text + ",'" + EmailTextBox.Text + "','" + GenderComboBox.Text + "','" + AddressTextBox.Text + "','" + EmergencyFullNameTextBox.Text + "'," + EmergencyPhoneNumberTextBox.Text + ",'" + emergencyRelationTextBox.Text + "','" + IdNumberTextBox.Text + "')";
+           
+            if (userNameTextBox.Text!= "" && EmailTextBox.Text != " " && PasswordTextBox.Text != "" && BloodGroupComboBox.Text != ""&&DateTimePicker.Text!=""&&GenderComboBox.Text!=""&&AddressTextBox.Text!="")
 
-
-            SqlCommand command = new SqlCommand(sql, connection);
-
-            int result = command.ExecuteNonQuery();
-            if (result > 0)
-            {
-                MessageBox.Show("SuccessFully Created.");
-                userNameTextBox.Text = FullNameTextBox.Text = PasswordTextBox.Text = BloodGroupComboBox.Text = DateTimePicker.Text = PhoneNumberTextBox.Text = EmailTextBox.Text = GenderComboBox.Text = AddressTextBox.Text = EmergencyContactTextBox.Text = EmergencyPhoneNumberTextBox.Text = emergencyRelationTextBox.Text = IdNumberTextBox.Text = string.Empty;
+            { 
+                query = "INSERT INTO New_student(UserName,FullName,Password,BloodGroup,DateOfBirth,PhoneNumber,Email,Gender,Address,EmergencyContact,EmergencyPhoneNumber,EmergencyRelation,VerficationId,RoomNumber)VALUES('" + userNameTextBox.Text + "','" + FullNameTextBox.Text + "','" + PasswordTextBox.Text + "','" + BloodGroupComboBox.Text + "','" + DateTimePicker.Text + "'," + PhoneNumberTextBox.Text + ",'" + EmailTextBox.Text + "','" + GenderComboBox.Text + "','" + AddressTextBox.Text + "','" + EmergencyFullNameTextBox.Text + "'," + EmergencyPhoneNumberTextBox.Text + ",'" + emergencyRelationTextBox.Text + "','" + IdNumberTextBox.Text + "'," + RoomNoComboBox.Text + ") UPDATE rooms SET Booked='Yes' Where RoomNumber=" + RoomNoComboBox.Text + "";
+                fn.setData(query, "Student Added Successfully!!!");
+                userNameTextBox.Text = FullNameTextBox.Text = PasswordTextBox.Text = BloodGroupComboBox.Text = DateTimePicker.Text = PhoneNumberTextBox.Text = EmailTextBox.Text = GenderComboBox.Text = AddressTextBox.Text = EmergencyContactTextBox.Text = EmergencyPhoneNumberTextBox.Text = emergencyRelationTextBox.Text = IdNumberTextBox.Text = RoomNoComboBox.Text = string.Empty;
             }
+
             else
             {
-                MessageBox.Show("Error in Creation.");
+                MessageBox.Show("Fill Empty Space","Information",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                
             }
-
-            HomePage studentlogin = new HomePage();
-            studentlogin.Show();
+            Tenants tenants = new Tenants();
+            tenants.Show();
             this.Hide();
 
 
@@ -62,15 +58,7 @@ namespace Student_Profile
 
         }
 
-        /* private void guna2Button1_Click(object sender, EventArgs e)
-         {
-             OpenFileDialog openFileDialog = new OpenFileDialog();
-             openFileDialog.Filter = "Image Files(*jpg,*png)";
-             if (openFileDialog.ShowDialog()==DialogResult.OK){
-
-                 guna2Button1.Image = new Bitmap(openFileDialog.FileName);
-             }
-         */
+      
 
         private void UpdatePhotoPictureBox1_Click(object sender, EventArgs e)
         {

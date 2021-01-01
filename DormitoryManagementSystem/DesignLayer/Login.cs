@@ -37,8 +37,8 @@ namespace Student_Log_In
                 bool result = userService.LoginValidation(userNameTextBox.Text, userPasswordTextBox.Text);
                 if (result)
                 {
-                    Room room = new Room();
-                    room.Show();
+                    Dashboard dashboard = new Dashboard();
+                    dashboard.Show();
                     this.Hide();
                 }
                 else

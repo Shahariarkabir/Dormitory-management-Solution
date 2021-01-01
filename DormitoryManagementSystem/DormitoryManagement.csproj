@@ -105,6 +105,12 @@
     <Compile Include="DesignLayer\Tenants.Designer.cs">
       <DependentUpon>Tenants.cs</DependentUpon>
     </Compile>
+    <Compile Include="DesignLayer\UpdateDeleteInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignLayer\UpdateDeleteInformation.Designer.cs">
+      <DependentUpon>UpdateDeleteInformation.cs</DependentUpon>
+    </Compile>
     <Compile Include="DormitoryManagementDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -119,6 +125,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DormitoryManagementDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DormitoryManagementDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DormitoryManagementDataSet3.xsd</DependentUpon>
     </Compile>
     <Compile Include="Entities\User.cs" />
     <Compile Include="DesignLayer\Login.cs">
@@ -155,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DesignLayer\Tenants.resx">
       <DependentUpon>Tenants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignLayer\UpdateDeleteInformation.resx">
+      <DependentUpon>UpdateDeleteInformation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -198,6 +212,17 @@
     </None>
     <None Include="DormitoryManagementDataSet2.xss">
       <DependentUpon>DormitoryManagementDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DormitoryManagementDataSet3.xsc">
+      <DependentUpon>DormitoryManagementDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DormitoryManagementDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DormitoryManagementDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DormitoryManagementDataSet3.xss">
+      <DependentUpon>DormitoryManagementDataSet3.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

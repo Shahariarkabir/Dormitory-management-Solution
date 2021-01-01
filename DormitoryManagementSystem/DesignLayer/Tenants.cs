@@ -43,5 +43,19 @@ namespace Student_Log_In.DesignLayer
             room.Show();
             this.Hide();
         }
+
+        private void Tenants_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dormitoryManagementDataSet3.New_student' table. You can move, or remove it, as needed.
+            this.new_studentTableAdapter.Fill(this.dormitoryManagementDataSet3.New_student);
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            UpdateDeleteInformation information = new UpdateDeleteInformation();
+            information.Show();
+            this.Hide();
+        }
     }
 }
