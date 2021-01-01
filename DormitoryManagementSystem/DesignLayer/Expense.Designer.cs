@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace Student_Log_In.DesignLayer
 {
     partial class Expense
@@ -31,7 +33,7 @@ namespace Student_Log_In.DesignLayer
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.LogoutButton = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.AboutUsButton = new Guna.UI2.WinForms.Guna2Button();
             this.SettingsButton = new Guna.UI2.WinForms.Guna2Button();
@@ -56,7 +58,7 @@ namespace Student_Log_In.DesignLayer
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoutButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox13)).BeginInit();
@@ -82,7 +84,7 @@ namespace Student_Log_In.DesignLayer
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.guna2Panel1.BorderColor = System.Drawing.Color.White;
             this.guna2Panel1.BorderThickness = 2;
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox3);
+            this.guna2Panel1.Controls.Add(this.LogoutButton);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Controls.Add(this.AboutUsButton);
             this.guna2Panel1.Controls.Add(this.SettingsButton);
@@ -102,16 +104,17 @@ namespace Student_Log_In.DesignLayer
             this.guna2Panel1.Size = new System.Drawing.Size(134, 672);
             this.guna2Panel1.TabIndex = 46;
             // 
-            // guna2PictureBox3
+            // LogoutButton
             // 
-            this.guna2PictureBox3.Image = global::Student_Log_In.Properties.Resources.Group_187;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(7, 544);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
-            this.guna2PictureBox3.Size = new System.Drawing.Size(122, 117);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox3.TabIndex = 140;
-            this.guna2PictureBox3.TabStop = false;
+            this.LogoutButton.Image = global::Student_Log_In.Properties.Resources.Group_187;
+            this.LogoutButton.Location = new System.Drawing.Point(7, 544);
+            this.LogoutButton.Name = "LogoutButton";
+            this.LogoutButton.ShadowDecoration.Parent = this.LogoutButton;
+            this.LogoutButton.Size = new System.Drawing.Size(122, 117);
+            this.LogoutButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LogoutButton.TabIndex = 140;
+            this.LogoutButton.TabStop = false;
+            this.LogoutButton.Click += new System.EventHandler(this.LogoutButtonClick);
             // 
             // guna2PictureBox1
             // 
@@ -180,6 +183,7 @@ namespace Student_Log_In.DesignLayer
             this.ExpenseButton.TabIndex = 140;
             this.ExpenseButton.Text = "Expense";
             this.ExpenseButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ExpenseButton.Click += new System.EventHandler(this.ExpenseButton_Click);
             // 
             // TenantsButton
             // 
@@ -457,7 +461,7 @@ namespace Student_Log_In.DesignLayer
             this.Text = "Expense";
             this.panel1.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoutButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox13)).EndInit();
@@ -470,6 +474,11 @@ namespace Student_Log_In.DesignLayer
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void LogoutButtonClick(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
@@ -485,7 +494,7 @@ namespace Student_Log_In.DesignLayer
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
+        private Guna.UI2.WinForms.Guna2PictureBox LogoutButton;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Button AboutUsButton;
         private Guna.UI2.WinForms.Guna2Button SettingsButton;

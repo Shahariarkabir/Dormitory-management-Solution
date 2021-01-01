@@ -1,5 +1,8 @@
 ﻿using Student_Log_In;
+<<<<<<< HEAD
+=======
 using Student_Log_In.DataAccessLayer;
+>>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
 using Student_Log_In.DesignLayer;
 using System;
 using System.Collections.Generic;
@@ -121,6 +124,8 @@ namespace Student_Profile
             this.Hide();
         }
 
+<<<<<<< HEAD
+=======
         private void LogoutButton_Click(object sender, EventArgs e)
         {
             HomePage homePage = new HomePage();
@@ -128,6 +133,7 @@ namespace Student_Profile
             this.Hide();
         }
 
+>>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
         private void RoomButton_Click(object sender, EventArgs e)
         {
             Room room = new Room();
@@ -140,7 +146,10 @@ namespace Student_Profile
             Bed bed = new Bed();
             bed.Show();
             this.Hide();
+<<<<<<< HEAD
+=======
 
+>>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
         }
 
         private void TenantsButton_Click(object sender, EventArgs e)
@@ -170,6 +179,8 @@ namespace Student_Profile
             aboutUs.Show();
             this.Hide();
         }
+<<<<<<< HEAD
+=======
 
         private void StudentButton_Click(object sender, EventArgs e)
         {
@@ -196,5 +207,6 @@ namespace Student_Profile
             }
 
         }
+>>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
     }
 }

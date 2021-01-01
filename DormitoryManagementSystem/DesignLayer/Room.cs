@@ -115,6 +115,11 @@ namespace Student_Log_In.DesignLayer
             this.Hide();
         }
 
+<<<<<<< HEAD
+        private void RoomButton_Click(object sender, EventArgs e)
+        {
+
+=======
         private void AddRoomButton_Click(object sender, EventArgs e)
         {
             query = "SELECT * FROM rooms WHERE RoomNumber ="+AddRoomTextBox.Text+"";
@@ -195,6 +200,7 @@ namespace Student_Log_In.DesignLayer
             {
                 MessageBox.Show("Trying To Delete Something Which Doesn't Exist!!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+>>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
         }
 
         private void StudentButton_Click(object sender, EventArgs e)

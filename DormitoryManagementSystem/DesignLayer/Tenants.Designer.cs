@@ -139,6 +139,7 @@ namespace Student_Log_In.DesignLayer
             this.LogoutButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.LogoutButton.TabIndex = 140;
             this.LogoutButton.TabStop = false;
+            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
             // guna2PictureBox1
             // 
@@ -167,6 +168,27 @@ namespace Student_Log_In.DesignLayer
             this.AboutUsButton.TabIndex = 141;
             this.AboutUsButton.Text = "About us";
             this.AboutUsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.AboutUsButton.Click += new System.EventHandler(this.AboutUsButton_Click);
+            // 
+            // BedButton
+            // 
+            this.BedButton.CheckedState.Parent = this.BedButton;
+            this.BedButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BedButton.CustomImages.Parent = this.BedButton;
+            this.BedButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.BedButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold);
+            this.BedButton.ForeColor = System.Drawing.Color.Black;
+            this.BedButton.HoverState.Parent = this.BedButton;
+            this.BedButton.Image = global::Student_Log_In.Properties.Resources.terrain;
+            this.BedButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.BedButton.Location = new System.Drawing.Point(3, 219);
+            this.BedButton.Name = "BedButton";
+            this.BedButton.ShadowDecoration.Parent = this.BedButton;
+            this.BedButton.Size = new System.Drawing.Size(129, 22);
+            this.BedButton.TabIndex = 140;
+            this.BedButton.Text = "Bed";
+            this.BedButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.BedButton.Click += new System.EventHandler(this.BedButton_Click);
             // 
             // BedButton
             // 
@@ -205,6 +227,7 @@ namespace Student_Log_In.DesignLayer
             this.SettingsButton.TabIndex = 140;
             this.SettingsButton.Text = "Settings";
             this.SettingsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
             // 
             // ExpenseButton
             // 
@@ -224,6 +247,7 @@ namespace Student_Log_In.DesignLayer
             this.ExpenseButton.TabIndex = 140;
             this.ExpenseButton.Text = "Expense";
             this.ExpenseButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ExpenseButton.Click += new System.EventHandler(this.ExpenseButton_Click);
             // 
             // TenantsButton
             // 
@@ -243,6 +267,10 @@ namespace Student_Log_In.DesignLayer
             this.TenantsButton.TabIndex = 140;
             this.TenantsButton.Text = "Tenants";
             this.TenantsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+<<<<<<< HEAD
+            this.TenantsButton.Click += new System.EventHandler(this.TenantsButton_Click);
+=======
+>>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
             // 
             // RoomButton
             // 
