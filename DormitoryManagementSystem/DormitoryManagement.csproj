@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="BusinessLayer\UserService.cs" />
     <Compile Include="DataAccessLayer\DataAccess.cs" />
+    <Compile Include="DataAccessLayer\Function.cs" />
     <Compile Include="DataAccessLayer\UserAccess.cs" />
     <Compile Include="DesignLayer\AboutUs.cs">
       <SubType>Form</SubType>

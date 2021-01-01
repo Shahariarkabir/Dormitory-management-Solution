@@ -34,10 +34,10 @@ namespace Student_Log_In.DesignLayer
             this.LogoutButton = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.AboutUsButton = new Guna.UI2.WinForms.Guna2Button();
+            this.BedButton = new Guna.UI2.WinForms.Guna2Button();
             this.SettingsButton = new Guna.UI2.WinForms.Guna2Button();
             this.ExpenseButton = new Guna.UI2.WinForms.Guna2Button();
             this.TenantsButton = new Guna.UI2.WinForms.Guna2Button();
-            this.BedButton = new Guna.UI2.WinForms.Guna2Button();
             this.RoomButton = new Guna.UI2.WinForms.Guna2Button();
             this.DashBoardButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox14 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -141,6 +141,25 @@ namespace Student_Log_In.DesignLayer
             this.AboutUsButton.Text = "About us";
             this.AboutUsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
+            // BedButton
+            // 
+            this.BedButton.CheckedState.Parent = this.BedButton;
+            this.BedButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BedButton.CustomImages.Parent = this.BedButton;
+            this.BedButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.BedButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold);
+            this.BedButton.ForeColor = System.Drawing.Color.Black;
+            this.BedButton.HoverState.Parent = this.BedButton;
+            this.BedButton.Image = global::Student_Log_In.Properties.Resources.terrain;
+            this.BedButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.BedButton.Location = new System.Drawing.Point(3, 219);
+            this.BedButton.Name = "BedButton";
+            this.BedButton.ShadowDecoration.Parent = this.BedButton;
+            this.BedButton.Size = new System.Drawing.Size(129, 22);
+            this.BedButton.TabIndex = 140;
+            this.BedButton.Text = "Bed";
+            this.BedButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // SettingsButton
             // 
             this.SettingsButton.CheckedState.Parent = this.SettingsButton;
@@ -197,25 +216,6 @@ namespace Student_Log_In.DesignLayer
             this.TenantsButton.TabIndex = 140;
             this.TenantsButton.Text = "Tenants";
             this.TenantsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // BedButton
-            // 
-            this.BedButton.CheckedState.Parent = this.BedButton;
-            this.BedButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BedButton.CustomImages.Parent = this.BedButton;
-            this.BedButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.BedButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold);
-            this.BedButton.ForeColor = System.Drawing.Color.Black;
-            this.BedButton.HoverState.Parent = this.BedButton;
-            this.BedButton.Image = global::Student_Log_In.Properties.Resources.terrain;
-            this.BedButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BedButton.Location = new System.Drawing.Point(3, 219);
-            this.BedButton.Name = "BedButton";
-            this.BedButton.ShadowDecoration.Parent = this.BedButton;
-            this.BedButton.Size = new System.Drawing.Size(129, 22);
-            this.BedButton.TabIndex = 140;
-            this.BedButton.Text = "Bed";
-            this.BedButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // RoomButton
             // 
@@ -368,6 +368,7 @@ namespace Student_Log_In.DesignLayer
             this.Room.TabIndex = 140;
             this.Room.Text = "Room";
             this.Room.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Room.Click += new System.EventHandler(this.Room_Click);
             // 
             // ExpenseBuuton
             // 

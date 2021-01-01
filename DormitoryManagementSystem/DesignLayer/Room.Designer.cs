@@ -30,24 +30,18 @@ namespace Student_Log_In.DesignLayer
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.StudentButton = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            this.ExpenseBuuton = new Guna.UI2.WinForms.Guna2Button();
+            this.EmojiPictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.AddRoomTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.AddRoomButton = new Guna.UI2.WinForms.Guna2Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.guna2CheckBox2 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.SearchButton = new Guna.UI2.WinForms.Guna2Button();
             this.LogoutButton = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.AboutUsButton = new Guna.UI2.WinForms.Guna2Button();
@@ -62,10 +56,16 @@ namespace Student_Log_In.DesignLayer
             this.guna2PictureBox12 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.StudentButton = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            this.ExpenseBuuton = new Guna.UI2.WinForms.Guna2Button();
-            this.EmojiPictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.AddRoomTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.AddRoomCheckBox = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.AddRoomButton = new Guna.UI2.WinForms.Guna2Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.UpdateDeleteTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.CheckBox2 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.SearchButton = new Guna.UI2.WinForms.Guna2Button();
             this.UpdateRoomButton = new Guna.UI2.WinForms.Guna2Button();
             this.DeleteRoomButton = new Guna.UI2.WinForms.Guna2Button();
             this.labelRoom = new System.Windows.Forms.Label();
@@ -84,7 +84,10 @@ namespace Student_Log_In.DesignLayer
             this.roomNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.roomTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bookedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AddRoomComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiPictureBox)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoutButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -93,7 +96,6 @@ namespace Student_Log_In.DesignLayer
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EmojiPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dormitoryManagementDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dormitoryManagementDataSet1)).BeginInit();
@@ -131,6 +133,77 @@ namespace Student_Log_In.DesignLayer
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(1132, 67);
             this.guna2Panel2.TabIndex = 47;
+            // 
+            // StudentButton
+            // 
+            this.StudentButton.CheckedState.Parent = this.StudentButton;
+            this.StudentButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.StudentButton.CustomImages.Parent = this.StudentButton;
+            this.StudentButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.StudentButton.Font = new System.Drawing.Font("JetBrains Mono", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentButton.ForeColor = System.Drawing.Color.Black;
+            this.StudentButton.HoverState.Parent = this.StudentButton;
+            this.StudentButton.Image = global::Student_Log_In.Properties.Resources.Group_129__1_;
+            this.StudentButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.StudentButton.Location = new System.Drawing.Point(837, 37);
+            this.StudentButton.Name = "StudentButton";
+            this.StudentButton.ShadowDecoration.Parent = this.StudentButton;
+            this.StudentButton.Size = new System.Drawing.Size(143, 22);
+            this.StudentButton.TabIndex = 141;
+            this.StudentButton.Text = "Student";
+            this.StudentButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // guna2Button6
+            // 
+            this.guna2Button6.CheckedState.Parent = this.guna2Button6;
+            this.guna2Button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button6.CustomImages.Parent = this.guna2Button6;
+            this.guna2Button6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.guna2Button6.Font = new System.Drawing.Font("JetBrains Mono", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button6.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button6.HoverState.Parent = this.guna2Button6;
+            this.guna2Button6.Image = global::Student_Log_In.Properties.Resources.Group_129__1_;
+            this.guna2Button6.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button6.Location = new System.Drawing.Point(727, 37);
+            this.guna2Button6.Name = "guna2Button6";
+            this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
+            this.guna2Button6.Size = new System.Drawing.Size(100, 22);
+            this.guna2Button6.TabIndex = 140;
+            this.guna2Button6.Text = "Room";
+            this.guna2Button6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // ExpenseBuuton
+            // 
+            this.ExpenseBuuton.CheckedState.Parent = this.ExpenseBuuton;
+            this.ExpenseBuuton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExpenseBuuton.CustomImages.Parent = this.ExpenseBuuton;
+            this.ExpenseBuuton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.ExpenseBuuton.Font = new System.Drawing.Font("JetBrains Mono", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExpenseBuuton.ForeColor = System.Drawing.Color.Black;
+            this.ExpenseBuuton.HoverState.Parent = this.ExpenseBuuton;
+            this.ExpenseBuuton.Image = global::Student_Log_In.Properties.Resources.Group_129__1_;
+            this.ExpenseBuuton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ExpenseBuuton.Location = new System.Drawing.Point(581, 37);
+            this.ExpenseBuuton.Name = "ExpenseBuuton";
+            this.ExpenseBuuton.ShadowDecoration.Parent = this.ExpenseBuuton;
+            this.ExpenseBuuton.Size = new System.Drawing.Size(143, 22);
+            this.ExpenseBuuton.TabIndex = 10;
+            this.ExpenseBuuton.Text = "Expense";
+            this.ExpenseBuuton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // EmojiPictureBox
+            // 
+            this.EmojiPictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.EmojiPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.EmojiPictureBox.Image = global::Student_Log_In.Properties.Resources.Group__1_;
+            this.EmojiPictureBox.Location = new System.Drawing.Point(1038, 6);
+            this.EmojiPictureBox.Name = "EmojiPictureBox";
+            this.EmojiPictureBox.ShadowDecoration.Parent = this.EmojiPictureBox;
+            this.EmojiPictureBox.Size = new System.Drawing.Size(18, 18);
+            this.EmojiPictureBox.TabIndex = 4;
+            this.EmojiPictureBox.TabStop = false;
+            this.EmojiPictureBox.UseTransparentBackground = true;
+            this.EmojiPictureBox.Click += new System.EventHandler(this.EmojiPictureBox_Click);
             // 
             // guna2ControlBox2
             // 
@@ -181,178 +254,6 @@ namespace Student_Log_In.DesignLayer
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(135, 671);
             this.guna2Panel1.TabIndex = 48;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1017, 111);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 21);
-            this.label1.TabIndex = 50;
-            this.label1.Text = "Add Room";
-            // 
-            // AddRoomTextBox
-            // 
-            this.AddRoomTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.AddRoomTextBox.BorderRadius = 4;
-            this.AddRoomTextBox.BorderThickness = 2;
-            this.AddRoomTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.AddRoomTextBox.DefaultText = "Input Room No";
-            this.AddRoomTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.AddRoomTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.AddRoomTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.AddRoomTextBox.DisabledState.Parent = this.AddRoomTextBox;
-            this.AddRoomTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.AddRoomTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.AddRoomTextBox.FocusedState.Parent = this.AddRoomTextBox;
-            this.AddRoomTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.AddRoomTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.AddRoomTextBox.HoverState.Parent = this.AddRoomTextBox;
-            this.AddRoomTextBox.Location = new System.Drawing.Point(957, 138);
-            this.AddRoomTextBox.Name = "AddRoomTextBox";
-            this.AddRoomTextBox.PasswordChar = '\0';
-            this.AddRoomTextBox.PlaceholderText = "";
-            this.AddRoomTextBox.SelectedText = "";
-            this.AddRoomTextBox.SelectionStart = 13;
-            this.AddRoomTextBox.ShadowDecoration.Parent = this.AddRoomTextBox;
-            this.AddRoomTextBox.Size = new System.Drawing.Size(200, 36);
-            this.AddRoomTextBox.TabIndex = 51;
-            this.AddRoomTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(977, 191);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(180, 21);
-            this.label2.TabIndex = 52;
-            this.label2.Text = "Activated or not!";
-            // 
-            // guna2CheckBox1
-            // 
-            this.guna2CheckBox1.AutoSize = true;
-            this.guna2CheckBox1.CheckedState.BorderColor = System.Drawing.Color.Black;
-            this.guna2CheckBox1.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox1.CheckedState.BorderThickness = 2;
-            this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2CheckBox1.CheckMarkColor = System.Drawing.Color.Black;
-            this.guna2CheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.guna2CheckBox1.Location = new System.Drawing.Point(1171, 195);
-            this.guna2CheckBox1.Name = "guna2CheckBox1";
-            this.guna2CheckBox1.Size = new System.Drawing.Size(15, 14);
-            this.guna2CheckBox1.TabIndex = 54;
-            this.guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.Black;
-            this.guna2CheckBox1.UncheckedState.BorderRadius = 0;
-            this.guna2CheckBox1.UncheckedState.BorderThickness = 2;
-            this.guna2CheckBox1.UncheckedState.FillColor = System.Drawing.Color.WhiteSmoke;
-            // 
-            // AddRoomButton
-            // 
-            this.AddRoomButton.BorderColor = System.Drawing.Color.Blue;
-            this.AddRoomButton.BorderRadius = 4;
-            this.AddRoomButton.BorderThickness = 2;
-            this.AddRoomButton.CheckedState.Parent = this.AddRoomButton;
-            this.AddRoomButton.CustomImages.Parent = this.AddRoomButton;
-            this.AddRoomButton.FillColor = System.Drawing.Color.Blue;
-            this.AddRoomButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddRoomButton.ForeColor = System.Drawing.Color.Black;
-            this.AddRoomButton.HoverState.Parent = this.AddRoomButton;
-            this.AddRoomButton.Location = new System.Drawing.Point(969, 243);
-            this.AddRoomButton.Name = "AddRoomButton";
-            this.AddRoomButton.ShadowDecoration.Parent = this.AddRoomButton;
-            this.AddRoomButton.Size = new System.Drawing.Size(180, 45);
-            this.AddRoomButton.TabIndex = 55;
-            this.AddRoomButton.Text = "Add Room";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(961, 316);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(220, 21);
-            this.label3.TabIndex = 56;
-            this.label3.Text = "Update Or Delete Room";
-            // 
-            // guna2TextBox1
-            // 
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.guna2TextBox1.BorderRadius = 4;
-            this.guna2TextBox1.BorderThickness = 2;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "Input Room No";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(957, 352);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.SelectionStart = 13;
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(200, 36);
-            this.guna2TextBox1.TabIndex = 57;
-            this.guna2TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(977, 411);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(180, 21);
-            this.label4.TabIndex = 58;
-            this.label4.Text = "Activated or not!";
-            // 
-            // guna2CheckBox2
-            // 
-            this.guna2CheckBox2.AutoSize = true;
-            this.guna2CheckBox2.CheckedState.BorderColor = System.Drawing.Color.Black;
-            this.guna2CheckBox2.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox2.CheckedState.BorderThickness = 2;
-            this.guna2CheckBox2.CheckedState.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2CheckBox2.CheckMarkColor = System.Drawing.Color.Black;
-            this.guna2CheckBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.guna2CheckBox2.Location = new System.Drawing.Point(1171, 418);
-            this.guna2CheckBox2.Name = "guna2CheckBox2";
-            this.guna2CheckBox2.Size = new System.Drawing.Size(15, 14);
-            this.guna2CheckBox2.TabIndex = 59;
-            this.guna2CheckBox2.UncheckedState.BorderColor = System.Drawing.Color.Black;
-            this.guna2CheckBox2.UncheckedState.BorderRadius = 0;
-            this.guna2CheckBox2.UncheckedState.BorderThickness = 2;
-            this.guna2CheckBox2.UncheckedState.FillColor = System.Drawing.Color.WhiteSmoke;
-            // 
-            // SearchButton
-            // 
-            this.SearchButton.BorderColor = System.Drawing.Color.White;
-            this.SearchButton.BorderRadius = 10;
-            this.SearchButton.BorderThickness = 1;
-            this.SearchButton.CheckedState.Parent = this.SearchButton;
-            this.SearchButton.CustomImages.Parent = this.SearchButton;
-            this.SearchButton.FillColor = System.Drawing.Color.RoyalBlue;
-            this.SearchButton.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F);
-            this.SearchButton.ForeColor = System.Drawing.Color.Black;
-            this.SearchButton.HoverState.Parent = this.SearchButton;
-            this.SearchButton.Image = global::Student_Log_In.Properties.Resources.iconfinder_search_1608826;
-            this.SearchButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.SearchButton.Location = new System.Drawing.Point(1163, 352);
-            this.SearchButton.Name = "SearchButton";
-            this.SearchButton.ShadowDecoration.Parent = this.SearchButton;
-            this.SearchButton.Size = new System.Drawing.Size(91, 36);
-            this.SearchButton.TabIndex = 60;
-            this.SearchButton.Text = "Search";
-            this.SearchButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.SearchButton.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // LogoutButton
             // 
@@ -562,76 +463,180 @@ namespace Student_Log_In.DesignLayer
             this.guna2PictureBox4.TabIndex = 0;
             this.guna2PictureBox4.TabStop = false;
             // 
-            // StudentButton
+            // label1
             // 
-            this.StudentButton.CheckedState.Parent = this.StudentButton;
-            this.StudentButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.StudentButton.CustomImages.Parent = this.StudentButton;
-            this.StudentButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.StudentButton.Font = new System.Drawing.Font("JetBrains Mono", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StudentButton.ForeColor = System.Drawing.Color.Black;
-            this.StudentButton.HoverState.Parent = this.StudentButton;
-            this.StudentButton.Image = global::Student_Log_In.Properties.Resources.Group_129__1_;
-            this.StudentButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.StudentButton.Location = new System.Drawing.Point(837, 37);
-            this.StudentButton.Name = "StudentButton";
-            this.StudentButton.ShadowDecoration.Parent = this.StudentButton;
-            this.StudentButton.Size = new System.Drawing.Size(143, 22);
-            this.StudentButton.TabIndex = 141;
-            this.StudentButton.Text = "Student";
-            this.StudentButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(1054, 100);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 21);
+            this.label1.TabIndex = 50;
+            this.label1.Text = "Add Room";
             // 
-            // guna2Button6
+            // AddRoomTextBox
             // 
-            this.guna2Button6.CheckedState.Parent = this.guna2Button6;
-            this.guna2Button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button6.CustomImages.Parent = this.guna2Button6;
-            this.guna2Button6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.guna2Button6.Font = new System.Drawing.Font("JetBrains Mono", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button6.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button6.HoverState.Parent = this.guna2Button6;
-            this.guna2Button6.Image = global::Student_Log_In.Properties.Resources.Group_129__1_;
-            this.guna2Button6.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button6.Location = new System.Drawing.Point(727, 37);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
-            this.guna2Button6.Size = new System.Drawing.Size(100, 22);
-            this.guna2Button6.TabIndex = 140;
-            this.guna2Button6.Text = "Room";
-            this.guna2Button6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.AddRoomTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.AddRoomTextBox.BorderRadius = 4;
+            this.AddRoomTextBox.BorderThickness = 2;
+            this.AddRoomTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AddRoomTextBox.DefaultText = "Input Room No";
+            this.AddRoomTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.AddRoomTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.AddRoomTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.AddRoomTextBox.DisabledState.Parent = this.AddRoomTextBox;
+            this.AddRoomTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.AddRoomTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.AddRoomTextBox.FocusedState.Parent = this.AddRoomTextBox;
+            this.AddRoomTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.AddRoomTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.AddRoomTextBox.HoverState.Parent = this.AddRoomTextBox;
+            this.AddRoomTextBox.Location = new System.Drawing.Point(984, 132);
+            this.AddRoomTextBox.Name = "AddRoomTextBox";
+            this.AddRoomTextBox.PasswordChar = '\0';
+            this.AddRoomTextBox.PlaceholderText = "";
+            this.AddRoomTextBox.SelectedText = "";
+            this.AddRoomTextBox.SelectionStart = 13;
+            this.AddRoomTextBox.ShadowDecoration.Parent = this.AddRoomTextBox;
+            this.AddRoomTextBox.Size = new System.Drawing.Size(200, 36);
+            this.AddRoomTextBox.TabIndex = 51;
+            this.AddRoomTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // ExpenseBuuton
+            // label2
             // 
-            this.ExpenseBuuton.CheckedState.Parent = this.ExpenseBuuton;
-            this.ExpenseBuuton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ExpenseBuuton.CustomImages.Parent = this.ExpenseBuuton;
-            this.ExpenseBuuton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.ExpenseBuuton.Font = new System.Drawing.Font("JetBrains Mono", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExpenseBuuton.ForeColor = System.Drawing.Color.Black;
-            this.ExpenseBuuton.HoverState.Parent = this.ExpenseBuuton;
-            this.ExpenseBuuton.Image = global::Student_Log_In.Properties.Resources.Group_129__1_;
-            this.ExpenseBuuton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.ExpenseBuuton.Location = new System.Drawing.Point(581, 37);
-            this.ExpenseBuuton.Name = "ExpenseBuuton";
-            this.ExpenseBuuton.ShadowDecoration.Parent = this.ExpenseBuuton;
-            this.ExpenseBuuton.Size = new System.Drawing.Size(143, 22);
-            this.ExpenseBuuton.TabIndex = 10;
-            this.ExpenseBuuton.Text = "Expense";
-            this.ExpenseBuuton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(981, 300);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(150, 21);
+            this.label2.TabIndex = 52;
+            this.label2.Text = "Booked or not!";
             // 
-            // EmojiPictureBox
+            // AddRoomCheckBox
             // 
-            this.EmojiPictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.EmojiPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.EmojiPictureBox.Image = global::Student_Log_In.Properties.Resources.Group__1_;
-            this.EmojiPictureBox.Location = new System.Drawing.Point(1038, 6);
-            this.EmojiPictureBox.Name = "EmojiPictureBox";
-            this.EmojiPictureBox.ShadowDecoration.Parent = this.EmojiPictureBox;
-            this.EmojiPictureBox.Size = new System.Drawing.Size(18, 18);
-            this.EmojiPictureBox.TabIndex = 4;
-            this.EmojiPictureBox.TabStop = false;
-            this.EmojiPictureBox.UseTransparentBackground = true;
-            this.EmojiPictureBox.Click += new System.EventHandler(this.EmojiPictureBox_Click);
+            this.AddRoomCheckBox.AutoSize = true;
+            this.AddRoomCheckBox.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.AddRoomCheckBox.CheckedState.BorderRadius = 0;
+            this.AddRoomCheckBox.CheckedState.BorderThickness = 2;
+            this.AddRoomCheckBox.CheckedState.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.AddRoomCheckBox.CheckMarkColor = System.Drawing.Color.Black;
+            this.AddRoomCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.AddRoomCheckBox.Location = new System.Drawing.Point(1134, 300);
+            this.AddRoomCheckBox.Name = "AddRoomCheckBox";
+            this.AddRoomCheckBox.Size = new System.Drawing.Size(44, 17);
+            this.AddRoomCheckBox.TabIndex = 54;
+            this.AddRoomCheckBox.Text = "Yes";
+            this.AddRoomCheckBox.UncheckedState.BorderColor = System.Drawing.Color.Black;
+            this.AddRoomCheckBox.UncheckedState.BorderRadius = 0;
+            this.AddRoomCheckBox.UncheckedState.BorderThickness = 2;
+            this.AddRoomCheckBox.UncheckedState.FillColor = System.Drawing.Color.WhiteSmoke;
+            // 
+            // AddRoomButton
+            // 
+            this.AddRoomButton.BorderColor = System.Drawing.Color.Blue;
+            this.AddRoomButton.BorderRadius = 4;
+            this.AddRoomButton.BorderThickness = 2;
+            this.AddRoomButton.CheckedState.Parent = this.AddRoomButton;
+            this.AddRoomButton.CustomImages.Parent = this.AddRoomButton;
+            this.AddRoomButton.FillColor = System.Drawing.Color.Blue;
+            this.AddRoomButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddRoomButton.ForeColor = System.Drawing.Color.Black;
+            this.AddRoomButton.HoverState.Parent = this.AddRoomButton;
+            this.AddRoomButton.Location = new System.Drawing.Point(1001, 343);
+            this.AddRoomButton.Name = "AddRoomButton";
+            this.AddRoomButton.ShadowDecoration.Parent = this.AddRoomButton;
+            this.AddRoomButton.Size = new System.Drawing.Size(180, 45);
+            this.AddRoomButton.TabIndex = 55;
+            this.AddRoomButton.Text = "Add Room";
+            this.AddRoomButton.Click += new System.EventHandler(this.AddRoomButton_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(966, 442);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(220, 21);
+            this.label3.TabIndex = 56;
+            this.label3.Text = "Update Or Delete Room";
+            // 
+            // UpdateDeleteTextBox
+            // 
+            this.UpdateDeleteTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.UpdateDeleteTextBox.BorderRadius = 4;
+            this.UpdateDeleteTextBox.BorderThickness = 2;
+            this.UpdateDeleteTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.UpdateDeleteTextBox.DefaultText = "Input Room No";
+            this.UpdateDeleteTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.UpdateDeleteTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.UpdateDeleteTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.UpdateDeleteTextBox.DisabledState.Parent = this.UpdateDeleteTextBox;
+            this.UpdateDeleteTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.UpdateDeleteTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.UpdateDeleteTextBox.FocusedState.Parent = this.UpdateDeleteTextBox;
+            this.UpdateDeleteTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.UpdateDeleteTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.UpdateDeleteTextBox.HoverState.Parent = this.UpdateDeleteTextBox;
+            this.UpdateDeleteTextBox.Location = new System.Drawing.Point(959, 480);
+            this.UpdateDeleteTextBox.Name = "UpdateDeleteTextBox";
+            this.UpdateDeleteTextBox.PasswordChar = '\0';
+            this.UpdateDeleteTextBox.PlaceholderText = "";
+            this.UpdateDeleteTextBox.SelectedText = "";
+            this.UpdateDeleteTextBox.SelectionStart = 13;
+            this.UpdateDeleteTextBox.ShadowDecoration.Parent = this.UpdateDeleteTextBox;
+            this.UpdateDeleteTextBox.Size = new System.Drawing.Size(200, 36);
+            this.UpdateDeleteTextBox.TabIndex = 57;
+            this.UpdateDeleteTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(977, 545);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(150, 21);
+            this.label4.TabIndex = 58;
+            this.label4.Text = "Booked or not!";
+            // 
+            // CheckBox2
+            // 
+            this.CheckBox2.AutoSize = true;
+            this.CheckBox2.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.CheckBox2.CheckedState.BorderRadius = 0;
+            this.CheckBox2.CheckedState.BorderThickness = 2;
+            this.CheckBox2.CheckedState.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.CheckBox2.CheckMarkColor = System.Drawing.Color.Black;
+            this.CheckBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.CheckBox2.Location = new System.Drawing.Point(1128, 549);
+            this.CheckBox2.Name = "CheckBox2";
+            this.CheckBox2.Size = new System.Drawing.Size(44, 17);
+            this.CheckBox2.TabIndex = 59;
+            this.CheckBox2.Text = "Yes";
+            this.CheckBox2.UncheckedState.BorderColor = System.Drawing.Color.Black;
+            this.CheckBox2.UncheckedState.BorderRadius = 0;
+            this.CheckBox2.UncheckedState.BorderThickness = 2;
+            this.CheckBox2.UncheckedState.FillColor = System.Drawing.Color.WhiteSmoke;
+            // 
+            // SearchButton
+            // 
+            this.SearchButton.BorderColor = System.Drawing.Color.White;
+            this.SearchButton.BorderRadius = 10;
+            this.SearchButton.BorderThickness = 1;
+            this.SearchButton.CheckedState.Parent = this.SearchButton;
+            this.SearchButton.CustomImages.Parent = this.SearchButton;
+            this.SearchButton.FillColor = System.Drawing.Color.RoyalBlue;
+            this.SearchButton.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F);
+            this.SearchButton.ForeColor = System.Drawing.Color.Black;
+            this.SearchButton.HoverState.Parent = this.SearchButton;
+            this.SearchButton.Image = global::Student_Log_In.Properties.Resources.iconfinder_search_1608826;
+            this.SearchButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.SearchButton.Location = new System.Drawing.Point(1160, 480);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.ShadowDecoration.Parent = this.SearchButton;
+            this.SearchButton.Size = new System.Drawing.Size(91, 36);
+            this.SearchButton.TabIndex = 60;
+            this.SearchButton.Text = "Search";
+            this.SearchButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
             // 
             // UpdateRoomButton
             // 
@@ -644,12 +649,13 @@ namespace Student_Log_In.DesignLayer
             this.UpdateRoomButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpdateRoomButton.ForeColor = System.Drawing.Color.Black;
             this.UpdateRoomButton.HoverState.Parent = this.UpdateRoomButton;
-            this.UpdateRoomButton.Location = new System.Drawing.Point(864, 468);
+            this.UpdateRoomButton.Location = new System.Drawing.Point(890, 609);
             this.UpdateRoomButton.Name = "UpdateRoomButton";
             this.UpdateRoomButton.ShadowDecoration.Parent = this.UpdateRoomButton;
             this.UpdateRoomButton.Size = new System.Drawing.Size(180, 45);
             this.UpdateRoomButton.TabIndex = 61;
             this.UpdateRoomButton.Text = "Update Room";
+            this.UpdateRoomButton.Click += new System.EventHandler(this.UpdateRoomButton_Click);
             // 
             // DeleteRoomButton
             // 
@@ -662,18 +668,19 @@ namespace Student_Log_In.DesignLayer
             this.DeleteRoomButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DeleteRoomButton.ForeColor = System.Drawing.Color.Black;
             this.DeleteRoomButton.HoverState.Parent = this.DeleteRoomButton;
-            this.DeleteRoomButton.Location = new System.Drawing.Point(1067, 468);
+            this.DeleteRoomButton.Location = new System.Drawing.Point(1086, 609);
             this.DeleteRoomButton.Name = "DeleteRoomButton";
             this.DeleteRoomButton.ShadowDecoration.Parent = this.DeleteRoomButton;
             this.DeleteRoomButton.Size = new System.Drawing.Size(180, 45);
             this.DeleteRoomButton.TabIndex = 62;
             this.DeleteRoomButton.Text = "Delete Room";
+            this.DeleteRoomButton.Click += new System.EventHandler(this.DeleteRoomButton_Click);
             // 
             // labelRoom
             // 
             this.labelRoom.AutoSize = true;
             this.labelRoom.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRoom.Location = new System.Drawing.Point(1036, 176);
+            this.labelRoom.Location = new System.Drawing.Point(1064, 176);
             this.labelRoom.Name = "labelRoom";
             this.labelRoom.Size = new System.Drawing.Size(63, 15);
             this.labelRoom.TabIndex = 63;
@@ -684,7 +691,7 @@ namespace Student_Log_In.DesignLayer
             // 
             this.labelRoomExist.AutoSize = true;
             this.labelRoomExist.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRoomExist.Location = new System.Drawing.Point(1036, 391);
+            this.labelRoomExist.Location = new System.Drawing.Point(1039, 519);
             this.labelRoomExist.Name = "labelRoomExist";
             this.labelRoomExist.Size = new System.Drawing.Size(63, 15);
             this.labelRoomExist.TabIndex = 64;
@@ -739,36 +746,36 @@ namespace Student_Log_In.DesignLayer
             // 
             // RoomDataGridView
             // 
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.RoomDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
+            this.RoomDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
             this.RoomDataGridView.AutoGenerateColumns = false;
             this.RoomDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.RoomDataGridView.BackgroundColor = System.Drawing.Color.LightBlue;
             this.RoomDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.RoomDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.RoomDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.RoomDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
-            this.RoomDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.RoomDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            this.RoomDataGridView.ColumnHeadersHeight = 21;
             this.RoomDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.roomNumberDataGridViewTextBoxColumn,
             this.roomTypeDataGridViewTextBoxColumn,
             this.bookedDataGridViewTextBoxColumn});
             this.RoomDataGridView.DataSource = this.roomsBindingSource2;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.RoomDataGridView.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.RoomDataGridView.DefaultCellStyle = dataGridViewCellStyle24;
             this.RoomDataGridView.EnableHeadersVisualStyles = false;
             this.RoomDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.RoomDataGridView.Location = new System.Drawing.Point(185, 150);
@@ -789,7 +796,7 @@ namespace Student_Log_In.DesignLayer
             this.RoomDataGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.RoomDataGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.RoomDataGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.RoomDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.RoomDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.RoomDataGridView.ThemeStyle.HeaderStyle.Height = 21;
             this.RoomDataGridView.ThemeStyle.ReadOnly = false;
             this.RoomDataGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -819,24 +826,62 @@ namespace Student_Log_In.DesignLayer
             this.bookedDataGridViewTextBoxColumn.HeaderText = "Booked";
             this.bookedDataGridViewTextBoxColumn.Name = "bookedDataGridViewTextBoxColumn";
             // 
+            // AddRoomComboBox
+            // 
+            this.AddRoomComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.AddRoomComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.AddRoomComboBox.BorderRadius = 4;
+            this.AddRoomComboBox.BorderThickness = 2;
+            this.AddRoomComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.AddRoomComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AddRoomComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.AddRoomComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.AddRoomComboBox.FocusedState.Parent = this.AddRoomComboBox;
+            this.AddRoomComboBox.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddRoomComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.AddRoomComboBox.HoverState.Parent = this.AddRoomComboBox;
+            this.AddRoomComboBox.ItemHeight = 30;
+            this.AddRoomComboBox.Items.AddRange(new object[] {
+            "Single",
+            "Double"});
+            this.AddRoomComboBox.ItemsAppearance.Parent = this.AddRoomComboBox;
+            this.AddRoomComboBox.Location = new System.Drawing.Point(984, 252);
+            this.AddRoomComboBox.Name = "AddRoomComboBox";
+            this.AddRoomComboBox.ShadowDecoration.Parent = this.AddRoomComboBox;
+            this.AddRoomComboBox.Size = new System.Drawing.Size(200, 36);
+            this.AddRoomComboBox.StartIndex = 0;
+            this.AddRoomComboBox.TabIndex = 66;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(1038, 219);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(110, 21);
+            this.label5.TabIndex = 67;
+            this.label5.Text = " Room Type";
+            // 
             // Room
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1254, 666);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.AddRoomComboBox);
             this.Controls.Add(this.RoomDataGridView);
             this.Controls.Add(this.labelRoomExist);
             this.Controls.Add(this.labelRoom);
             this.Controls.Add(this.DeleteRoomButton);
             this.Controls.Add(this.UpdateRoomButton);
             this.Controls.Add(this.SearchButton);
-            this.Controls.Add(this.guna2CheckBox2);
+            this.Controls.Add(this.CheckBox2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.UpdateDeleteTextBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.AddRoomButton);
-            this.Controls.Add(this.guna2CheckBox1);
+            this.Controls.Add(this.AddRoomCheckBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.AddRoomTextBox);
             this.Controls.Add(this.label1);
@@ -848,6 +893,7 @@ namespace Student_Log_In.DesignLayer
             this.Text = "Room";
             this.Load += new System.EventHandler(this.Room_Load);
             this.guna2Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiPictureBox)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LogoutButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
@@ -856,7 +902,6 @@ namespace Student_Log_In.DesignLayer
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EmojiPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dormitoryManagementDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dormitoryManagementDataSet1)).EndInit();
@@ -896,12 +941,12 @@ namespace Student_Log_In.DesignLayer
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox AddRoomTextBox;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
+        private Guna.UI2.WinForms.Guna2CheckBox AddRoomCheckBox;
         private Guna.UI2.WinForms.Guna2Button AddRoomButton;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox UpdateDeleteTextBox;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox2;
+        private Guna.UI2.WinForms.Guna2CheckBox CheckBox2;
         private Guna.UI2.WinForms.Guna2Button SearchButton;
         private Guna.UI2.WinForms.Guna2Button UpdateRoomButton;
         private Guna.UI2.WinForms.Guna2Button DeleteRoomButton;
@@ -921,5 +966,7 @@ namespace Student_Log_In.DesignLayer
         private System.Windows.Forms.DataGridViewTextBoxColumn roomNumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn roomTypeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bookedDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2ComboBox AddRoomComboBox;
     }
 }

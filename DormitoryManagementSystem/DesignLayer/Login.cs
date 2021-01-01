@@ -50,10 +50,7 @@ namespace Student_Log_In
 
         private void signupLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            
-            CreateStudentProfile studentProfile = new CreateStudentProfile();
-            studentProfile.Show();
-            this.Hide();
+           
         }
     }
 }
