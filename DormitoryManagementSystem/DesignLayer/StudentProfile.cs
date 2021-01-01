@@ -1,4 +1,8 @@
 ﻿using Student_Log_In;
+<<<<<<< HEAD
+=======
+using Student_Log_In.DataAccessLayer;
+>>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
 using Student_Log_In.DesignLayer;
 using System;
 using System.Collections.Generic;
@@ -16,8 +20,11 @@ namespace Student_Profile
 {
     public partial class CreateStudentProfile : Form
     {
+        Function fn = new Function();
+        String query;
         public CreateStudentProfile()
         {
+           
             InitializeComponent();
         }
 
@@ -32,7 +39,7 @@ namespace Student_Profile
         {
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DormitoryManagement"].ConnectionString);
             connection.Open();
-            string sql = "INSERT INTO student_user_create(UserName,FullName,Password,BloodGroup,DateOfBirth,PhoneNumber,Email,Gender,Address,EmergencyContactName,EmergencyPhoneNumber,EmergencyRelationship,VerficationId)VALUES('" + userNameTextBox.Text + "','" + FullNameTextBox.Text + "','" + PasswordTextBox.Text + "','" + BloodGroupComboBox.Text + "','" + DateOfBirthTextBox.Text + "'," + PhoneNumberTextBox.Text + ",'" + EmailTextBox.Text + "','" + GenderComboBox.Text + "','" + AddressTextBox.Text + "','" + EmergencyFullNameTextBox.Text + "'," + EmergencyPhoneNumberTextBox.Text + ",'" + emergencyRelationTextBox.Text + "','" + IdNumberTextBox.Text + "')";
+            string sql = "INSERT INTO New_student(UserName,FullName,Password,BloodGroup,DateOfBirth,PhoneNumber,Email,Gender,Address,EmergencyContactName,EmergencyPhoneNumber,EmergencyRelationship,VerficationId)VALUES('" + userNameTextBox.Text + "','" + FullNameTextBox.Text + "','" + PasswordTextBox.Text + "','" + BloodGroupComboBox.Text + "','" + DateTimePicker.Text + "'," + PhoneNumberTextBox.Text + ",'" + EmailTextBox.Text + "','" + GenderComboBox.Text + "','" + AddressTextBox.Text + "','" + EmergencyFullNameTextBox.Text + "'," + EmergencyPhoneNumberTextBox.Text + ",'" + emergencyRelationTextBox.Text + "','" + IdNumberTextBox.Text + "')";
 
 
             SqlCommand command = new SqlCommand(sql, connection);
@@ -41,7 +48,7 @@ namespace Student_Profile
             if (result > 0)
             {
                 MessageBox.Show("SuccessFully Created.");
-                userNameTextBox.Text = FullNameTextBox.Text = PasswordTextBox.Text = BloodGroupComboBox.Text = DateOfBirthTextBox.Text = PhoneNumberTextBox.Text = EmailTextBox.Text = GenderComboBox.Text = AddressTextBox.Text = EmergencyContactTextBox.Text = EmergencyPhoneNumberTextBox.Text = emergencyRelationTextBox.Text = IdNumberTextBox.Text = string.Empty;
+                userNameTextBox.Text = FullNameTextBox.Text = PasswordTextBox.Text = BloodGroupComboBox.Text = DateTimePicker.Text = PhoneNumberTextBox.Text = EmailTextBox.Text = GenderComboBox.Text = AddressTextBox.Text = EmergencyContactTextBox.Text = EmergencyPhoneNumberTextBox.Text = emergencyRelationTextBox.Text = IdNumberTextBox.Text = string.Empty;
             }
             else
             {
@@ -129,6 +136,16 @@ namespace Student_Profile
             this.Hide();
         }
 
+<<<<<<< HEAD
+=======
+        private void LogoutButton_Click(object sender, EventArgs e)
+        {
+            HomePage homePage = new HomePage();
+            homePage.Show();
+            this.Hide();
+        }
+
+>>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
         private void RoomButton_Click(object sender, EventArgs e)
         {
             Room room = new Room();
@@ -141,6 +158,10 @@ namespace Student_Profile
             Bed bed = new Bed();
             bed.Show();
             this.Hide();
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
         }
 
         private void TenantsButton_Click(object sender, EventArgs e)
@@ -170,5 +191,34 @@ namespace Student_Profile
             aboutUs.Show();
             this.Hide();
         }
+<<<<<<< HEAD
+=======
+
+        private void StudentButton_Click(object sender, EventArgs e)
+        {
+            Tenants tenants = new Tenants();
+            tenants.Show();
+            this.Hide();
+        }
+
+        private void ExpenseBox_Click(object sender, EventArgs e)
+        {
+            Expense expense = new Expense();
+            expense.Show();
+            this.Hide();
+        }
+
+        private void CreateStudentProfile_Load(object sender, EventArgs e)
+        {
+            query = "SELECT RoomNumber FROM rooms where Booked='No'";
+            DataSet ds = fn.getData(query);
+            for (int i = 0; i < ds.Tables[0].Rows.Count;i++)
+            {
+                Int64 room = Int64.Parse(ds.Tables[0].Rows[i][0].ToString());
+                RoomNoComboBox.Items.Add(room);
+            }
+
+        }
+>>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
     }
 }

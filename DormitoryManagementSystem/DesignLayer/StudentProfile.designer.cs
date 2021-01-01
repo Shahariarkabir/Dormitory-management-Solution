@@ -36,7 +36,6 @@ namespace Student_Profile
             this.PhoneNumberTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.EmailTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.AddressTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.DateOfBirthTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
             this.PasswordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.ConfirmPasswordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -66,7 +65,7 @@ namespace Student_Profile
             this.EmergencyPhoneNumberLabel = new System.Windows.Forms.Label();
             this.RelationTextBox = new System.Windows.Forms.Label();
             this.RoomNumberLabel = new System.Windows.Forms.Label();
-            this.RoomTypeComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.RoomNoComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.CreateProfileButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -103,6 +102,7 @@ namespace Student_Profile
             this.guna2PictureBox12 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.DateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EmojiBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -241,34 +241,6 @@ namespace Student_Profile
             this.AddressTextBox.ShadowDecoration.Parent = this.AddressTextBox;
             this.AddressTextBox.Size = new System.Drawing.Size(586, 51);
             this.AddressTextBox.TabIndex = 4;
-            // 
-            // DateOfBirthTextBox
-            // 
-            this.DateOfBirthTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.DateOfBirthTextBox.BorderRadius = 4;
-            this.DateOfBirthTextBox.BorderThickness = 2;
-            this.DateOfBirthTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.DateOfBirthTextBox.DefaultText = "";
-            this.DateOfBirthTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.DateOfBirthTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.DateOfBirthTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.DateOfBirthTextBox.DisabledState.Parent = this.DateOfBirthTextBox;
-            this.DateOfBirthTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.DateOfBirthTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DateOfBirthTextBox.FocusedState.Parent = this.DateOfBirthTextBox;
-            this.DateOfBirthTextBox.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
-            this.DateOfBirthTextBox.ForeColor = System.Drawing.Color.Black;
-            this.DateOfBirthTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DateOfBirthTextBox.HoverState.Parent = this.DateOfBirthTextBox;
-            this.DateOfBirthTextBox.Location = new System.Drawing.Point(506, 257);
-            this.DateOfBirthTextBox.Margin = new System.Windows.Forms.Padding(6);
-            this.DateOfBirthTextBox.Name = "DateOfBirthTextBox";
-            this.DateOfBirthTextBox.PasswordChar = '\0';
-            this.DateOfBirthTextBox.PlaceholderText = "";
-            this.DateOfBirthTextBox.SelectedText = "";
-            this.DateOfBirthTextBox.ShadowDecoration.Parent = this.DateOfBirthTextBox;
-            this.DateOfBirthTextBox.Size = new System.Drawing.Size(258, 51);
-            this.DateOfBirthTextBox.TabIndex = 5;
             // 
             // guna2TextBox7
             // 
@@ -686,7 +658,7 @@ namespace Student_Profile
             // 
             this.DateOfBirthLabel.AutoSize = true;
             this.DateOfBirthLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateOfBirthLabel.Location = new System.Drawing.Point(531, 252);
+            this.DateOfBirthLabel.Location = new System.Drawing.Point(510, 257);
             this.DateOfBirthLabel.Name = "DateOfBirthLabel";
             this.DateOfBirthLabel.Size = new System.Drawing.Size(98, 15);
             this.DateOfBirthLabel.TabIndex = 28;
@@ -767,34 +739,31 @@ namespace Student_Profile
             this.RoomNumberLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RoomNumberLabel.Location = new System.Drawing.Point(1115, 331);
             this.RoomNumberLabel.Name = "RoomNumberLabel";
-            this.RoomNumberLabel.Size = new System.Drawing.Size(70, 15);
+            this.RoomNumberLabel.Size = new System.Drawing.Size(56, 15);
             this.RoomNumberLabel.TabIndex = 38;
-            this.RoomNumberLabel.Text = "Room Type";
+            this.RoomNumberLabel.Text = "Room No";
             // 
-            // RoomTypeComboBox
+            // RoomNoComboBox
             // 
-            this.RoomTypeComboBox.BackColor = System.Drawing.Color.Transparent;
-            this.RoomTypeComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.RoomTypeComboBox.BorderRadius = 4;
-            this.RoomTypeComboBox.BorderThickness = 2;
-            this.RoomTypeComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.RoomTypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.RoomTypeComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.RoomTypeComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.RoomTypeComboBox.FocusedState.Parent = this.RoomTypeComboBox;
-            this.RoomTypeComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.RoomTypeComboBox.ForeColor = System.Drawing.Color.Black;
-            this.RoomTypeComboBox.HoverState.Parent = this.RoomTypeComboBox;
-            this.RoomTypeComboBox.ItemHeight = 30;
-            this.RoomTypeComboBox.Items.AddRange(new object[] {
-            "Single",
-            "Double"});
-            this.RoomTypeComboBox.ItemsAppearance.Parent = this.RoomTypeComboBox;
-            this.RoomTypeComboBox.Location = new System.Drawing.Point(1108, 349);
-            this.RoomTypeComboBox.Name = "RoomTypeComboBox";
-            this.RoomTypeComboBox.ShadowDecoration.Parent = this.RoomTypeComboBox;
-            this.RoomTypeComboBox.Size = new System.Drawing.Size(112, 36);
-            this.RoomTypeComboBox.TabIndex = 43;
+            this.RoomNoComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.RoomNoComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.RoomNoComboBox.BorderRadius = 4;
+            this.RoomNoComboBox.BorderThickness = 2;
+            this.RoomNoComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.RoomNoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.RoomNoComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.RoomNoComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.RoomNoComboBox.FocusedState.Parent = this.RoomNoComboBox;
+            this.RoomNoComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.RoomNoComboBox.ForeColor = System.Drawing.Color.Black;
+            this.RoomNoComboBox.HoverState.Parent = this.RoomNoComboBox;
+            this.RoomNoComboBox.ItemHeight = 30;
+            this.RoomNoComboBox.ItemsAppearance.Parent = this.RoomNoComboBox;
+            this.RoomNoComboBox.Location = new System.Drawing.Point(1108, 349);
+            this.RoomNoComboBox.Name = "RoomNoComboBox";
+            this.RoomNoComboBox.ShadowDecoration.Parent = this.RoomNoComboBox;
+            this.RoomNoComboBox.Size = new System.Drawing.Size(112, 36);
+            this.RoomNoComboBox.TabIndex = 43;
             // 
             // CreateProfileButton
             // 
@@ -878,6 +847,7 @@ namespace Student_Profile
             this.ExpenseBox.Size = new System.Drawing.Size(116, 22);
             this.ExpenseBox.TabIndex = 53;
             this.ExpenseBox.Text = "Expense";
+            this.ExpenseBox.Click += new System.EventHandler(this.ExpenseBox_Click);
             // 
             // RoomBox
             // 
@@ -912,6 +882,7 @@ namespace Student_Profile
             this.StudentButton.Size = new System.Drawing.Size(147, 22);
             this.StudentButton.TabIndex = 12;
             this.StudentButton.Text = "Student";
+            this.StudentButton.Click += new System.EventHandler(this.StudentButton_Click);
             // 
             // guna2PictureBox2
             // 
@@ -967,7 +938,7 @@ namespace Student_Profile
             this.BloodGroupComboBox.Location = new System.Drawing.Point(808, 179);
             this.BloodGroupComboBox.Name = "BloodGroupComboBox";
             this.BloodGroupComboBox.ShadowDecoration.Parent = this.BloodGroupComboBox;
-            this.BloodGroupComboBox.Size = new System.Drawing.Size(175, 36);
+            this.BloodGroupComboBox.Size = new System.Drawing.Size(258, 36);
             this.BloodGroupComboBox.TabIndex = 51;
             // 
             // GenderComboBox
@@ -990,7 +961,7 @@ namespace Student_Profile
             "Female",
             "Others"});
             this.GenderComboBox.ItemsAppearance.Parent = this.GenderComboBox;
-            this.GenderComboBox.Location = new System.Drawing.Point(506, 355);
+            this.GenderComboBox.Location = new System.Drawing.Point(506, 353);
             this.GenderComboBox.Name = "GenderComboBox";
             this.GenderComboBox.ShadowDecoration.Parent = this.GenderComboBox;
             this.GenderComboBox.Size = new System.Drawing.Size(258, 36);
@@ -1087,6 +1058,7 @@ namespace Student_Profile
             this.LogoutButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.LogoutButton.TabIndex = 140;
             this.LogoutButton.TabStop = false;
+            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
             // guna2PictureBox1
             // 
@@ -1285,12 +1257,32 @@ namespace Student_Profile
             this.guna2PictureBox4.TabIndex = 0;
             this.guna2PictureBox4.TabStop = false;
             // 
+            // DateTimePicker
+            // 
+            this.DateTimePicker.BorderColor = System.Drawing.Color.MediumBlue;
+            this.DateTimePicker.BorderRadius = 4;
+            this.DateTimePicker.BorderThickness = 2;
+            this.DateTimePicker.CheckedState.Parent = this.DateTimePicker;
+            this.DateTimePicker.FillColor = System.Drawing.Color.White;
+            this.DateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DateTimePicker.HoverState.Parent = this.DateTimePicker;
+            this.DateTimePicker.Location = new System.Drawing.Point(506, 275);
+            this.DateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DateTimePicker.Name = "DateTimePicker";
+            this.DateTimePicker.ShadowDecoration.Parent = this.DateTimePicker;
+            this.DateTimePicker.Size = new System.Drawing.Size(258, 51);
+            this.DateTimePicker.TabIndex = 56;
+            this.DateTimePicker.Value = new System.DateTime(2021, 1, 1, 0, 5, 14, 451);
+            // 
             // CreateStudentProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1250, 666);
+            this.Controls.Add(this.DateTimePicker);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.UpdatePhotoPictureBox);
             this.Controls.Add(this.guna2Button9);
@@ -1300,7 +1292,7 @@ namespace Student_Profile
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2PictureBox16);
             this.Controls.Add(this.CreateProfileButton);
-            this.Controls.Add(this.RoomTypeComboBox);
+            this.Controls.Add(this.RoomNoComboBox);
             this.Controls.Add(this.RoomNumberLabel);
             this.Controls.Add(this.RelationTextBox);
             this.Controls.Add(this.EmergencyPhoneNumberLabel);
@@ -1330,7 +1322,6 @@ namespace Student_Profile
             this.Controls.Add(this.ConfirmPasswordTextBox);
             this.Controls.Add(this.PasswordTextBox);
             this.Controls.Add(this.guna2TextBox7);
-            this.Controls.Add(this.DateOfBirthTextBox);
             this.Controls.Add(this.AddressTextBox);
             this.Controls.Add(this.EmailTextBox);
             this.Controls.Add(this.PhoneNumberTextBox);
@@ -1341,6 +1332,7 @@ namespace Student_Profile
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CreateStudentProfile_FormClosing);
+            this.Load += new System.EventHandler(this.CreateStudentProfile_Load);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EmojiBox)).EndInit();
@@ -1370,7 +1362,6 @@ namespace Student_Profile
         private Guna.UI2.WinForms.Guna2TextBox PhoneNumberTextBox;
         private Guna.UI2.WinForms.Guna2TextBox EmailTextBox;
         private Guna.UI2.WinForms.Guna2TextBox AddressTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox DateOfBirthTextBox;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
         private Guna.UI2.WinForms.Guna2TextBox PasswordTextBox;
         private Guna.UI2.WinForms.Guna2TextBox ConfirmPasswordTextBox;
@@ -1400,7 +1391,7 @@ namespace Student_Profile
         private System.Windows.Forms.Label EmergencyPhoneNumberLabel;
         private System.Windows.Forms.Label RelationTextBox;
         private System.Windows.Forms.Label RoomNumberLabel;
-        private Guna.UI2.WinForms.Guna2ComboBox RoomTypeComboBox;
+        private Guna.UI2.WinForms.Guna2ComboBox RoomNoComboBox;
         private Guna.UI2.WinForms.Guna2Button CreateProfileButton;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox9;
@@ -1437,6 +1428,7 @@ namespace Student_Profile
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox12;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox11;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DateTimePicker;
     }
 }
 
