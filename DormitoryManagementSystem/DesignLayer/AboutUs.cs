@@ -102,10 +102,5 @@ namespace Student_Log_In.DesignLayer
             room.Show();
             this.Hide();
         }
-
-        private void EmojiPictureBox_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

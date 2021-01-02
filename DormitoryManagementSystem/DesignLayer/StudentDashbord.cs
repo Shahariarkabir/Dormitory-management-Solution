@@ -1,9 +1,4 @@
-<<<<<<< Updated upstream
-﻿using Student_Profile;
-using System;
-=======
 ﻿using System;
->>>>>>> Stashed changes
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,8 +12,6 @@ namespace Student_Log_In.DesignLayer
 {
     public partial class StudentDashbord : Form
     {
-<<<<<<< Updated upstream
-=======
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2PictureBox LogOutBox;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
@@ -37,43 +30,11 @@ namespace Student_Log_In.DesignLayer
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
 
->>>>>>> Stashed changes
         public StudentDashbord()
         {
             InitializeComponent();
         }
 
-<<<<<<< Updated upstream
-        private void StudentDashBoardButton_Click(object sender, EventArgs e)
-        {
-            Dashboard dashboard = new Dashboard();
-            dashboard.Show();
-            this.Hide();
-        }
-
-        private void StudentRoomButton_Click(object sender, EventArgs e)
-        {
-            Room room = new Room();
-            room.Show();
-            this.Hide();
-        }
-
-        private void StudentExpenseButton_Click(object sender, EventArgs e)
-        {
-            Expense expense = new Expense();
-            expense.Show();
-            this.Hide();
-        }
-
-        private void StudentSettingsButton_Click(object sender, EventArgs e)
-        {
-            Setting setting = new Setting();
-            setting.Show();
-            this.Hide();
-        }
-
-        private void StudentAboutUsButton_Click(object sender, EventArgs e)
-=======
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -382,33 +343,15 @@ namespace Student_Log_In.DesignLayer
         }
 
         private void AboutUsButton_Click(object sender, EventArgs e)
->>>>>>> Stashed changes
         {
             AboutUs aboutUs = new AboutUs();
             aboutUs.Show();
             this.Hide();
         }
 
-<<<<<<< Updated upstream
-        private void StudentEmojiBox_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Thanks For Using Our System");
-        }
-
-        private void LogOutBox_Click(object sender, EventArgs e)
-        {
-            HomePage homePage = new HomePage();
-            homePage.Show();
-            this.Hide();
-        }
-    }
-}
-
-=======
         private void ExpenseButton_Click(object sender, EventArgs e)
         {
 
         }
     }
 }
->>>>>>> Stashed changes

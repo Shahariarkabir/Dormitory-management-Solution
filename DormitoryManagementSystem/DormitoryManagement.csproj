@@ -98,35 +98,11 @@
     <Compile Include="DesignLayer\Setting.Designer.cs">
       <DependentUpon>Setting.cs</DependentUpon>
     </Compile>
-    <Compile Include="DesignLayer\StudentDashbord.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DesignLayer\StudentDashbord.Designer.cs">
-      <DependentUpon>StudentDashbord.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DesignLayer\StudentExpense.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DesignLayer\StudentExpense.Designer.cs">
-      <DependentUpon>StudentExpense.cs</DependentUpon>
-    </Compile>
     <Compile Include="DesignLayer\StudentProfile.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DesignLayer\StudentProfile.designer.cs">
       <DependentUpon>StudentProfile.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DesignLayer\StudentRoom.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DesignLayer\StudentRoom.Designer.cs">
-      <DependentUpon>StudentRoom.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DesignLayer\StudentSettings.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DesignLayer\StudentSettings.Designer.cs">
-      <DependentUpon>StudentSettings.cs</DependentUpon>
     </Compile>
     <Compile Include="DesignLayer\Tenants.cs">
       <SubType>Form</SubType>
@@ -198,20 +174,8 @@
     <EmbeddedResource Include="DesignLayer\StudentDashbord.resx">
       <DependentUpon>StudentDashbord.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< Updated upstream
-    <EmbeddedResource Include="DesignLayer\StudentExpense.resx">
-      <DependentUpon>StudentExpense.cs</DependentUpon>
-    </EmbeddedResource>
-=======
->>>>>>> Stashed changes
     <EmbeddedResource Include="DesignLayer\StudentProfile.resx">
       <DependentUpon>StudentProfile.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DesignLayer\StudentRoom.resx">
-      <DependentUpon>StudentRoom.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DesignLayer\StudentSettings.resx">
-      <DependentUpon>StudentSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DesignLayer\Tenants.resx">
       <DependentUpon>Tenants.cs</DependentUpon>
