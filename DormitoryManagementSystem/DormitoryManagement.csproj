@@ -53,9 +53,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLayer\StudentService.cs" />
     <Compile Include="BusinessLayer\UserService.cs" />
     <Compile Include="DataAccessLayer\DataAccess.cs" />
     <Compile Include="DataAccessLayer\Function.cs" />
+    <Compile Include="DataAccessLayer\StudentAccess.cs" />
+    <Compile Include="DesignLayer\StudentDashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DataAccessLayer\UserAccess.cs" />
     <Compile Include="DesignLayer\AboutUs.cs">
       <SubType>Form</SubType>
@@ -193,9 +198,12 @@
     <EmbeddedResource Include="DesignLayer\StudentDashbord.resx">
       <DependentUpon>StudentDashbord.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< Updated upstream
     <EmbeddedResource Include="DesignLayer\StudentExpense.resx">
       <DependentUpon>StudentExpense.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> Stashed changes
     <EmbeddedResource Include="DesignLayer\StudentProfile.resx">
       <DependentUpon>StudentProfile.cs</DependentUpon>
     </EmbeddedResource>

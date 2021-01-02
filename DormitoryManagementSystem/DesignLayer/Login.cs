@@ -34,23 +34,33 @@ namespace Student_Log_In
             else
             {
                 UserService userService = new UserService();
-                bool result = userService.LoginValidation(userNameTextBox.Text, userPasswordTextBox.Text);
-                if (result)
+                StudentService studentService = new StudentService();
+                bool userResult = userService.LoginValidation(userNameTextBox.Text, userPasswordTextBox.Text);
+                bool studentResult = studentService.LoginValidation(userNameTextBox.Text, userPasswordTextBox.Text);
+                if (userResult)
                 {
                     Dashboard dashboard = new Dashboard();
                     dashboard.Show();
                     this.Hide();
                 }
+                else if(studentResult)
+                {
+                    StudentDashbord student = new StudentDashbord();
+                    student.Show();
+                    this.Hide();
+                }
                 else
                 {
-                    MessageBox.Show("Invalid Username or password");
+                    MessageBox.Show("Invalid User Name or Password!!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
 
         private void signupLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-           
+            CreateStudentProfile profile = new CreateStudentProfile();
+            profile.Show();
+            this.Hide();
         }
 
        

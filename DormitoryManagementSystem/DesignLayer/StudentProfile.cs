@@ -199,5 +199,9 @@ namespace Student_Profile
 
         }
 
+        private void ConfirmPasswordTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

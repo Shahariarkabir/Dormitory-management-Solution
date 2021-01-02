@@ -32,3 +32,4 @@ D:\Github\Dormitory-management-Solution\DormitoryManagementSystem\obj\Debug\Stud
 D:\Github\Dormitory-management-Solution\DormitoryManagementSystem\obj\Debug\Student_Log_In.DesignLayer.AboutUs.resources
 D:\Github\Dormitory-management-Solution\DormitoryManagementSystem\obj\Debug\Student_Log_In.HomePage.resources
 D:\Github\Dormitory-management-Solution\DormitoryManagementSystem\obj\Debug\Student_Log_In.DesignLayer.UpdateDeleteInformation.resources
+D:\Github\Dormitory-management-Solution\DormitoryManagementSystem\obj\Debug\Student_Log_In.DesignLayer.StudentDashbord.resources

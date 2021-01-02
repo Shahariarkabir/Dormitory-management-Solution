@@ -329,6 +329,7 @@ namespace Student_Profile
             this.ConfirmPasswordTextBox.Size = new System.Drawing.Size(258, 51);
             this.ConfirmPasswordTextBox.TabIndex = 10;
             this.ConfirmPasswordTextBox.UseSystemPasswordChar = true;
+            this.ConfirmPasswordTextBox.TextChanged += new System.EventHandler(this.ConfirmPasswordTextBox_TextChanged);
             // 
             // IdNumberTextBox
             // 
@@ -1045,10 +1046,10 @@ namespace Student_Profile
             this.guna2Panel1.Controls.Add(this.guna2PictureBox12);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox11);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox4);
-            this.guna2Panel1.Location = new System.Drawing.Point(1, 2);
+            this.guna2Panel1.Location = new System.Drawing.Point(1, -1);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(135, 679);
+            this.guna2Panel1.Size = new System.Drawing.Size(135, 682);
             this.guna2Panel1.TabIndex = 55;
             // 
             // LogoutButton

@@ -76,17 +76,30 @@ namespace Student_Log_In.DesignLayer
             this.Hide();
         }
 
-        private void AboutUsButton_Click(object sender, EventArgs e)
-        {
-            AboutUs aboutUs = new AboutUs();
-            aboutUs.Show();
-            this.Hide();
-        }
-
+       
         private void LogoutButton_Click(object sender, EventArgs e)
         {
             HomePage homePage = new HomePage();
             homePage.Show();
+            this.Hide();
+        }
+
+        private void EmojiPictureBox_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(" Thanks For using Our System");
+        }
+
+        private void StudentBox_Click(object sender, EventArgs e)
+        {
+            CreateStudentProfile studentProfile = new CreateStudentProfile();
+            studentProfile.Show();
+            this.Hide();
+        }
+
+        private void RoomBox_Click(object sender, EventArgs e)
+        {
+            Room room = new Room();
+            room.Show();
             this.Hide();
         }
 

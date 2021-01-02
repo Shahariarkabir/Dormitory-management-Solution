@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -83,6 +84,97 @@ namespace Student_Profile
             AboutUs aboutUs = new AboutUs();
             aboutUs.Show();
             this.Hide();
+        }
+
+        private void TotalStudentButton_Click(object sender, EventArgs e)
+        {
+            /*string str = "data source = .\\sqlexpress; database= DormitoryManagement;integrated security=true;";
+            SqlConnection sqlConnection = new SqlConnection(str);
+            SqlCommand command;
+            string sql = "SELECT count(UserId) FROM New_student";
+            try
+            {
+                sqlConnection.Open();
+                command = new SqlCommand(sql, sqlConnection);
+                
+                Int32 rows_Count = Convert.ToInt32(command.ExecuteScalar());
+                command.Dispose();
+                label33.ForeColor = Color.Blue;
+                label33.Text = " "+rows_Count.ToString();
+                sqlConnection.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message); 
+            }*/
+        }
+
+        
+
+        private void label33_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+            timer2.Start();
+        }
+        
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            string str = "data source = .\\sqlexpress; database= DormitoryManagement;integrated security=true;";
+            SqlConnection sqlConnection = new SqlConnection(str);
+            SqlCommand command;
+            string sql = "SELECT count(UserId) FROM New_student";
+            try
+            {
+                sqlConnection.Open();
+                command = new SqlCommand(sql, sqlConnection);
+
+                Int32 rows_Count = Convert.ToInt32(command.ExecuteScalar());
+                command.Dispose();
+                label33.ForeColor = Color.Blue;
+                
+                label33.Text = " " + rows_Count.ToString();
+                sqlConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void guna2Panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            string str = "data source = .\\sqlexpress; database= DormitoryManagement;integrated security=true;";
+            SqlConnection sqlConnection = new SqlConnection(str);
+            SqlCommand command;
+            string sql = "SELECT count(RoomNumber) FROM rooms";
+            try
+            {
+                sqlConnection.Open();
+                command = new SqlCommand(sql, sqlConnection);
+
+                Int32 rows_Count = Convert.ToInt32(command.ExecuteScalar());
+                command.Dispose();
+                label37.ForeColor = Color.Blue;
+
+                label37.Text = " " + rows_Count.ToString();
+                sqlConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
     }
 }

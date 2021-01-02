@@ -50,7 +50,6 @@ namespace Student_Profile
             this.SettingsButton = new Guna.UI2.WinForms.Guna2Button();
             this.ExpenseButton = new Guna.UI2.WinForms.Guna2Button();
             this.TenantsButton = new Guna.UI2.WinForms.Guna2Button();
-            this.BedButton = new Guna.UI2.WinForms.Guna2Button();
             this.RoomButton = new Guna.UI2.WinForms.Guna2Button();
             this.DashBoardButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox14 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -101,15 +100,8 @@ namespace Student_Profile
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
             this.label32 = new System.Windows.Forms.Label();
-            this.guna2Button12 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button13 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button14 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button15 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CirclePictureBox17 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2CirclePictureBox16 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2CirclePictureBox15 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -125,6 +117,14 @@ namespace Student_Profile
             this.guna2CirclePictureBox11 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2CirclePictureBox12 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2PictureBox9 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label35 = new System.Windows.Forms.Label();
+            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EmojiBox)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -150,6 +150,8 @@ namespace Student_Profile
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).BeginInit();
+            this.guna2Panel3.SuspendLayout();
+            this.guna2Panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2TextBox17
@@ -362,7 +364,6 @@ namespace Student_Profile
             this.guna2Panel1.Controls.Add(this.SettingsButton);
             this.guna2Panel1.Controls.Add(this.ExpenseButton);
             this.guna2Panel1.Controls.Add(this.TenantsButton);
-            this.guna2Panel1.Controls.Add(this.BedButton);
             this.guna2Panel1.Controls.Add(this.RoomButton);
             this.guna2Panel1.Controls.Add(this.DashBoardButton);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox14);
@@ -408,7 +409,7 @@ namespace Student_Profile
             this.AboutUsButton.HoverState.Parent = this.AboutUsButton;
             this.AboutUsButton.Image = global::Student_Log_In.Properties.Resources.Vector__10_;
             this.AboutUsButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.AboutUsButton.Location = new System.Drawing.Point(2, 417);
+            this.AboutUsButton.Location = new System.Drawing.Point(2, 363);
             this.AboutUsButton.Name = "AboutUsButton";
             this.AboutUsButton.ShadowDecoration.Parent = this.AboutUsButton;
             this.AboutUsButton.Size = new System.Drawing.Size(127, 22);
@@ -428,7 +429,7 @@ namespace Student_Profile
             this.SettingsButton.HoverState.Parent = this.SettingsButton;
             this.SettingsButton.Image = global::Student_Log_In.Properties.Resources.options1;
             this.SettingsButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.SettingsButton.Location = new System.Drawing.Point(2, 365);
+            this.SettingsButton.Location = new System.Drawing.Point(2, 311);
             this.SettingsButton.Name = "SettingsButton";
             this.SettingsButton.ShadowDecoration.Parent = this.SettingsButton;
             this.SettingsButton.Size = new System.Drawing.Size(127, 22);
@@ -448,7 +449,7 @@ namespace Student_Profile
             this.ExpenseButton.HoverState.Parent = this.ExpenseButton;
             this.ExpenseButton.Image = global::Student_Log_In.Properties.Resources.Vector;
             this.ExpenseButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.ExpenseButton.Location = new System.Drawing.Point(3, 315);
+            this.ExpenseButton.Location = new System.Drawing.Point(3, 261);
             this.ExpenseButton.Name = "ExpenseButton";
             this.ExpenseButton.ShadowDecoration.Parent = this.ExpenseButton;
             this.ExpenseButton.Size = new System.Drawing.Size(129, 22);
@@ -468,7 +469,7 @@ namespace Student_Profile
             this.TenantsButton.HoverState.Parent = this.TenantsButton;
             this.TenantsButton.Image = global::Student_Log_In.Properties.Resources.profile;
             this.TenantsButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TenantsButton.Location = new System.Drawing.Point(3, 265);
+            this.TenantsButton.Location = new System.Drawing.Point(3, 213);
             this.TenantsButton.Name = "TenantsButton";
             this.TenantsButton.ShadowDecoration.Parent = this.TenantsButton;
             this.TenantsButton.Size = new System.Drawing.Size(129, 22);
@@ -476,26 +477,6 @@ namespace Student_Profile
             this.TenantsButton.Text = "Tenants";
             this.TenantsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TenantsButton.Click += new System.EventHandler(this.TenantsButton_Click);
-            // 
-            // BedButton
-            // 
-            this.BedButton.CheckedState.Parent = this.BedButton;
-            this.BedButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BedButton.CustomImages.Parent = this.BedButton;
-            this.BedButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.BedButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold);
-            this.BedButton.ForeColor = System.Drawing.Color.Black;
-            this.BedButton.HoverState.Parent = this.BedButton;
-            this.BedButton.Image = global::Student_Log_In.Properties.Resources.terrain;
-            this.BedButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BedButton.Location = new System.Drawing.Point(3, 216);
-            this.BedButton.Name = "BedButton";
-            this.BedButton.ShadowDecoration.Parent = this.BedButton;
-            this.BedButton.Size = new System.Drawing.Size(129, 22);
-            this.BedButton.TabIndex = 140;
-            this.BedButton.Text = "Bed";
-            this.BedButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BedButton.Click += new System.EventHandler(this.BedButton_Click);
             // 
             // RoomButton
             // 
@@ -1161,20 +1142,6 @@ namespace Student_Profile
             this.label1.TabIndex = 87;
             this.label1.Text = "Transiction History";
             // 
-            // linkLabel4
-            // 
-            this.linkLabel4.AutoSize = true;
-            this.linkLabel4.BackColor = System.Drawing.Color.White;
-            this.linkLabel4.DisabledLinkColor = System.Drawing.Color.White;
-            this.linkLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel4.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
-            this.linkLabel4.Location = new System.Drawing.Point(1056, 230);
-            this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(79, 20);
-            this.linkLabel4.TabIndex = 85;
-            this.linkLabel4.TabStop = true;
-            this.linkLabel4.Text = "$ 12,174";
-            // 
             // linkLabel3
             // 
             this.linkLabel3.AutoSize = true;
@@ -1182,39 +1149,10 @@ namespace Student_Profile
             this.linkLabel3.DisabledLinkColor = System.Drawing.Color.White;
             this.linkLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel3.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
-            this.linkLabel3.Location = new System.Drawing.Point(803, 229);
+            this.linkLabel3.Location = new System.Drawing.Point(538, 220);
             this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(39, 20);
+            this.linkLabel3.Size = new System.Drawing.Size(0, 20);
             this.linkLabel3.TabIndex = 84;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "104";
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.BackColor = System.Drawing.Color.White;
-            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
-            this.linkLabel2.Location = new System.Drawing.Point(547, 228);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(29, 20);
-            this.linkLabel2.TabIndex = 83;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "24";
-            // 
-            // linkLabel5
-            // 
-            this.linkLabel5.AutoSize = true;
-            this.linkLabel5.BackColor = System.Drawing.Color.White;
-            this.linkLabel5.DisabledLinkColor = System.Drawing.Color.White;
-            this.linkLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel5.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
-            this.linkLabel5.Location = new System.Drawing.Point(275, 230);
-            this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(39, 20);
-            this.linkLabel5.TabIndex = 82;
-            this.linkLabel5.TabStop = true;
-            this.linkLabel5.Text = "213";
             // 
             // label32
             // 
@@ -1226,79 +1164,6 @@ namespace Student_Profile
             this.label32.Size = new System.Drawing.Size(220, 50);
             this.label32.TabIndex = 139;
             this.label32.Text = "Dashboard";
-            // 
-            // guna2Button12
-            // 
-            this.guna2Button12.BorderRadius = 20;
-            this.guna2Button12.CheckedState.Parent = this.guna2Button12;
-            this.guna2Button12.CustomImages.Parent = this.guna2Button12;
-            this.guna2Button12.FillColor = System.Drawing.Color.White;
-            this.guna2Button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button12.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button12.HoverState.Parent = this.guna2Button12;
-            this.guna2Button12.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button12.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button12.Location = new System.Drawing.Point(445, 167);
-            this.guna2Button12.Name = "guna2Button12";
-            this.guna2Button12.ShadowDecoration.Parent = this.guna2Button12;
-            this.guna2Button12.Size = new System.Drawing.Size(226, 88);
-            this.guna2Button12.TabIndex = 81;
-            this.guna2Button12.Text = "Bad Capacity";
-            // 
-            // guna2Button13
-            // 
-            this.guna2Button13.BorderRadius = 20;
-            this.guna2Button13.CheckedState.Parent = this.guna2Button13;
-            this.guna2Button13.CustomImages.Parent = this.guna2Button13;
-            this.guna2Button13.FillColor = System.Drawing.Color.White;
-            this.guna2Button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button13.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button13.HoverState.Parent = this.guna2Button13;
-            this.guna2Button13.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button13.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button13.Location = new System.Drawing.Point(976, 167);
-            this.guna2Button13.Name = "guna2Button13";
-            this.guna2Button13.ShadowDecoration.Parent = this.guna2Button13;
-            this.guna2Button13.Size = new System.Drawing.Size(226, 88);
-            this.guna2Button13.TabIndex = 80;
-            this.guna2Button13.Text = "Expense";
-            // 
-            // guna2Button14
-            // 
-            this.guna2Button14.BorderRadius = 20;
-            this.guna2Button14.CheckedState.Parent = this.guna2Button14;
-            this.guna2Button14.CustomImages.Parent = this.guna2Button14;
-            this.guna2Button14.FillColor = System.Drawing.Color.White;
-            this.guna2Button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button14.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button14.HoverState.Parent = this.guna2Button14;
-            this.guna2Button14.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button14.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button14.Location = new System.Drawing.Point(708, 167);
-            this.guna2Button14.Name = "guna2Button14";
-            this.guna2Button14.ShadowDecoration.Parent = this.guna2Button14;
-            this.guna2Button14.Size = new System.Drawing.Size(226, 88);
-            this.guna2Button14.TabIndex = 79;
-            this.guna2Button14.Text = "Total Student";
-            // 
-            // guna2Button15
-            // 
-            this.guna2Button15.BorderRadius = 20;
-            this.guna2Button15.CheckedState.Parent = this.guna2Button15;
-            this.guna2Button15.CustomImages.Parent = this.guna2Button15;
-            this.guna2Button15.FillColor = System.Drawing.Color.White;
-            this.guna2Button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button15.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button15.HoverState.Parent = this.guna2Button15;
-            this.guna2Button15.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button15.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button15.Location = new System.Drawing.Point(179, 167);
-            this.guna2Button15.Name = "guna2Button15";
-            this.guna2Button15.ShadowDecoration.Parent = this.guna2Button15;
-            this.guna2Button15.Size = new System.Drawing.Size(226, 88);
-            this.guna2Button15.TabIndex = 78;
-            this.guna2Button15.Text = "Room Availabe";
-            this.guna2Button15.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // guna2CirclePictureBox17
             // 
@@ -1463,12 +1328,96 @@ namespace Student_Profile
             this.guna2PictureBox9.TabIndex = 48;
             this.guna2PictureBox9.TabStop = false;
             // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.BackColor = System.Drawing.Color.White;
+            this.label33.Font = new System.Drawing.Font("JetBrains Mono", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(50, 41);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(89, 26);
+            this.label33.TabIndex = 140;
+            this.label33.Text = "label33";
+            this.label33.TextChanged += new System.EventHandler(this.label33_TextChanged);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.BackColor = System.Drawing.Color.White;
+            this.guna2Panel3.BorderColor = System.Drawing.Color.DarkBlue;
+            this.guna2Panel3.BorderRadius = 4;
+            this.guna2Panel3.BorderThickness = 2;
+            this.guna2Panel3.Controls.Add(this.label35);
+            this.guna2Panel3.Controls.Add(this.label33);
+            this.guna2Panel3.Location = new System.Drawing.Point(178, 165);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
+            this.guna2Panel3.Size = new System.Drawing.Size(189, 85);
+            this.guna2Panel3.TabIndex = 143;
+            this.guna2Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel3_Paint);
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.BackColor = System.Drawing.Color.White;
+            this.label35.Font = new System.Drawing.Font("JetBrains Mono", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(18, 7);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(155, 26);
+            this.label35.TabIndex = 141;
+            this.label35.Text = "Total Student";
+            // 
+            // guna2Panel4
+            // 
+            this.guna2Panel4.BackColor = System.Drawing.Color.White;
+            this.guna2Panel4.BorderColor = System.Drawing.Color.DarkBlue;
+            this.guna2Panel4.BorderRadius = 4;
+            this.guna2Panel4.BorderThickness = 2;
+            this.guna2Panel4.Controls.Add(this.label36);
+            this.guna2Panel4.Controls.Add(this.label37);
+            this.guna2Panel4.Location = new System.Drawing.Point(492, 165);
+            this.guna2Panel4.Name = "guna2Panel4";
+            this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
+            this.guna2Panel4.Size = new System.Drawing.Size(189, 85);
+            this.guna2Panel4.TabIndex = 144;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.BackColor = System.Drawing.Color.White;
+            this.label36.Font = new System.Drawing.Font("JetBrains Mono", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(33, 7);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(122, 26);
+            this.label36.TabIndex = 141;
+            this.label36.Text = "Total Room";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.BackColor = System.Drawing.Color.White;
+            this.label37.Font = new System.Drawing.Font("JetBrains Mono", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(49, 45);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(89, 26);
+            this.label37.TabIndex = 140;
+            this.label37.Text = "label37";
+            // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             this.ClientSize = new System.Drawing.Size(1250, 666);
+            this.Controls.Add(this.guna2Panel4);
+            this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.guna2CirclePictureBox17);
             this.Controls.Add(this.guna2CirclePictureBox16);
@@ -1523,14 +1472,7 @@ namespace Student_Profile
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.transiction);
-            this.Controls.Add(this.linkLabel4);
             this.Controls.Add(this.linkLabel3);
-            this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.linkLabel5);
-            this.Controls.Add(this.guna2Button12);
-            this.Controls.Add(this.guna2Button13);
-            this.Controls.Add(this.guna2Button14);
-            this.Controls.Add(this.guna2Button15);
             this.Controls.Add(this.guna2PictureBox9);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
@@ -1540,6 +1482,7 @@ namespace Student_Profile
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboard";
             this.Text = " ";
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.guna2Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.EmojiBox)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
@@ -1565,6 +1508,10 @@ namespace Student_Profile
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).EndInit();
+            this.guna2Panel3.ResumeLayout(false);
+            this.guna2Panel3.PerformLayout();
+            this.guna2Panel4.ResumeLayout(false);
+            this.guna2Panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1641,14 +1588,7 @@ namespace Student_Profile
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox transiction;
-        private System.Windows.Forms.LinkLabel linkLabel4;
         private System.Windows.Forms.LinkLabel linkLabel3;
-        private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.LinkLabel linkLabel5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button12;
-        private Guna.UI2.WinForms.Guna2Button guna2Button13;
-        private Guna.UI2.WinForms.Guna2Button guna2Button14;
-        private Guna.UI2.WinForms.Guna2Button guna2Button15;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2payment;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox13;
@@ -1658,7 +1598,6 @@ namespace Student_Profile
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox14;
         private System.Windows.Forms.Label label32;
         private Guna.UI2.WinForms.Guna2Button RoomButton;
-        private Guna.UI2.WinForms.Guna2Button BedButton;
         private Guna.UI2.WinForms.Guna2Button TenantsButton;
         private Guna.UI2.WinForms.Guna2Button ExpenseButton;
         private Guna.UI2.WinForms.Guna2Button SettingsButton;
@@ -1667,6 +1606,14 @@ namespace Student_Profile
         private Guna.UI2.WinForms.Guna2Button AboutUsButton;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2PictureBox LogOutBox;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Timer timer1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private System.Windows.Forms.Label label35;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Timer timer2;
     }
 }
 
