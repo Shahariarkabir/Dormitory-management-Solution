@@ -29,6 +29,14 @@ namespace Student_Log_In.DesignLayer
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.LogoutButton = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -54,6 +62,22 @@ namespace Student_Log_In.DesignLayer
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.TenantsDataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.newstudentBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dormitoryManagementDataSet4 = new Student_Log_In.DormitoryManagementDataSet4();
+            this.newstudentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dormitoryManagementDataSet3 = new Student_Log_In.DormitoryManagementDataSet3();
+            this.new_studentTableAdapter = new Student_Log_In.DormitoryManagementDataSet3TableAdapters.New_studentTableAdapter();
+            this.UpdateDeleteButton = new Guna.UI2.WinForms.Guna2Button();
+            this.new_studentTableAdapter1 = new Student_Log_In.DormitoryManagementDataSet4TableAdapters.New_studentTableAdapter();
+            this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bloodGroupDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roomNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoutButton)).BeginInit();
@@ -66,6 +90,12 @@ namespace Student_Log_In.DesignLayer
             this.flowLayoutPanel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EmojiPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TenantsDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newstudentBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dormitoryManagementDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newstudentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dormitoryManagementDataSet3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -163,25 +193,6 @@ namespace Student_Log_In.DesignLayer
             this.BedButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.BedButton.Click += new System.EventHandler(this.BedButton_Click);
             // 
-            // BedButton
-            // 
-            this.BedButton.CheckedState.Parent = this.BedButton;
-            this.BedButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BedButton.CustomImages.Parent = this.BedButton;
-            this.BedButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.BedButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold);
-            this.BedButton.ForeColor = System.Drawing.Color.Black;
-            this.BedButton.HoverState.Parent = this.BedButton;
-            this.BedButton.Image = global::Student_Log_In.Properties.Resources.terrain;
-            this.BedButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BedButton.Location = new System.Drawing.Point(3, 219);
-            this.BedButton.Name = "BedButton";
-            this.BedButton.ShadowDecoration.Parent = this.BedButton;
-            this.BedButton.Size = new System.Drawing.Size(129, 22);
-            this.BedButton.TabIndex = 140;
-            this.BedButton.Text = "Bed";
-            this.BedButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // SettingsButton
             // 
             this.SettingsButton.CheckedState.Parent = this.SettingsButton;
@@ -240,10 +251,6 @@ namespace Student_Log_In.DesignLayer
             this.TenantsButton.TabIndex = 140;
             this.TenantsButton.Text = "Tenants";
             this.TenantsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-<<<<<<< HEAD
-            this.TenantsButton.Click += new System.EventHandler(this.TenantsButton_Click);
-=======
->>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
             // 
             // RoomButton
             // 
@@ -377,6 +384,7 @@ namespace Student_Log_In.DesignLayer
             this.StudentButton.TabIndex = 141;
             this.StudentButton.Text = "Student";
             this.StudentButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.StudentButton.Click += new System.EventHandler(this.StudentButton_Click);
             // 
             // Room
             // 
@@ -461,12 +469,233 @@ namespace Student_Log_In.DesignLayer
             this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("JetBrains Mono", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(161, 88);
+            this.textBox1.Location = new System.Drawing.Point(173, 76);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(1040, 53);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "Tenants";
+            // 
+            // guna2DataGridView1
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.guna2DataGridView1.ColumnHeadersHeight = 4;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.guna2DataGridView1.EnableHeadersVisualStyles = false;
+            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.Location = new System.Drawing.Point(221, 197);
+            this.guna2DataGridView1.Name = "guna2DataGridView1";
+            this.guna2DataGridView1.RowHeadersVisible = false;
+            this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.guna2DataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.guna2DataGridView1.TabIndex = 2;
+            this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
+            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // TenantsDataGridView
+            // 
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.TenantsDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.TenantsDataGridView.AutoGenerateColumns = false;
+            this.TenantsDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.TenantsDataGridView.BackgroundColor = System.Drawing.Color.White;
+            this.TenantsDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TenantsDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.TenantsDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.TenantsDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.TenantsDataGridView.ColumnHeadersHeight = 21;
+            this.TenantsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.userNameDataGridViewTextBoxColumn,
+            this.fullNameDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn,
+            this.genderDataGridViewTextBoxColumn,
+            this.bloodGroupDataGridViewTextBoxColumn,
+            this.addressDataGridViewTextBoxColumn,
+            this.roomNumberDataGridViewTextBoxColumn});
+            this.TenantsDataGridView.DataSource = this.newstudentBindingSource1;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.TenantsDataGridView.DefaultCellStyle = dataGridViewCellStyle6;
+            this.TenantsDataGridView.EnableHeadersVisualStyles = false;
+            this.TenantsDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.TenantsDataGridView.Location = new System.Drawing.Point(141, 125);
+            this.TenantsDataGridView.Name = "TenantsDataGridView";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.TenantsDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.TenantsDataGridView.RowHeadersVisible = false;
+            this.TenantsDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.TenantsDataGridView.Size = new System.Drawing.Size(1072, 366);
+            this.TenantsDataGridView.TabIndex = 3;
+            this.TenantsDataGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.TenantsDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.TenantsDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.TenantsDataGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.TenantsDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.TenantsDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.TenantsDataGridView.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.TenantsDataGridView.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.TenantsDataGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.TenantsDataGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.TenantsDataGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.TenantsDataGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.TenantsDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.TenantsDataGridView.ThemeStyle.HeaderStyle.Height = 21;
+            this.TenantsDataGridView.ThemeStyle.ReadOnly = false;
+            this.TenantsDataGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.TenantsDataGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.TenantsDataGridView.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.TenantsDataGridView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.TenantsDataGridView.ThemeStyle.RowsStyle.Height = 22;
+            this.TenantsDataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.TenantsDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // newstudentBindingSource1
+            // 
+            this.newstudentBindingSource1.DataMember = "New_student";
+            this.newstudentBindingSource1.DataSource = this.dormitoryManagementDataSet4;
+            // 
+            // dormitoryManagementDataSet4
+            // 
+            this.dormitoryManagementDataSet4.DataSetName = "DormitoryManagementDataSet4";
+            this.dormitoryManagementDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // newstudentBindingSource
+            // 
+            this.newstudentBindingSource.DataMember = "New_student";
+            this.newstudentBindingSource.DataSource = this.dormitoryManagementDataSet3;
+            // 
+            // dormitoryManagementDataSet3
+            // 
+            this.dormitoryManagementDataSet3.DataSetName = "DormitoryManagementDataSet3";
+            this.dormitoryManagementDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // new_studentTableAdapter
+            // 
+            this.new_studentTableAdapter.ClearBeforeFill = true;
+            // 
+            // UpdateDeleteButton
+            // 
+            this.UpdateDeleteButton.BorderColor = System.Drawing.Color.MediumBlue;
+            this.UpdateDeleteButton.BorderRadius = 4;
+            this.UpdateDeleteButton.BorderThickness = 2;
+            this.UpdateDeleteButton.CheckedState.Parent = this.UpdateDeleteButton;
+            this.UpdateDeleteButton.CustomImages.Parent = this.UpdateDeleteButton;
+            this.UpdateDeleteButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.UpdateDeleteButton.Font = new System.Drawing.Font("JetBrains Mono", 12F);
+            this.UpdateDeleteButton.ForeColor = System.Drawing.Color.White;
+            this.UpdateDeleteButton.HoverState.Parent = this.UpdateDeleteButton;
+            this.UpdateDeleteButton.Location = new System.Drawing.Point(590, 586);
+            this.UpdateDeleteButton.Name = "UpdateDeleteButton";
+            this.UpdateDeleteButton.ShadowDecoration.Parent = this.UpdateDeleteButton;
+            this.UpdateDeleteButton.Size = new System.Drawing.Size(310, 45);
+            this.UpdateDeleteButton.TabIndex = 4;
+            this.UpdateDeleteButton.Text = "Update or Delete Info";
+            this.UpdateDeleteButton.Click += new System.EventHandler(this.UpdateDeleteButton_Click);
+            // 
+            // new_studentTableAdapter1
+            // 
+            this.new_studentTableAdapter1.ClearBeforeFill = true;
+            // 
+            // userNameDataGridViewTextBoxColumn
+            // 
+            this.userNameDataGridViewTextBoxColumn.DataPropertyName = "UserName";
+            this.userNameDataGridViewTextBoxColumn.HeaderText = "UserName";
+            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
+            // 
+            // fullNameDataGridViewTextBoxColumn
+            // 
+            this.fullNameDataGridViewTextBoxColumn.DataPropertyName = "FullName";
+            this.fullNameDataGridViewTextBoxColumn.HeaderText = "FullName";
+            this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            // 
+            // genderDataGridViewTextBoxColumn
+            // 
+            this.genderDataGridViewTextBoxColumn.DataPropertyName = "Gender";
+            this.genderDataGridViewTextBoxColumn.HeaderText = "Gender";
+            this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
+            // 
+            // bloodGroupDataGridViewTextBoxColumn
+            // 
+            this.bloodGroupDataGridViewTextBoxColumn.DataPropertyName = "BloodGroup";
+            this.bloodGroupDataGridViewTextBoxColumn.HeaderText = "BloodGroup";
+            this.bloodGroupDataGridViewTextBoxColumn.Name = "bloodGroupDataGridViewTextBoxColumn";
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            // 
+            // roomNumberDataGridViewTextBoxColumn
+            // 
+            this.roomNumberDataGridViewTextBoxColumn.DataPropertyName = "RoomNumber";
+            this.roomNumberDataGridViewTextBoxColumn.HeaderText = "RoomNumber";
+            this.roomNumberDataGridViewTextBoxColumn.Name = "roomNumberDataGridViewTextBoxColumn";
             // 
             // Tenants
             // 
@@ -474,12 +703,16 @@ namespace Student_Log_In.DesignLayer
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1254, 666);
+            this.Controls.Add(this.UpdateDeleteButton);
+            this.Controls.Add(this.TenantsDataGridView);
+            this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Tenants";
             this.Text = "Tenants";
+            this.Load += new System.EventHandler(this.Tenants_Load);
             this.panel1.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LogoutButton)).EndInit();
@@ -492,6 +725,12 @@ namespace Student_Log_In.DesignLayer
             this.flowLayoutPanel1.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.EmojiPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TenantsDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newstudentBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dormitoryManagementDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newstudentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dormitoryManagementDataSet3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -524,5 +763,21 @@ namespace Student_Log_In.DesignLayer
         private Guna.UI2.WinForms.Guna2PictureBox EmojiPictureBox;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Guna.UI2.WinForms.Guna2DataGridView TenantsDataGridView;
+        private DormitoryManagementDataSet3 dormitoryManagementDataSet3;
+        private System.Windows.Forms.BindingSource newstudentBindingSource;
+        private DormitoryManagementDataSet3TableAdapters.New_studentTableAdapter new_studentTableAdapter;
+        private Guna.UI2.WinForms.Guna2Button UpdateDeleteButton;
+        private DormitoryManagementDataSet4 dormitoryManagementDataSet4;
+        private System.Windows.Forms.BindingSource newstudentBindingSource1;
+        private DormitoryManagementDataSet4TableAdapters.New_studentTableAdapter new_studentTableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fullNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn genderDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bloodGroupDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn roomNumberDataGridViewTextBoxColumn;
     }
 }

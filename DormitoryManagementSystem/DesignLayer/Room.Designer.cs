@@ -30,15 +30,9 @@ namespace Student_Log_In.DesignLayer
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-<<<<<<< HEAD
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-=======
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
->>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.StudentButton = new Guna.UI2.WinForms.Guna2Button();
@@ -65,21 +59,12 @@ namespace Student_Log_In.DesignLayer
             this.label1 = new System.Windows.Forms.Label();
             this.AddRoomTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
-<<<<<<< HEAD
-            this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.AddRoomButton = new Guna.UI2.WinForms.Guna2Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.guna2CheckBox2 = new Guna.UI2.WinForms.Guna2CheckBox();
-=======
             this.AddRoomCheckBox = new Guna.UI2.WinForms.Guna2CheckBox();
             this.AddRoomButton = new Guna.UI2.WinForms.Guna2Button();
             this.label3 = new System.Windows.Forms.Label();
             this.UpdateDeleteTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.CheckBox2 = new Guna.UI2.WinForms.Guna2CheckBox();
->>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
             this.SearchButton = new Guna.UI2.WinForms.Guna2Button();
             this.UpdateRoomButton = new Guna.UI2.WinForms.Guna2Button();
             this.DeleteRoomButton = new Guna.UI2.WinForms.Guna2Button();
@@ -167,6 +152,7 @@ namespace Student_Log_In.DesignLayer
             this.StudentButton.TabIndex = 141;
             this.StudentButton.Text = "Student";
             this.StudentButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.StudentButton.Click += new System.EventHandler(this.StudentButton_Click);
             // 
             // guna2Button6
             // 
@@ -409,7 +395,6 @@ namespace Student_Log_In.DesignLayer
             this.RoomButton.TabIndex = 140;
             this.RoomButton.Text = "Room";
             this.RoomButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.RoomButton.Click += new System.EventHandler(this.RoomButton_Click);
             // 
             // DashBoardButton
             // 
@@ -483,11 +468,7 @@ namespace Student_Log_In.DesignLayer
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.label1.Location = new System.Drawing.Point(1017, 111);
-=======
             this.label1.Location = new System.Drawing.Point(1054, 100);
->>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 21);
             this.label1.TabIndex = 50;
@@ -510,11 +491,7 @@ namespace Student_Log_In.DesignLayer
             this.AddRoomTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.AddRoomTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.AddRoomTextBox.HoverState.Parent = this.AddRoomTextBox;
-<<<<<<< HEAD
-            this.AddRoomTextBox.Location = new System.Drawing.Point(957, 138);
-=======
             this.AddRoomTextBox.Location = new System.Drawing.Point(984, 132);
->>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
             this.AddRoomTextBox.Name = "AddRoomTextBox";
             this.AddRoomTextBox.PasswordChar = '\0';
             this.AddRoomTextBox.PlaceholderText = "";
@@ -529,34 +506,6 @@ namespace Student_Log_In.DesignLayer
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.label2.Location = new System.Drawing.Point(977, 191);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(180, 21);
-            this.label2.TabIndex = 52;
-            this.label2.Text = "Activated or not!";
-            // 
-            // guna2CheckBox1
-            // 
-            this.guna2CheckBox1.AutoSize = true;
-            this.guna2CheckBox1.CheckedState.BorderColor = System.Drawing.Color.Black;
-            this.guna2CheckBox1.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox1.CheckedState.BorderThickness = 2;
-            this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2CheckBox1.CheckMarkColor = System.Drawing.Color.Black;
-            this.guna2CheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.guna2CheckBox1.Location = new System.Drawing.Point(1171, 195);
-            this.guna2CheckBox1.Name = "guna2CheckBox1";
-            this.guna2CheckBox1.Size = new System.Drawing.Size(15, 14);
-            this.guna2CheckBox1.TabIndex = 54;
-            this.guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.Black;
-            this.guna2CheckBox1.UncheckedState.BorderRadius = 0;
-            this.guna2CheckBox1.UncheckedState.BorderThickness = 2;
-            this.guna2CheckBox1.UncheckedState.FillColor = System.Drawing.Color.WhiteSmoke;
-            // 
-            // AddRoomButton
-            // 
-=======
             this.label2.Location = new System.Drawing.Point(981, 300);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(150, 21);
@@ -584,7 +533,6 @@ namespace Student_Log_In.DesignLayer
             // 
             // AddRoomButton
             // 
->>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
             this.AddRoomButton.BorderColor = System.Drawing.Color.Blue;
             this.AddRoomButton.BorderRadius = 4;
             this.AddRoomButton.BorderThickness = 2;
@@ -594,64 +542,24 @@ namespace Student_Log_In.DesignLayer
             this.AddRoomButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddRoomButton.ForeColor = System.Drawing.Color.Black;
             this.AddRoomButton.HoverState.Parent = this.AddRoomButton;
-<<<<<<< HEAD
-            this.AddRoomButton.Location = new System.Drawing.Point(969, 243);
-=======
             this.AddRoomButton.Location = new System.Drawing.Point(1001, 343);
->>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
             this.AddRoomButton.Name = "AddRoomButton";
             this.AddRoomButton.ShadowDecoration.Parent = this.AddRoomButton;
             this.AddRoomButton.Size = new System.Drawing.Size(180, 45);
             this.AddRoomButton.TabIndex = 55;
             this.AddRoomButton.Text = "Add Room";
-<<<<<<< HEAD
-=======
             this.AddRoomButton.Click += new System.EventHandler(this.AddRoomButton_Click);
->>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.label3.Location = new System.Drawing.Point(961, 316);
-=======
             this.label3.Location = new System.Drawing.Point(966, 442);
->>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(220, 21);
             this.label3.TabIndex = 56;
             this.label3.Text = "Update Or Delete Room";
             // 
-<<<<<<< HEAD
-            // guna2TextBox1
-            // 
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.guna2TextBox1.BorderRadius = 4;
-            this.guna2TextBox1.BorderThickness = 2;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "Input Room No";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(957, 352);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.SelectionStart = 13;
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(200, 36);
-            this.guna2TextBox1.TabIndex = 57;
-            this.guna2TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-=======
             // UpdateDeleteTextBox
             // 
             this.UpdateDeleteTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
@@ -679,37 +587,11 @@ namespace Student_Log_In.DesignLayer
             this.UpdateDeleteTextBox.Size = new System.Drawing.Size(200, 36);
             this.UpdateDeleteTextBox.TabIndex = 57;
             this.UpdateDeleteTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
->>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.label4.Location = new System.Drawing.Point(977, 411);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(180, 21);
-            this.label4.TabIndex = 58;
-            this.label4.Text = "Activated or not!";
-            // 
-            // guna2CheckBox2
-            // 
-            this.guna2CheckBox2.AutoSize = true;
-            this.guna2CheckBox2.CheckedState.BorderColor = System.Drawing.Color.Black;
-            this.guna2CheckBox2.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox2.CheckedState.BorderThickness = 2;
-            this.guna2CheckBox2.CheckedState.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2CheckBox2.CheckMarkColor = System.Drawing.Color.Black;
-            this.guna2CheckBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.guna2CheckBox2.Location = new System.Drawing.Point(1171, 418);
-            this.guna2CheckBox2.Name = "guna2CheckBox2";
-            this.guna2CheckBox2.Size = new System.Drawing.Size(15, 14);
-            this.guna2CheckBox2.TabIndex = 59;
-            this.guna2CheckBox2.UncheckedState.BorderColor = System.Drawing.Color.Black;
-            this.guna2CheckBox2.UncheckedState.BorderRadius = 0;
-            this.guna2CheckBox2.UncheckedState.BorderThickness = 2;
-            this.guna2CheckBox2.UncheckedState.FillColor = System.Drawing.Color.WhiteSmoke;
-=======
             this.label4.Location = new System.Drawing.Point(977, 545);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(150, 21);
@@ -734,7 +616,6 @@ namespace Student_Log_In.DesignLayer
             this.CheckBox2.UncheckedState.BorderRadius = 0;
             this.CheckBox2.UncheckedState.BorderThickness = 2;
             this.CheckBox2.UncheckedState.FillColor = System.Drawing.Color.WhiteSmoke;
->>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
             // 
             // SearchButton
             // 
@@ -749,22 +630,14 @@ namespace Student_Log_In.DesignLayer
             this.SearchButton.HoverState.Parent = this.SearchButton;
             this.SearchButton.Image = global::Student_Log_In.Properties.Resources.iconfinder_search_1608826;
             this.SearchButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-<<<<<<< HEAD
-            this.SearchButton.Location = new System.Drawing.Point(1163, 352);
-=======
             this.SearchButton.Location = new System.Drawing.Point(1160, 480);
->>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
             this.SearchButton.Name = "SearchButton";
             this.SearchButton.ShadowDecoration.Parent = this.SearchButton;
             this.SearchButton.Size = new System.Drawing.Size(91, 36);
             this.SearchButton.TabIndex = 60;
             this.SearchButton.Text = "Search";
             this.SearchButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-<<<<<<< HEAD
-            this.SearchButton.Click += new System.EventHandler(this.guna2Button2_Click);
-=======
             this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
->>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
             // 
             // UpdateRoomButton
             // 
@@ -874,63 +747,36 @@ namespace Student_Log_In.DesignLayer
             // 
             // RoomDataGridView
             // 
-<<<<<<< HEAD
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.RoomDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-=======
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
-            this.RoomDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
->>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.RoomDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.RoomDataGridView.AutoGenerateColumns = false;
             this.RoomDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.RoomDataGridView.BackgroundColor = System.Drawing.Color.LightBlue;
             this.RoomDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.RoomDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.RoomDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-<<<<<<< HEAD
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.RoomDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-=======
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.RoomDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
->>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.RoomDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.RoomDataGridView.ColumnHeadersHeight = 21;
             this.RoomDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.roomNumberDataGridViewTextBoxColumn,
             this.roomTypeDataGridViewTextBoxColumn,
             this.bookedDataGridViewTextBoxColumn});
             this.RoomDataGridView.DataSource = this.roomsBindingSource2;
-<<<<<<< HEAD
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.RoomDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
-=======
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.RoomDataGridView.DefaultCellStyle = dataGridViewCellStyle24;
->>>>>>> 3c79683fe02b361820cbd8814cdea47cf65a8a97
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.RoomDataGridView.DefaultCellStyle = dataGridViewCellStyle15;
             this.RoomDataGridView.EnableHeadersVisualStyles = false;
             this.RoomDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.RoomDataGridView.Location = new System.Drawing.Point(185, 150);
