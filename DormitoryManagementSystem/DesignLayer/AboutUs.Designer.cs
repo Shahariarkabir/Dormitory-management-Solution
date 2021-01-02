@@ -216,6 +216,7 @@ namespace Student_Log_In.DesignLayer
             this.EmojiPictureBox.TabIndex = 50;
             this.EmojiPictureBox.TabStop = false;
             this.EmojiPictureBox.UseTransparentBackground = true;
+            this.EmojiPictureBox.Click += new System.EventHandler(this.EmojiPictureBox_Click);
             // 
             // StudentBox
             // 
