@@ -76,9 +76,6 @@
     <Compile Include="DesignLayer\StudentDesignLayer\Student Setting.Designer.cs">
       <DependentUpon>Student Setting.cs</DependentUpon>
     </Compile>
-    <Compile Include="DesignLayer\StudentDesignLayer\StudentDashbord.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="DataAccessLayer\UserAccess.cs" />
     <Compile Include="DesignLayer\AdminDesignLayer\AboutUs.cs">
       <SubType>Form</SubType>
@@ -109,6 +106,18 @@
     </Compile>
     <Compile Include="DesignLayer\AdminDesignLayer\Setting.Designer.cs">
       <DependentUpon>Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignLayer\StudentDesignLayer\StudentAboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignLayer\StudentDesignLayer\StudentAboutUs.Designer.cs">
+      <DependentUpon>StudentAboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignLayer\StudentDesignLayer\StudentDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignLayer\StudentDesignLayer\StudentDashboard.Designer.cs">
+      <DependentUpon>StudentDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="DesignLayer\StudentDesignLayer\StudentRoom.cs">
       <SubType>Form</SubType>
@@ -230,8 +239,11 @@
     <EmbeddedResource Include="DesignLayer\StudentDesignLayer\Student Setting.resx">
       <DependentUpon>Student Setting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DesignLayer\StudentDesignLayer\StudentDashbord.resx">
-      <DependentUpon>StudentDashbord.cs</DependentUpon>
+    <EmbeddedResource Include="DesignLayer\StudentDesignLayer\StudentAboutUs.resx">
+      <DependentUpon>StudentAboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignLayer\StudentDesignLayer\StudentDashboard.resx">
+      <DependentUpon>StudentDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DesignLayer\StudentDesignLayer\StudentRoom.resx">
       <DependentUpon>StudentRoom.cs</DependentUpon>

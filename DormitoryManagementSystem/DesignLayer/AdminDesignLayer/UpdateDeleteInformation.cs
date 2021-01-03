@@ -128,12 +128,18 @@ namespace Student_Log_In.DesignLayer
 
         private void DeleteRoomButton_Click(object sender, EventArgs e)
         {
-            query = "DELETE FROM New_student WHERE UserName='" + userNameTextBox.Text + "'";
-            fn.setData(query, "Deleted Successfully....");
-            userNameTextBox.Text = FullTextBox.Text = PassTextBox.Text = BloodGroupComboBox.Text = DateTimePicker.Text = PhoneNumberTextBox.Text = TextBoxEmail.Text = GenderComboBox.Text = AddressTextBox.Text = EmergencyContactTextBox.Text = EmergencyPhoneNumberTextBox.Text = emergencyRelationTextBox.Text = IdNumberTextBox.Text = RoomNoText.Text = string.Empty;
-            Tenants tenants = new Tenants();
-            tenants.Show();
-            this.Hide();
+           if(MessageBox.Show("Are You Sure To Delete???","Confirmation",MessageBoxButtons.YesNo,MessageBoxIcon.Warning)== DialogResult.Yes)
+            {
+                query = "DELETE FROM New_student WHERE UserName='" + userNameTextBox.Text + "'";
+                fn.setData(query, "Deleted Successfully....");
+                userNameTextBox.Text = FullTextBox.Text = PassTextBox.Text = BloodGroupComboBox.Text = DateTimePicker.Text = PhoneNumberTextBox.Text = TextBoxEmail.Text = GenderComboBox.Text = AddressTextBox.Text = EmergencyContactTextBox.Text = EmergencyPhoneNumberTextBox.Text = emergencyRelationTextBox.Text = IdNumberTextBox.Text = RoomNoText.Text = string.Empty;
+                Tenants tenants = new Tenants();
+                tenants.Show();
+                this.Hide();
+            }
+            
+            
+           
 
         }
 

@@ -1,5 +1,6 @@
 ﻿using Student_Log_In.BusinessLayer;
 using Student_Log_In.DesignLayer;
+using Student_Log_In.DesignLayer.StudentDesignLayer;
 using Student_Profile;
 using System;
 using System.Collections.Generic;
@@ -45,7 +46,7 @@ namespace Student_Log_In
                 }
                 else if(studentResult)
                 {
-                    StudentDashbord student = new StudentDashbord();
+                    StudentDashboard student = new StudentDashboard();
                     student.Show();
                     this.Hide();
                 }

@@ -125,10 +125,10 @@ namespace Student_Log_In.DesignLayer
             this.guna2Panel1.Controls.Add(this.guna2PictureBox12);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox11);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox4);
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 3);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(135, 679);
+            this.guna2Panel1.Size = new System.Drawing.Size(135, 665);
             this.guna2Panel1.TabIndex = 56;
             // 
             // LogoutButton
@@ -350,7 +350,7 @@ namespace Student_Log_In.DesignLayer
             this.guna2Panel2.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel2.Controls.Add(this.guna2ControlBox2);
             this.guna2Panel2.Controls.Add(this.guna2ControlBox1);
-            this.guna2Panel2.Location = new System.Drawing.Point(131, 3);
+            this.guna2Panel2.Location = new System.Drawing.Point(134, 0);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(1115, 67);
@@ -497,6 +497,7 @@ namespace Student_Log_In.DesignLayer
             this.GenderComboBox.Name = "GenderComboBox";
             this.GenderComboBox.ShadowDecoration.Parent = this.GenderComboBox;
             this.GenderComboBox.Size = new System.Drawing.Size(258, 36);
+            this.GenderComboBox.StartIndex = 0;
             this.GenderComboBox.TabIndex = 73;
             // 
             // BloodGroupComboBox
@@ -534,7 +535,7 @@ namespace Student_Log_In.DesignLayer
             // 
             this.RoomNumberLabel.AutoSize = true;
             this.RoomNumberLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RoomNumberLabel.Location = new System.Drawing.Point(798, 254);
+            this.RoomNumberLabel.Location = new System.Drawing.Point(797, 257);
             this.RoomNumberLabel.Name = "RoomNumberLabel";
             this.RoomNumberLabel.Size = new System.Drawing.Size(56, 15);
             this.RoomNumberLabel.TabIndex = 70;
@@ -563,7 +564,7 @@ namespace Student_Log_In.DesignLayer
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(488, 169);
+            this.label10.Location = new System.Drawing.Point(488, 175);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(84, 15);
             this.label10.TabIndex = 66;
@@ -573,7 +574,7 @@ namespace Student_Log_In.DesignLayer
             // 
             this.GenderLabel.AutoSize = true;
             this.GenderLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GenderLabel.Location = new System.Drawing.Point(152, 254);
+            this.GenderLabel.Location = new System.Drawing.Point(152, 260);
             this.GenderLabel.Name = "GenderLabel";
             this.GenderLabel.Size = new System.Drawing.Size(49, 15);
             this.GenderLabel.TabIndex = 65;
@@ -583,7 +584,7 @@ namespace Student_Log_In.DesignLayer
             // 
             this.DateOfBirthLabel.AutoSize = true;
             this.DateOfBirthLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateOfBirthLabel.Location = new System.Drawing.Point(152, 154);
+            this.DateOfBirthLabel.Location = new System.Drawing.Point(155, 159);
             this.DateOfBirthLabel.Name = "DateOfBirthLabel";
             this.DateOfBirthLabel.Size = new System.Drawing.Size(98, 15);
             this.DateOfBirthLabel.TabIndex = 64;
@@ -715,7 +716,7 @@ namespace Student_Log_In.DesignLayer
             // 
             this.EmailLabel.AutoSize = true;
             this.EmailLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmailLabel.Location = new System.Drawing.Point(795, 173);
+            this.EmailLabel.Location = new System.Drawing.Point(795, 175);
             this.EmailLabel.Name = "EmailLabel";
             this.EmailLabel.Size = new System.Drawing.Size(49, 15);
             this.EmailLabel.TabIndex = 82;
@@ -906,7 +907,7 @@ namespace Student_Log_In.DesignLayer
             // 
             this.PasswordLabel.AutoSize = true;
             this.PasswordLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordLabel.Location = new System.Drawing.Point(477, 254);
+            this.PasswordLabel.Location = new System.Drawing.Point(485, 258);
             this.PasswordLabel.Name = "PasswordLabel";
             this.PasswordLabel.Size = new System.Drawing.Size(63, 15);
             this.PasswordLabel.TabIndex = 67;
@@ -974,10 +975,12 @@ namespace Student_Log_In.DesignLayer
             // 
             // EmergencyContactTextBox
             // 
+            this.EmergencyContactTextBox.BackColor = System.Drawing.Color.White;
             this.EmergencyContactTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.EmergencyContactTextBox.Font = new System.Drawing.Font("JetBrains Mono", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmergencyContactTextBox.Location = new System.Drawing.Point(144, 521);
             this.EmergencyContactTextBox.Name = "EmergencyContactTextBox";
+            this.EmergencyContactTextBox.ReadOnly = true;
             this.EmergencyContactTextBox.Size = new System.Drawing.Size(352, 40);
             this.EmergencyContactTextBox.TabIndex = 92;
             this.EmergencyContactTextBox.Text = "Emergency Contact";
@@ -1142,14 +1145,14 @@ namespace Student_Log_In.DesignLayer
             this.RoomNoText.ForeColor = System.Drawing.Color.Black;
             this.RoomNoText.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.RoomNoText.HoverState.Parent = this.RoomNoText;
-            this.RoomNoText.Location = new System.Drawing.Point(791, 268);
+            this.RoomNoText.Location = new System.Drawing.Point(782, 268);
             this.RoomNoText.Margin = new System.Windows.Forms.Padding(6);
             this.RoomNoText.Name = "RoomNoText";
             this.RoomNoText.PasswordChar = '\0';
             this.RoomNoText.PlaceholderText = "";
             this.RoomNoText.SelectedText = "";
             this.RoomNoText.ShadowDecoration.Parent = this.RoomNoText;
-            this.RoomNoText.Size = new System.Drawing.Size(247, 51);
+            this.RoomNoText.Size = new System.Drawing.Size(258, 51);
             this.RoomNoText.TabIndex = 97;
             // 
             // RoomType
@@ -1175,13 +1178,14 @@ namespace Student_Log_In.DesignLayer
             this.RoomType.Name = "RoomType";
             this.RoomType.ShadowDecoration.Parent = this.RoomType;
             this.RoomType.Size = new System.Drawing.Size(247, 36);
+            this.RoomType.StartIndex = 0;
             this.RoomType.TabIndex = 98;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(795, 351);
+            this.label4.Location = new System.Drawing.Point(795, 357);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(105, 15);
             this.label4.TabIndex = 99;
@@ -1196,7 +1200,15 @@ namespace Student_Log_In.DesignLayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1250, 666);
+            this.Controls.Add(this.PasswordLabel);
+            this.Controls.Add(this.GenderLabel);
+            this.Controls.Add(this.DateOfBirthLabel);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.BloodGroupComboBox);
+            this.Controls.Add(this.RoomNumberLabel);
+            this.Controls.Add(this.EmailLabel);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.RoomType);
             this.Controls.Add(this.RoomNoText);
@@ -1214,7 +1226,6 @@ namespace Student_Log_In.DesignLayer
             this.Controls.Add(this.DeleteRoomButton);
             this.Controls.Add(this.UpdateInfoButton);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.EmailLabel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.PassTextBox);
@@ -1222,14 +1233,8 @@ namespace Student_Log_In.DesignLayer
             this.Controls.Add(this.FullTextBox);
             this.Controls.Add(this.DateTimePicker);
             this.Controls.Add(this.GenderComboBox);
-            this.Controls.Add(this.BloodGroupComboBox);
-            this.Controls.Add(this.RoomNumberLabel);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.ConfirmPasswordLabel);
-            this.Controls.Add(this.PasswordLabel);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.GenderLabel);
-            this.Controls.Add(this.DateOfBirthLabel);
             this.Controls.Add(this.FullNameTextBox);
             this.Controls.Add(this.IdNumberTextBox);
             this.Controls.Add(this.ConfirmPasswordTextBox);
