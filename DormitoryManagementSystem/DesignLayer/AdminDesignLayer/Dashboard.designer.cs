@@ -125,6 +125,8 @@ namespace Student_Profile
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl3 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EmojiBox)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -284,6 +286,7 @@ namespace Student_Profile
             this.guna2Button9.TabIndex = 141;
             this.guna2Button9.Text = "Student";
             this.guna2Button9.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            //this.guna2Button9.Click += new System.EventHandler(this.guna2Button9_Click);
             // 
             // guna2Button6
             // 
@@ -1149,7 +1152,7 @@ namespace Student_Profile
             this.linkLabel3.DisabledLinkColor = System.Drawing.Color.White;
             this.linkLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel3.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
-            this.linkLabel3.Location = new System.Drawing.Point(538, 220);
+            this.linkLabel3.Location = new System.Drawing.Point(564, 220);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(0, 20);
             this.linkLabel3.TabIndex = 84;
@@ -1378,7 +1381,7 @@ namespace Student_Profile
             this.guna2Panel4.BorderThickness = 2;
             this.guna2Panel4.Controls.Add(this.label36);
             this.guna2Panel4.Controls.Add(this.label37);
-            this.guna2Panel4.Location = new System.Drawing.Point(492, 165);
+            this.guna2Panel4.Location = new System.Drawing.Point(518, 165);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
             this.guna2Panel4.Size = new System.Drawing.Size(189, 85);
@@ -1400,7 +1403,7 @@ namespace Student_Profile
             this.label37.AutoSize = true;
             this.label37.BackColor = System.Drawing.Color.White;
             this.label37.Font = new System.Drawing.Font("JetBrains Mono", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(49, 45);
+            this.label37.Location = new System.Drawing.Point(52, 45);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(89, 26);
             this.label37.TabIndex = 140;
@@ -1409,6 +1412,15 @@ namespace Student_Profile
             // timer2
             // 
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.ContainerControl = this;
+            this.guna2DragControl1.TargetControl = this;
+            // 
+            // guna2DragControl3
+            // 
+            this.guna2DragControl3.ContainerControl = this;
             // 
             // Dashboard
             // 
@@ -1614,6 +1626,8 @@ namespace Student_Profile
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Timer timer2;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl3;
     }
 }
 

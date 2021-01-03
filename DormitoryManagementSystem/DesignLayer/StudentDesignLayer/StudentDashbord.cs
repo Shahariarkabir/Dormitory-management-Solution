@@ -28,6 +28,7 @@ namespace Student_Log_In.DesignLayer
         private Guna.UI2.WinForms.Guna2PictureBox EmojiBox;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Label label1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
 
         public StudentDashbord()
@@ -54,6 +55,7 @@ namespace Student_Log_In.DesignLayer
             this.EmojiBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogOutBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -308,9 +310,19 @@ namespace Student_Log_In.DesignLayer
             this.guna2ControlBox1.Size = new System.Drawing.Size(18, 18);
             this.guna2ControlBox1.TabIndex = 2;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(217, 108);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 48;
+            this.label1.Text = "label1";
+            // 
             // StudentDashbord
             // 
             this.ClientSize = new System.Drawing.Size(1250, 666);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -327,6 +339,7 @@ namespace Student_Log_In.DesignLayer
             this.guna2Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.EmojiBox)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

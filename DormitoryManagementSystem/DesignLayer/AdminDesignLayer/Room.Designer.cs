@@ -892,7 +892,6 @@ namespace Student_Log_In.DesignLayer
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Room";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Room";
             this.Load += new System.EventHandler(this.Room_Load);
             this.guna2Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.EmojiPictureBox)).EndInit();

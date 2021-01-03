@@ -58,6 +58,12 @@
     <Compile Include="DataAccessLayer\DataAccess.cs" />
     <Compile Include="DataAccessLayer\Function.cs" />
     <Compile Include="DataAccessLayer\StudentAccess.cs" />
+    <Compile Include="DesignLayer\AdminDesignLayer\Expense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignLayer\AdminDesignLayer\Expense.designer.cs">
+      <DependentUpon>Expense.cs</DependentUpon>
+    </Compile>
     <Compile Include="DesignLayer\StudentDesignLayer\Student Expense.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,12 +97,6 @@
     </Compile>
     <Compile Include="DesignLayer\AdminDesignLayer\Dashboard.designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DesignLayer\AdminDesignLayer\Expense.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DesignLayer\AdminDesignLayer\Expense.Designer.cs">
-      <DependentUpon>Expense.cs</DependentUpon>
     </Compile>
     <Compile Include="DesignLayer\AdminDesignLayer\Room.cs">
       <SubType>Form</SubType>
@@ -158,6 +158,16 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DormitoryManagementDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DormitoryManagementDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DormitoryManagementDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DormitoryManagementDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DormitoryManagementDataSet6.xsd</DependentUpon>
     </Compile>
     <Compile Include="Entities\User.cs" />
     <Compile Include="DesignLayer\Login.cs">
@@ -275,6 +285,28 @@
     <None Include="DormitoryManagementDataSet4.xss">
       <DependentUpon>DormitoryManagementDataSet4.xsd</DependentUpon>
     </None>
+    <None Include="DormitoryManagementDataSet5.xsc">
+      <DependentUpon>DormitoryManagementDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DormitoryManagementDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DormitoryManagementDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DormitoryManagementDataSet5.xss">
+      <DependentUpon>DormitoryManagementDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DormitoryManagementDataSet6.xsc">
+      <DependentUpon>DormitoryManagementDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DormitoryManagementDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DormitoryManagementDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DormitoryManagementDataSet6.xss">
+      <DependentUpon>DormitoryManagementDataSet6.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -351,6 +383,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\iconfinder_search_1608826.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_search_16088261.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

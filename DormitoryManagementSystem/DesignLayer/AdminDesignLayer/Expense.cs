@@ -1,4 +1,5 @@
-﻿using Student_Profile;
+﻿using Student_Log_In.DataAccessLayer;
+using Student_Profile;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,8 @@ namespace Student_Log_In.DesignLayer
 {
     public partial class Expense : Form
     {
+        Function fn = new Function();
+        String query;
         public Expense()
         {
             InitializeComponent();
@@ -72,7 +75,83 @@ namespace Student_Log_In.DesignLayer
             this.Hide();
         }
 
+        private void Expense_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dormitoryManagementDataSet6.Expenses' table. You can move, or remove it, as needed.
+            this.expensesTableAdapter.Fill(this.dormitoryManagementDataSet6.Expenses);
+            // TODO: This line of code loads data into the 'dormitoryManagementDataSet6.Expenses' table. You can move, or remove it, as needed.
+
+            // TODO: This line of code loads data into the 'dormitoryManagementDataSet5.Expenses' table. You can move, or remove it, as needed.
+            //this.expensesTableAdapter.Fill(this.dormitoryManagementDataSet5.Expenses);
+            this.Location = new Point(350, 170);
+            dateTimePicker.Format = DateTimePickerFormat.Custom;
+            dateTimePicker.CustomFormat = "MMMM yyyy";
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if(txtEmail.Text !="")
+            {
+                query = "select   UserName,PhoneNumber,RoomNumber from New_student where Email ='" + txtEmail.Text + "'";
+                DataSet ds = fn.getData(query);
+
+                if(ds.Tables[0].Rows.Count !=0)
+                {
+                    txtName.Text = ds.Tables[0].Rows[0][0].ToString();
+                    txtMobile.Text = ds.Tables[0].Rows[0][1].ToString();
+                    txtRoomNumber.Text = ds.Tables[0].Rows[0][2].ToString();
+                    query = "select * from Expenses where Email = '" +txtEmail.Text+ "'";
+                    DataSet ds2 = fn.getData(query);
+                    guna2DataGridView1.DataSource = ds2.Tables[0]; 
+
+                    
+
+                }
+                else
+                {
+                    MessageBox.Show("No Record Exicts", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }        
+        }
+
+        private void btnPay_Click(object sender, EventArgs e)
+        {
+            if (txtEmail.Text !=" "&& txtDuesAmmount.Text!=" ")
+            {
+                query = "SELECT * FROM Expenses WHERE Email='" + txtEmail.Text + "'AND Month='"+dateTimePicker.Text+"'";
+                DataSet ds = fn.getData(query);
+                if (ds.Tables[0].Rows.Count == 0)
+                {
+                    Int64 PhoneNumber = Int64.Parse(txtMobile.Text);
+                    String Month = dateTimePicker.Text;
+                    String UserName = txtName.Text;
+                    Int64 Amount = Int64.Parse(txtDuesAmmount.Text);
+                    String PaymentDate = PaymentDatePicker.Text;
+                    String Email = txtEmail.Text;
+                    query = "INSERT INTO Expenses (PhoneNumber,Month,UserName,Amount,PaymentDate,Email) VALUES(" + PhoneNumber + ",'" + Month + "','" + UserName + "'," + Amount + ",'" + PaymentDate + "','"+Email+"') ";
+                    fn.setData(query, "Paid Successfully");
+                    Expense_Load(this, null);
+
+                    
+
+                }
+                else
+                {
+                    MessageBox.Show("No Dues of "+dateTimePicker.Text+"Left","Information",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                }
+            }
+        }
+
        
 
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtEmail.Clear();
+            txtMobile.Clear();
+            txtName.Clear();
+            txtDuesAmmount.Clear();
+            txtRoomNumber.Clear();
+        }
     }
 }
