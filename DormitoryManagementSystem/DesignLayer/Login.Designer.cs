@@ -48,8 +48,8 @@ namespace Student_Log_In
             this.forgetPasswordLinkLabel = new System.Windows.Forms.LinkLabel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.clickhereLabel = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.btnSignin = new Guna.UI2.WinForms.Guna2Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,7 +90,7 @@ namespace Student_Log_In
             // 
             this.userNameLabel.AutoSize = true;
             this.userNameLabel.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userNameLabel.Location = new System.Drawing.Point(440, 191);
+            this.userNameLabel.Location = new System.Drawing.Point(440, 188);
             this.userNameLabel.Name = "userNameLabel";
             this.userNameLabel.Size = new System.Drawing.Size(90, 21);
             this.userNameLabel.TabIndex = 5;
@@ -102,7 +102,7 @@ namespace Student_Log_In
             this.userNameTextBox.BorderRadius = 20;
             this.userNameTextBox.BorderThickness = 2;
             this.userNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.userNameTextBox.DefaultText = "";
+            this.userNameTextBox.DefaultText = "Admin";
             this.userNameTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.userNameTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.userNameTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -118,8 +118,10 @@ namespace Student_Log_In
             this.userNameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.userNameTextBox.Name = "userNameTextBox";
             this.userNameTextBox.PasswordChar = '\0';
-            this.userNameTextBox.PlaceholderText = "";
+            this.userNameTextBox.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.userNameTextBox.PlaceholderText = "Please Enter Your Username";
             this.userNameTextBox.SelectedText = "";
+            this.userNameTextBox.SelectionStart = 5;
             this.userNameTextBox.ShadowDecoration.Parent = this.userNameTextBox;
             this.userNameTextBox.Size = new System.Drawing.Size(302, 43);
             this.userNameTextBox.TabIndex = 6;
@@ -140,7 +142,7 @@ namespace Student_Log_In
             this.userPasswordTextBox.BorderRadius = 20;
             this.userPasswordTextBox.BorderThickness = 2;
             this.userPasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.userPasswordTextBox.DefaultText = "";
+            this.userPasswordTextBox.DefaultText = "1234";
             this.userPasswordTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.userPasswordTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.userPasswordTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -156,8 +158,9 @@ namespace Student_Log_In
             this.userPasswordTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.userPasswordTextBox.Name = "userPasswordTextBox";
             this.userPasswordTextBox.PasswordChar = '\0';
-            this.userPasswordTextBox.PlaceholderText = "";
+            this.userPasswordTextBox.PlaceholderText = "Please Enter Your Password";
             this.userPasswordTextBox.SelectedText = "";
+            this.userPasswordTextBox.SelectionStart = 4;
             this.userPasswordTextBox.ShadowDecoration.Parent = this.userPasswordTextBox;
             this.userPasswordTextBox.Size = new System.Drawing.Size(302, 43);
             this.userPasswordTextBox.TabIndex = 8;
@@ -254,6 +257,7 @@ namespace Student_Log_In
             this.forgetPasswordLinkLabel.TabIndex = 22;
             this.forgetPasswordLinkLabel.TabStop = true;
             this.forgetPasswordLinkLabel.Text = "Forgot Password";
+            this.forgetPasswordLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.forgetPasswordLinkLabel_LinkClicked);
             // 
             // guna2Elipse1
             // 
@@ -271,18 +275,6 @@ namespace Student_Log_In
             this.clickhereLabel.Text = "Click here to";
             this.clickhereLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBox1.Font = new System.Drawing.Font("JetBrains Mono", 9.75F);
-            this.checkBox1.Location = new System.Drawing.Point(444, 359);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(115, 22);
-            this.checkBox1.TabIndex = 25;
-            this.checkBox1.Text = "Remember me";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // btnSignin
             // 
             this.btnSignin.BorderRadius = 10;
@@ -299,6 +291,18 @@ namespace Student_Log_In
             this.btnSignin.TabIndex = 26;
             this.btnSignin.Text = "Sign In";
             this.btnSignin.Click += new System.EventHandler(this.btnSignin_Click);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkBox1.Font = new System.Drawing.Font("JetBrains Mono", 9.75F);
+            this.checkBox1.Location = new System.Drawing.Point(444, 359);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(115, 22);
+            this.checkBox1.TabIndex = 25;
+            this.checkBox1.Text = "Remember me";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // HomePage
             // 
@@ -327,7 +331,6 @@ namespace Student_Log_In
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Log In";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.studentlogin_FormClosing);
-            
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -354,8 +357,8 @@ namespace Student_Log_In
         private System.Windows.Forms.LinkLabel forgetPasswordLinkLabel;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.Label clickhereLabel;
-        private System.Windows.Forms.CheckBox checkBox1;
         private Guna.UI2.WinForms.Guna2Button btnSignin;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

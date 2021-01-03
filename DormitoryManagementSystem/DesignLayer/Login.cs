@@ -63,7 +63,10 @@ namespace Student_Log_In
             this.Hide();
         }
 
-       
+        private void forgetPasswordLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MessageBox.Show("Please Contact Our Admins", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
 

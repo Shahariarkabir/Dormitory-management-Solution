@@ -144,6 +144,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DormitoryManagementDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DormitoryManagementDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DormitoryManagementDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DormitoryManagementDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DormitoryManagementDataSet11.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DormitoryManagementDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -168,6 +178,21 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DormitoryManagementDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DormitoryManagementDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DormitoryManagementDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DormitoryManagementDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DormitoryManagementDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DormitoryManagementDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DormitoryManagementDataSet9.xsd</DependentUpon>
     </Compile>
     <Compile Include="Entities\User.cs" />
     <Compile Include="DesignLayer\Login.cs">
@@ -252,6 +277,28 @@
     <None Include="DormitoryManagementDataSet1.xss">
       <DependentUpon>DormitoryManagementDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="DormitoryManagementDataSet10.xsc">
+      <DependentUpon>DormitoryManagementDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="DormitoryManagementDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DormitoryManagementDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DormitoryManagementDataSet10.xss">
+      <DependentUpon>DormitoryManagementDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="DormitoryManagementDataSet11.xsc">
+      <DependentUpon>DormitoryManagementDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="DormitoryManagementDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DormitoryManagementDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DormitoryManagementDataSet11.xss">
+      <DependentUpon>DormitoryManagementDataSet11.xsd</DependentUpon>
+    </None>
     <None Include="DormitoryManagementDataSet2.xsc">
       <DependentUpon>DormitoryManagementDataSet2.xsd</DependentUpon>
     </None>
@@ -306,6 +353,39 @@
     </None>
     <None Include="DormitoryManagementDataSet6.xss">
       <DependentUpon>DormitoryManagementDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DormitoryManagementDataSet7.xsc">
+      <DependentUpon>DormitoryManagementDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="DormitoryManagementDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DormitoryManagementDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DormitoryManagementDataSet7.xss">
+      <DependentUpon>DormitoryManagementDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="DormitoryManagementDataSet8.xsc">
+      <DependentUpon>DormitoryManagementDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="DormitoryManagementDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DormitoryManagementDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DormitoryManagementDataSet8.xss">
+      <DependentUpon>DormitoryManagementDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="DormitoryManagementDataSet9.xsc">
+      <DependentUpon>DormitoryManagementDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="DormitoryManagementDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DormitoryManagementDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DormitoryManagementDataSet9.xss">
+      <DependentUpon>DormitoryManagementDataSet9.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

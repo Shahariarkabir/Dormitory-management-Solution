@@ -118,6 +118,12 @@ namespace Student_Profile
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dormitoryManagementDataSet11.student_user_create' table. You can move, or remove it, as needed.
+            this.student_user_createTableAdapter3.Fill(this.dormitoryManagementDataSet11.student_user_create);
+
+            // TODO: This line of code loads data into the 'dormitoryManagementDataSet8.Expenses' table. You can move, or remove it, as needed.
+            this.expensesTableAdapter.Fill(this.dormitoryManagementDataSet8.Expenses);
+            
             timer1.Start();
             timer2.Start();
         }
@@ -176,5 +182,17 @@ namespace Student_Profile
             }
 
         }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            label3.Text = DateTime.Now.ToString("hh:MM:ss tt");
+        }
+
+        private void timer4_Tick(object sender, EventArgs e)
+        {
+            label4.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy");
+        }
+
+        
     }
 }

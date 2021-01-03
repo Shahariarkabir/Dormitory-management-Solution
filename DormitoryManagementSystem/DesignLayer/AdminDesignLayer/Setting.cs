@@ -1,4 +1,5 @@
-﻿using Student_Profile;
+﻿using Student_Log_In.DataAccessLayer;
+using Student_Profile;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,8 @@ namespace Student_Log_In.DesignLayer
 {
     public partial class Setting : Form
     {
+        Function fn = new Function();
+        String query;
         public Setting()
         {
             InitializeComponent();
@@ -76,6 +79,38 @@ namespace Student_Log_In.DesignLayer
         {
             HomePage homePage = new HomePage();
             homePage.Show();
+            this.Hide();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CreateProfileButton_Click(object sender, EventArgs e)
+        {
+            if (userNameTextBox.Text != "" && EmailTextBox.Text != " " && PasswordTextBox.Text != "" && BloodGroupComboBox.Text != "" && DateTimePicker.Text != "" && GenderComboBox.Text != "" && AddressTextBox.Text != "")
+
+            {
+                query = "INSERT INTO student_user_create(UserName,FullName,Password,BloodGroup,DateOfBirth,PhoneNumber,Email,Gender,Address,EmergencyContactName,EmergencyPhoneNumber,EmergencyRelationship,VerficationId) VALUES('" + userNameTextBox.Text + "','" + TextBoxFullName.Text + "','" + PasswordTextBox.Text + "','" + BloodGroupComboBox.Text + "','" + DateTimePicker.Text + "'," + PhoneNumberTextBox.Text + ",'" + EmailTextBox.Text + "','" + GenderComboBox.Text + "','" + AddressTextBox.Text + "','" + EmergencyFullNameTextBox.Text + "'," + EmergencyPhoneNumberTextBox.Text + ",'" + emergencyRelationTextBox.Text + "','" + IdNumberTextBox.Text + "') ";
+                fn.setData(query, "Admin Added Successfully!!!");
+                userNameTextBox.Text = TextBoxFullName.Text = PasswordTextBox.Text = BloodGroupComboBox.Text = DateTimePicker.Text = PhoneNumberTextBox.Text = EmailTextBox.Text = GenderComboBox.Text = AddressTextBox.Text = EmergencyContactTextBox.Text = EmergencyPhoneNumberTextBox.Text = emergencyRelationTextBox.Text = IdNumberTextBox.Text = string.Empty;
+                Dashboard dashboard = new Dashboard();
+                dashboard.Show();
+                this.Hide();
+            }
+
+            else
+            {
+                MessageBox.Show("Fill Empty Space", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+        }
+
+        private void StudentButton_Click(object sender, EventArgs e)
+        {
+            CreateStudentProfile studentProfile = new CreateStudentProfile();
+            studentProfile.Show();
             this.Hide();
         }
     }
