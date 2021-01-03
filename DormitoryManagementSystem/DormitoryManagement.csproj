@@ -58,44 +58,44 @@
     <Compile Include="DataAccessLayer\DataAccess.cs" />
     <Compile Include="DataAccessLayer\Function.cs" />
     <Compile Include="DataAccessLayer\StudentAccess.cs" />
-    <Compile Include="DesignLayer\StudentDashbord.cs">
+    <Compile Include="DesignLayer\StudentDesignLayer\StudentDashbord.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DataAccessLayer\UserAccess.cs" />
-    <Compile Include="DesignLayer\AboutUs.cs">
+    <Compile Include="DesignLayer\AdminDesignLayer\AboutUs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DesignLayer\AboutUs.Designer.cs">
+    <Compile Include="DesignLayer\AdminDesignLayer\AboutUs.Designer.cs">
       <DependentUpon>AboutUs.cs</DependentUpon>
     </Compile>
-    <Compile Include="DesignLayer\Bed.cs">
+    <Compile Include="DesignLayer\AdminDesignLayer\Bed.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DesignLayer\Bed.Designer.cs">
+    <Compile Include="DesignLayer\AdminDesignLayer\Bed.Designer.cs">
       <DependentUpon>Bed.cs</DependentUpon>
     </Compile>
-    <Compile Include="DesignLayer\Dashboard.cs">
+    <Compile Include="DesignLayer\AdminDesignLayer\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DesignLayer\Dashboard.designer.cs">
+    <Compile Include="DesignLayer\AdminDesignLayer\Dashboard.designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="DesignLayer\Expense.cs">
+    <Compile Include="DesignLayer\AdminDesignLayer\Expense.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DesignLayer\Expense.Designer.cs">
+    <Compile Include="DesignLayer\AdminDesignLayer\Expense.Designer.cs">
       <DependentUpon>Expense.cs</DependentUpon>
     </Compile>
-    <Compile Include="DesignLayer\Room.cs">
+    <Compile Include="DesignLayer\AdminDesignLayer\Room.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DesignLayer\Room.Designer.cs">
+    <Compile Include="DesignLayer\AdminDesignLayer\Room.Designer.cs">
       <DependentUpon>Room.cs</DependentUpon>
     </Compile>
-    <Compile Include="DesignLayer\Setting.cs">
+    <Compile Include="DesignLayer\AdminDesignLayer\Setting.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DesignLayer\Setting.Designer.cs">
+    <Compile Include="DesignLayer\AdminDesignLayer\Setting.Designer.cs">
       <DependentUpon>Setting.cs</DependentUpon>
     </Compile>
     <Compile Include="DesignLayer\StudentDesignLayer\StudentRoom.cs">
@@ -104,22 +104,22 @@
     <Compile Include="DesignLayer\StudentDesignLayer\StudentRoom.Designer.cs">
       <DependentUpon>StudentRoom.cs</DependentUpon>
     </Compile>
-    <Compile Include="DesignLayer\StudentProfile.cs">
+    <Compile Include="DesignLayer\AdminDesignLayer\StudentProfile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DesignLayer\StudentProfile.designer.cs">
+    <Compile Include="DesignLayer\AdminDesignLayer\StudentProfile.designer.cs">
       <DependentUpon>StudentProfile.cs</DependentUpon>
     </Compile>
-    <Compile Include="DesignLayer\Tenants.cs">
+    <Compile Include="DesignLayer\AdminDesignLayer\Tenants.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DesignLayer\Tenants.Designer.cs">
+    <Compile Include="DesignLayer\AdminDesignLayer\Tenants.Designer.cs">
       <DependentUpon>Tenants.cs</DependentUpon>
     </Compile>
-    <Compile Include="DesignLayer\UpdateDeleteInformation.cs">
+    <Compile Include="DesignLayer\AdminDesignLayer\UpdateDeleteInformation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DesignLayer\UpdateDeleteInformation.Designer.cs">
+    <Compile Include="DesignLayer\AdminDesignLayer\UpdateDeleteInformation.Designer.cs">
       <DependentUpon>UpdateDeleteInformation.cs</DependentUpon>
     </Compile>
     <Compile Include="DormitoryManagementDataSet.Designer.cs">
@@ -156,40 +156,40 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="DesignLayer\AboutUs.resx">
+    <EmbeddedResource Include="DesignLayer\AdminDesignLayer\AboutUs.resx">
       <DependentUpon>AboutUs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DesignLayer\Bed.resx">
+    <EmbeddedResource Include="DesignLayer\AdminDesignLayer\Bed.resx">
       <DependentUpon>Bed.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DesignLayer\Dashboard.resx">
+    <EmbeddedResource Include="DesignLayer\AdminDesignLayer\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DesignLayer\Expense.resx">
+    <EmbeddedResource Include="DesignLayer\AdminDesignLayer\Expense.resx">
       <DependentUpon>Expense.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DesignLayer\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DesignLayer\Room.resx">
+    <EmbeddedResource Include="DesignLayer\AdminDesignLayer\Room.resx">
       <DependentUpon>Room.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DesignLayer\Setting.resx">
+    <EmbeddedResource Include="DesignLayer\AdminDesignLayer\Setting.resx">
       <DependentUpon>Setting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DesignLayer\StudentDashbord.resx">
+    <EmbeddedResource Include="DesignLayer\StudentDesignLayer\StudentDashbord.resx">
       <DependentUpon>StudentDashbord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DesignLayer\StudentDesignLayer\StudentRoom.resx">
       <DependentUpon>StudentRoom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DesignLayer\StudentProfile.resx">
+    <EmbeddedResource Include="DesignLayer\AdminDesignLayer\StudentProfile.resx">
       <DependentUpon>StudentProfile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DesignLayer\Tenants.resx">
+    <EmbeddedResource Include="DesignLayer\AdminDesignLayer\Tenants.resx">
       <DependentUpon>Tenants.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DesignLayer\UpdateDeleteInformation.resx">
+    <EmbeddedResource Include="DesignLayer\AdminDesignLayer\UpdateDeleteInformation.resx">
       <DependentUpon>UpdateDeleteInformation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -103,7 +103,6 @@ namespace Student_Profile
             this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.DateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EmojiBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -119,7 +118,6 @@ namespace Student_Profile
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.SuspendLayout();
             // 
             // userNameTextBox
@@ -996,7 +994,7 @@ namespace Student_Profile
             // 
             // errorProvider1
             // 
-            this.errorProvider1.ContainerControl = this.ConfirmPasswordTextBox;
+            this.errorProvider1.ContainerControl = this;
             // 
             // UpdatePhotoPictureBox
             // 
@@ -1280,10 +1278,6 @@ namespace Student_Profile
             this.DateTimePicker.TabIndex = 56;
             this.DateTimePicker.Value = new System.DateTime(2021, 1, 1, 0, 5, 14, 451);
             // 
-            // errorProvider2
-            // 
-            this.errorProvider2.ContainerControl = this;
-            // 
             // CreateStudentProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1357,7 +1351,6 @@ namespace Student_Profile
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1438,7 +1431,6 @@ namespace Student_Profile
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
         private Guna.UI2.WinForms.Guna2DateTimePicker DateTimePicker;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.ErrorProvider errorProvider2;
     }
 }
 
