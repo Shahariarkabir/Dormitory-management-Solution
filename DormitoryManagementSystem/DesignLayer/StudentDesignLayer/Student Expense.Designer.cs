@@ -1,7 +1,7 @@
 ﻿
 namespace Student_Log_In.DesignLayer.StudentDesignLayer
 {
-    partial class StudentRoom
+    partial class Student_Expense
     {
         /// <summary>
         /// Required designer variable.
@@ -30,11 +30,6 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.Room = new System.Windows.Forms.TextBox();
-            this.StudentEmojiBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.LogOutBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.StudentAboutUsButton = new Guna.UI2.WinForms.Guna2Button();
@@ -47,9 +42,12 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             this.guna2PictureBox12 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.StudentEmojiBox = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.Expense = new System.Windows.Forms.TextBox();
             this.guna2Panel1.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.StudentEmojiBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogOutBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox14)).BeginInit();
@@ -57,6 +55,8 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
+            this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.StudentEmojiBox)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -76,76 +76,11 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             this.guna2Panel1.Controls.Add(this.guna2PictureBox12);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox11);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox4);
-            this.guna2Panel1.Location = new System.Drawing.Point(3, 2);
+            this.guna2Panel1.Location = new System.Drawing.Point(3, -2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(135, 671);
-            this.guna2Panel1.TabIndex = 48;
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.guna2Panel2.BorderColor = System.Drawing.Color.White;
-            this.guna2Panel2.BorderThickness = 2;
-            this.guna2Panel2.Controls.Add(this.StudentEmojiBox);
-            this.guna2Panel2.Controls.Add(this.guna2ControlBox2);
-            this.guna2Panel2.Controls.Add(this.guna2ControlBox1);
-            this.guna2Panel2.Location = new System.Drawing.Point(138, 2);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(1120, 67);
-            this.guna2Panel2.TabIndex = 49;
-            // 
-            // guna2ControlBox2
-            // 
-            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1065, 5);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.Size = new System.Drawing.Size(18, 18);
-            this.guna2ControlBox2.TabIndex = 3;
-            // 
-            // guna2ControlBox1
-            // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1084, 6);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(18, 18);
-            this.guna2ControlBox1.TabIndex = 2;
-            // 
-            // Room
-            // 
-            this.Room.BackColor = System.Drawing.Color.White;
-            this.Room.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Room.Font = new System.Drawing.Font("JetBrains Mono", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Room.Location = new System.Drawing.Point(157, 91);
-            this.Room.Multiline = true;
-            this.Room.Name = "Room";
-            this.Room.Size = new System.Drawing.Size(977, 53);
-            this.Room.TabIndex = 51;
-            this.Room.Text = "Room";
-            // 
-            // StudentEmojiBox
-            // 
-            this.StudentEmojiBox.BackColor = System.Drawing.Color.Transparent;
-            this.StudentEmojiBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.StudentEmojiBox.Image = global::Student_Log_In.Properties.Resources.Group__1_;
-            this.StudentEmojiBox.Location = new System.Drawing.Point(1038, 6);
-            this.StudentEmojiBox.Name = "StudentEmojiBox";
-            this.StudentEmojiBox.ShadowDecoration.Parent = this.StudentEmojiBox;
-            this.StudentEmojiBox.Size = new System.Drawing.Size(18, 18);
-            this.StudentEmojiBox.TabIndex = 4;
-            this.StudentEmojiBox.TabStop = false;
-            this.StudentEmojiBox.UseTransparentBackground = true;
-            this.StudentEmojiBox.Click += new System.EventHandler(this.StudentEmojiBox_Click);
+            this.guna2Panel1.TabIndex = 49;
             // 
             // LogOutBox
             // 
@@ -179,7 +114,7 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             this.StudentAboutUsButton.HoverState.Parent = this.StudentAboutUsButton;
             this.StudentAboutUsButton.Image = global::Student_Log_In.Properties.Resources.Vector__10_;
             this.StudentAboutUsButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.StudentAboutUsButton.Location = new System.Drawing.Point(2, 314);
+            this.StudentAboutUsButton.Location = new System.Drawing.Point(4, 327);
             this.StudentAboutUsButton.Name = "StudentAboutUsButton";
             this.StudentAboutUsButton.ShadowDecoration.Parent = this.StudentAboutUsButton;
             this.StudentAboutUsButton.Size = new System.Drawing.Size(127, 22);
@@ -199,7 +134,7 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             this.StudentSettingsButton.HoverState.Parent = this.StudentSettingsButton;
             this.StudentSettingsButton.Image = global::Student_Log_In.Properties.Resources.options1;
             this.StudentSettingsButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.StudentSettingsButton.Location = new System.Drawing.Point(4, 260);
+            this.StudentSettingsButton.Location = new System.Drawing.Point(5, 271);
             this.StudentSettingsButton.Name = "StudentSettingsButton";
             this.StudentSettingsButton.ShadowDecoration.Parent = this.StudentSettingsButton;
             this.StudentSettingsButton.Size = new System.Drawing.Size(127, 22);
@@ -219,7 +154,7 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             this.StudentExpenseButton.HoverState.Parent = this.StudentExpenseButton;
             this.StudentExpenseButton.Image = global::Student_Log_In.Properties.Resources.Vector;
             this.StudentExpenseButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.StudentExpenseButton.Location = new System.Drawing.Point(2, 214);
+            this.StudentExpenseButton.Location = new System.Drawing.Point(4, 219);
             this.StudentExpenseButton.Name = "StudentExpenseButton";
             this.StudentExpenseButton.ShadowDecoration.Parent = this.StudentExpenseButton;
             this.StudentExpenseButton.Size = new System.Drawing.Size(129, 22);
@@ -239,7 +174,7 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             this.StudentRoomButton.HoverState.Parent = this.StudentRoomButton;
             this.StudentRoomButton.Image = global::Student_Log_In.Properties.Resources.home;
             this.StudentRoomButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.StudentRoomButton.Location = new System.Drawing.Point(3, 168);
+            this.StudentRoomButton.Location = new System.Drawing.Point(4, 171);
             this.StudentRoomButton.Name = "StudentRoomButton";
             this.StudentRoomButton.ShadowDecoration.Parent = this.StudentRoomButton;
             this.StudentRoomButton.Size = new System.Drawing.Size(129, 22);
@@ -308,7 +243,7 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             // guna2PictureBox4
             // 
             this.guna2PictureBox4.Image = global::Student_Log_In.Properties.Resources.Group_186;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(11, 18);
+            this.guna2PictureBox4.Location = new System.Drawing.Point(9, 14);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
             this.guna2PictureBox4.ShadowDecoration.Parent = this.guna2PictureBox4;
             this.guna2PictureBox4.Size = new System.Drawing.Size(118, 77);
@@ -316,21 +251,84 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             this.guna2PictureBox4.TabIndex = 0;
             this.guna2PictureBox4.TabStop = false;
             // 
-            // StudentRoom
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.guna2Panel2.BorderColor = System.Drawing.Color.White;
+            this.guna2Panel2.BorderThickness = 2;
+            this.guna2Panel2.Controls.Add(this.StudentEmojiBox);
+            this.guna2Panel2.Controls.Add(this.guna2ControlBox2);
+            this.guna2Panel2.Controls.Add(this.guna2ControlBox1);
+            this.guna2Panel2.Location = new System.Drawing.Point(138, -1);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(1120, 67);
+            this.guna2Panel2.TabIndex = 50;
+            // 
+            // StudentEmojiBox
+            // 
+            this.StudentEmojiBox.BackColor = System.Drawing.Color.Transparent;
+            this.StudentEmojiBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.StudentEmojiBox.Image = global::Student_Log_In.Properties.Resources.Group__1_;
+            this.StudentEmojiBox.Location = new System.Drawing.Point(1038, 6);
+            this.StudentEmojiBox.Name = "StudentEmojiBox";
+            this.StudentEmojiBox.ShadowDecoration.Parent = this.StudentEmojiBox;
+            this.StudentEmojiBox.Size = new System.Drawing.Size(18, 18);
+            this.StudentEmojiBox.TabIndex = 4;
+            this.StudentEmojiBox.TabStop = false;
+            this.StudentEmojiBox.UseTransparentBackground = true;
+            this.StudentEmojiBox.Click += new System.EventHandler(this.StudentEmojiBox_Click);
+            // 
+            // guna2ControlBox2
+            // 
+            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
+            this.guna2ControlBox2.Location = new System.Drawing.Point(1065, 5);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.Size = new System.Drawing.Size(18, 18);
+            this.guna2ControlBox2.TabIndex = 3;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1084, 6);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(18, 18);
+            this.guna2ControlBox1.TabIndex = 2;
+            // 
+            // Expense
+            // 
+            this.Expense.BackColor = System.Drawing.Color.White;
+            this.Expense.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Expense.Font = new System.Drawing.Font("JetBrains Mono", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Expense.Location = new System.Drawing.Point(163, 118);
+            this.Expense.Multiline = true;
+            this.Expense.Name = "Expense";
+            this.Expense.Size = new System.Drawing.Size(977, 53);
+            this.Expense.TabIndex = 52;
+            this.Expense.Text = "Expense";
+            // 
+            // Student_Expense
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1254, 666);
-            this.Controls.Add(this.Room);
+            this.Controls.Add(this.Expense);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "StudentRoom";
-            this.Text = "StudentRoom";
+            this.Name = "Student_Expense";
+            this.Text = "Student_Expense";
             this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.StudentEmojiBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogOutBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox14)).EndInit();
@@ -338,6 +336,8 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
+            this.guna2Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.StudentEmojiBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -362,6 +362,6 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
         private Guna.UI2.WinForms.Guna2PictureBox StudentEmojiBox;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private System.Windows.Forms.TextBox Room;
+        private System.Windows.Forms.TextBox Expense;
     }
 }

@@ -58,6 +58,18 @@
     <Compile Include="DataAccessLayer\DataAccess.cs" />
     <Compile Include="DataAccessLayer\Function.cs" />
     <Compile Include="DataAccessLayer\StudentAccess.cs" />
+    <Compile Include="DesignLayer\StudentDesignLayer\Student Expense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignLayer\StudentDesignLayer\Student Expense.Designer.cs">
+      <DependentUpon>Student Expense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignLayer\StudentDesignLayer\Student Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignLayer\StudentDesignLayer\Student Setting.Designer.cs">
+      <DependentUpon>Student Setting.cs</DependentUpon>
+    </Compile>
     <Compile Include="DesignLayer\StudentDesignLayer\StudentDashbord.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +188,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DesignLayer\AdminDesignLayer\Setting.resx">
       <DependentUpon>Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignLayer\StudentDesignLayer\Student Expense.resx">
+      <DependentUpon>Student Expense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignLayer\StudentDesignLayer\Student Setting.resx">
+      <DependentUpon>Student Setting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DesignLayer\StudentDesignLayer\StudentDashbord.resx">
       <DependentUpon>StudentDashbord.cs</DependentUpon>
