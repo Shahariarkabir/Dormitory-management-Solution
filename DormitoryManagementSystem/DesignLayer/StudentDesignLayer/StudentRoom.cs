@@ -21,28 +21,28 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
 
         private void StudentDashBoardButton_Click(object sender, EventArgs e)
         {
-            Dashboard dashboard = new Dashboard();
+            StudentDashboard dashboard = new StudentDashboard();
             dashboard.Show();
             this.Hide();
         }
 
         private void StudentRoomButton_Click(object sender, EventArgs e)
         {
-            Room room = new Room();
+            StudentRoom room = new StudentRoom();
             room.Show();
             this.Hide();
         }
 
         private void StudentExpenseButton_Click(object sender, EventArgs e)
         {
-            Expense expense = new Expense();
+            Student_Expense expense = new Student_Expense();
             expense.Show();
             this.Hide();
         }
 
         private void StudentSettingsButton_Click(object sender, EventArgs e)
         {
-            Setting setting = new Setting();
+            Student_Setting setting = new Student_Setting();
             setting.Show();
             this.Hide();
         }
@@ -50,7 +50,7 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
         private void StudentAboutUsButton_Click(object sender, EventArgs e)
         {
 
-            AboutUs aboutUs = new AboutUs();
+            StudentAboutUs aboutUs = new StudentAboutUs();
             aboutUs.Show();
             this.Hide();
         }
@@ -65,6 +65,13 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             HomePage login = new HomePage();
             login.Show();
             this.Hide();
+        }
+
+        private void StudentRoom_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dormitoryManagementDataSet12.rooms' table. You can move, or remove it, as needed.
+            this.roomsTableAdapter.Fill(this.dormitoryManagementDataSet12.rooms);
+
         }
     }
 }

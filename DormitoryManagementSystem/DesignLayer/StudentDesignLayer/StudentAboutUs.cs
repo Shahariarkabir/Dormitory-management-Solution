@@ -31,7 +31,7 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
 
         private void DashBoardButton_Click(object sender, EventArgs e)
         {
-            StudentDashboard student = new StudentDashboard();
+           StudentDashboard student = new StudentDashboard();
             student.Show();
             this.Hide();
         }

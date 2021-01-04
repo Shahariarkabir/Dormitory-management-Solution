@@ -29,12 +29,11 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.Room = new System.Windows.Forms.TextBox();
-            this.StudentEmojiBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.LogOutBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.StudentAboutUsButton = new Guna.UI2.WinForms.Guna2Button();
@@ -47,9 +46,19 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             this.guna2PictureBox12 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.StudentEmojiBox = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.Room = new System.Windows.Forms.TextBox();
+            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dormitoryManagementDataSet12 = new Student_Log_In.DormitoryManagementDataSet12();
+            this.roomsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.roomsTableAdapter = new Student_Log_In.DormitoryManagementDataSet12TableAdapters.roomsTableAdapter();
+            this.roomNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roomTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bookedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel1.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.StudentEmojiBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogOutBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox14)).BeginInit();
@@ -57,6 +66,11 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
+            this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.StudentEmojiBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dormitoryManagementDataSet12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roomsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -81,71 +95,6 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(135, 671);
             this.guna2Panel1.TabIndex = 48;
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.guna2Panel2.BorderColor = System.Drawing.Color.White;
-            this.guna2Panel2.BorderThickness = 2;
-            this.guna2Panel2.Controls.Add(this.StudentEmojiBox);
-            this.guna2Panel2.Controls.Add(this.guna2ControlBox2);
-            this.guna2Panel2.Controls.Add(this.guna2ControlBox1);
-            this.guna2Panel2.Location = new System.Drawing.Point(138, 2);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(1120, 67);
-            this.guna2Panel2.TabIndex = 49;
-            // 
-            // guna2ControlBox2
-            // 
-            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1065, 5);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.Size = new System.Drawing.Size(18, 18);
-            this.guna2ControlBox2.TabIndex = 3;
-            // 
-            // guna2ControlBox1
-            // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1084, 6);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(18, 18);
-            this.guna2ControlBox1.TabIndex = 2;
-            // 
-            // Room
-            // 
-            this.Room.BackColor = System.Drawing.Color.White;
-            this.Room.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Room.Font = new System.Drawing.Font("JetBrains Mono", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Room.Location = new System.Drawing.Point(157, 91);
-            this.Room.Multiline = true;
-            this.Room.Name = "Room";
-            this.Room.Size = new System.Drawing.Size(977, 53);
-            this.Room.TabIndex = 51;
-            this.Room.Text = "Room";
-            // 
-            // StudentEmojiBox
-            // 
-            this.StudentEmojiBox.BackColor = System.Drawing.Color.Transparent;
-            this.StudentEmojiBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.StudentEmojiBox.Image = global::Student_Log_In.Properties.Resources.Group__1_;
-            this.StudentEmojiBox.Location = new System.Drawing.Point(1038, 6);
-            this.StudentEmojiBox.Name = "StudentEmojiBox";
-            this.StudentEmojiBox.ShadowDecoration.Parent = this.StudentEmojiBox;
-            this.StudentEmojiBox.Size = new System.Drawing.Size(18, 18);
-            this.StudentEmojiBox.TabIndex = 4;
-            this.StudentEmojiBox.TabStop = false;
-            this.StudentEmojiBox.UseTransparentBackground = true;
-            this.StudentEmojiBox.Click += new System.EventHandler(this.StudentEmojiBox_Click);
             // 
             // LogOutBox
             // 
@@ -316,21 +265,181 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             this.guna2PictureBox4.TabIndex = 0;
             this.guna2PictureBox4.TabStop = false;
             // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.guna2Panel2.BorderColor = System.Drawing.Color.White;
+            this.guna2Panel2.BorderThickness = 2;
+            this.guna2Panel2.Controls.Add(this.StudentEmojiBox);
+            this.guna2Panel2.Controls.Add(this.guna2ControlBox2);
+            this.guna2Panel2.Controls.Add(this.guna2ControlBox1);
+            this.guna2Panel2.Location = new System.Drawing.Point(138, 2);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(1120, 67);
+            this.guna2Panel2.TabIndex = 49;
+            // 
+            // StudentEmojiBox
+            // 
+            this.StudentEmojiBox.BackColor = System.Drawing.Color.Transparent;
+            this.StudentEmojiBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.StudentEmojiBox.Image = global::Student_Log_In.Properties.Resources.Group__1_;
+            this.StudentEmojiBox.Location = new System.Drawing.Point(1038, 6);
+            this.StudentEmojiBox.Name = "StudentEmojiBox";
+            this.StudentEmojiBox.ShadowDecoration.Parent = this.StudentEmojiBox;
+            this.StudentEmojiBox.Size = new System.Drawing.Size(18, 18);
+            this.StudentEmojiBox.TabIndex = 4;
+            this.StudentEmojiBox.TabStop = false;
+            this.StudentEmojiBox.UseTransparentBackground = true;
+            this.StudentEmojiBox.Click += new System.EventHandler(this.StudentEmojiBox_Click);
+            // 
+            // guna2ControlBox2
+            // 
+            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
+            this.guna2ControlBox2.Location = new System.Drawing.Point(1065, 5);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.Size = new System.Drawing.Size(18, 18);
+            this.guna2ControlBox2.TabIndex = 3;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1084, 6);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(18, 18);
+            this.guna2ControlBox1.TabIndex = 2;
+            // 
+            // Room
+            // 
+            this.Room.BackColor = System.Drawing.Color.White;
+            this.Room.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Room.Font = new System.Drawing.Font("JetBrains Mono", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Room.Location = new System.Drawing.Point(157, 91);
+            this.Room.Multiline = true;
+            this.Room.Name = "Room";
+            this.Room.Size = new System.Drawing.Size(977, 53);
+            this.Room.TabIndex = 51;
+            this.Room.Text = "Room";
+            // 
+            // guna2DataGridView1
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.guna2DataGridView1.AutoGenerateColumns = false;
+            this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.roomNumberDataGridViewTextBoxColumn,
+            this.roomTypeDataGridViewTextBoxColumn,
+            this.bookedDataGridViewTextBoxColumn});
+            this.guna2DataGridView1.DataSource = this.roomsBindingSource;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(233)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(185)))), ((int)(((byte)(175)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.guna2DataGridView1.EnableHeadersVisualStyles = false;
+            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(222)))), ((int)(((byte)(218)))));
+            this.guna2DataGridView1.Location = new System.Drawing.Point(197, 150);
+            this.guna2DataGridView1.Name = "guna2DataGridView1";
+            this.guna2DataGridView1.RowHeadersVisible = false;
+            this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.guna2DataGridView1.Size = new System.Drawing.Size(576, 297);
+            this.guna2DataGridView1.TabIndex = 52;
+            this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Teal;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(222)))), ((int)(((byte)(218)))));
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 21;
+            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(233)))), ((int)(((byte)(231)))));
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(185)))), ((int)(((byte)(175)))));
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            // 
+            // dormitoryManagementDataSet12
+            // 
+            this.dormitoryManagementDataSet12.DataSetName = "DormitoryManagementDataSet12";
+            this.dormitoryManagementDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // roomsBindingSource
+            // 
+            this.roomsBindingSource.DataMember = "rooms";
+            this.roomsBindingSource.DataSource = this.dormitoryManagementDataSet12;
+            // 
+            // roomsTableAdapter
+            // 
+            this.roomsTableAdapter.ClearBeforeFill = true;
+            // 
+            // roomNumberDataGridViewTextBoxColumn
+            // 
+            this.roomNumberDataGridViewTextBoxColumn.DataPropertyName = "RoomNumber";
+            this.roomNumberDataGridViewTextBoxColumn.HeaderText = "RoomNumber";
+            this.roomNumberDataGridViewTextBoxColumn.Name = "roomNumberDataGridViewTextBoxColumn";
+            // 
+            // roomTypeDataGridViewTextBoxColumn
+            // 
+            this.roomTypeDataGridViewTextBoxColumn.DataPropertyName = "RoomType";
+            this.roomTypeDataGridViewTextBoxColumn.HeaderText = "RoomType";
+            this.roomTypeDataGridViewTextBoxColumn.Name = "roomTypeDataGridViewTextBoxColumn";
+            // 
+            // bookedDataGridViewTextBoxColumn
+            // 
+            this.bookedDataGridViewTextBoxColumn.DataPropertyName = "Booked";
+            this.bookedDataGridViewTextBoxColumn.HeaderText = "Booked";
+            this.bookedDataGridViewTextBoxColumn.Name = "bookedDataGridViewTextBoxColumn";
+            // 
             // StudentRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1254, 666);
+            this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.Room);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StudentRoom";
             this.Text = "StudentRoom";
+            this.Load += new System.EventHandler(this.StudentRoom_Load);
             this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.StudentEmojiBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogOutBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox14)).EndInit();
@@ -338,6 +447,11 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
+            this.guna2Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.StudentEmojiBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dormitoryManagementDataSet12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roomsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -363,5 +477,12 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private System.Windows.Forms.TextBox Room;
+        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private DormitoryManagementDataSet12 dormitoryManagementDataSet12;
+        private System.Windows.Forms.BindingSource roomsBindingSource;
+        private DormitoryManagementDataSet12TableAdapters.roomsTableAdapter roomsTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn roomNumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn roomTypeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bookedDataGridViewTextBoxColumn;
     }
 }

@@ -352,10 +352,12 @@ namespace Student_Log_In.DesignLayer
             // 
             // ExpenseBox
             // 
+            this.ExpenseBox.BackColor = System.Drawing.Color.Transparent;
+            this.ExpenseBox.BorderColor = System.Drawing.Color.Transparent;
             this.ExpenseBox.CheckedState.Parent = this.ExpenseBox;
             this.ExpenseBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ExpenseBox.CustomImages.Parent = this.ExpenseBox;
-            this.ExpenseBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(237)))));
+            this.ExpenseBox.FillColor = System.Drawing.Color.Transparent;
             this.ExpenseBox.Font = new System.Drawing.Font("JetBrains Mono", 15.75F);
             this.ExpenseBox.ForeColor = System.Drawing.Color.Black;
             this.ExpenseBox.HoverState.Parent = this.ExpenseBox;
@@ -366,14 +368,14 @@ namespace Student_Log_In.DesignLayer
             this.ExpenseBox.Size = new System.Drawing.Size(116, 22);
             this.ExpenseBox.TabIndex = 53;
             this.ExpenseBox.Text = "Expense";
-
+            this.ExpenseBox.UseTransparentBackground = true;
             // 
             // RoomBox
             // 
             this.RoomBox.CheckedState.Parent = this.RoomBox;
             this.RoomBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RoomBox.CustomImages.Parent = this.RoomBox;
-            this.RoomBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(237)))));
+            this.RoomBox.FillColor = System.Drawing.Color.Transparent;
             this.RoomBox.Font = new System.Drawing.Font("JetBrains Mono", 15.75F);
             this.RoomBox.ForeColor = System.Drawing.Color.Black;
             this.RoomBox.HoverState.Parent = this.RoomBox;
@@ -390,7 +392,7 @@ namespace Student_Log_In.DesignLayer
             this.StudentButton.CheckedState.Parent = this.StudentButton;
             this.StudentButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.StudentButton.CustomImages.Parent = this.StudentButton;
-            this.StudentButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(237)))));
+            this.StudentButton.FillColor = System.Drawing.Color.Transparent;
             this.StudentButton.Font = new System.Drawing.Font("JetBrains Mono", 15.75F);
             this.StudentButton.ForeColor = System.Drawing.Color.Black;
             this.StudentButton.HoverState.Parent = this.StudentButton;
@@ -462,7 +464,7 @@ namespace Student_Log_In.DesignLayer
             this.RoomNumberLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RoomNumberLabel.Location = new System.Drawing.Point(749, 351);
             this.RoomNumberLabel.Name = "RoomNumberLabel";
-            this.RoomNumberLabel.Size = new System.Drawing.Size(56, 14);
+            this.RoomNumberLabel.Size = new System.Drawing.Size(56, 15);
             this.RoomNumberLabel.TabIndex = 70;
             this.RoomNumberLabel.Text = "Room No";
             // 
@@ -481,7 +483,7 @@ namespace Student_Log_In.DesignLayer
             this.ConfirmPasswordLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConfirmPasswordLabel.Location = new System.Drawing.Point(461, 433);
             this.ConfirmPasswordLabel.Name = "ConfirmPasswordLabel";
-            this.ConfirmPasswordLabel.Size = new System.Drawing.Size(126, 14);
+            this.ConfirmPasswordLabel.Size = new System.Drawing.Size(126, 15);
             this.ConfirmPasswordLabel.TabIndex = 68;
             this.ConfirmPasswordLabel.Text = " Confirm Password";
             // 
@@ -491,7 +493,7 @@ namespace Student_Log_In.DesignLayer
             this.label10.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(464, 280);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(84, 14);
+            this.label10.Size = new System.Drawing.Size(84, 15);
             this.label10.TabIndex = 66;
             this.label10.Text = "Blood Group";
             // 
@@ -501,7 +503,7 @@ namespace Student_Log_In.DesignLayer
             this.GenderLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GenderLabel.Location = new System.Drawing.Point(180, 280);
             this.GenderLabel.Name = "GenderLabel";
-            this.GenderLabel.Size = new System.Drawing.Size(49, 14);
+            this.GenderLabel.Size = new System.Drawing.Size(49, 15);
             this.GenderLabel.TabIndex = 65;
             this.GenderLabel.Text = "Gender";
             // 
@@ -511,7 +513,7 @@ namespace Student_Log_In.DesignLayer
             this.DateOfBirthLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DateOfBirthLabel.Location = new System.Drawing.Point(183, 206);
             this.DateOfBirthLabel.Name = "DateOfBirthLabel";
-            this.DateOfBirthLabel.Size = new System.Drawing.Size(98, 14);
+            this.DateOfBirthLabel.Size = new System.Drawing.Size(98, 15);
             this.DateOfBirthLabel.TabIndex = 64;
             this.DateOfBirthLabel.Text = "Date Of Birth";
             // 
@@ -521,7 +523,7 @@ namespace Student_Log_In.DesignLayer
             this.FullNameTextBox.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FullNameTextBox.Location = new System.Drawing.Point(182, 129);
             this.FullNameTextBox.Name = "FullNameTextBox";
-            this.FullNameTextBox.Size = new System.Drawing.Size(70, 14);
+            this.FullNameTextBox.Size = new System.Drawing.Size(70, 15);
             this.FullNameTextBox.TabIndex = 63;
             this.FullNameTextBox.Text = "Full Name";
             // 
@@ -643,7 +645,7 @@ namespace Student_Log_In.DesignLayer
             this.EmailLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmailLabel.Location = new System.Drawing.Point(469, 124);
             this.EmailLabel.Name = "EmailLabel";
-            this.EmailLabel.Size = new System.Drawing.Size(49, 14);
+            this.EmailLabel.Size = new System.Drawing.Size(49, 15);
             this.EmailLabel.TabIndex = 82;
             this.EmailLabel.Text = "E-mail";
             // 
@@ -653,7 +655,7 @@ namespace Student_Log_In.DesignLayer
             this.label2.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(471, 202);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 14);
+            this.label2.Size = new System.Drawing.Size(91, 15);
             this.label2.TabIndex = 81;
             this.label2.Text = "Phone number";
             // 
@@ -663,7 +665,7 @@ namespace Student_Log_In.DesignLayer
             this.label1.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(898, 127);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 14);
+            this.label1.Size = new System.Drawing.Size(63, 15);
             this.label1.TabIndex = 80;
             this.label1.Text = "Username";
             // 
@@ -729,7 +731,7 @@ namespace Student_Log_In.DesignLayer
             this.label3.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(176, 352);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 14);
+            this.label3.Size = new System.Drawing.Size(56, 15);
             this.label3.TabIndex = 83;
             this.label3.Text = "Address";
             // 
@@ -805,7 +807,7 @@ namespace Student_Log_In.DesignLayer
             this.PasswordLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordLabel.Location = new System.Drawing.Point(465, 352);
             this.PasswordLabel.Name = "PasswordLabel";
-            this.PasswordLabel.Size = new System.Drawing.Size(63, 14);
+            this.PasswordLabel.Size = new System.Drawing.Size(63, 15);
             this.PasswordLabel.TabIndex = 67;
             this.PasswordLabel.Text = "Password";
             // 
@@ -835,7 +837,7 @@ namespace Student_Log_In.DesignLayer
             this.RelationTextBox.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RelationTextBox.Location = new System.Drawing.Point(761, 552);
             this.RelationTextBox.Name = "RelationTextBox";
-            this.RelationTextBox.Size = new System.Drawing.Size(63, 14);
+            this.RelationTextBox.Size = new System.Drawing.Size(63, 15);
             this.RelationTextBox.TabIndex = 96;
             this.RelationTextBox.Text = "Relation";
             // 
@@ -845,7 +847,7 @@ namespace Student_Log_In.DesignLayer
             this.EmergencyPhoneNumberLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmergencyPhoneNumberLabel.Location = new System.Drawing.Point(477, 562);
             this.EmergencyPhoneNumberLabel.Name = "EmergencyPhoneNumberLabel";
-            this.EmergencyPhoneNumberLabel.Size = new System.Drawing.Size(91, 14);
+            this.EmergencyPhoneNumberLabel.Size = new System.Drawing.Size(91, 15);
             this.EmergencyPhoneNumberLabel.TabIndex = 95;
             this.EmergencyPhoneNumberLabel.Text = "Phone Number";
             // 
@@ -855,7 +857,7 @@ namespace Student_Log_In.DesignLayer
             this.EmergencyFullNameLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmergencyFullNameLabel.Location = new System.Drawing.Point(182, 562);
             this.EmergencyFullNameLabel.Name = "EmergencyFullNameLabel";
-            this.EmergencyFullNameLabel.Size = new System.Drawing.Size(70, 14);
+            this.EmergencyFullNameLabel.Size = new System.Drawing.Size(70, 15);
             this.EmergencyFullNameLabel.TabIndex = 94;
             this.EmergencyFullNameLabel.Text = "Full Name";
             // 
@@ -1055,7 +1057,7 @@ namespace Student_Log_In.DesignLayer
             this.label4.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(746, 439);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 14);
+            this.label4.Size = new System.Drawing.Size(105, 15);
             this.label4.TabIndex = 99;
             this.label4.Text = "Booking Status";
             // 

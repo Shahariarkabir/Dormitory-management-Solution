@@ -59,8 +59,8 @@ namespace Student_Log_In
 
         private void signupLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            CreateStudentProfile profile = new CreateStudentProfile();
-            profile.Show();
+            SelfCreateStudentProfile selfCreate = new SelfCreateStudentProfile();
+            selfCreate.Show();
             this.Hide();
         }
 

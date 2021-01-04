@@ -102,7 +102,7 @@ namespace Student_Log_In
             this.userNameTextBox.BorderRadius = 20;
             this.userNameTextBox.BorderThickness = 2;
             this.userNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.userNameTextBox.DefaultText = "Admin";
+            this.userNameTextBox.DefaultText = "";
             this.userNameTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.userNameTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.userNameTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -121,7 +121,6 @@ namespace Student_Log_In
             this.userNameTextBox.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.userNameTextBox.PlaceholderText = "Please Enter Your Username";
             this.userNameTextBox.SelectedText = "";
-            this.userNameTextBox.SelectionStart = 5;
             this.userNameTextBox.ShadowDecoration.Parent = this.userNameTextBox;
             this.userNameTextBox.Size = new System.Drawing.Size(302, 43);
             this.userNameTextBox.TabIndex = 6;
@@ -142,7 +141,7 @@ namespace Student_Log_In
             this.userPasswordTextBox.BorderRadius = 20;
             this.userPasswordTextBox.BorderThickness = 2;
             this.userPasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.userPasswordTextBox.DefaultText = "1234";
+            this.userPasswordTextBox.DefaultText = "";
             this.userPasswordTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.userPasswordTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.userPasswordTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -160,7 +159,6 @@ namespace Student_Log_In
             this.userPasswordTextBox.PasswordChar = '\0';
             this.userPasswordTextBox.PlaceholderText = "Please Enter Your Password";
             this.userPasswordTextBox.SelectedText = "";
-            this.userPasswordTextBox.SelectionStart = 4;
             this.userPasswordTextBox.ShadowDecoration.Parent = this.userPasswordTextBox;
             this.userPasswordTextBox.Size = new System.Drawing.Size(302, 43);
             this.userPasswordTextBox.TabIndex = 8;

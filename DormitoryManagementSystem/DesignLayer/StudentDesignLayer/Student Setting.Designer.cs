@@ -48,26 +48,34 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.Settings = new System.Windows.Forms.TextBox();
-            this.StudentUsernameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.StudentFullnameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.StudentConfirmPasswordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.StudentPasswordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.StudentEmailTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.StudentDateOfBirthTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.StudentGenderTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.StudentPhoneNumberTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.StudentUpdateProfileButton = new Guna.UI2.WinForms.Guna2Button();
-            this.StudentBloodGroupComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.SearchButton = new Guna.UI2.WinForms.Guna2Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.userNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.BloodGroupComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.GenderLabel = new System.Windows.Forms.Label();
+            this.GenderComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.FullNameTextBox = new System.Windows.Forms.Label();
+            this.PasswordLabel = new System.Windows.Forms.Label();
+            this.DateOfBirthLabel = new System.Windows.Forms.Label();
+            this.EmailLabel = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.PassTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PhoneNumberTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.FullTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.DateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.label13 = new System.Windows.Forms.Label();
+            this.ConfirmPasswordLabel = new System.Windows.Forms.Label();
+            this.IdNumberTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.ConfirmPasswordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TextBoxEmail = new Guna.UI2.WinForms.Guna2TextBox();
+            this.AddressTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.RoomNumberLabel = new System.Windows.Forms.Label();
+            this.RoomNoText = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogOutBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -78,6 +86,7 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StudentEmojiBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -333,306 +342,10 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             this.Settings.Location = new System.Drawing.Point(156, 87);
             this.Settings.Multiline = true;
             this.Settings.Name = "Settings";
-            this.Settings.Size = new System.Drawing.Size(977, 53);
+            this.Settings.ReadOnly = true;
+            this.Settings.Size = new System.Drawing.Size(977, 37);
             this.Settings.TabIndex = 52;
             this.Settings.Text = "Settings";
-            // 
-            // StudentUsernameTextBox
-            // 
-            this.StudentUsernameTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.StudentUsernameTextBox.BorderRadius = 4;
-            this.StudentUsernameTextBox.BorderThickness = 2;
-            this.StudentUsernameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.StudentUsernameTextBox.DefaultText = "";
-            this.StudentUsernameTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.StudentUsernameTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.StudentUsernameTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.StudentUsernameTextBox.DisabledState.Parent = this.StudentUsernameTextBox;
-            this.StudentUsernameTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.StudentUsernameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.StudentUsernameTextBox.FocusedState.Parent = this.StudentUsernameTextBox;
-            this.StudentUsernameTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.StudentUsernameTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.StudentUsernameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.StudentUsernameTextBox.HoverState.Parent = this.StudentUsernameTextBox;
-            this.StudentUsernameTextBox.Location = new System.Drawing.Point(156, 146);
-            this.StudentUsernameTextBox.Name = "StudentUsernameTextBox";
-            this.StudentUsernameTextBox.PasswordChar = '\0';
-            this.StudentUsernameTextBox.PlaceholderText = "";
-            this.StudentUsernameTextBox.SelectedText = "";
-            this.StudentUsernameTextBox.ShadowDecoration.Parent = this.StudentUsernameTextBox;
-            this.StudentUsernameTextBox.Size = new System.Drawing.Size(258, 51);
-            this.StudentUsernameTextBox.TabIndex = 53;
-            // 
-            // StudentFullnameTextBox
-            // 
-            this.StudentFullnameTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.StudentFullnameTextBox.BorderRadius = 4;
-            this.StudentFullnameTextBox.BorderThickness = 2;
-            this.StudentFullnameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.StudentFullnameTextBox.DefaultText = "";
-            this.StudentFullnameTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.StudentFullnameTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.StudentFullnameTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.StudentFullnameTextBox.DisabledState.Parent = this.StudentFullnameTextBox;
-            this.StudentFullnameTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.StudentFullnameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.StudentFullnameTextBox.FocusedState.Parent = this.StudentFullnameTextBox;
-            this.StudentFullnameTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.StudentFullnameTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.StudentFullnameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.StudentFullnameTextBox.HoverState.Parent = this.StudentFullnameTextBox;
-            this.StudentFullnameTextBox.Location = new System.Drawing.Point(521, 146);
-            this.StudentFullnameTextBox.Name = "StudentFullnameTextBox";
-            this.StudentFullnameTextBox.PasswordChar = '\0';
-            this.StudentFullnameTextBox.PlaceholderText = "";
-            this.StudentFullnameTextBox.SelectedText = "";
-            this.StudentFullnameTextBox.ShadowDecoration.Parent = this.StudentFullnameTextBox;
-            this.StudentFullnameTextBox.Size = new System.Drawing.Size(258, 51);
-            this.StudentFullnameTextBox.TabIndex = 54;
-            // 
-            // StudentConfirmPasswordTextBox
-            // 
-            this.StudentConfirmPasswordTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.StudentConfirmPasswordTextBox.BorderRadius = 4;
-            this.StudentConfirmPasswordTextBox.BorderThickness = 2;
-            this.StudentConfirmPasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.StudentConfirmPasswordTextBox.DefaultText = "";
-            this.StudentConfirmPasswordTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.StudentConfirmPasswordTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.StudentConfirmPasswordTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.StudentConfirmPasswordTextBox.DisabledState.Parent = this.StudentConfirmPasswordTextBox;
-            this.StudentConfirmPasswordTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.StudentConfirmPasswordTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.StudentConfirmPasswordTextBox.FocusedState.Parent = this.StudentConfirmPasswordTextBox;
-            this.StudentConfirmPasswordTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.StudentConfirmPasswordTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.StudentConfirmPasswordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.StudentConfirmPasswordTextBox.HoverState.Parent = this.StudentConfirmPasswordTextBox;
-            this.StudentConfirmPasswordTextBox.Location = new System.Drawing.Point(156, 439);
-            this.StudentConfirmPasswordTextBox.Name = "StudentConfirmPasswordTextBox";
-            this.StudentConfirmPasswordTextBox.PasswordChar = '\0';
-            this.StudentConfirmPasswordTextBox.PlaceholderText = "";
-            this.StudentConfirmPasswordTextBox.SelectedText = "";
-            this.StudentConfirmPasswordTextBox.ShadowDecoration.Parent = this.StudentConfirmPasswordTextBox;
-            this.StudentConfirmPasswordTextBox.Size = new System.Drawing.Size(258, 51);
-            this.StudentConfirmPasswordTextBox.TabIndex = 55;
-            // 
-            // StudentPasswordTextBox
-            // 
-            this.StudentPasswordTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.StudentPasswordTextBox.BorderRadius = 4;
-            this.StudentPasswordTextBox.BorderThickness = 2;
-            this.StudentPasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.StudentPasswordTextBox.DefaultText = "";
-            this.StudentPasswordTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.StudentPasswordTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.StudentPasswordTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.StudentPasswordTextBox.DisabledState.Parent = this.StudentPasswordTextBox;
-            this.StudentPasswordTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.StudentPasswordTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.StudentPasswordTextBox.FocusedState.Parent = this.StudentPasswordTextBox;
-            this.StudentPasswordTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.StudentPasswordTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.StudentPasswordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.StudentPasswordTextBox.HoverState.Parent = this.StudentPasswordTextBox;
-            this.StudentPasswordTextBox.Location = new System.Drawing.Point(156, 347);
-            this.StudentPasswordTextBox.Name = "StudentPasswordTextBox";
-            this.StudentPasswordTextBox.PasswordChar = '\0';
-            this.StudentPasswordTextBox.PlaceholderText = "";
-            this.StudentPasswordTextBox.SelectedText = "";
-            this.StudentPasswordTextBox.ShadowDecoration.Parent = this.StudentPasswordTextBox;
-            this.StudentPasswordTextBox.Size = new System.Drawing.Size(258, 51);
-            this.StudentPasswordTextBox.TabIndex = 56;
-            // 
-            // StudentEmailTextBox
-            // 
-            this.StudentEmailTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.StudentEmailTextBox.BorderRadius = 4;
-            this.StudentEmailTextBox.BorderThickness = 2;
-            this.StudentEmailTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.StudentEmailTextBox.DefaultText = "";
-            this.StudentEmailTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.StudentEmailTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.StudentEmailTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.StudentEmailTextBox.DisabledState.Parent = this.StudentEmailTextBox;
-            this.StudentEmailTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.StudentEmailTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.StudentEmailTextBox.FocusedState.Parent = this.StudentEmailTextBox;
-            this.StudentEmailTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.StudentEmailTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.StudentEmailTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.StudentEmailTextBox.HoverState.Parent = this.StudentEmailTextBox;
-            this.StudentEmailTextBox.Location = new System.Drawing.Point(156, 249);
-            this.StudentEmailTextBox.Name = "StudentEmailTextBox";
-            this.StudentEmailTextBox.PasswordChar = '\0';
-            this.StudentEmailTextBox.PlaceholderText = "";
-            this.StudentEmailTextBox.SelectedText = "";
-            this.StudentEmailTextBox.ShadowDecoration.Parent = this.StudentEmailTextBox;
-            this.StudentEmailTextBox.Size = new System.Drawing.Size(258, 51);
-            this.StudentEmailTextBox.TabIndex = 57;
-            // 
-            // StudentDateOfBirthTextBox
-            // 
-            this.StudentDateOfBirthTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.StudentDateOfBirthTextBox.BorderRadius = 4;
-            this.StudentDateOfBirthTextBox.BorderThickness = 2;
-            this.StudentDateOfBirthTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.StudentDateOfBirthTextBox.DefaultText = "";
-            this.StudentDateOfBirthTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.StudentDateOfBirthTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.StudentDateOfBirthTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.StudentDateOfBirthTextBox.DisabledState.Parent = this.StudentDateOfBirthTextBox;
-            this.StudentDateOfBirthTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.StudentDateOfBirthTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.StudentDateOfBirthTextBox.FocusedState.Parent = this.StudentDateOfBirthTextBox;
-            this.StudentDateOfBirthTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.StudentDateOfBirthTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.StudentDateOfBirthTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.StudentDateOfBirthTextBox.HoverState.Parent = this.StudentDateOfBirthTextBox;
-            this.StudentDateOfBirthTextBox.Location = new System.Drawing.Point(521, 347);
-            this.StudentDateOfBirthTextBox.Name = "StudentDateOfBirthTextBox";
-            this.StudentDateOfBirthTextBox.PasswordChar = '\0';
-            this.StudentDateOfBirthTextBox.PlaceholderText = "";
-            this.StudentDateOfBirthTextBox.SelectedText = "";
-            this.StudentDateOfBirthTextBox.ShadowDecoration.Parent = this.StudentDateOfBirthTextBox;
-            this.StudentDateOfBirthTextBox.Size = new System.Drawing.Size(258, 51);
-            this.StudentDateOfBirthTextBox.TabIndex = 58;
-            // 
-            // StudentGenderTextBox
-            // 
-            this.StudentGenderTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.StudentGenderTextBox.BorderRadius = 4;
-            this.StudentGenderTextBox.BorderThickness = 2;
-            this.StudentGenderTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.StudentGenderTextBox.DefaultText = "";
-            this.StudentGenderTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.StudentGenderTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.StudentGenderTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.StudentGenderTextBox.DisabledState.Parent = this.StudentGenderTextBox;
-            this.StudentGenderTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.StudentGenderTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.StudentGenderTextBox.FocusedState.Parent = this.StudentGenderTextBox;
-            this.StudentGenderTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.StudentGenderTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.StudentGenderTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.StudentGenderTextBox.HoverState.Parent = this.StudentGenderTextBox;
-            this.StudentGenderTextBox.Location = new System.Drawing.Point(521, 439);
-            this.StudentGenderTextBox.Name = "StudentGenderTextBox";
-            this.StudentGenderTextBox.PasswordChar = '\0';
-            this.StudentGenderTextBox.PlaceholderText = "";
-            this.StudentGenderTextBox.SelectedText = "";
-            this.StudentGenderTextBox.ShadowDecoration.Parent = this.StudentGenderTextBox;
-            this.StudentGenderTextBox.Size = new System.Drawing.Size(258, 51);
-            this.StudentGenderTextBox.TabIndex = 60;
-            // 
-            // StudentPhoneNumberTextBox
-            // 
-            this.StudentPhoneNumberTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.StudentPhoneNumberTextBox.BorderRadius = 4;
-            this.StudentPhoneNumberTextBox.BorderThickness = 2;
-            this.StudentPhoneNumberTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.StudentPhoneNumberTextBox.DefaultText = "";
-            this.StudentPhoneNumberTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.StudentPhoneNumberTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.StudentPhoneNumberTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.StudentPhoneNumberTextBox.DisabledState.Parent = this.StudentPhoneNumberTextBox;
-            this.StudentPhoneNumberTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.StudentPhoneNumberTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.StudentPhoneNumberTextBox.FocusedState.Parent = this.StudentPhoneNumberTextBox;
-            this.StudentPhoneNumberTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.StudentPhoneNumberTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.StudentPhoneNumberTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.StudentPhoneNumberTextBox.HoverState.Parent = this.StudentPhoneNumberTextBox;
-            this.StudentPhoneNumberTextBox.Location = new System.Drawing.Point(521, 249);
-            this.StudentPhoneNumberTextBox.Name = "StudentPhoneNumberTextBox";
-            this.StudentPhoneNumberTextBox.PasswordChar = '\0';
-            this.StudentPhoneNumberTextBox.PlaceholderText = "";
-            this.StudentPhoneNumberTextBox.SelectedText = "";
-            this.StudentPhoneNumberTextBox.ShadowDecoration.Parent = this.StudentPhoneNumberTextBox;
-            this.StudentPhoneNumberTextBox.Size = new System.Drawing.Size(258, 51);
-            this.StudentPhoneNumberTextBox.TabIndex = 61;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(179, 141);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
-            this.label1.TabIndex = 62;
-            this.label1.Text = "Username";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(553, 342);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 13);
-            this.label2.TabIndex = 63;
-            this.label2.Text = "Date Of Birth";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(553, 243);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 13);
-            this.label3.TabIndex = 64;
-            this.label3.Text = "Phone Number";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(553, 141);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 13);
-            this.label4.TabIndex = 65;
-            this.label4.Text = "Full Name";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(179, 434);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 13);
-            this.label5.TabIndex = 66;
-            this.label5.Text = "Confirm Password";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(179, 340);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 13);
-            this.label6.TabIndex = 67;
-            this.label6.Text = "Password";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(179, 245);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 68;
-            this.label7.Text = "E-mail";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(553, 435);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(42, 13);
-            this.label8.TabIndex = 69;
-            this.label8.Text = "Gender";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(908, 127);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(66, 13);
-            this.label9.TabIndex = 70;
-            this.label9.Text = "Blood Group";
             // 
             // StudentUpdateProfileButton
             // 
@@ -641,37 +354,497 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             this.StudentUpdateProfileButton.CheckedState.Parent = this.StudentUpdateProfileButton;
             this.StudentUpdateProfileButton.CustomImages.Parent = this.StudentUpdateProfileButton;
             this.StudentUpdateProfileButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.StudentUpdateProfileButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.StudentUpdateProfileButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StudentUpdateProfileButton.ForeColor = System.Drawing.Color.White;
             this.StudentUpdateProfileButton.HoverState.Parent = this.StudentUpdateProfileButton;
-            this.StudentUpdateProfileButton.Location = new System.Drawing.Point(885, 249);
+            this.StudentUpdateProfileButton.Location = new System.Drawing.Point(1012, 438);
             this.StudentUpdateProfileButton.Name = "StudentUpdateProfileButton";
             this.StudentUpdateProfileButton.ShadowDecoration.Parent = this.StudentUpdateProfileButton;
-            this.StudentUpdateProfileButton.Size = new System.Drawing.Size(180, 45);
+            this.StudentUpdateProfileButton.Size = new System.Drawing.Size(170, 51);
             this.StudentUpdateProfileButton.TabIndex = 71;
             this.StudentUpdateProfileButton.Text = "Update Profile";
+            this.StudentUpdateProfileButton.Click += new System.EventHandler(this.StudentUpdateProfileButton_Click);
             // 
-            // StudentBloodGroupComboBox
+            // guna2DragControl1
             // 
-            this.StudentBloodGroupComboBox.BackColor = System.Drawing.Color.Transparent;
-            this.StudentBloodGroupComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.StudentBloodGroupComboBox.BorderRadius = 4;
-            this.StudentBloodGroupComboBox.BorderThickness = 2;
-            this.StudentBloodGroupComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.StudentBloodGroupComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.StudentBloodGroupComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.StudentBloodGroupComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.StudentBloodGroupComboBox.FocusedState.Parent = this.StudentBloodGroupComboBox;
-            this.StudentBloodGroupComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.StudentBloodGroupComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.StudentBloodGroupComboBox.HoverState.Parent = this.StudentBloodGroupComboBox;
-            this.StudentBloodGroupComboBox.ItemHeight = 30;
-            this.StudentBloodGroupComboBox.ItemsAppearance.Parent = this.StudentBloodGroupComboBox;
-            this.StudentBloodGroupComboBox.Location = new System.Drawing.Point(885, 146);
-            this.StudentBloodGroupComboBox.Name = "StudentBloodGroupComboBox";
-            this.StudentBloodGroupComboBox.ShadowDecoration.Parent = this.StudentBloodGroupComboBox;
-            this.StudentBloodGroupComboBox.Size = new System.Drawing.Size(258, 36);
-            this.StudentBloodGroupComboBox.TabIndex = 72;
+            this.guna2DragControl1.ContainerControl = this;
+            this.guna2DragControl1.TargetControl = this.Settings;
+            // 
+            // SearchButton
+            // 
+            this.SearchButton.BorderColor = System.Drawing.Color.MediumBlue;
+            this.SearchButton.BorderRadius = 4;
+            this.SearchButton.BorderThickness = 2;
+            this.SearchButton.CheckedState.Parent = this.SearchButton;
+            this.SearchButton.CustomImages.Parent = this.SearchButton;
+            this.SearchButton.FillColor = System.Drawing.Color.RoyalBlue;
+            this.SearchButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchButton.ForeColor = System.Drawing.Color.White;
+            this.SearchButton.HoverState.Parent = this.SearchButton;
+            this.SearchButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.SearchButton.Location = new System.Drawing.Point(1012, 217);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.ShadowDecoration.Parent = this.SearchButton;
+            this.SearchButton.Size = new System.Drawing.Size(170, 51);
+            this.SearchButton.TabIndex = 89;
+            this.SearchButton.Text = "Search Student";
+            this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(982, 135);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 15);
+            this.label1.TabIndex = 88;
+            this.label1.Text = "Username";
+            // 
+            // userNameTextBox
+            // 
+            this.userNameTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.userNameTextBox.BorderRadius = 4;
+            this.userNameTextBox.BorderThickness = 2;
+            this.userNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.userNameTextBox.DefaultText = "";
+            this.userNameTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.userNameTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.userNameTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.userNameTextBox.DisabledState.Parent = this.userNameTextBox;
+            this.userNameTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.userNameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.userNameTextBox.FocusedState.Parent = this.userNameTextBox;
+            this.userNameTextBox.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
+            this.userNameTextBox.ForeColor = System.Drawing.Color.Black;
+            this.userNameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.userNameTextBox.HoverState.Parent = this.userNameTextBox;
+            this.userNameTextBox.Location = new System.Drawing.Point(967, 146);
+            this.userNameTextBox.Margin = new System.Windows.Forms.Padding(6);
+            this.userNameTextBox.Name = "userNameTextBox";
+            this.userNameTextBox.PasswordChar = '\0';
+            this.userNameTextBox.PlaceholderText = "";
+            this.userNameTextBox.SelectedText = "";
+            this.userNameTextBox.ShadowDecoration.Parent = this.userNameTextBox;
+            this.userNameTextBox.Size = new System.Drawing.Size(258, 51);
+            this.userNameTextBox.TabIndex = 87;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(449, 311);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(84, 15);
+            this.label10.TabIndex = 110;
+            this.label10.Text = "Blood Group";
+            // 
+            // BloodGroupComboBox
+            // 
+            this.BloodGroupComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.BloodGroupComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.BloodGroupComboBox.BorderRadius = 4;
+            this.BloodGroupComboBox.BorderThickness = 2;
+            this.BloodGroupComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.BloodGroupComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.BloodGroupComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.BloodGroupComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.BloodGroupComboBox.FocusedState.Parent = this.BloodGroupComboBox;
+            this.BloodGroupComboBox.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F);
+            this.BloodGroupComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.BloodGroupComboBox.HoverState.Parent = this.BloodGroupComboBox;
+            this.BloodGroupComboBox.ItemHeight = 45;
+            this.BloodGroupComboBox.Items.AddRange(new object[] {
+            "A+",
+            "A-",
+            "B+",
+            "B-",
+            "O+",
+            "O-",
+            "AB+",
+            "AB-"});
+            this.BloodGroupComboBox.ItemsAppearance.Parent = this.BloodGroupComboBox;
+            this.BloodGroupComboBox.Location = new System.Drawing.Point(437, 317);
+            this.BloodGroupComboBox.Name = "BloodGroupComboBox";
+            this.BloodGroupComboBox.ShadowDecoration.Parent = this.BloodGroupComboBox;
+            this.BloodGroupComboBox.Size = new System.Drawing.Size(258, 51);
+            this.BloodGroupComboBox.StartIndex = 0;
+            this.BloodGroupComboBox.TabIndex = 122;
+            // 
+            // GenderLabel
+            // 
+            this.GenderLabel.AutoSize = true;
+            this.GenderLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GenderLabel.Location = new System.Drawing.Point(165, 311);
+            this.GenderLabel.Name = "GenderLabel";
+            this.GenderLabel.Size = new System.Drawing.Size(49, 15);
+            this.GenderLabel.TabIndex = 109;
+            this.GenderLabel.Text = "Gender";
+            // 
+            // GenderComboBox
+            // 
+            this.GenderComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.GenderComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.GenderComboBox.BorderRadius = 4;
+            this.GenderComboBox.BorderThickness = 2;
+            this.GenderComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.GenderComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.GenderComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.GenderComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.GenderComboBox.FocusedState.Parent = this.GenderComboBox;
+            this.GenderComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.GenderComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.GenderComboBox.HoverState.Parent = this.GenderComboBox;
+            this.GenderComboBox.ItemHeight = 45;
+            this.GenderComboBox.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Other"});
+            this.GenderComboBox.ItemsAppearance.Parent = this.GenderComboBox;
+            this.GenderComboBox.Location = new System.Drawing.Point(153, 317);
+            this.GenderComboBox.Name = "GenderComboBox";
+            this.GenderComboBox.ShadowDecoration.Parent = this.GenderComboBox;
+            this.GenderComboBox.Size = new System.Drawing.Size(258, 51);
+            this.GenderComboBox.StartIndex = 0;
+            this.GenderComboBox.TabIndex = 121;
+            // 
+            // FullNameTextBox
+            // 
+            this.FullNameTextBox.AutoSize = true;
+            this.FullNameTextBox.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FullNameTextBox.Location = new System.Drawing.Point(167, 160);
+            this.FullNameTextBox.Name = "FullNameTextBox";
+            this.FullNameTextBox.Size = new System.Drawing.Size(70, 15);
+            this.FullNameTextBox.TabIndex = 107;
+            this.FullNameTextBox.Text = "Full Name";
+            // 
+            // PasswordLabel
+            // 
+            this.PasswordLabel.AutoSize = true;
+            this.PasswordLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordLabel.Location = new System.Drawing.Point(450, 383);
+            this.PasswordLabel.Name = "PasswordLabel";
+            this.PasswordLabel.Size = new System.Drawing.Size(63, 15);
+            this.PasswordLabel.TabIndex = 111;
+            this.PasswordLabel.Text = "Password";
+            // 
+            // DateOfBirthLabel
+            // 
+            this.DateOfBirthLabel.AutoSize = true;
+            this.DateOfBirthLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateOfBirthLabel.Location = new System.Drawing.Point(168, 237);
+            this.DateOfBirthLabel.Name = "DateOfBirthLabel";
+            this.DateOfBirthLabel.Size = new System.Drawing.Size(98, 15);
+            this.DateOfBirthLabel.TabIndex = 108;
+            this.DateOfBirthLabel.Text = "Date Of Birth";
+            // 
+            // EmailLabel
+            // 
+            this.EmailLabel.AutoSize = true;
+            this.EmailLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailLabel.Location = new System.Drawing.Point(454, 155);
+            this.EmailLabel.Name = "EmailLabel";
+            this.EmailLabel.Size = new System.Drawing.Size(49, 15);
+            this.EmailLabel.TabIndex = 119;
+            this.EmailLabel.Text = "E-mail";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(161, 383);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 15);
+            this.label3.TabIndex = 120;
+            this.label3.Text = "Address";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(456, 233);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(91, 15);
+            this.label2.TabIndex = 118;
+            this.label2.Text = "Phone number";
+            // 
+            // PassTextBox
+            // 
+            this.PassTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.PassTextBox.BorderRadius = 4;
+            this.PassTextBox.BorderThickness = 2;
+            this.PassTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PassTextBox.DefaultText = "";
+            this.PassTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PassTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PassTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PassTextBox.DisabledState.Parent = this.PassTextBox;
+            this.PassTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PassTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PassTextBox.FocusedState.Parent = this.PassTextBox;
+            this.PassTextBox.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
+            this.PassTextBox.ForeColor = System.Drawing.Color.Black;
+            this.PassTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PassTextBox.HoverState.Parent = this.PassTextBox;
+            this.PassTextBox.Location = new System.Drawing.Point(437, 393);
+            this.PassTextBox.Margin = new System.Windows.Forms.Padding(6);
+            this.PassTextBox.Name = "PassTextBox";
+            this.PassTextBox.PasswordChar = '\0';
+            this.PassTextBox.PlaceholderText = "";
+            this.PassTextBox.SelectedText = "";
+            this.PassTextBox.ShadowDecoration.Parent = this.PassTextBox;
+            this.PassTextBox.Size = new System.Drawing.Size(261, 51);
+            this.PassTextBox.TabIndex = 117;
+            // 
+            // PhoneNumberTextBox
+            // 
+            this.PhoneNumberTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.PhoneNumberTextBox.BorderRadius = 4;
+            this.PhoneNumberTextBox.BorderThickness = 2;
+            this.PhoneNumberTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PhoneNumberTextBox.DefaultText = "";
+            this.PhoneNumberTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PhoneNumberTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PhoneNumberTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PhoneNumberTextBox.DisabledState.Parent = this.PhoneNumberTextBox;
+            this.PhoneNumberTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PhoneNumberTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PhoneNumberTextBox.FocusedState.Parent = this.PhoneNumberTextBox;
+            this.PhoneNumberTextBox.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
+            this.PhoneNumberTextBox.ForeColor = System.Drawing.Color.Black;
+            this.PhoneNumberTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PhoneNumberTextBox.HoverState.Parent = this.PhoneNumberTextBox;
+            this.PhoneNumberTextBox.Location = new System.Drawing.Point(440, 243);
+            this.PhoneNumberTextBox.Margin = new System.Windows.Forms.Padding(6);
+            this.PhoneNumberTextBox.Name = "PhoneNumberTextBox";
+            this.PhoneNumberTextBox.PasswordChar = '\0';
+            this.PhoneNumberTextBox.PlaceholderText = "";
+            this.PhoneNumberTextBox.SelectedText = "";
+            this.PhoneNumberTextBox.ShadowDecoration.Parent = this.PhoneNumberTextBox;
+            this.PhoneNumberTextBox.Size = new System.Drawing.Size(258, 51);
+            this.PhoneNumberTextBox.TabIndex = 116;
+            // 
+            // FullTextBox
+            // 
+            this.FullTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.FullTextBox.BorderRadius = 4;
+            this.FullTextBox.BorderThickness = 2;
+            this.FullTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.FullTextBox.DefaultText = "";
+            this.FullTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.FullTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.FullTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.FullTextBox.DisabledState.Parent = this.FullTextBox;
+            this.FullTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.FullTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FullTextBox.FocusedState.Parent = this.FullTextBox;
+            this.FullTextBox.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
+            this.FullTextBox.ForeColor = System.Drawing.Color.Black;
+            this.FullTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FullTextBox.HoverState.Parent = this.FullTextBox;
+            this.FullTextBox.Location = new System.Drawing.Point(156, 166);
+            this.FullTextBox.Margin = new System.Windows.Forms.Padding(6);
+            this.FullTextBox.Name = "FullTextBox";
+            this.FullTextBox.PasswordChar = '\0';
+            this.FullTextBox.PlaceholderText = "";
+            this.FullTextBox.SelectedText = "";
+            this.FullTextBox.ShadowDecoration.Parent = this.FullTextBox;
+            this.FullTextBox.Size = new System.Drawing.Size(258, 51);
+            this.FullTextBox.TabIndex = 115;
+            // 
+            // DateTimePicker
+            // 
+            this.DateTimePicker.BorderColor = System.Drawing.Color.MediumBlue;
+            this.DateTimePicker.BorderRadius = 4;
+            this.DateTimePicker.BorderThickness = 2;
+            this.DateTimePicker.CheckedState.Parent = this.DateTimePicker;
+            this.DateTimePicker.FillColor = System.Drawing.Color.White;
+            this.DateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DateTimePicker.HoverState.Parent = this.DateTimePicker;
+            this.DateTimePicker.Location = new System.Drawing.Point(156, 243);
+            this.DateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DateTimePicker.Name = "DateTimePicker";
+            this.DateTimePicker.ShadowDecoration.Parent = this.DateTimePicker;
+            this.DateTimePicker.Size = new System.Drawing.Size(258, 51);
+            this.DateTimePicker.TabIndex = 114;
+            this.DateTimePicker.Value = new System.DateTime(2021, 1, 1, 0, 5, 14, 451);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(172, 459);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(58, 13);
+            this.label13.TabIndex = 113;
+            this.label13.Text = "ID Number";
+            // 
+            // ConfirmPasswordLabel
+            // 
+            this.ConfirmPasswordLabel.AutoSize = true;
+            this.ConfirmPasswordLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConfirmPasswordLabel.Location = new System.Drawing.Point(446, 464);
+            this.ConfirmPasswordLabel.Name = "ConfirmPasswordLabel";
+            this.ConfirmPasswordLabel.Size = new System.Drawing.Size(126, 15);
+            this.ConfirmPasswordLabel.TabIndex = 112;
+            this.ConfirmPasswordLabel.Text = " Confirm Password";
+            // 
+            // IdNumberTextBox
+            // 
+            this.IdNumberTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.IdNumberTextBox.BorderRadius = 4;
+            this.IdNumberTextBox.BorderThickness = 2;
+            this.IdNumberTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.IdNumberTextBox.DefaultText = "";
+            this.IdNumberTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.IdNumberTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.IdNumberTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.IdNumberTextBox.DisabledState.Parent = this.IdNumberTextBox;
+            this.IdNumberTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.IdNumberTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.IdNumberTextBox.FocusedState.Parent = this.IdNumberTextBox;
+            this.IdNumberTextBox.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
+            this.IdNumberTextBox.ForeColor = System.Drawing.Color.Black;
+            this.IdNumberTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.IdNumberTextBox.HoverState.Parent = this.IdNumberTextBox;
+            this.IdNumberTextBox.Location = new System.Drawing.Point(150, 469);
+            this.IdNumberTextBox.Margin = new System.Windows.Forms.Padding(6);
+            this.IdNumberTextBox.Name = "IdNumberTextBox";
+            this.IdNumberTextBox.PasswordChar = '\0';
+            this.IdNumberTextBox.PlaceholderText = "";
+            this.IdNumberTextBox.SelectedText = "";
+            this.IdNumberTextBox.ShadowDecoration.Parent = this.IdNumberTextBox;
+            this.IdNumberTextBox.Size = new System.Drawing.Size(258, 51);
+            this.IdNumberTextBox.TabIndex = 106;
+            // 
+            // ConfirmPasswordTextBox
+            // 
+            this.ConfirmPasswordTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.ConfirmPasswordTextBox.BorderRadius = 4;
+            this.ConfirmPasswordTextBox.BorderThickness = 2;
+            this.ConfirmPasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ConfirmPasswordTextBox.DefaultText = "";
+            this.ConfirmPasswordTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.ConfirmPasswordTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.ConfirmPasswordTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ConfirmPasswordTextBox.DisabledState.Parent = this.ConfirmPasswordTextBox;
+            this.ConfirmPasswordTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ConfirmPasswordTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ConfirmPasswordTextBox.FocusedState.Parent = this.ConfirmPasswordTextBox;
+            this.ConfirmPasswordTextBox.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
+            this.ConfirmPasswordTextBox.ForeColor = System.Drawing.Color.Black;
+            this.ConfirmPasswordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ConfirmPasswordTextBox.HoverState.Parent = this.ConfirmPasswordTextBox;
+            this.ConfirmPasswordTextBox.Location = new System.Drawing.Point(437, 469);
+            this.ConfirmPasswordTextBox.Margin = new System.Windows.Forms.Padding(6);
+            this.ConfirmPasswordTextBox.Name = "ConfirmPasswordTextBox";
+            this.ConfirmPasswordTextBox.PasswordChar = '*';
+            this.ConfirmPasswordTextBox.PlaceholderText = "";
+            this.ConfirmPasswordTextBox.SelectedText = "";
+            this.ConfirmPasswordTextBox.ShadowDecoration.Parent = this.ConfirmPasswordTextBox;
+            this.ConfirmPasswordTextBox.Size = new System.Drawing.Size(258, 51);
+            this.ConfirmPasswordTextBox.TabIndex = 105;
+            this.ConfirmPasswordTextBox.UseSystemPasswordChar = true;
+            this.ConfirmPasswordTextBox.TextChanged += new System.EventHandler(this.ConfirmPasswordTextBox_TextChanged);
+            this.ConfirmPasswordTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.ConfirmPasswordTextBox_Validating);
+            // 
+            // TextBoxEmail
+            // 
+            this.TextBoxEmail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.TextBoxEmail.BorderRadius = 4;
+            this.TextBoxEmail.BorderThickness = 2;
+            this.TextBoxEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxEmail.DefaultText = "";
+            this.TextBoxEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBoxEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBoxEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxEmail.DisabledState.Parent = this.TextBoxEmail;
+            this.TextBoxEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxEmail.FocusedState.Parent = this.TextBoxEmail;
+            this.TextBoxEmail.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
+            this.TextBoxEmail.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxEmail.HoverState.Parent = this.TextBoxEmail;
+            this.TextBoxEmail.Location = new System.Drawing.Point(440, 166);
+            this.TextBoxEmail.Margin = new System.Windows.Forms.Padding(6);
+            this.TextBoxEmail.Name = "TextBoxEmail";
+            this.TextBoxEmail.PasswordChar = '\0';
+            this.TextBoxEmail.PlaceholderText = "";
+            this.TextBoxEmail.SelectedText = "";
+            this.TextBoxEmail.ShadowDecoration.Parent = this.TextBoxEmail;
+            this.TextBoxEmail.Size = new System.Drawing.Size(258, 51);
+            this.TextBoxEmail.TabIndex = 104;
+            // 
+            // AddressTextBox
+            // 
+            this.AddressTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.AddressTextBox.BorderRadius = 4;
+            this.AddressTextBox.BorderThickness = 2;
+            this.AddressTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AddressTextBox.DefaultText = "";
+            this.AddressTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.AddressTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.AddressTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.AddressTextBox.DisabledState.Parent = this.AddressTextBox;
+            this.AddressTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.AddressTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.AddressTextBox.FocusedState.Parent = this.AddressTextBox;
+            this.AddressTextBox.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
+            this.AddressTextBox.ForeColor = System.Drawing.Color.Black;
+            this.AddressTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.AddressTextBox.HoverState.Parent = this.AddressTextBox;
+            this.AddressTextBox.Location = new System.Drawing.Point(153, 393);
+            this.AddressTextBox.Margin = new System.Windows.Forms.Padding(6);
+            this.AddressTextBox.Name = "AddressTextBox";
+            this.AddressTextBox.PasswordChar = '\0';
+            this.AddressTextBox.PlaceholderText = "";
+            this.AddressTextBox.SelectedText = "";
+            this.AddressTextBox.ShadowDecoration.Parent = this.AddressTextBox;
+            this.AddressTextBox.Size = new System.Drawing.Size(258, 51);
+            this.AddressTextBox.TabIndex = 103;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this.ConfirmPasswordTextBox;
+            // 
+            // RoomNumberLabel
+            // 
+            this.RoomNumberLabel.AutoSize = true;
+            this.RoomNumberLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RoomNumberLabel.Location = new System.Drawing.Point(721, 306);
+            this.RoomNumberLabel.Name = "RoomNumberLabel";
+            this.RoomNumberLabel.Size = new System.Drawing.Size(56, 15);
+            this.RoomNumberLabel.TabIndex = 123;
+            this.RoomNumberLabel.Text = "Room No";
+            // 
+            // RoomNoText
+            // 
+            this.RoomNoText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.RoomNoText.BorderRadius = 4;
+            this.RoomNoText.BorderThickness = 2;
+            this.RoomNoText.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.RoomNoText.DefaultText = "";
+            this.RoomNoText.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.RoomNoText.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.RoomNoText.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.RoomNoText.DisabledState.Parent = this.RoomNoText;
+            this.RoomNoText.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.RoomNoText.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.RoomNoText.FocusedState.Parent = this.RoomNoText;
+            this.RoomNoText.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
+            this.RoomNoText.ForeColor = System.Drawing.Color.Black;
+            this.RoomNoText.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.RoomNoText.HoverState.Parent = this.RoomNoText;
+            this.RoomNoText.Location = new System.Drawing.Point(704, 317);
+            this.RoomNoText.Margin = new System.Windows.Forms.Padding(6);
+            this.RoomNoText.Name = "RoomNoText";
+            this.RoomNoText.PasswordChar = '\0';
+            this.RoomNoText.PlaceholderText = "";
+            this.RoomNoText.SelectedText = "";
+            this.RoomNoText.ShadowDecoration.Parent = this.RoomNoText;
+            this.RoomNoText.Size = new System.Drawing.Size(258, 51);
+            this.RoomNoText.TabIndex = 124;
             // 
             // Student_Setting
             // 
@@ -679,25 +852,32 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1254, 666);
-            this.Controls.Add(this.StudentBloodGroupComboBox);
-            this.Controls.Add(this.StudentUpdateProfileButton);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.RoomNumberLabel);
+            this.Controls.Add(this.RoomNoText);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.BloodGroupComboBox);
+            this.Controls.Add(this.GenderLabel);
+            this.Controls.Add(this.GenderComboBox);
+            this.Controls.Add(this.FullNameTextBox);
+            this.Controls.Add(this.PasswordLabel);
+            this.Controls.Add(this.DateOfBirthLabel);
+            this.Controls.Add(this.EmailLabel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.PassTextBox);
+            this.Controls.Add(this.PhoneNumberTextBox);
+            this.Controls.Add(this.FullTextBox);
+            this.Controls.Add(this.DateTimePicker);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.ConfirmPasswordLabel);
+            this.Controls.Add(this.IdNumberTextBox);
+            this.Controls.Add(this.ConfirmPasswordTextBox);
+            this.Controls.Add(this.TextBoxEmail);
+            this.Controls.Add(this.AddressTextBox);
+            this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.StudentPhoneNumberTextBox);
-            this.Controls.Add(this.StudentGenderTextBox);
-            this.Controls.Add(this.StudentDateOfBirthTextBox);
-            this.Controls.Add(this.StudentEmailTextBox);
-            this.Controls.Add(this.StudentPasswordTextBox);
-            this.Controls.Add(this.StudentConfirmPasswordTextBox);
-            this.Controls.Add(this.StudentFullnameTextBox);
-            this.Controls.Add(this.StudentUsernameTextBox);
+            this.Controls.Add(this.userNameTextBox);
+            this.Controls.Add(this.StudentUpdateProfileButton);
             this.Controls.Add(this.Settings);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
@@ -714,6 +894,7 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.StudentEmojiBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -739,25 +920,33 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private System.Windows.Forms.TextBox Settings;
-        private Guna.UI2.WinForms.Guna2TextBox StudentUsernameTextBox;
-        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
-        private Guna.UI2.WinForms.Guna2TextBox StudentFullnameTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox StudentConfirmPasswordTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox StudentPasswordTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox StudentEmailTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox StudentDateOfBirthTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox StudentGenderTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox StudentPhoneNumberTextBox;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2Button StudentUpdateProfileButton;
-        private Guna.UI2.WinForms.Guna2ComboBox StudentBloodGroupComboBox;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private Guna.UI2.WinForms.Guna2Button SearchButton;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2TextBox userNameTextBox;
+        private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2ComboBox BloodGroupComboBox;
+        private System.Windows.Forms.Label GenderLabel;
+        private Guna.UI2.WinForms.Guna2ComboBox GenderComboBox;
+        private System.Windows.Forms.Label FullNameTextBox;
+        private System.Windows.Forms.Label PasswordLabel;
+        private System.Windows.Forms.Label DateOfBirthLabel;
+        private System.Windows.Forms.Label EmailLabel;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2TextBox PassTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox PhoneNumberTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox FullTextBox;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DateTimePicker;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label ConfirmPasswordLabel;
+        private Guna.UI2.WinForms.Guna2TextBox IdNumberTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox ConfirmPasswordTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox TextBoxEmail;
+        private Guna.UI2.WinForms.Guna2TextBox AddressTextBox;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Label RoomNumberLabel;
+        private Guna.UI2.WinForms.Guna2TextBox RoomNoText;
     }
 }

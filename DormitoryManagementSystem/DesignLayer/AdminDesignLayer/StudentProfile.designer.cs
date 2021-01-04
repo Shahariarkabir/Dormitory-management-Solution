@@ -30,7 +30,6 @@ namespace Student_Profile
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.userNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.PhoneNumberTextBox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -69,22 +68,19 @@ namespace Student_Profile
             this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.EmojiBox = new System.Windows.Forms.PictureBox();
-            this.ExpenseBox = new Guna.UI2.WinForms.Guna2Button();
-            this.RoomBox = new Guna.UI2.WinForms.Guna2Button();
-            this.StudentButton = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.DateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.GenderComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.BloodGroupComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.RoomNoComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.LogoutButton = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.AboutUsButton = new Guna.UI2.WinForms.Guna2Button();
-            this.BedButton = new Guna.UI2.WinForms.Guna2Button();
             this.SettingsButton = new Guna.UI2.WinForms.Guna2Button();
             this.ExpenseButton = new Guna.UI2.WinForms.Guna2Button();
             this.TenantsButton = new Guna.UI2.WinForms.Guna2Button();
@@ -95,13 +91,12 @@ namespace Student_Profile
             this.guna2PictureBox12 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.DateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.GenderComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.BloodGroupComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.RoomNoComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.EmojiBox = new System.Windows.Forms.PictureBox();
+            this.ExpenseBox = new Guna.UI2.WinForms.Guna2Button();
+            this.RoomBox = new Guna.UI2.WinForms.Guna2Button();
+            this.StudentButton = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.EmojiBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoutButton)).BeginInit();
@@ -111,6 +106,8 @@ namespace Student_Profile
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // userNameTextBox
@@ -485,7 +482,7 @@ namespace Student_Profile
             this.emergencyRelationTextBox.ForeColor = System.Drawing.Color.Black;
             this.emergencyRelationTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.emergencyRelationTextBox.HoverState.Parent = this.emergencyRelationTextBox;
-            this.emergencyRelationTextBox.Location = new System.Drawing.Point(776, 539);
+            this.emergencyRelationTextBox.Location = new System.Drawing.Point(776, 531);
             this.emergencyRelationTextBox.Margin = new System.Windows.Forms.Padding(6);
             this.emergencyRelationTextBox.Name = "emergencyRelationTextBox";
             this.emergencyRelationTextBox.PasswordChar = '\0';
@@ -589,7 +586,7 @@ namespace Student_Profile
             this.label1.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(211, 160);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 14);
+            this.label1.Size = new System.Drawing.Size(63, 15);
             this.label1.TabIndex = 21;
             this.label1.Text = "Username";
             // 
@@ -599,7 +596,7 @@ namespace Student_Profile
             this.label2.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(211, 248);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 14);
+            this.label2.Size = new System.Drawing.Size(91, 15);
             this.label2.TabIndex = 22;
             this.label2.Text = "Phone number";
             // 
@@ -609,7 +606,7 @@ namespace Student_Profile
             this.EmailLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmailLabel.Location = new System.Drawing.Point(211, 331);
             this.EmailLabel.Name = "EmailLabel";
-            this.EmailLabel.Size = new System.Drawing.Size(49, 14);
+            this.EmailLabel.Size = new System.Drawing.Size(49, 15);
             this.EmailLabel.TabIndex = 23;
             this.EmailLabel.Text = "E-mail";
             // 
@@ -619,7 +616,7 @@ namespace Student_Profile
             this.AddressLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddressLabel.Location = new System.Drawing.Point(211, 405);
             this.AddressLabel.Name = "AddressLabel";
-            this.AddressLabel.Size = new System.Drawing.Size(56, 14);
+            this.AddressLabel.Size = new System.Drawing.Size(56, 15);
             this.AddressLabel.TabIndex = 24;
             this.AddressLabel.Text = "Address";
             // 
@@ -637,7 +634,7 @@ namespace Student_Profile
             this.EmergencyFullNameLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmergencyFullNameLabel.Location = new System.Drawing.Point(199, 523);
             this.EmergencyFullNameLabel.Name = "EmergencyFullNameLabel";
-            this.EmergencyFullNameLabel.Size = new System.Drawing.Size(70, 14);
+            this.EmergencyFullNameLabel.Size = new System.Drawing.Size(70, 15);
             this.EmergencyFullNameLabel.TabIndex = 26;
             this.EmergencyFullNameLabel.Text = "Full Name";
             // 
@@ -647,7 +644,7 @@ namespace Student_Profile
             this.FullNameTextBox.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FullNameTextBox.Location = new System.Drawing.Point(509, 160);
             this.FullNameTextBox.Name = "FullNameTextBox";
-            this.FullNameTextBox.Size = new System.Drawing.Size(70, 14);
+            this.FullNameTextBox.Size = new System.Drawing.Size(70, 15);
             this.FullNameTextBox.TabIndex = 27;
             this.FullNameTextBox.Text = "Full Name";
             // 
@@ -657,7 +654,7 @@ namespace Student_Profile
             this.DateOfBirthLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DateOfBirthLabel.Location = new System.Drawing.Point(495, 247);
             this.DateOfBirthLabel.Name = "DateOfBirthLabel";
-            this.DateOfBirthLabel.Size = new System.Drawing.Size(98, 14);
+            this.DateOfBirthLabel.Size = new System.Drawing.Size(98, 15);
             this.DateOfBirthLabel.TabIndex = 28;
             this.DateOfBirthLabel.Text = "Date Of Birth";
             // 
@@ -667,7 +664,7 @@ namespace Student_Profile
             this.GenderLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GenderLabel.Location = new System.Drawing.Point(495, 324);
             this.GenderLabel.Name = "GenderLabel";
-            this.GenderLabel.Size = new System.Drawing.Size(49, 14);
+            this.GenderLabel.Size = new System.Drawing.Size(49, 15);
             this.GenderLabel.TabIndex = 29;
             this.GenderLabel.Text = "Gender";
             // 
@@ -677,7 +674,7 @@ namespace Student_Profile
             this.label10.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(793, 158);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(84, 14);
+            this.label10.Size = new System.Drawing.Size(84, 15);
             this.label10.TabIndex = 30;
             this.label10.Text = "Blood Group";
             // 
@@ -687,7 +684,7 @@ namespace Student_Profile
             this.PasswordLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordLabel.Location = new System.Drawing.Point(803, 248);
             this.PasswordLabel.Name = "PasswordLabel";
-            this.PasswordLabel.Size = new System.Drawing.Size(63, 14);
+            this.PasswordLabel.Size = new System.Drawing.Size(63, 15);
             this.PasswordLabel.TabIndex = 31;
             this.PasswordLabel.Text = "Password";
             // 
@@ -697,7 +694,7 @@ namespace Student_Profile
             this.ConfirmPasswordLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConfirmPasswordLabel.Location = new System.Drawing.Point(789, 331);
             this.ConfirmPasswordLabel.Name = "ConfirmPasswordLabel";
-            this.ConfirmPasswordLabel.Size = new System.Drawing.Size(126, 14);
+            this.ConfirmPasswordLabel.Size = new System.Drawing.Size(126, 15);
             this.ConfirmPasswordLabel.TabIndex = 32;
             this.ConfirmPasswordLabel.Text = " Confirm Password";
             // 
@@ -716,7 +713,7 @@ namespace Student_Profile
             this.EmergencyPhoneNumberLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmergencyPhoneNumberLabel.Location = new System.Drawing.Point(509, 523);
             this.EmergencyPhoneNumberLabel.Name = "EmergencyPhoneNumberLabel";
-            this.EmergencyPhoneNumberLabel.Size = new System.Drawing.Size(91, 14);
+            this.EmergencyPhoneNumberLabel.Size = new System.Drawing.Size(91, 15);
             this.EmergencyPhoneNumberLabel.TabIndex = 34;
             this.EmergencyPhoneNumberLabel.Text = "Phone Number";
             // 
@@ -724,9 +721,9 @@ namespace Student_Profile
             // 
             this.RelationTextBox.AutoSize = true;
             this.RelationTextBox.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RelationTextBox.Location = new System.Drawing.Point(803, 531);
+            this.RelationTextBox.Location = new System.Drawing.Point(803, 526);
             this.RelationTextBox.Name = "RelationTextBox";
-            this.RelationTextBox.Size = new System.Drawing.Size(63, 14);
+            this.RelationTextBox.Size = new System.Drawing.Size(63, 15);
             this.RelationTextBox.TabIndex = 35;
             this.RelationTextBox.Text = "Relation";
             // 
@@ -736,7 +733,7 @@ namespace Student_Profile
             this.RoomNumberLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RoomNumberLabel.Location = new System.Drawing.Point(799, 409);
             this.RoomNumberLabel.Name = "RoomNumberLabel";
-            this.RoomNumberLabel.Size = new System.Drawing.Size(56, 14);
+            this.RoomNumberLabel.Size = new System.Drawing.Size(56, 15);
             this.RoomNumberLabel.TabIndex = 38;
             this.RoomNumberLabel.Text = "Room No";
             // 
@@ -795,81 +792,6 @@ namespace Student_Profile
             this.guna2Panel2.TabIndex = 46;
             this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
             // 
-            // EmojiBox
-            // 
-            this.EmojiBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EmojiBox.Image = global::Student_Log_In.Properties.Resources.Group__1_;
-            this.EmojiBox.Location = new System.Drawing.Point(1038, 5);
-            this.EmojiBox.Name = "EmojiBox";
-            this.EmojiBox.Size = new System.Drawing.Size(20, 20);
-            this.EmojiBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.EmojiBox.TabIndex = 54;
-            this.EmojiBox.TabStop = false;
-            this.EmojiBox.Click += new System.EventHandler(this.EmojiBox_Click);
-            // 
-            // ExpenseBox
-            // 
-            this.ExpenseBox.CheckedState.Parent = this.ExpenseBox;
-            this.ExpenseBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ExpenseBox.CustomImages.Parent = this.ExpenseBox;
-            this.ExpenseBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(237)))));
-            this.ExpenseBox.Font = new System.Drawing.Font("JetBrains Mono", 15.75F);
-            this.ExpenseBox.ForeColor = System.Drawing.Color.Black;
-            this.ExpenseBox.HoverState.Parent = this.ExpenseBox;
-            this.ExpenseBox.Image = global::Student_Log_In.Properties.Resources.Group_129__1_;
-            this.ExpenseBox.Location = new System.Drawing.Point(557, 35);
-            this.ExpenseBox.Name = "ExpenseBox";
-            this.ExpenseBox.ShadowDecoration.Parent = this.ExpenseBox;
-            this.ExpenseBox.Size = new System.Drawing.Size(116, 22);
-            this.ExpenseBox.TabIndex = 53;
-            this.ExpenseBox.Text = "Expense";
-            this.ExpenseBox.Click += new System.EventHandler(this.ExpenseBox_Click);
-            // 
-            // RoomBox
-            // 
-            this.RoomBox.CheckedState.Parent = this.RoomBox;
-            this.RoomBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.RoomBox.CustomImages.Parent = this.RoomBox;
-            this.RoomBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(237)))));
-            this.RoomBox.Font = new System.Drawing.Font("JetBrains Mono", 15.75F);
-            this.RoomBox.ForeColor = System.Drawing.Color.Black;
-            this.RoomBox.HoverState.Parent = this.RoomBox;
-            this.RoomBox.Image = global::Student_Log_In.Properties.Resources.Group_129__1_;
-            this.RoomBox.Location = new System.Drawing.Point(693, 35);
-            this.RoomBox.Name = "RoomBox";
-            this.RoomBox.ShadowDecoration.Parent = this.RoomBox;
-            this.RoomBox.Size = new System.Drawing.Size(116, 22);
-            this.RoomBox.TabIndex = 13;
-            this.RoomBox.Text = "Room";
-            this.RoomBox.Click += new System.EventHandler(this.RoomBox_Click);
-            // 
-            // StudentButton
-            // 
-            this.StudentButton.CheckedState.Parent = this.StudentButton;
-            this.StudentButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.StudentButton.CustomImages.Parent = this.StudentButton;
-            this.StudentButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(237)))));
-            this.StudentButton.Font = new System.Drawing.Font("JetBrains Mono", 15.75F);
-            this.StudentButton.ForeColor = System.Drawing.Color.Black;
-            this.StudentButton.HoverState.Parent = this.StudentButton;
-            this.StudentButton.Image = global::Student_Log_In.Properties.Resources.Group_129__1_;
-            this.StudentButton.Location = new System.Drawing.Point(815, 37);
-            this.StudentButton.Name = "StudentButton";
-            this.StudentButton.ShadowDecoration.Parent = this.StudentButton;
-            this.StudentButton.Size = new System.Drawing.Size(147, 22);
-            this.StudentButton.TabIndex = 12;
-            this.StudentButton.Text = "Student";
-            this.StudentButton.Click += new System.EventHandler(this.StudentButton_Click);
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.Location = new System.Drawing.Point(1038, 6);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
-            this.guna2PictureBox2.Size = new System.Drawing.Size(18, 18);
-            this.guna2PictureBox2.TabIndex = 4;
-            this.guna2PictureBox2.TabStop = false;
-            // 
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -887,10 +809,6 @@ namespace Student_Profile
             this.guna2Elipse1.BorderRadius = 20;
             this.guna2Elipse1.TargetControl = this;
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
@@ -903,7 +821,6 @@ namespace Student_Profile
             this.guna2Panel1.Controls.Add(this.LogoutButton);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Controls.Add(this.AboutUsButton);
-            this.guna2Panel1.Controls.Add(this.BedButton);
             this.guna2Panel1.Controls.Add(this.SettingsButton);
             this.guna2Panel1.Controls.Add(this.ExpenseButton);
             this.guna2Panel1.Controls.Add(this.TenantsButton);
@@ -919,215 +836,6 @@ namespace Student_Profile
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(135, 682);
             this.guna2Panel1.TabIndex = 55;
-            // 
-            // LogoutButton
-            // 
-            this.LogoutButton.Image = global::Student_Log_In.Properties.Resources.Group_187;
-            this.LogoutButton.Location = new System.Drawing.Point(7, 544);
-            this.LogoutButton.Name = "LogoutButton";
-            this.LogoutButton.ShadowDecoration.Parent = this.LogoutButton;
-            this.LogoutButton.Size = new System.Drawing.Size(122, 117);
-            this.LogoutButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.LogoutButton.TabIndex = 140;
-            this.LogoutButton.TabStop = false;
-            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Location = new System.Drawing.Point(2, 137);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(10, 28);
-            this.guna2PictureBox1.TabIndex = 140;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // AboutUsButton
-            // 
-            this.AboutUsButton.CheckedState.Parent = this.AboutUsButton;
-            this.AboutUsButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AboutUsButton.CustomImages.Parent = this.AboutUsButton;
-            this.AboutUsButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.AboutUsButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold);
-            this.AboutUsButton.ForeColor = System.Drawing.Color.Black;
-            this.AboutUsButton.HoverState.Parent = this.AboutUsButton;
-            this.AboutUsButton.Image = global::Student_Log_In.Properties.Resources.Vector__10_;
-            this.AboutUsButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.AboutUsButton.Location = new System.Drawing.Point(2, 417);
-            this.AboutUsButton.Name = "AboutUsButton";
-            this.AboutUsButton.ShadowDecoration.Parent = this.AboutUsButton;
-            this.AboutUsButton.Size = new System.Drawing.Size(127, 22);
-            this.AboutUsButton.TabIndex = 141;
-            this.AboutUsButton.Text = "About us";
-            this.AboutUsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.AboutUsButton.Click += new System.EventHandler(this.AboutUsButton_Click);
-            // 
-            // BedButton
-            // 
-            this.BedButton.CheckedState.Parent = this.BedButton;
-            this.BedButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BedButton.CustomImages.Parent = this.BedButton;
-            this.BedButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.BedButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold);
-            this.BedButton.ForeColor = System.Drawing.Color.Black;
-            this.BedButton.HoverState.Parent = this.BedButton;
-            this.BedButton.Image = global::Student_Log_In.Properties.Resources.terrain;
-            this.BedButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BedButton.Location = new System.Drawing.Point(3, 219);
-            this.BedButton.Name = "BedButton";
-            this.BedButton.ShadowDecoration.Parent = this.BedButton;
-            this.BedButton.Size = new System.Drawing.Size(129, 22);
-            this.BedButton.TabIndex = 140;
-            this.BedButton.Text = "Bed";
-            this.BedButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BedButton.Click += new System.EventHandler(this.BedButton_Click);
-            // 
-            // SettingsButton
-            // 
-            this.SettingsButton.CheckedState.Parent = this.SettingsButton;
-            this.SettingsButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SettingsButton.CustomImages.Parent = this.SettingsButton;
-            this.SettingsButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.SettingsButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SettingsButton.ForeColor = System.Drawing.Color.Black;
-            this.SettingsButton.HoverState.Parent = this.SettingsButton;
-            this.SettingsButton.Image = global::Student_Log_In.Properties.Resources.options1;
-            this.SettingsButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.SettingsButton.Location = new System.Drawing.Point(2, 365);
-            this.SettingsButton.Name = "SettingsButton";
-            this.SettingsButton.ShadowDecoration.Parent = this.SettingsButton;
-            this.SettingsButton.Size = new System.Drawing.Size(127, 22);
-            this.SettingsButton.TabIndex = 140;
-            this.SettingsButton.Text = "Settings";
-            this.SettingsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
-            // 
-            // ExpenseButton
-            // 
-            this.ExpenseButton.CheckedState.Parent = this.ExpenseButton;
-            this.ExpenseButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ExpenseButton.CustomImages.Parent = this.ExpenseButton;
-            this.ExpenseButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.ExpenseButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExpenseButton.ForeColor = System.Drawing.Color.Black;
-            this.ExpenseButton.HoverState.Parent = this.ExpenseButton;
-            this.ExpenseButton.Image = global::Student_Log_In.Properties.Resources.Vector;
-            this.ExpenseButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.ExpenseButton.Location = new System.Drawing.Point(3, 315);
-            this.ExpenseButton.Name = "ExpenseButton";
-            this.ExpenseButton.ShadowDecoration.Parent = this.ExpenseButton;
-            this.ExpenseButton.Size = new System.Drawing.Size(129, 22);
-            this.ExpenseButton.TabIndex = 140;
-            this.ExpenseButton.Text = "Expense";
-            this.ExpenseButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.ExpenseButton.Click += new System.EventHandler(this.ExpenseButton_Click);
-            // 
-            // TenantsButton
-            // 
-            this.TenantsButton.CheckedState.Parent = this.TenantsButton;
-            this.TenantsButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TenantsButton.CustomImages.Parent = this.TenantsButton;
-            this.TenantsButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.TenantsButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TenantsButton.ForeColor = System.Drawing.Color.Black;
-            this.TenantsButton.HoverState.Parent = this.TenantsButton;
-            this.TenantsButton.Image = global::Student_Log_In.Properties.Resources.profile;
-            this.TenantsButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TenantsButton.Location = new System.Drawing.Point(3, 265);
-            this.TenantsButton.Name = "TenantsButton";
-            this.TenantsButton.ShadowDecoration.Parent = this.TenantsButton;
-            this.TenantsButton.Size = new System.Drawing.Size(129, 22);
-            this.TenantsButton.TabIndex = 140;
-            this.TenantsButton.Text = "Tenants";
-            this.TenantsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TenantsButton.Click += new System.EventHandler(this.TenantsButton_Click);
-            // 
-            // RoomButton
-            // 
-            this.RoomButton.CheckedState.Parent = this.RoomButton;
-            this.RoomButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.RoomButton.CustomImages.Parent = this.RoomButton;
-            this.RoomButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.RoomButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RoomButton.ForeColor = System.Drawing.Color.Black;
-            this.RoomButton.HoverState.Parent = this.RoomButton;
-            this.RoomButton.Image = global::Student_Log_In.Properties.Resources.home;
-            this.RoomButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.RoomButton.Location = new System.Drawing.Point(3, 168);
-            this.RoomButton.Name = "RoomButton";
-            this.RoomButton.ShadowDecoration.Parent = this.RoomButton;
-            this.RoomButton.Size = new System.Drawing.Size(129, 22);
-            this.RoomButton.TabIndex = 140;
-            this.RoomButton.Text = "Room";
-            this.RoomButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.RoomButton.Click += new System.EventHandler(this.RoomButton_Click);
-            // 
-            // DashBoardButton
-            // 
-            this.DashBoardButton.BackColor = System.Drawing.Color.Black;
-            this.DashBoardButton.CheckedState.Parent = this.DashBoardButton;
-            this.DashBoardButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DashBoardButton.CustomImages.Parent = this.DashBoardButton;
-            this.DashBoardButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.DashBoardButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DashBoardButton.ForeColor = System.Drawing.Color.Black;
-            this.DashBoardButton.HoverState.Parent = this.DashBoardButton;
-            this.DashBoardButton.Image = global::Student_Log_In.Properties.Resources.template;
-            this.DashBoardButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.DashBoardButton.Location = new System.Drawing.Point(3, 120);
-            this.DashBoardButton.Name = "DashBoardButton";
-            this.DashBoardButton.ShadowDecoration.Parent = this.DashBoardButton;
-            this.DashBoardButton.Size = new System.Drawing.Size(129, 22);
-            this.DashBoardButton.TabIndex = 18;
-            this.DashBoardButton.Text = "Dashboard";
-            this.DashBoardButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.DashBoardButton.Click += new System.EventHandler(this.DashBoardButton_Click);
-            // 
-            // guna2PictureBox14
-            // 
-            this.guna2PictureBox14.Location = new System.Drawing.Point(50, 590);
-            this.guna2PictureBox14.Name = "guna2PictureBox14";
-            this.guna2PictureBox14.ShadowDecoration.Parent = this.guna2PictureBox14;
-            this.guna2PictureBox14.Size = new System.Drawing.Size(26, 5);
-            this.guna2PictureBox14.TabIndex = 19;
-            this.guna2PictureBox14.TabStop = false;
-            // 
-            // guna2PictureBox13
-            // 
-            this.guna2PictureBox13.Location = new System.Drawing.Point(0, 518);
-            this.guna2PictureBox13.Name = "guna2PictureBox13";
-            this.guna2PictureBox13.ShadowDecoration.Parent = this.guna2PictureBox13;
-            this.guna2PictureBox13.Size = new System.Drawing.Size(135, 2);
-            this.guna2PictureBox13.TabIndex = 17;
-            this.guna2PictureBox13.TabStop = false;
-            // 
-            // guna2PictureBox12
-            // 
-            this.guna2PictureBox12.Location = new System.Drawing.Point(67, 582);
-            this.guna2PictureBox12.Name = "guna2PictureBox12";
-            this.guna2PictureBox12.ShadowDecoration.Parent = this.guna2PictureBox12;
-            this.guna2PictureBox12.Size = new System.Drawing.Size(15, 21);
-            this.guna2PictureBox12.TabIndex = 16;
-            this.guna2PictureBox12.TabStop = false;
-            // 
-            // guna2PictureBox11
-            // 
-            this.guna2PictureBox11.Location = new System.Drawing.Point(42, 572);
-            this.guna2PictureBox11.Name = "guna2PictureBox11";
-            this.guna2PictureBox11.ShadowDecoration.Parent = this.guna2PictureBox11;
-            this.guna2PictureBox11.Size = new System.Drawing.Size(19, 39);
-            this.guna2PictureBox11.TabIndex = 15;
-            this.guna2PictureBox11.TabStop = false;
-            // 
-            // guna2PictureBox4
-            // 
-            this.guna2PictureBox4.Image = global::Student_Log_In.Properties.Resources.Group_186;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(7, 20);
-            this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.ShadowDecoration.Parent = this.guna2PictureBox4;
-            this.guna2PictureBox4.Size = new System.Drawing.Size(118, 77);
-            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox4.TabIndex = 0;
-            this.guna2PictureBox4.TabStop = false;
             // 
             // DateTimePicker
             // 
@@ -1229,6 +937,270 @@ namespace Student_Profile
             this.RoomNoComboBox.Size = new System.Drawing.Size(258, 51);
             this.RoomNoComboBox.TabIndex = 104;
             // 
+            // LogoutButton
+            // 
+            this.LogoutButton.Image = global::Student_Log_In.Properties.Resources.Group_187;
+            this.LogoutButton.Location = new System.Drawing.Point(7, 544);
+            this.LogoutButton.Name = "LogoutButton";
+            this.LogoutButton.ShadowDecoration.Parent = this.LogoutButton;
+            this.LogoutButton.Size = new System.Drawing.Size(122, 117);
+            this.LogoutButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LogoutButton.TabIndex = 140;
+            this.LogoutButton.TabStop = false;
+            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Location = new System.Drawing.Point(2, 137);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(10, 28);
+            this.guna2PictureBox1.TabIndex = 140;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // AboutUsButton
+            // 
+            this.AboutUsButton.CheckedState.Parent = this.AboutUsButton;
+            this.AboutUsButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AboutUsButton.CustomImages.Parent = this.AboutUsButton;
+            this.AboutUsButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.AboutUsButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold);
+            this.AboutUsButton.ForeColor = System.Drawing.Color.Black;
+            this.AboutUsButton.HoverState.Parent = this.AboutUsButton;
+            this.AboutUsButton.Image = global::Student_Log_In.Properties.Resources.Vector__10_;
+            this.AboutUsButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.AboutUsButton.Location = new System.Drawing.Point(2, 365);
+            this.AboutUsButton.Name = "AboutUsButton";
+            this.AboutUsButton.ShadowDecoration.Parent = this.AboutUsButton;
+            this.AboutUsButton.Size = new System.Drawing.Size(127, 22);
+            this.AboutUsButton.TabIndex = 141;
+            this.AboutUsButton.Text = "About us";
+            this.AboutUsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.AboutUsButton.Click += new System.EventHandler(this.AboutUsButton_Click);
+            // 
+            // SettingsButton
+            // 
+            this.SettingsButton.CheckedState.Parent = this.SettingsButton;
+            this.SettingsButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SettingsButton.CustomImages.Parent = this.SettingsButton;
+            this.SettingsButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.SettingsButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SettingsButton.ForeColor = System.Drawing.Color.Black;
+            this.SettingsButton.HoverState.Parent = this.SettingsButton;
+            this.SettingsButton.Image = global::Student_Log_In.Properties.Resources.options1;
+            this.SettingsButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.SettingsButton.Location = new System.Drawing.Point(2, 313);
+            this.SettingsButton.Name = "SettingsButton";
+            this.SettingsButton.ShadowDecoration.Parent = this.SettingsButton;
+            this.SettingsButton.Size = new System.Drawing.Size(127, 22);
+            this.SettingsButton.TabIndex = 140;
+            this.SettingsButton.Text = "Settings";
+            this.SettingsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
+            // 
+            // ExpenseButton
+            // 
+            this.ExpenseButton.CheckedState.Parent = this.ExpenseButton;
+            this.ExpenseButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExpenseButton.CustomImages.Parent = this.ExpenseButton;
+            this.ExpenseButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.ExpenseButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExpenseButton.ForeColor = System.Drawing.Color.Black;
+            this.ExpenseButton.HoverState.Parent = this.ExpenseButton;
+            this.ExpenseButton.Image = global::Student_Log_In.Properties.Resources.Vector;
+            this.ExpenseButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ExpenseButton.Location = new System.Drawing.Point(3, 263);
+            this.ExpenseButton.Name = "ExpenseButton";
+            this.ExpenseButton.ShadowDecoration.Parent = this.ExpenseButton;
+            this.ExpenseButton.Size = new System.Drawing.Size(129, 22);
+            this.ExpenseButton.TabIndex = 140;
+            this.ExpenseButton.Text = "Expense";
+            this.ExpenseButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ExpenseButton.Click += new System.EventHandler(this.ExpenseButton_Click);
+            // 
+            // TenantsButton
+            // 
+            this.TenantsButton.CheckedState.Parent = this.TenantsButton;
+            this.TenantsButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TenantsButton.CustomImages.Parent = this.TenantsButton;
+            this.TenantsButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.TenantsButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TenantsButton.ForeColor = System.Drawing.Color.Black;
+            this.TenantsButton.HoverState.Parent = this.TenantsButton;
+            this.TenantsButton.Image = global::Student_Log_In.Properties.Resources.profile;
+            this.TenantsButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TenantsButton.Location = new System.Drawing.Point(3, 213);
+            this.TenantsButton.Name = "TenantsButton";
+            this.TenantsButton.ShadowDecoration.Parent = this.TenantsButton;
+            this.TenantsButton.Size = new System.Drawing.Size(129, 22);
+            this.TenantsButton.TabIndex = 140;
+            this.TenantsButton.Text = "Tenants";
+            this.TenantsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TenantsButton.Click += new System.EventHandler(this.TenantsButton_Click);
+            // 
+            // RoomButton
+            // 
+            this.RoomButton.CheckedState.Parent = this.RoomButton;
+            this.RoomButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RoomButton.CustomImages.Parent = this.RoomButton;
+            this.RoomButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.RoomButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RoomButton.ForeColor = System.Drawing.Color.Black;
+            this.RoomButton.HoverState.Parent = this.RoomButton;
+            this.RoomButton.Image = global::Student_Log_In.Properties.Resources.home;
+            this.RoomButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.RoomButton.Location = new System.Drawing.Point(3, 168);
+            this.RoomButton.Name = "RoomButton";
+            this.RoomButton.ShadowDecoration.Parent = this.RoomButton;
+            this.RoomButton.Size = new System.Drawing.Size(129, 22);
+            this.RoomButton.TabIndex = 140;
+            this.RoomButton.Text = "Room";
+            this.RoomButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.RoomButton.Click += new System.EventHandler(this.RoomButton_Click);
+            // 
+            // DashBoardButton
+            // 
+            this.DashBoardButton.BackColor = System.Drawing.Color.Black;
+            this.DashBoardButton.CheckedState.Parent = this.DashBoardButton;
+            this.DashBoardButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DashBoardButton.CustomImages.Parent = this.DashBoardButton;
+            this.DashBoardButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.DashBoardButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DashBoardButton.ForeColor = System.Drawing.Color.Black;
+            this.DashBoardButton.HoverState.Parent = this.DashBoardButton;
+            this.DashBoardButton.Image = global::Student_Log_In.Properties.Resources.template;
+            this.DashBoardButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.DashBoardButton.Location = new System.Drawing.Point(3, 120);
+            this.DashBoardButton.Name = "DashBoardButton";
+            this.DashBoardButton.ShadowDecoration.Parent = this.DashBoardButton;
+            this.DashBoardButton.Size = new System.Drawing.Size(129, 22);
+            this.DashBoardButton.TabIndex = 18;
+            this.DashBoardButton.Text = "Dashboard";
+            this.DashBoardButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.DashBoardButton.Click += new System.EventHandler(this.DashBoardButton_Click);
+            // 
+            // guna2PictureBox14
+            // 
+            this.guna2PictureBox14.Location = new System.Drawing.Point(50, 590);
+            this.guna2PictureBox14.Name = "guna2PictureBox14";
+            this.guna2PictureBox14.ShadowDecoration.Parent = this.guna2PictureBox14;
+            this.guna2PictureBox14.Size = new System.Drawing.Size(26, 5);
+            this.guna2PictureBox14.TabIndex = 19;
+            this.guna2PictureBox14.TabStop = false;
+            // 
+            // guna2PictureBox13
+            // 
+            this.guna2PictureBox13.Location = new System.Drawing.Point(0, 518);
+            this.guna2PictureBox13.Name = "guna2PictureBox13";
+            this.guna2PictureBox13.ShadowDecoration.Parent = this.guna2PictureBox13;
+            this.guna2PictureBox13.Size = new System.Drawing.Size(135, 2);
+            this.guna2PictureBox13.TabIndex = 17;
+            this.guna2PictureBox13.TabStop = false;
+            // 
+            // guna2PictureBox12
+            // 
+            this.guna2PictureBox12.Location = new System.Drawing.Point(67, 582);
+            this.guna2PictureBox12.Name = "guna2PictureBox12";
+            this.guna2PictureBox12.ShadowDecoration.Parent = this.guna2PictureBox12;
+            this.guna2PictureBox12.Size = new System.Drawing.Size(15, 21);
+            this.guna2PictureBox12.TabIndex = 16;
+            this.guna2PictureBox12.TabStop = false;
+            // 
+            // guna2PictureBox11
+            // 
+            this.guna2PictureBox11.Location = new System.Drawing.Point(42, 572);
+            this.guna2PictureBox11.Name = "guna2PictureBox11";
+            this.guna2PictureBox11.ShadowDecoration.Parent = this.guna2PictureBox11;
+            this.guna2PictureBox11.Size = new System.Drawing.Size(19, 39);
+            this.guna2PictureBox11.TabIndex = 15;
+            this.guna2PictureBox11.TabStop = false;
+            // 
+            // guna2PictureBox4
+            // 
+            this.guna2PictureBox4.Image = global::Student_Log_In.Properties.Resources.Group_186;
+            this.guna2PictureBox4.Location = new System.Drawing.Point(7, 20);
+            this.guna2PictureBox4.Name = "guna2PictureBox4";
+            this.guna2PictureBox4.ShadowDecoration.Parent = this.guna2PictureBox4;
+            this.guna2PictureBox4.Size = new System.Drawing.Size(118, 77);
+            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox4.TabIndex = 0;
+            this.guna2PictureBox4.TabStop = false;
+            // 
+            // EmojiBox
+            // 
+            this.EmojiBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EmojiBox.Image = global::Student_Log_In.Properties.Resources.Group__1_;
+            this.EmojiBox.Location = new System.Drawing.Point(1038, 5);
+            this.EmojiBox.Name = "EmojiBox";
+            this.EmojiBox.Size = new System.Drawing.Size(20, 20);
+            this.EmojiBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.EmojiBox.TabIndex = 54;
+            this.EmojiBox.TabStop = false;
+            this.EmojiBox.Click += new System.EventHandler(this.EmojiBox_Click);
+            // 
+            // ExpenseBox
+            // 
+            this.ExpenseBox.CheckedState.Parent = this.ExpenseBox;
+            this.ExpenseBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExpenseBox.CustomImages.Parent = this.ExpenseBox;
+            this.ExpenseBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(237)))));
+            this.ExpenseBox.Font = new System.Drawing.Font("JetBrains Mono", 15.75F);
+            this.ExpenseBox.ForeColor = System.Drawing.Color.Black;
+            this.ExpenseBox.HoverState.Parent = this.ExpenseBox;
+            this.ExpenseBox.Image = global::Student_Log_In.Properties.Resources.Group_129__1_;
+            this.ExpenseBox.Location = new System.Drawing.Point(557, 35);
+            this.ExpenseBox.Name = "ExpenseBox";
+            this.ExpenseBox.ShadowDecoration.Parent = this.ExpenseBox;
+            this.ExpenseBox.Size = new System.Drawing.Size(116, 22);
+            this.ExpenseBox.TabIndex = 53;
+            this.ExpenseBox.Text = "Expense";
+            this.ExpenseBox.Click += new System.EventHandler(this.ExpenseBox_Click);
+            // 
+            // RoomBox
+            // 
+            this.RoomBox.CheckedState.Parent = this.RoomBox;
+            this.RoomBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RoomBox.CustomImages.Parent = this.RoomBox;
+            this.RoomBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(237)))));
+            this.RoomBox.Font = new System.Drawing.Font("JetBrains Mono", 15.75F);
+            this.RoomBox.ForeColor = System.Drawing.Color.Black;
+            this.RoomBox.HoverState.Parent = this.RoomBox;
+            this.RoomBox.Image = global::Student_Log_In.Properties.Resources.Group_129__1_;
+            this.RoomBox.Location = new System.Drawing.Point(693, 35);
+            this.RoomBox.Name = "RoomBox";
+            this.RoomBox.ShadowDecoration.Parent = this.RoomBox;
+            this.RoomBox.Size = new System.Drawing.Size(116, 22);
+            this.RoomBox.TabIndex = 13;
+            this.RoomBox.Text = "Room";
+            this.RoomBox.Click += new System.EventHandler(this.RoomBox_Click);
+            // 
+            // StudentButton
+            // 
+            this.StudentButton.CheckedState.Parent = this.StudentButton;
+            this.StudentButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.StudentButton.CustomImages.Parent = this.StudentButton;
+            this.StudentButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(237)))));
+            this.StudentButton.Font = new System.Drawing.Font("JetBrains Mono", 15.75F);
+            this.StudentButton.ForeColor = System.Drawing.Color.Black;
+            this.StudentButton.HoverState.Parent = this.StudentButton;
+            this.StudentButton.Image = global::Student_Log_In.Properties.Resources.Group_129__1_;
+            this.StudentButton.Location = new System.Drawing.Point(815, 37);
+            this.StudentButton.Name = "StudentButton";
+            this.StudentButton.ShadowDecoration.Parent = this.StudentButton;
+            this.StudentButton.Size = new System.Drawing.Size(147, 22);
+            this.StudentButton.TabIndex = 12;
+            this.StudentButton.Text = "Student";
+            this.StudentButton.Click += new System.EventHandler(this.StudentButton_Click);
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Location = new System.Drawing.Point(1038, 6);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
+            this.guna2PictureBox2.Size = new System.Drawing.Size(18, 18);
+            this.guna2PictureBox2.TabIndex = 4;
+            this.guna2PictureBox2.TabStop = false;
+            // 
             // CreateStudentProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1284,8 +1256,6 @@ namespace Student_Profile
             this.Load += new System.EventHandler(this.CreateStudentProfile_Load);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.EmojiBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LogoutButton)).EndInit();
@@ -1295,14 +1265,14 @@ namespace Student_Profile
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private Guna.UI2.WinForms.Guna2TextBox userNameTextBox;
         private System.Windows.Forms.TextBox textBox1;
         private Guna.UI2.WinForms.Guna2TextBox PhoneNumberTextBox;
@@ -1349,13 +1319,11 @@ namespace Student_Profile
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private Guna.UI2.WinForms.Guna2Button ExpenseBox;
         private Guna.UI2.WinForms.Guna2Button RoomBox;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.PictureBox EmojiBox;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2PictureBox LogoutButton;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Button AboutUsButton;
-        private Guna.UI2.WinForms.Guna2Button BedButton;
         private Guna.UI2.WinForms.Guna2Button SettingsButton;
         private Guna.UI2.WinForms.Guna2Button ExpenseButton;
         private Guna.UI2.WinForms.Guna2Button TenantsButton;
