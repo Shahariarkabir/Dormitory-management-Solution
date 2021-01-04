@@ -113,5 +113,23 @@ namespace Student_Log_In.DesignLayer
             studentProfile.Show();
             this.Hide();
         }
+
+        private void ConfirmPasswordTextBox_Validating(object sender, CancelEventArgs e)
+        {
+            {
+                if (this.ConfirmPasswordTextBox.Text != this.PasswordTextBox.Text)
+                {
+                    this.errorProvider1.SetError(this.ConfirmPasswordTextBox, "Password and Confirm must be the same");
+                    e.Cancel = true;
+                    PasswordTextBox.Clear();
+
+                    ConfirmPasswordTextBox.Clear();
+                }
+                else
+                {
+                    this.errorProvider1.SetError(this.ConfirmPasswordTextBox, "");
+                }
+            }
+        }
     }
 }

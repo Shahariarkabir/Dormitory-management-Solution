@@ -112,6 +112,7 @@ namespace Student_Log_In.DesignLayer
             this.textBox1.Location = new System.Drawing.Point(154, 91);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(513, 41);
             this.textBox1.TabIndex = 2;
             this.textBox1.Text = "Room";
@@ -657,7 +658,8 @@ namespace Student_Log_In.DesignLayer
             // 
             this.labelRoom.AutoSize = true;
             this.labelRoom.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRoom.Location = new System.Drawing.Point(1131, 121);
+            this.labelRoom.ForeColor = System.Drawing.Color.Red;
+            this.labelRoom.Location = new System.Drawing.Point(1116, 118);
             this.labelRoom.Name = "labelRoom";
             this.labelRoom.Size = new System.Drawing.Size(89, 20);
             this.labelRoom.TabIndex = 63;

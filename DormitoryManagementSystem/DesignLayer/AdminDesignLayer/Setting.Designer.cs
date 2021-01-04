@@ -38,7 +38,6 @@ namespace Student_Log_In.DesignLayer
             this.SettingsButton = new Guna.UI2.WinForms.Guna2Button();
             this.ExpenseButton = new Guna.UI2.WinForms.Guna2Button();
             this.TenantsButton = new Guna.UI2.WinForms.Guna2Button();
-            this.RoomButton = new Guna.UI2.WinForms.Guna2Button();
             this.DashBoardButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox14 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox13 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -53,8 +52,6 @@ namespace Student_Log_In.DesignLayer
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.DateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.GenderComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.BloodGroupComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.ConfirmPasswordLabel = new System.Windows.Forms.Label();
             this.PasswordLabel = new System.Windows.Forms.Label();
@@ -87,6 +84,9 @@ namespace Student_Log_In.DesignLayer
             this.CreateProfileButton = new Guna.UI2.WinForms.Guna2Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.GenderComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.BloodGroupComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.RoomButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoutButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -108,6 +108,7 @@ namespace Student_Log_In.DesignLayer
             this.textBox1.Location = new System.Drawing.Point(163, 92);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(498, 50);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "Create an Admin Profile";
@@ -237,26 +238,6 @@ namespace Student_Log_In.DesignLayer
             this.TenantsButton.Text = "Tenants";
             this.TenantsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TenantsButton.Click += new System.EventHandler(this.TenantsButton_Click);
-            // 
-            // RoomButton
-            // 
-            this.RoomButton.CheckedState.Parent = this.RoomButton;
-            this.RoomButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.RoomButton.CustomImages.Parent = this.RoomButton;
-            this.RoomButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.RoomButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RoomButton.ForeColor = System.Drawing.Color.Black;
-            this.RoomButton.HoverState.Parent = this.RoomButton;
-            this.RoomButton.Image = global::Student_Log_In.Properties.Resources.home;
-            this.RoomButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.RoomButton.Location = new System.Drawing.Point(3, 168);
-            this.RoomButton.Name = "RoomButton";
-            this.RoomButton.ShadowDecoration.Parent = this.RoomButton;
-            this.RoomButton.Size = new System.Drawing.Size(129, 22);
-            this.RoomButton.TabIndex = 140;
-            this.RoomButton.Text = "Room";
-            this.RoomButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.RoomButton.Click += new System.EventHandler(this.RoomButton_Click);
             // 
             // DashBoardButton
             // 
@@ -450,7 +431,7 @@ namespace Student_Log_In.DesignLayer
             this.DateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.DateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.DateTimePicker.HoverState.Parent = this.DateTimePicker;
-            this.DateTimePicker.Location = new System.Drawing.Point(518, 277);
+            this.DateTimePicker.Location = new System.Drawing.Point(472, 277);
             this.DateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.DateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.DateTimePicker.Name = "DateTimePicker";
@@ -459,67 +440,10 @@ namespace Student_Log_In.DesignLayer
             this.DateTimePicker.TabIndex = 78;
             this.DateTimePicker.Value = new System.DateTime(2021, 1, 1, 0, 5, 14, 451);
             // 
-            // GenderComboBox
-            // 
-            this.GenderComboBox.BackColor = System.Drawing.Color.Transparent;
-            this.GenderComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.GenderComboBox.BorderRadius = 4;
-            this.GenderComboBox.BorderThickness = 2;
-            this.GenderComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.GenderComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.GenderComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.GenderComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.GenderComboBox.FocusedState.Parent = this.GenderComboBox;
-            this.GenderComboBox.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F);
-            this.GenderComboBox.ForeColor = System.Drawing.Color.Black;
-            this.GenderComboBox.HoverState.Parent = this.GenderComboBox;
-            this.GenderComboBox.ItemHeight = 30;
-            this.GenderComboBox.Items.AddRange(new object[] {
-            "Male",
-            "Female",
-            "Others"});
-            this.GenderComboBox.ItemsAppearance.Parent = this.GenderComboBox;
-            this.GenderComboBox.Location = new System.Drawing.Point(508, 360);
-            this.GenderComboBox.Name = "GenderComboBox";
-            this.GenderComboBox.ShadowDecoration.Parent = this.GenderComboBox;
-            this.GenderComboBox.Size = new System.Drawing.Size(258, 36);
-            this.GenderComboBox.TabIndex = 77;
-            // 
-            // BloodGroupComboBox
-            // 
-            this.BloodGroupComboBox.BackColor = System.Drawing.Color.Transparent;
-            this.BloodGroupComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.BloodGroupComboBox.BorderRadius = 4;
-            this.BloodGroupComboBox.BorderThickness = 2;
-            this.BloodGroupComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.BloodGroupComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.BloodGroupComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.BloodGroupComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.BloodGroupComboBox.FocusedState.Parent = this.BloodGroupComboBox;
-            this.BloodGroupComboBox.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F);
-            this.BloodGroupComboBox.ForeColor = System.Drawing.Color.Black;
-            this.BloodGroupComboBox.HoverState.Parent = this.BloodGroupComboBox;
-            this.BloodGroupComboBox.ItemHeight = 30;
-            this.BloodGroupComboBox.Items.AddRange(new object[] {
-            "A+",
-            "A-",
-            "B+",
-            "B-",
-            "O+",
-            "O-",
-            "AB+",
-            "AB-"});
-            this.BloodGroupComboBox.ItemsAppearance.Parent = this.BloodGroupComboBox;
-            this.BloodGroupComboBox.Location = new System.Drawing.Point(813, 199);
-            this.BloodGroupComboBox.Name = "BloodGroupComboBox";
-            this.BloodGroupComboBox.ShadowDecoration.Parent = this.BloodGroupComboBox;
-            this.BloodGroupComboBox.Size = new System.Drawing.Size(258, 36);
-            this.BloodGroupComboBox.TabIndex = 76;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(840, 427);
+            this.label13.Location = new System.Drawing.Point(499, 427);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(58, 13);
             this.label13.TabIndex = 75;
@@ -529,9 +453,9 @@ namespace Student_Log_In.DesignLayer
             // 
             this.ConfirmPasswordLabel.AutoSize = true;
             this.ConfirmPasswordLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConfirmPasswordLabel.Location = new System.Drawing.Point(840, 355);
+            this.ConfirmPasswordLabel.Location = new System.Drawing.Point(786, 350);
             this.ConfirmPasswordLabel.Name = "ConfirmPasswordLabel";
-            this.ConfirmPasswordLabel.Size = new System.Drawing.Size(126, 15);
+            this.ConfirmPasswordLabel.Size = new System.Drawing.Size(126, 14);
             this.ConfirmPasswordLabel.TabIndex = 74;
             this.ConfirmPasswordLabel.Text = " Confirm Password";
             // 
@@ -539,9 +463,9 @@ namespace Student_Log_In.DesignLayer
             // 
             this.PasswordLabel.AutoSize = true;
             this.PasswordLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordLabel.Location = new System.Drawing.Point(840, 272);
+            this.PasswordLabel.Location = new System.Drawing.Point(786, 267);
             this.PasswordLabel.Name = "PasswordLabel";
-            this.PasswordLabel.Size = new System.Drawing.Size(63, 15);
+            this.PasswordLabel.Size = new System.Drawing.Size(63, 14);
             this.PasswordLabel.TabIndex = 73;
             this.PasswordLabel.Text = "Password";
             // 
@@ -549,9 +473,9 @@ namespace Student_Log_In.DesignLayer
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(840, 181);
+            this.label10.Location = new System.Drawing.Point(783, 188);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(84, 15);
+            this.label10.Size = new System.Drawing.Size(84, 14);
             this.label10.TabIndex = 72;
             this.label10.Text = "Blood Group";
             // 
@@ -559,9 +483,9 @@ namespace Student_Log_In.DesignLayer
             // 
             this.GenderLabel.AutoSize = true;
             this.GenderLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GenderLabel.Location = new System.Drawing.Point(533, 355);
+            this.GenderLabel.Location = new System.Drawing.Point(492, 356);
             this.GenderLabel.Name = "GenderLabel";
-            this.GenderLabel.Size = new System.Drawing.Size(49, 15);
+            this.GenderLabel.Size = new System.Drawing.Size(49, 14);
             this.GenderLabel.TabIndex = 71;
             this.GenderLabel.Text = "Gender";
             // 
@@ -569,9 +493,9 @@ namespace Student_Log_In.DesignLayer
             // 
             this.DateOfBirthLabel.AutoSize = true;
             this.DateOfBirthLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateOfBirthLabel.Location = new System.Drawing.Point(533, 268);
+            this.DateOfBirthLabel.Location = new System.Drawing.Point(488, 271);
             this.DateOfBirthLabel.Name = "DateOfBirthLabel";
-            this.DateOfBirthLabel.Size = new System.Drawing.Size(98, 15);
+            this.DateOfBirthLabel.Size = new System.Drawing.Size(98, 14);
             this.DateOfBirthLabel.TabIndex = 70;
             this.DateOfBirthLabel.Text = "Date Of Birth";
             // 
@@ -579,9 +503,9 @@ namespace Student_Log_In.DesignLayer
             // 
             this.FullNameTextBox.AutoSize = true;
             this.FullNameTextBox.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FullNameTextBox.Location = new System.Drawing.Point(536, 184);
+            this.FullNameTextBox.Location = new System.Drawing.Point(497, 187);
             this.FullNameTextBox.Name = "FullNameTextBox";
-            this.FullNameTextBox.Size = new System.Drawing.Size(70, 15);
+            this.FullNameTextBox.Size = new System.Drawing.Size(70, 14);
             this.FullNameTextBox.TabIndex = 69;
             this.FullNameTextBox.Text = "Full Name";
             // 
@@ -591,7 +515,7 @@ namespace Student_Log_In.DesignLayer
             this.AddressLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddressLabel.Location = new System.Drawing.Point(206, 429);
             this.AddressLabel.Name = "AddressLabel";
-            this.AddressLabel.Size = new System.Drawing.Size(56, 15);
+            this.AddressLabel.Size = new System.Drawing.Size(56, 14);
             this.AddressLabel.TabIndex = 68;
             this.AddressLabel.Text = "Address";
             // 
@@ -601,7 +525,7 @@ namespace Student_Log_In.DesignLayer
             this.EmailLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmailLabel.Location = new System.Drawing.Point(206, 355);
             this.EmailLabel.Name = "EmailLabel";
-            this.EmailLabel.Size = new System.Drawing.Size(49, 15);
+            this.EmailLabel.Size = new System.Drawing.Size(49, 14);
             this.EmailLabel.TabIndex = 67;
             this.EmailLabel.Text = "E-mail";
             // 
@@ -611,7 +535,7 @@ namespace Student_Log_In.DesignLayer
             this.label2.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(206, 272);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 15);
+            this.label2.Size = new System.Drawing.Size(91, 14);
             this.label2.TabIndex = 66;
             this.label2.Text = "Phone number";
             // 
@@ -621,7 +545,7 @@ namespace Student_Log_In.DesignLayer
             this.label1.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(206, 184);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 15);
+            this.label1.Size = new System.Drawing.Size(63, 14);
             this.label1.TabIndex = 65;
             this.label1.Text = "Username";
             // 
@@ -643,7 +567,7 @@ namespace Student_Log_In.DesignLayer
             this.IdNumberTextBox.ForeColor = System.Drawing.Color.Black;
             this.IdNumberTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.IdNumberTextBox.HoverState.Parent = this.IdNumberTextBox;
-            this.IdNumberTextBox.Location = new System.Drawing.Point(813, 434);
+            this.IdNumberTextBox.Location = new System.Drawing.Point(472, 434);
             this.IdNumberTextBox.Margin = new System.Windows.Forms.Padding(6);
             this.IdNumberTextBox.Name = "IdNumberTextBox";
             this.IdNumberTextBox.PasswordChar = '\0';
@@ -671,7 +595,7 @@ namespace Student_Log_In.DesignLayer
             this.ConfirmPasswordTextBox.ForeColor = System.Drawing.Color.Black;
             this.ConfirmPasswordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ConfirmPasswordTextBox.HoverState.Parent = this.ConfirmPasswordTextBox;
-            this.ConfirmPasswordTextBox.Location = new System.Drawing.Point(813, 360);
+            this.ConfirmPasswordTextBox.Location = new System.Drawing.Point(759, 355);
             this.ConfirmPasswordTextBox.Margin = new System.Windows.Forms.Padding(6);
             this.ConfirmPasswordTextBox.Name = "ConfirmPasswordTextBox";
             this.ConfirmPasswordTextBox.PasswordChar = '*';
@@ -681,6 +605,7 @@ namespace Student_Log_In.DesignLayer
             this.ConfirmPasswordTextBox.Size = new System.Drawing.Size(258, 51);
             this.ConfirmPasswordTextBox.TabIndex = 63;
             this.ConfirmPasswordTextBox.UseSystemPasswordChar = true;
+            this.ConfirmPasswordTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.ConfirmPasswordTextBox_Validating);
             // 
             // PasswordTextBox
             // 
@@ -700,7 +625,7 @@ namespace Student_Log_In.DesignLayer
             this.PasswordTextBox.ForeColor = System.Drawing.Color.Black;
             this.PasswordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PasswordTextBox.HoverState.Parent = this.PasswordTextBox;
-            this.PasswordTextBox.Location = new System.Drawing.Point(813, 277);
+            this.PasswordTextBox.Location = new System.Drawing.Point(759, 272);
             this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(6);
             this.PasswordTextBox.Name = "PasswordTextBox";
             this.PasswordTextBox.PasswordChar = '*';
@@ -729,7 +654,7 @@ namespace Student_Log_In.DesignLayer
             this.TextBoxFullName.ForeColor = System.Drawing.Color.Black;
             this.TextBoxFullName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBoxFullName.HoverState.Parent = this.TextBoxFullName;
-            this.TextBoxFullName.Location = new System.Drawing.Point(511, 190);
+            this.TextBoxFullName.Location = new System.Drawing.Point(472, 193);
             this.TextBoxFullName.Margin = new System.Windows.Forms.Padding(6);
             this.TextBoxFullName.Name = "TextBoxFullName";
             this.TextBoxFullName.PasswordChar = '\0';
@@ -764,7 +689,7 @@ namespace Student_Log_In.DesignLayer
             this.AddressTextBox.PlaceholderText = "";
             this.AddressTextBox.SelectedText = "";
             this.AddressTextBox.ShadowDecoration.Parent = this.AddressTextBox;
-            this.AddressTextBox.Size = new System.Drawing.Size(586, 51);
+            this.AddressTextBox.Size = new System.Drawing.Size(258, 51);
             this.AddressTextBox.TabIndex = 60;
             // 
             // EmailTextBox
@@ -855,9 +780,9 @@ namespace Student_Log_In.DesignLayer
             // 
             this.RelationTextBox.AutoSize = true;
             this.RelationTextBox.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RelationTextBox.Location = new System.Drawing.Point(837, 580);
+            this.RelationTextBox.Location = new System.Drawing.Point(786, 586);
             this.RelationTextBox.Name = "RelationTextBox";
-            this.RelationTextBox.Size = new System.Drawing.Size(63, 15);
+            this.RelationTextBox.Size = new System.Drawing.Size(63, 14);
             this.RelationTextBox.TabIndex = 88;
             this.RelationTextBox.Text = "Relation";
             // 
@@ -867,7 +792,7 @@ namespace Student_Log_In.DesignLayer
             this.EmergencyPhoneNumberLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmergencyPhoneNumberLabel.Location = new System.Drawing.Point(533, 580);
             this.EmergencyPhoneNumberLabel.Name = "EmergencyPhoneNumberLabel";
-            this.EmergencyPhoneNumberLabel.Size = new System.Drawing.Size(91, 15);
+            this.EmergencyPhoneNumberLabel.Size = new System.Drawing.Size(91, 14);
             this.EmergencyPhoneNumberLabel.TabIndex = 87;
             this.EmergencyPhoneNumberLabel.Text = "Phone Number";
             // 
@@ -877,7 +802,7 @@ namespace Student_Log_In.DesignLayer
             this.EmergencyFullNameLabel.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmergencyFullNameLabel.Location = new System.Drawing.Point(194, 580);
             this.EmergencyFullNameLabel.Name = "EmergencyFullNameLabel";
-            this.EmergencyFullNameLabel.Size = new System.Drawing.Size(70, 15);
+            this.EmergencyFullNameLabel.Size = new System.Drawing.Size(70, 14);
             this.EmergencyFullNameLabel.TabIndex = 86;
             this.EmergencyFullNameLabel.Text = "Full Name";
             // 
@@ -917,7 +842,7 @@ namespace Student_Log_In.DesignLayer
             this.emergencyRelationTextBox.ForeColor = System.Drawing.Color.Black;
             this.emergencyRelationTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.emergencyRelationTextBox.HoverState.Parent = this.emergencyRelationTextBox;
-            this.emergencyRelationTextBox.Location = new System.Drawing.Point(810, 590);
+            this.emergencyRelationTextBox.Location = new System.Drawing.Point(759, 596);
             this.emergencyRelationTextBox.Margin = new System.Windows.Forms.Padding(6);
             this.emergencyRelationTextBox.Name = "emergencyRelationTextBox";
             this.emergencyRelationTextBox.PasswordChar = '\0';
@@ -1002,7 +927,7 @@ namespace Student_Log_In.DesignLayer
             this.EmergencyPhoneNumberTextBox.ForeColor = System.Drawing.Color.Black;
             this.EmergencyPhoneNumberTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.EmergencyPhoneNumberTextBox.HoverState.Parent = this.EmergencyPhoneNumberTextBox;
-            this.EmergencyPhoneNumberTextBox.Location = new System.Drawing.Point(508, 590);
+            this.EmergencyPhoneNumberTextBox.Location = new System.Drawing.Point(472, 596);
             this.EmergencyPhoneNumberTextBox.Margin = new System.Windows.Forms.Padding(6);
             this.EmergencyPhoneNumberTextBox.Name = "EmergencyPhoneNumberTextBox";
             this.EmergencyPhoneNumberTextBox.PasswordChar = '\0';
@@ -1053,10 +978,10 @@ namespace Student_Log_In.DesignLayer
             this.CreateProfileButton.Font = new System.Drawing.Font("JetBrains Mono", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateProfileButton.ForeColor = System.Drawing.Color.White;
             this.CreateProfileButton.HoverState.Parent = this.CreateProfileButton;
-            this.CreateProfileButton.Location = new System.Drawing.Point(1078, 518);
+            this.CreateProfileButton.Location = new System.Drawing.Point(968, 458);
             this.CreateProfileButton.Name = "CreateProfileButton";
             this.CreateProfileButton.ShadowDecoration.Parent = this.CreateProfileButton;
-            this.CreateProfileButton.Size = new System.Drawing.Size(164, 50);
+            this.CreateProfileButton.Size = new System.Drawing.Size(219, 50);
             this.CreateProfileButton.TabIndex = 89;
             this.CreateProfileButton.Text = "Create Admin  Profile";
             this.CreateProfileButton.Click += new System.EventHandler(this.CreateProfileButton_Click);
@@ -1070,13 +995,95 @@ namespace Student_Log_In.DesignLayer
             this.guna2DragControl1.ContainerControl = this;
             this.guna2DragControl1.TargetControl = this;
             // 
+            // GenderComboBox
+            // 
+            this.GenderComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.GenderComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.GenderComboBox.BorderRadius = 4;
+            this.GenderComboBox.BorderThickness = 2;
+            this.GenderComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.GenderComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.GenderComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.GenderComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.GenderComboBox.FocusedState.Parent = this.GenderComboBox;
+            this.GenderComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.GenderComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.GenderComboBox.HoverState.Parent = this.GenderComboBox;
+            this.GenderComboBox.ItemHeight = 45;
+            this.GenderComboBox.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Other"});
+            this.GenderComboBox.ItemsAppearance.Parent = this.GenderComboBox;
+            this.GenderComboBox.Location = new System.Drawing.Point(472, 360);
+            this.GenderComboBox.Name = "GenderComboBox";
+            this.GenderComboBox.ShadowDecoration.Parent = this.GenderComboBox;
+            this.GenderComboBox.Size = new System.Drawing.Size(258, 51);
+            this.GenderComboBox.StartIndex = 0;
+            this.GenderComboBox.TabIndex = 102;
+            // 
+            // BloodGroupComboBox
+            // 
+            this.BloodGroupComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.BloodGroupComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.BloodGroupComboBox.BorderRadius = 4;
+            this.BloodGroupComboBox.BorderThickness = 2;
+            this.BloodGroupComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.BloodGroupComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.BloodGroupComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.BloodGroupComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.BloodGroupComboBox.FocusedState.Parent = this.BloodGroupComboBox;
+            this.BloodGroupComboBox.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F);
+            this.BloodGroupComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.BloodGroupComboBox.HoverState.Parent = this.BloodGroupComboBox;
+            this.BloodGroupComboBox.ItemHeight = 45;
+            this.BloodGroupComboBox.Items.AddRange(new object[] {
+            "A+",
+            "A-",
+            "B+",
+            "B-",
+            "O+",
+            "O-",
+            "AB+",
+            "AB-"});
+            this.BloodGroupComboBox.ItemsAppearance.Parent = this.BloodGroupComboBox;
+            this.BloodGroupComboBox.Location = new System.Drawing.Point(759, 193);
+            this.BloodGroupComboBox.Name = "BloodGroupComboBox";
+            this.BloodGroupComboBox.ShadowDecoration.Parent = this.BloodGroupComboBox;
+            this.BloodGroupComboBox.Size = new System.Drawing.Size(258, 51);
+            this.BloodGroupComboBox.StartIndex = 0;
+            this.BloodGroupComboBox.TabIndex = 103;
+            // 
+            // RoomButton
+            // 
+            this.RoomButton.CheckedState.Parent = this.RoomButton;
+            this.RoomButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RoomButton.CustomImages.Parent = this.RoomButton;
+            this.RoomButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.RoomButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RoomButton.ForeColor = System.Drawing.Color.Black;
+            this.RoomButton.HoverState.Parent = this.RoomButton;
+            this.RoomButton.Image = global::Student_Log_In.Properties.Resources.home;
+            this.RoomButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.RoomButton.Location = new System.Drawing.Point(3, 168);
+            this.RoomButton.Name = "RoomButton";
+            this.RoomButton.ShadowDecoration.Parent = this.RoomButton;
+            this.RoomButton.Size = new System.Drawing.Size(129, 22);
+            this.RoomButton.TabIndex = 140;
+            this.RoomButton.Text = "Room";
+            this.RoomButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.RoomButton.Click += new System.EventHandler(this.RoomButton_Click);
+            // 
             // Setting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1254, 666);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.BloodGroupComboBox);
             this.Controls.Add(this.GenderLabel);
+            this.Controls.Add(this.GenderComboBox);
             this.Controls.Add(this.DateOfBirthLabel);
             this.Controls.Add(this.CreateProfileButton);
             this.Controls.Add(this.RelationTextBox);
@@ -1090,12 +1097,9 @@ namespace Student_Log_In.DesignLayer
             this.Controls.Add(this.EmergencyPhoneNumberTextBox);
             this.Controls.Add(this.guna2TextBox12);
             this.Controls.Add(this.DateTimePicker);
-            this.Controls.Add(this.GenderComboBox);
-            this.Controls.Add(this.BloodGroupComboBox);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.ConfirmPasswordLabel);
             this.Controls.Add(this.PasswordLabel);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.FullNameTextBox);
             this.Controls.Add(this.AddressLabel);
             this.Controls.Add(this.EmailLabel);
@@ -1140,7 +1144,6 @@ namespace Student_Log_In.DesignLayer
         private Guna.UI2.WinForms.Guna2Button SettingsButton;
         private Guna.UI2.WinForms.Guna2Button ExpenseButton;
         private Guna.UI2.WinForms.Guna2Button TenantsButton;
-        private Guna.UI2.WinForms.Guna2Button RoomButton;
         private Guna.UI2.WinForms.Guna2Button DashBoardButton;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox14;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox13;
@@ -1155,8 +1158,6 @@ namespace Student_Log_In.DesignLayer
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2DateTimePicker DateTimePicker;
-        private Guna.UI2.WinForms.Guna2ComboBox GenderComboBox;
-        private Guna.UI2.WinForms.Guna2ComboBox BloodGroupComboBox;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label ConfirmPasswordLabel;
         private System.Windows.Forms.Label PasswordLabel;
@@ -1189,5 +1190,8 @@ namespace Student_Log_In.DesignLayer
         private Guna.UI2.WinForms.Guna2Button CreateProfileButton;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private Guna.UI2.WinForms.Guna2ComboBox GenderComboBox;
+        private Guna.UI2.WinForms.Guna2ComboBox BloodGroupComboBox;
+        private Guna.UI2.WinForms.Guna2Button RoomButton;
     }
 }

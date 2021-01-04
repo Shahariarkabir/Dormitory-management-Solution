@@ -64,13 +64,6 @@ namespace Student_Log_In.DesignLayer
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.TenantsDataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.newstudentBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.dormitoryManagementDataSet4 = new Student_Log_In.DormitoryManagementDataSet4();
-            this.newstudentBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dormitoryManagementDataSet3 = new Student_Log_In.DormitoryManagementDataSet3();
-            this.new_studentTableAdapter = new Student_Log_In.DormitoryManagementDataSet3TableAdapters.New_studentTableAdapter();
-            this.UpdateDeleteButton = new Guna.UI2.WinForms.Guna2Button();
-            this.new_studentTableAdapter1 = new Student_Log_In.DormitoryManagementDataSet4TableAdapters.New_studentTableAdapter();
             this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,6 +71,13 @@ namespace Student_Log_In.DesignLayer
             this.bloodGroupDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.roomNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.newstudentBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dormitoryManagementDataSet4 = new Student_Log_In.DormitoryManagementDataSet4();
+            this.newstudentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dormitoryManagementDataSet3 = new Student_Log_In.DormitoryManagementDataSet3();
+            this.new_studentTableAdapter = new Student_Log_In.DormitoryManagementDataSet3TableAdapters.New_studentTableAdapter();
+            this.UpdateDeleteButton = new Guna.UI2.WinForms.Guna2Button();
+            this.new_studentTableAdapter1 = new Student_Log_In.DormitoryManagementDataSet4TableAdapters.New_studentTableAdapter();
             this.panel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoutButton)).BeginInit();
@@ -472,6 +472,7 @@ namespace Student_Log_In.DesignLayer
             this.textBox1.Location = new System.Drawing.Point(173, 76);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(1040, 53);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "Tenants";
@@ -608,6 +609,48 @@ namespace Student_Log_In.DesignLayer
             this.TenantsDataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.TenantsDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // userNameDataGridViewTextBoxColumn
+            // 
+            this.userNameDataGridViewTextBoxColumn.DataPropertyName = "UserName";
+            this.userNameDataGridViewTextBoxColumn.HeaderText = "UserName";
+            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
+            // 
+            // fullNameDataGridViewTextBoxColumn
+            // 
+            this.fullNameDataGridViewTextBoxColumn.DataPropertyName = "FullName";
+            this.fullNameDataGridViewTextBoxColumn.HeaderText = "FullName";
+            this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            // 
+            // genderDataGridViewTextBoxColumn
+            // 
+            this.genderDataGridViewTextBoxColumn.DataPropertyName = "Gender";
+            this.genderDataGridViewTextBoxColumn.HeaderText = "Gender";
+            this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
+            // 
+            // bloodGroupDataGridViewTextBoxColumn
+            // 
+            this.bloodGroupDataGridViewTextBoxColumn.DataPropertyName = "BloodGroup";
+            this.bloodGroupDataGridViewTextBoxColumn.HeaderText = "BloodGroup";
+            this.bloodGroupDataGridViewTextBoxColumn.Name = "bloodGroupDataGridViewTextBoxColumn";
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            // 
+            // roomNumberDataGridViewTextBoxColumn
+            // 
+            this.roomNumberDataGridViewTextBoxColumn.DataPropertyName = "RoomNumber";
+            this.roomNumberDataGridViewTextBoxColumn.HeaderText = "RoomNumber";
+            this.roomNumberDataGridViewTextBoxColumn.Name = "roomNumberDataGridViewTextBoxColumn";
+            // 
             // newstudentBindingSource1
             // 
             this.newstudentBindingSource1.DataMember = "New_student";
@@ -654,48 +697,6 @@ namespace Student_Log_In.DesignLayer
             // new_studentTableAdapter1
             // 
             this.new_studentTableAdapter1.ClearBeforeFill = true;
-            // 
-            // userNameDataGridViewTextBoxColumn
-            // 
-            this.userNameDataGridViewTextBoxColumn.DataPropertyName = "UserName";
-            this.userNameDataGridViewTextBoxColumn.HeaderText = "UserName";
-            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
-            // 
-            // fullNameDataGridViewTextBoxColumn
-            // 
-            this.fullNameDataGridViewTextBoxColumn.DataPropertyName = "FullName";
-            this.fullNameDataGridViewTextBoxColumn.HeaderText = "FullName";
-            this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            // 
-            // genderDataGridViewTextBoxColumn
-            // 
-            this.genderDataGridViewTextBoxColumn.DataPropertyName = "Gender";
-            this.genderDataGridViewTextBoxColumn.HeaderText = "Gender";
-            this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
-            // 
-            // bloodGroupDataGridViewTextBoxColumn
-            // 
-            this.bloodGroupDataGridViewTextBoxColumn.DataPropertyName = "BloodGroup";
-            this.bloodGroupDataGridViewTextBoxColumn.HeaderText = "BloodGroup";
-            this.bloodGroupDataGridViewTextBoxColumn.Name = "bloodGroupDataGridViewTextBoxColumn";
-            // 
-            // addressDataGridViewTextBoxColumn
-            // 
-            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
-            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
-            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
-            // 
-            // roomNumberDataGridViewTextBoxColumn
-            // 
-            this.roomNumberDataGridViewTextBoxColumn.DataPropertyName = "RoomNumber";
-            this.roomNumberDataGridViewTextBoxColumn.HeaderText = "RoomNumber";
-            this.roomNumberDataGridViewTextBoxColumn.Name = "roomNumberDataGridViewTextBoxColumn";
             // 
             // Tenants
             // 

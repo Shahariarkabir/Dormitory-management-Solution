@@ -366,7 +366,7 @@ namespace Student_Log_In.DesignLayer
             this.ExpenseBox.Size = new System.Drawing.Size(116, 22);
             this.ExpenseBox.TabIndex = 53;
             this.ExpenseBox.Text = "Expense";
-            this.ExpenseBox.Click += new System.EventHandler(this.ExpenseBox_Click);
+
             // 
             // RoomBox
             // 
@@ -384,7 +384,6 @@ namespace Student_Log_In.DesignLayer
             this.RoomBox.Size = new System.Drawing.Size(116, 22);
             this.RoomBox.TabIndex = 13;
             this.RoomBox.Text = "Room";
-            this.RoomBox.Click += new System.EventHandler(this.RoomBox_Click);
             // 
             // StudentButton
             // 

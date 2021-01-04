@@ -168,14 +168,11 @@ namespace Student_Log_In.DesignLayer
             }
         }
 
-        private void ExpenseBox_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void RoomBox_Click(object sender, EventArgs e)
-        {
-
-        }
     }
+
+
 }
+     
+
+
