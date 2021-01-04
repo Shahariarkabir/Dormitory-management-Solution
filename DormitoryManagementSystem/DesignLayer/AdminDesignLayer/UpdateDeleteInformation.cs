@@ -23,8 +23,8 @@ namespace Student_Log_In.DesignLayer
 
         private void SearchButton_Click(object sender, EventArgs e)
         {
-            query= "SELECT * FROM New_student WHERE UserName='"+userNameTextBox.Text+"'";
-          
+            query = "SELECT * FROM New_student WHERE UserName='" + userNameTextBox.Text + "'";
+
             DataSet ds = fn.getData(query);
             if (ds.Tables[0].Rows.Count != 0)
             {
@@ -41,11 +41,11 @@ namespace Student_Log_In.DesignLayer
                 PhoneNumberTextBox.Text = ds.Tables[0].Rows[0][12].ToString();
                 IdNumberTextBox.Text = ds.Tables[0].Rows[0][13].ToString();
                 RoomNoText.Text = ds.Tables[0].Rows[0][14].ToString();
-                
+
             }
             else
             {
-                userNameTextBox.Text = FullTextBox.Text = PassTextBox.Text = BloodGroupComboBox.Text = DateTimePicker.Text = PhoneNumberTextBox.Text = TextBoxEmail.Text = GenderComboBox.Text = AddressTextBox.Text = EmergencyContactTextBox.Text = EmergencyPhoneNumberTextBox.Text = emergencyRelationTextBox.Text = IdNumberTextBox.Text = RoomNoText.Text= string.Empty;
+                userNameTextBox.Text = FullTextBox.Text = PassTextBox.Text = BloodGroupComboBox.Text = DateTimePicker.Text = PhoneNumberTextBox.Text = TextBoxEmail.Text = GenderComboBox.Text = AddressTextBox.Text = EmergencyContactTextBox.Text = EmergencyPhoneNumberTextBox.Text = emergencyRelationTextBox.Text = IdNumberTextBox.Text = RoomNoText.Text = string.Empty;
                 MessageBox.Show("No Record Found By the Name", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
@@ -117,18 +117,18 @@ namespace Student_Log_In.DesignLayer
             Int64 mobile = Int64.Parse(PhoneNumberTextBox.Text);
             Int64 eMobile = Int64.Parse(EmergencyPhoneNumberTextBox.Text);
             String bookingStatus = RoomType.Text;
-            query = " UPDATE New_student SET UserName ='" + userNameTextBox.Text + "',FullName='" + FullTextBox.Text + "',Password='" + PassTextBox.Text + "',BloodGroup='" + BloodGroupComboBox.Text + "',DateOfBirth='" + DateTimePicker.Text + "',PhoneNumber=" + mobile + ",Email='" + TextBoxEmail.Text + "',Gender='" + GenderComboBox.Text + "',Address='" + AddressTextBox.Text + "',EmergencyContact='" + EmergencyFullNameTextBox.Text + "',EmergencyPhoneNumber=" + eMobile + ",EmergencyRelation='" + emergencyRelationTextBox.Text + "',VerficationId='" + IdNumberTextBox.Text + "',RoomNumber=" + RoomNoText.Text + " WHERE UserName='"+userNameTextBox.Text+"' UPDATE rooms set Booked='"+bookingStatus+"' WHERE RoomNumber="+RoomNoText.Text+"";
+            query = " UPDATE New_student SET UserName ='" + userNameTextBox.Text + "',FullName='" + FullTextBox.Text + "',Password='" + PassTextBox.Text + "',BloodGroup='" + BloodGroupComboBox.Text + "',DateOfBirth='" + DateTimePicker.Text + "',PhoneNumber=" + mobile + ",Email='" + TextBoxEmail.Text + "',Gender='" + GenderComboBox.Text + "',Address='" + AddressTextBox.Text + "',EmergencyContact='" + EmergencyFullNameTextBox.Text + "',EmergencyPhoneNumber=" + eMobile + ",EmergencyRelation='" + emergencyRelationTextBox.Text + "',VerficationId='" + IdNumberTextBox.Text + "',RoomNumber=" + RoomNoText.Text + " WHERE UserName='" + userNameTextBox.Text + "' UPDATE rooms set Booked='" + bookingStatus + "' WHERE RoomNumber=" + RoomNoText.Text + "";
             fn.setData(query, "Updated Successfully......");
             userNameTextBox.Text = FullTextBox.Text = PassTextBox.Text = BloodGroupComboBox.Text = DateTimePicker.Text = PhoneNumberTextBox.Text = TextBoxEmail.Text = GenderComboBox.Text = AddressTextBox.Text = EmergencyContactTextBox.Text = EmergencyPhoneNumberTextBox.Text = emergencyRelationTextBox.Text = IdNumberTextBox.Text = RoomNoText.Text = string.Empty;
             Tenants tenants = new Tenants();
             tenants.Show();
             this.Hide();
-            
+
         }
 
         private void DeleteRoomButton_Click(object sender, EventArgs e)
         {
-           if(MessageBox.Show("Are You Sure To Delete???","Confirmation",MessageBoxButtons.YesNo,MessageBoxIcon.Warning)== DialogResult.Yes)
+            if (MessageBox.Show("Are You Sure To Delete???", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 query = "DELETE FROM New_student WHERE UserName='" + userNameTextBox.Text + "'";
                 fn.setData(query, "Deleted Successfully....");
@@ -137,9 +137,9 @@ namespace Student_Log_In.DesignLayer
                 tenants.Show();
                 this.Hide();
             }
-            
-            
-           
+
+
+
 
         }
 
@@ -148,6 +148,34 @@ namespace Student_Log_In.DesignLayer
             CreateStudentProfile studentProfile = new CreateStudentProfile();
             studentProfile.Show();
             this.Hide();
+        }
+
+        private void ConfirmPasswordTextBox_Validating(object sender, CancelEventArgs e)
+        {
+            {
+                if (this.ConfirmPasswordTextBox.Text != this.PassTextBox.Text)
+                {
+                    this.errorProvider1.SetError(this.ConfirmPasswordTextBox, "Password and Confirm must be the same");
+                    e.Cancel = true;
+                    PassTextBox.Clear();
+
+                    ConfirmPasswordTextBox.Clear();
+                }
+                else
+                {
+                    this.errorProvider1.SetError(this.ConfirmPasswordTextBox, "");
+                }
+            }
+        }
+
+        private void ExpenseBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RoomBox_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

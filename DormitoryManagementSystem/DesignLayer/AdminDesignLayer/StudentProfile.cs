@@ -71,36 +71,13 @@ namespace Student_Profile
             }
         }
 
-        private void GenderComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-       
-        private void ConfirmPasswordTextBox_Validating(object sender, CancelEventArgs e)
-        {
-            {
-                if (this.ConfirmPasswordTextBox.Text != this.PasswordTextBox.Text)
-                {
-                    this.errorProvider1.SetError(this.ConfirmPasswordTextBox, "Password and Confirm must be the same");
-                    e.Cancel = true;
-                    PasswordTextBox.Clear();
-                    ConfirmPasswordTextBox.Clear();
-                }
-                else
-                {
-                    this.errorProvider1.SetError(this.ConfirmPasswordTextBox, "");
-                }
-            }
-        }
-
         private void guna2Button9_Click(object sender, EventArgs e)
         {
             OpenFileDialog opf = new OpenFileDialog();
             opf.Filter = "Select Image(*.jpg;*.png)|*.jpg;*.png ";
             if (opf.ShowDialog() == DialogResult.OK)
             {
-                UpdatePhotoPictureBox.Image = Image.FromFile(opf.FileName);
+               
             }
         }
 
@@ -199,9 +176,36 @@ namespace Student_Profile
 
         }
 
+  
+
+        private void RoomBox_Click(object sender, EventArgs e)
+        {
+            Room room = new Room();
+            room.Show();
+            this.Hide();
+        }
+
+
         private void ConfirmPasswordTextBox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void ConfirmPasswordTextBox_Validating(object sender, CancelEventArgs e)
+        {
+            {
+                if (this.ConfirmPasswordTextBox.Text != this.PasswordTextBox.Text)
+                {
+                    this.errorProvider1.SetError(this.ConfirmPasswordTextBox, "Password and Confirm must be the same");
+                    e.Cancel = true;
+                    PasswordTextBox.Clear();
+                    ConfirmPasswordTextBox.Clear();
+                }
+                else
+                {
+                    this.errorProvider1.SetError(this.ConfirmPasswordTextBox, "");
+                }
+            }
         }
     }
 }

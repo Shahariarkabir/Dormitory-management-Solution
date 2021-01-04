@@ -109,17 +109,11 @@ namespace Student_Profile
             }*/
         }
 
-        
-
-        private void label33_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
+  
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dormitoryManagementDataSet11.student_user_create' table. You can move, or remove it, as needed.
-            this.student_user_createTableAdapter3.Fill(this.dormitoryManagementDataSet11.student_user_create);
 
             // TODO: This line of code loads data into the 'dormitoryManagementDataSet8.Expenses' table. You can move, or remove it, as needed.
             this.expensesTableAdapter.Fill(this.dormitoryManagementDataSet8.Expenses);
@@ -150,11 +144,6 @@ namespace Student_Profile
             {
                 MessageBox.Show(ex.Message);
             }
-
-        }
-
-        private void guna2Panel3_Paint(object sender, PaintEventArgs e)
-        {
 
         }
 
@@ -193,6 +182,25 @@ namespace Student_Profile
             label4.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy");
         }
 
-        
+        private void Expenseadd_Click(object sender, EventArgs e)
+        {
+            Expense expense = new Expense();
+            expense.Show();
+            this.Hide();
+        }
+
+        private void Roomadd_Click(object sender, EventArgs e)
+        {
+            Room room = new Room();
+            room.Show();
+            this.Hide();
+        }
+
+        private void StudentAdd_Click(object sender, EventArgs e)
+        {
+            CreateStudentProfile CreateStudentProfile = new CreateStudentProfile();
+            CreateStudentProfile.Show();
+            this.Hide();
+        }
     }
 }

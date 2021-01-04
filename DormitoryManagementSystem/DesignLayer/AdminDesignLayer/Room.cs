@@ -205,6 +205,27 @@ namespace Student_Log_In.DesignLayer
             profile.Show();
             this.Hide();
         }
+
+        private void Expenseadd_Click(object sender, EventArgs e)
+        {
+            Expense expense = new Expense();
+            expense.Show();
+            this.Hide();
+        }
+
+        private void Roomadd_Click(object sender, EventArgs e)
+        {
+            Room room = new Room();
+            room.Show();
+            this.Hide();
+        }
+
+        private void StudentAdd_Click(object sender, EventArgs e)
+        {
+            CreateStudentProfile CreateStudentProfile = new CreateStudentProfile();
+            CreateStudentProfile.Show();
+            this.Hide();
+        }
     }
     }
 
