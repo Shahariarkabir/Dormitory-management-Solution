@@ -109,11 +109,11 @@ namespace Student_Log_In.DesignLayer
             this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("JetBrains Mono", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(154, 91);
+            this.textBox1.Location = new System.Drawing.Point(168, 83);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(513, 41);
+            this.textBox1.Size = new System.Drawing.Size(75, 41);
             this.textBox1.TabIndex = 2;
             this.textBox1.Text = "Room";
             // 
@@ -313,7 +313,7 @@ namespace Student_Log_In.DesignLayer
             this.SettingsButton.ShadowDecoration.Parent = this.SettingsButton;
             this.SettingsButton.Size = new System.Drawing.Size(127, 22);
             this.SettingsButton.TabIndex = 140;
-            this.SettingsButton.Text = "Settings";
+            this.SettingsButton.Text = "New Emp.";
             this.SettingsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
             // 
@@ -450,7 +450,7 @@ namespace Student_Log_In.DesignLayer
             this.label1.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(868, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 15);
+            this.label1.Size = new System.Drawing.Size(64, 16);
             this.label1.TabIndex = 50;
             this.label1.Text = "Add Room";
             // 
@@ -460,7 +460,7 @@ namespace Student_Log_In.DesignLayer
             this.AddRoomTextBox.BorderRadius = 4;
             this.AddRoomTextBox.BorderThickness = 2;
             this.AddRoomTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.AddRoomTextBox.DefaultText = "Input Room No";
+            this.AddRoomTextBox.DefaultText = "";
             this.AddRoomTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.AddRoomTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.AddRoomTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -474,9 +474,8 @@ namespace Student_Log_In.DesignLayer
             this.AddRoomTextBox.Location = new System.Drawing.Point(844, 105);
             this.AddRoomTextBox.Name = "AddRoomTextBox";
             this.AddRoomTextBox.PasswordChar = '\0';
-            this.AddRoomTextBox.PlaceholderText = "";
+            this.AddRoomTextBox.PlaceholderText = "Input Room No";
             this.AddRoomTextBox.SelectedText = "";
-            this.AddRoomTextBox.SelectionStart = 13;
             this.AddRoomTextBox.ShadowDecoration.Parent = this.AddRoomTextBox;
             this.AddRoomTextBox.Size = new System.Drawing.Size(258, 51);
             this.AddRoomTextBox.TabIndex = 51;
@@ -488,7 +487,7 @@ namespace Student_Log_In.DesignLayer
             this.label2.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(867, 249);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 20);
+            this.label2.Size = new System.Drawing.Size(150, 21);
             this.label2.TabIndex = 52;
             this.label2.Text = "Booked or not!";
             // 
@@ -536,7 +535,7 @@ namespace Student_Log_In.DesignLayer
             this.label3.Font = new System.Drawing.Font("JetBrains Mono", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(840, 383);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(241, 23);
+            this.label3.Size = new System.Drawing.Size(243, 26);
             this.label3.TabIndex = 56;
             this.label3.Text = "Update Or Delete Room";
             // 
@@ -546,7 +545,7 @@ namespace Student_Log_In.DesignLayer
             this.UpdateDeleteTextBox.BorderRadius = 4;
             this.UpdateDeleteTextBox.BorderThickness = 2;
             this.UpdateDeleteTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.UpdateDeleteTextBox.DefaultText = "Input Room No";
+            this.UpdateDeleteTextBox.DefaultText = "";
             this.UpdateDeleteTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.UpdateDeleteTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.UpdateDeleteTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -560,9 +559,8 @@ namespace Student_Log_In.DesignLayer
             this.UpdateDeleteTextBox.Location = new System.Drawing.Point(832, 409);
             this.UpdateDeleteTextBox.Name = "UpdateDeleteTextBox";
             this.UpdateDeleteTextBox.PasswordChar = '\0';
-            this.UpdateDeleteTextBox.PlaceholderText = "";
+            this.UpdateDeleteTextBox.PlaceholderText = "Input Room No";
             this.UpdateDeleteTextBox.SelectedText = "";
-            this.UpdateDeleteTextBox.SelectionStart = 13;
             this.UpdateDeleteTextBox.ShadowDecoration.Parent = this.UpdateDeleteTextBox;
             this.UpdateDeleteTextBox.Size = new System.Drawing.Size(258, 51);
             this.UpdateDeleteTextBox.TabIndex = 57;
@@ -574,7 +572,7 @@ namespace Student_Log_In.DesignLayer
             this.label4.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(854, 519);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(149, 20);
+            this.label4.Size = new System.Drawing.Size(150, 21);
             this.label4.TabIndex = 58;
             this.label4.Text = "Booked or not!";
             // 
@@ -661,7 +659,7 @@ namespace Student_Log_In.DesignLayer
             this.labelRoom.ForeColor = System.Drawing.Color.Red;
             this.labelRoom.Location = new System.Drawing.Point(1116, 118);
             this.labelRoom.Name = "labelRoom";
-            this.labelRoom.Size = new System.Drawing.Size(89, 20);
+            this.labelRoom.Size = new System.Drawing.Size(90, 21);
             this.labelRoom.TabIndex = 63;
             this.labelRoom.Text = "Set Text";
             this.labelRoom.Click += new System.EventHandler(this.labelRoom_Click);
@@ -672,7 +670,7 @@ namespace Student_Log_In.DesignLayer
             this.labelRoomExist.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRoomExist.Location = new System.Drawing.Point(922, 478);
             this.labelRoomExist.Name = "labelRoomExist";
-            this.labelRoomExist.Size = new System.Drawing.Size(89, 20);
+            this.labelRoomExist.Size = new System.Drawing.Size(90, 21);
             this.labelRoomExist.TabIndex = 64;
             this.labelRoomExist.Text = "Set Text";
             // 
@@ -811,7 +809,7 @@ namespace Student_Log_In.DesignLayer
             this.label5.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(855, 168);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 15);
+            this.label5.Size = new System.Drawing.Size(78, 16);
             this.label5.TabIndex = 67;
             this.label5.Text = " Room Type";
             // 

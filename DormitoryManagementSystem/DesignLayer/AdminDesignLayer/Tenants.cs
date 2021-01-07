@@ -104,5 +104,12 @@ namespace Student_Log_In.DesignLayer
             room.Show();
             this.Hide();
         }
+
+        private void ExpenseBuuton_Click(object sender, EventArgs e)
+        {
+            Expense expense = new Expense();
+            expense.Show();
+            this.Hide();
+        }
     }
 }

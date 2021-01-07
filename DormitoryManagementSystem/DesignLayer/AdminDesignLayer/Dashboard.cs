@@ -113,6 +113,8 @@ namespace Student_Profile
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dormitoryManagementDataSet13.student_user_create' table. You can move, or remove it, as needed.
+            this.student_user_createTableAdapter4.Fill(this.dormitoryManagementDataSet13.student_user_create);
             // TODO: This line of code loads data into the 'dormitoryManagementDataSet11.student_user_create' table. You can move, or remove it, as needed.
 
             // TODO: This line of code loads data into the 'dormitoryManagementDataSet8.Expenses' table. You can move, or remove it, as needed.
@@ -200,6 +202,13 @@ namespace Student_Profile
         {
             CreateStudentProfile CreateStudentProfile = new CreateStudentProfile();
             CreateStudentProfile.Show();
+            this.Hide();
+        }
+
+        private void Roomadd_Click_1(object sender, EventArgs e)
+        {
+            Room room = new Room();
+            room.Show();
             this.Hide();
         }
     }

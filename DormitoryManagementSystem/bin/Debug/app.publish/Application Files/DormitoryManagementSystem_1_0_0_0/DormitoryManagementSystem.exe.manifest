@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="DormitoryManagementSystem.exe" version="1.0.0.0" publicKeyToken="12d62ddf60719cfe" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="DormitoryManagementSystem" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="DormitoryManagementSystem.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DormitoryManagementSystem.exe" size="1078240">
+      <assemblyIdentity name="DormitoryManagementSystem" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>1RksVHmRKlGjZqDw/VHdowW2MX1IRPHeI3eF8z5j57Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Guna.UI2.dll" size="2022568">
+      <assemblyIdentity name="Guna.UI2" version="2.0.1.2" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>z5tm4RUG+kMYSTUMDLWEMKceXslD0tue8bLiMC8plEM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="DormitoryManagementSystem.exe.config" size="650">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>E9AnAgNuLED2arAYAYXQbxDVnxnObBBcZOPay5SJbEE=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-RL8DMR4\sadia" issuerKeyHash="e6df5b2287ead2f27bdae9b368cabecf083909fb" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>kaFE7k1DRig2SI8kHesd/BDvKzO5e4O5ZKTwD1DjBXM=</DigestValue></Reference></SignedInfo><SignatureValue>vZLH/tl5QRHK0xZjx1ZRnWn7EhfB4F9r6wg5FBHggn/y0lYIISLbBVySohKDtXsHzz9xX/5iBo+VfjdQlwoVA1XFO0lbNaY8vivyJyvEZ+ZRZRWniyVnR3MM5CwIbOgveIG6ZDRiYP+KVzQNgLI3FCetQeaFTIaiPAnph6eR4rA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>zJOTGjLfb+tZpw2CdNgx9ZBml2IHGobNPRwCCJg5vH5snZLY0R9xGDO+GOc/PhOfgHt/eyGs/Zz69pyba6sN4+T1laZuIGUiHdJcRlf/Aly2tXfmw8G1+WrHfmNtcO9b7fjII9aQwd65yDKQHp7GvCJY/S0dOXtoy76tnrHwAAE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="7305e3500ff0a464b9837bb9332bef10fc1deb1d248f48362846434dee44a191" Description="" Url=""><as:assemblyIdentity name="DormitoryManagementSystem.exe" version="1.0.0.0" publicKeyToken="12d62ddf60719cfe" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-RL8DMR4\sadia</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>sKP4RzKhkE68iAnMvGRMURvg1ZLrJl+dSZib88xAw9Q=</DigestValue></Reference></SignedInfo><SignatureValue>C47BQF2RjV3sLvIbgUZiM9Ug+7WPsDneW14ISZ8AICgLGffSERW9L11bfjbEtAZ1QWbiy+TKHjWkllZig5X9gXgQ/wPug+/gJ27toLqpLsTFS3EmtShnlJ4nxiLzlUceqrLT/45cwtYr6BqImdPjTKz45sUoRtMzB58cx+DH224=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zJOTGjLfb+tZpw2CdNgx9ZBml2IHGobNPRwCCJg5vH5snZLY0R9xGDO+GOc/PhOfgHt/eyGs/Zz69pyba6sN4+T1laZuIGUiHdJcRlf/Aly2tXfmw8G1+WrHfmNtcO9b7fjII9aQwd65yDKQHp7GvCJY/S0dOXtoy76tnrHwAAE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQL/wVWi3R0YlEw/7AjJiGIjANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAFIATAA4AEQATQBSADQAXABzAGEAZABpAGEwHhcNMjEwMTA0MDkzNTQ4WhcNMjIwMTA0MTUzNTQ4WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAFIATAA4AEQATQBSADQAXABzAGEAZABpAGEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMyTkxoy32/rWacNgnTYMfWQZpdiBxqGzT0cAgiYObx+bJ2S2NEfcRgzvhjnPz4Tn4B7f3shrP2c+vacm2urDePk9ZWmbiBlIh3SXEZX/wJctrV35sPBtflqx35jbXDvW+34yCPWkMHeucgykB6exrwiWP0tHTl7aMu+rZ6x8AABAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAlB3zIz7gX5o05iWEjF70RDXAFSlzK6IypSs92Zk1oAV++f51miKR49q00urG7BdXu3O1HCH5hBNGplwEu4Gc86Ajt4RK77sdHFrTgLWCO/+5o4f6WMnwphavO9pD3I7wXisbhwtVPpypNRL+uZnOjbTSG30s9wGraIYRKUH0AuM=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

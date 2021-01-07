@@ -47,7 +47,6 @@ namespace Student_Log_In.DesignLayer
             this.SettingsButton = new Guna.UI2.WinForms.Guna2Button();
             this.ExpenseButton = new Guna.UI2.WinForms.Guna2Button();
             this.TenantsButton = new Guna.UI2.WinForms.Guna2Button();
-            this.BedButton = new Guna.UI2.WinForms.Guna2Button();
             this.RoomButton = new Guna.UI2.WinForms.Guna2Button();
             this.DashBoardButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox14 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -283,7 +282,6 @@ namespace Student_Log_In.DesignLayer
             this.guna2Panel3.Controls.Add(this.SettingsButton);
             this.guna2Panel3.Controls.Add(this.ExpenseButton);
             this.guna2Panel3.Controls.Add(this.TenantsButton);
-            this.guna2Panel3.Controls.Add(this.BedButton);
             this.guna2Panel3.Controls.Add(this.RoomButton);
             this.guna2Panel3.Controls.Add(this.DashBoardButton);
             this.guna2Panel3.Controls.Add(this.guna2PictureBox14);
@@ -329,7 +327,7 @@ namespace Student_Log_In.DesignLayer
             this.AboutUsButton.HoverState.Parent = this.AboutUsButton;
             this.AboutUsButton.Image = global::Student_Log_In.Properties.Resources.Vector__10_;
             this.AboutUsButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.AboutUsButton.Location = new System.Drawing.Point(2, 417);
+            this.AboutUsButton.Location = new System.Drawing.Point(2, 370);
             this.AboutUsButton.Name = "AboutUsButton";
             this.AboutUsButton.ShadowDecoration.Parent = this.AboutUsButton;
             this.AboutUsButton.Size = new System.Drawing.Size(127, 22);
@@ -348,12 +346,12 @@ namespace Student_Log_In.DesignLayer
             this.SettingsButton.HoverState.Parent = this.SettingsButton;
             this.SettingsButton.Image = global::Student_Log_In.Properties.Resources.options1;
             this.SettingsButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.SettingsButton.Location = new System.Drawing.Point(2, 365);
+            this.SettingsButton.Location = new System.Drawing.Point(2, 318);
             this.SettingsButton.Name = "SettingsButton";
             this.SettingsButton.ShadowDecoration.Parent = this.SettingsButton;
             this.SettingsButton.Size = new System.Drawing.Size(127, 22);
             this.SettingsButton.TabIndex = 140;
-            this.SettingsButton.Text = "Settings";
+            this.SettingsButton.Text = "New Emp.";
             this.SettingsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
             // 
@@ -368,7 +366,7 @@ namespace Student_Log_In.DesignLayer
             this.ExpenseButton.HoverState.Parent = this.ExpenseButton;
             this.ExpenseButton.Image = global::Student_Log_In.Properties.Resources.Vector;
             this.ExpenseButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.ExpenseButton.Location = new System.Drawing.Point(3, 315);
+            this.ExpenseButton.Location = new System.Drawing.Point(3, 268);
             this.ExpenseButton.Name = "ExpenseButton";
             this.ExpenseButton.ShadowDecoration.Parent = this.ExpenseButton;
             this.ExpenseButton.Size = new System.Drawing.Size(129, 22);
@@ -388,7 +386,7 @@ namespace Student_Log_In.DesignLayer
             this.TenantsButton.HoverState.Parent = this.TenantsButton;
             this.TenantsButton.Image = global::Student_Log_In.Properties.Resources.profile;
             this.TenantsButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TenantsButton.Location = new System.Drawing.Point(3, 265);
+            this.TenantsButton.Location = new System.Drawing.Point(3, 218);
             this.TenantsButton.Name = "TenantsButton";
             this.TenantsButton.ShadowDecoration.Parent = this.TenantsButton;
             this.TenantsButton.Size = new System.Drawing.Size(129, 22);
@@ -396,26 +394,6 @@ namespace Student_Log_In.DesignLayer
             this.TenantsButton.Text = "Tenants";
             this.TenantsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TenantsButton.Click += new System.EventHandler(this.TenantsButton_Click);
-            // 
-            // BedButton
-            // 
-            this.BedButton.CheckedState.Parent = this.BedButton;
-            this.BedButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BedButton.CustomImages.Parent = this.BedButton;
-            this.BedButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.BedButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold);
-            this.BedButton.ForeColor = System.Drawing.Color.Black;
-            this.BedButton.HoverState.Parent = this.BedButton;
-            this.BedButton.Image = global::Student_Log_In.Properties.Resources.terrain;
-            this.BedButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BedButton.Location = new System.Drawing.Point(3, 218);
-            this.BedButton.Name = "BedButton";
-            this.BedButton.ShadowDecoration.Parent = this.BedButton;
-            this.BedButton.Size = new System.Drawing.Size(129, 22);
-            this.BedButton.TabIndex = 140;
-            this.BedButton.Text = "Bed";
-            this.BedButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BedButton.Click += new System.EventHandler(this.BedButton_Click);
             // 
             // RoomButton
             // 
@@ -662,7 +640,6 @@ namespace Student_Log_In.DesignLayer
         private Guna.UI2.WinForms.Guna2Button SettingsButton;
         private Guna.UI2.WinForms.Guna2Button ExpenseButton;
         private Guna.UI2.WinForms.Guna2Button TenantsButton;
-        private Guna.UI2.WinForms.Guna2Button BedButton;
         private Guna.UI2.WinForms.Guna2Button RoomButton;
         private Guna.UI2.WinForms.Guna2Button DashBoardButton;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox14;

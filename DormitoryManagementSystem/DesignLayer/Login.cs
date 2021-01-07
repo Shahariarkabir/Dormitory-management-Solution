@@ -68,6 +68,11 @@ namespace Student_Log_In
         {
             MessageBox.Show("Please Contact Our Admins", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void EmojiPictureBox_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Welcome to Our System");
+        }
     }
 }
 

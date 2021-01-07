@@ -32,9 +32,9 @@ namespace Student_Log_In.DesignLayer
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.LogoutButton = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -51,9 +51,9 @@ namespace Student_Log_In.DesignLayer
             this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.StudentButton = new Guna.UI2.WinForms.Guna2Button();
-            this.ButtonRoom = new Guna.UI2.WinForms.Guna2Button();
-            this.ExpenseBuuton = new Guna.UI2.WinForms.Guna2Button();
+            this.Studentadd = new Guna.UI2.WinForms.Guna2Button();
+            this.Buttonadd = new Guna.UI2.WinForms.Guna2Button();
+            this.Expenseadd = new Guna.UI2.WinForms.Guna2Button();
             this.EmojiButton = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -192,7 +192,7 @@ namespace Student_Log_In.DesignLayer
             this.SettingsButton.ShadowDecoration.Parent = this.SettingsButton;
             this.SettingsButton.Size = new System.Drawing.Size(127, 22);
             this.SettingsButton.TabIndex = 140;
-            this.SettingsButton.Text = "Settings";
+            this.SettingsButton.Text = "New Emp.";
             this.SettingsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
             // 
@@ -329,9 +329,9 @@ namespace Student_Log_In.DesignLayer
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.guna2Panel2.BorderColor = System.Drawing.Color.White;
             this.guna2Panel2.BorderThickness = 2;
-            this.guna2Panel2.Controls.Add(this.StudentButton);
-            this.guna2Panel2.Controls.Add(this.ButtonRoom);
-            this.guna2Panel2.Controls.Add(this.ExpenseBuuton);
+            this.guna2Panel2.Controls.Add(this.Studentadd);
+            this.guna2Panel2.Controls.Add(this.Buttonadd);
+            this.guna2Panel2.Controls.Add(this.Expenseadd);
             this.guna2Panel2.Controls.Add(this.EmojiButton);
             this.guna2Panel2.Controls.Add(this.guna2ControlBox2);
             this.guna2Panel2.Controls.Add(this.guna2ControlBox1);
@@ -341,62 +341,65 @@ namespace Student_Log_In.DesignLayer
             this.guna2Panel2.Size = new System.Drawing.Size(1120, 67);
             this.guna2Panel2.TabIndex = 47;
             // 
-            // StudentButton
+            // Studentadd
             // 
-            this.StudentButton.CheckedState.Parent = this.StudentButton;
-            this.StudentButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.StudentButton.CustomImages.Parent = this.StudentButton;
-            this.StudentButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.StudentButton.Font = new System.Drawing.Font("JetBrains Mono", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StudentButton.ForeColor = System.Drawing.Color.Black;
-            this.StudentButton.HoverState.Parent = this.StudentButton;
-            this.StudentButton.Image = global::Student_Log_In.Properties.Resources.Group_129__1_;
-            this.StudentButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.StudentButton.Location = new System.Drawing.Point(837, 37);
-            this.StudentButton.Name = "StudentButton";
-            this.StudentButton.ShadowDecoration.Parent = this.StudentButton;
-            this.StudentButton.Size = new System.Drawing.Size(143, 22);
-            this.StudentButton.TabIndex = 141;
-            this.StudentButton.Text = "Student";
-            this.StudentButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Studentadd.CheckedState.Parent = this.Studentadd;
+            this.Studentadd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Studentadd.CustomImages.Parent = this.Studentadd;
+            this.Studentadd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.Studentadd.Font = new System.Drawing.Font("JetBrains Mono", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Studentadd.ForeColor = System.Drawing.Color.Black;
+            this.Studentadd.HoverState.Parent = this.Studentadd;
+            this.Studentadd.Image = global::Student_Log_In.Properties.Resources.Group_129__1_;
+            this.Studentadd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Studentadd.Location = new System.Drawing.Point(837, 37);
+            this.Studentadd.Name = "Studentadd";
+            this.Studentadd.ShadowDecoration.Parent = this.Studentadd;
+            this.Studentadd.Size = new System.Drawing.Size(143, 22);
+            this.Studentadd.TabIndex = 141;
+            this.Studentadd.Text = "Student";
+            this.Studentadd.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Studentadd.Click += new System.EventHandler(this.Studentadd_Click_1);
             // 
-            // ButtonRoom
+            // Buttonadd
             // 
-            this.ButtonRoom.CheckedState.Parent = this.ButtonRoom;
-            this.ButtonRoom.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonRoom.CustomImages.Parent = this.ButtonRoom;
-            this.ButtonRoom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.ButtonRoom.Font = new System.Drawing.Font("JetBrains Mono", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonRoom.ForeColor = System.Drawing.Color.Black;
-            this.ButtonRoom.HoverState.Parent = this.ButtonRoom;
-            this.ButtonRoom.Image = global::Student_Log_In.Properties.Resources.Group_129__1_;
-            this.ButtonRoom.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.ButtonRoom.Location = new System.Drawing.Point(727, 37);
-            this.ButtonRoom.Name = "ButtonRoom";
-            this.ButtonRoom.ShadowDecoration.Parent = this.ButtonRoom;
-            this.ButtonRoom.Size = new System.Drawing.Size(100, 22);
-            this.ButtonRoom.TabIndex = 140;
-            this.ButtonRoom.Text = "Room";
-            this.ButtonRoom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Buttonadd.CheckedState.Parent = this.Buttonadd;
+            this.Buttonadd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Buttonadd.CustomImages.Parent = this.Buttonadd;
+            this.Buttonadd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.Buttonadd.Font = new System.Drawing.Font("JetBrains Mono", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Buttonadd.ForeColor = System.Drawing.Color.Black;
+            this.Buttonadd.HoverState.Parent = this.Buttonadd;
+            this.Buttonadd.Image = global::Student_Log_In.Properties.Resources.Group_129__1_;
+            this.Buttonadd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Buttonadd.Location = new System.Drawing.Point(727, 37);
+            this.Buttonadd.Name = "Buttonadd";
+            this.Buttonadd.ShadowDecoration.Parent = this.Buttonadd;
+            this.Buttonadd.Size = new System.Drawing.Size(100, 22);
+            this.Buttonadd.TabIndex = 140;
+            this.Buttonadd.Text = "Room";
+            this.Buttonadd.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Buttonadd.Click += new System.EventHandler(this.Buttonadd_Click);
             // 
-            // ExpenseBuuton
+            // Expenseadd
             // 
-            this.ExpenseBuuton.CheckedState.Parent = this.ExpenseBuuton;
-            this.ExpenseBuuton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ExpenseBuuton.CustomImages.Parent = this.ExpenseBuuton;
-            this.ExpenseBuuton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.ExpenseBuuton.Font = new System.Drawing.Font("JetBrains Mono", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExpenseBuuton.ForeColor = System.Drawing.Color.Black;
-            this.ExpenseBuuton.HoverState.Parent = this.ExpenseBuuton;
-            this.ExpenseBuuton.Image = global::Student_Log_In.Properties.Resources.Group_129__1_;
-            this.ExpenseBuuton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.ExpenseBuuton.Location = new System.Drawing.Point(581, 37);
-            this.ExpenseBuuton.Name = "ExpenseBuuton";
-            this.ExpenseBuuton.ShadowDecoration.Parent = this.ExpenseBuuton;
-            this.ExpenseBuuton.Size = new System.Drawing.Size(143, 22);
-            this.ExpenseBuuton.TabIndex = 10;
-            this.ExpenseBuuton.Text = "Expense";
-            this.ExpenseBuuton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Expenseadd.CheckedState.Parent = this.Expenseadd;
+            this.Expenseadd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Expenseadd.CustomImages.Parent = this.Expenseadd;
+            this.Expenseadd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.Expenseadd.Font = new System.Drawing.Font("JetBrains Mono", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Expenseadd.ForeColor = System.Drawing.Color.Black;
+            this.Expenseadd.HoverState.Parent = this.Expenseadd;
+            this.Expenseadd.Image = global::Student_Log_In.Properties.Resources.Group_129__1_;
+            this.Expenseadd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Expenseadd.Location = new System.Drawing.Point(581, 37);
+            this.Expenseadd.Name = "Expenseadd";
+            this.Expenseadd.ShadowDecoration.Parent = this.Expenseadd;
+            this.Expenseadd.Size = new System.Drawing.Size(143, 22);
+            this.Expenseadd.TabIndex = 10;
+            this.Expenseadd.Text = "Expense";
+            this.Expenseadd.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Expenseadd.Click += new System.EventHandler(this.ExpenseBuuton_Click);
             // 
             // EmojiButton
             // 
@@ -446,7 +449,7 @@ namespace Student_Log_In.DesignLayer
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(203, 53);
+            this.textBox1.Size = new System.Drawing.Size(115, 39);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "Expense";
             // 
@@ -456,7 +459,7 @@ namespace Student_Log_In.DesignLayer
             this.Month.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Month.Location = new System.Drawing.Point(692, 365);
             this.Month.Name = "Month";
-            this.Month.Size = new System.Drawing.Size(42, 15);
+            this.Month.Size = new System.Drawing.Size(43, 16);
             this.Month.TabIndex = 86;
             this.Month.Text = "Month";
             // 
@@ -466,7 +469,7 @@ namespace Student_Log_In.DesignLayer
             this.mobile.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mobile.Location = new System.Drawing.Point(979, 193);
             this.mobile.Name = "mobile";
-            this.mobile.Size = new System.Drawing.Size(49, 14);
+            this.mobile.Size = new System.Drawing.Size(49, 15);
             this.mobile.TabIndex = 85;
             this.mobile.Text = "Mobile";
             // 
@@ -504,7 +507,7 @@ namespace Student_Log_In.DesignLayer
             this.duesAmmount.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.duesAmmount.Location = new System.Drawing.Point(979, 281);
             this.duesAmmount.Name = "duesAmmount";
-            this.duesAmmount.Size = new System.Drawing.Size(91, 15);
+            this.duesAmmount.Size = new System.Drawing.Size(92, 16);
             this.duesAmmount.TabIndex = 82;
             this.duesAmmount.Text = "Dues Ammount";
             // 
@@ -514,7 +517,7 @@ namespace Student_Log_In.DesignLayer
             this.roomNo.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roomNo.Location = new System.Drawing.Point(687, 284);
             this.roomNo.Name = "roomNo";
-            this.roomNo.Size = new System.Drawing.Size(84, 15);
+            this.roomNo.Size = new System.Drawing.Size(85, 16);
             this.roomNo.TabIndex = 83;
             this.roomNo.Text = "Room Number";
             // 
@@ -580,7 +583,7 @@ namespace Student_Log_In.DesignLayer
             this.name.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name.Location = new System.Drawing.Point(691, 195);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(35, 15);
+            this.name.Size = new System.Drawing.Size(36, 16);
             this.name.TabIndex = 79;
             this.name.Text = "Name";
             // 
@@ -618,7 +621,7 @@ namespace Student_Log_In.DesignLayer
             this.label1.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(690, 108);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 15);
+            this.label1.Size = new System.Drawing.Size(50, 16);
             this.label1.TabIndex = 77;
             this.label1.Text = "E-mail";
             // 
@@ -710,22 +713,22 @@ namespace Student_Log_In.DesignLayer
             // 
             // guna2DataGridView1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(223)))), ((int)(((byte)(251)))));
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(223)))), ((int)(((byte)(251)))));
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.guna2DataGridView1.AutoGenerateColumns = false;
             this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.guna2DataGridView1.ColumnHeadersHeight = 21;
             this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -735,21 +738,21 @@ namespace Student_Log_In.DesignLayer
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.guna2DataGridView1.DataSource = this.expensesBindingSource;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(185)))), ((int)(((byte)(246)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(185)))), ((int)(((byte)(246)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(222)))), ((int)(((byte)(251)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(141, 136);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(512, 255);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(519, 255);
             this.guna2DataGridView1.TabIndex = 87;
             this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Blue;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(223)))), ((int)(((byte)(251)))));
@@ -855,7 +858,7 @@ namespace Student_Log_In.DesignLayer
             this.label2.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(979, 367);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 15);
+            this.label2.Size = new System.Drawing.Size(92, 16);
             this.label2.TabIndex = 89;
             this.label2.Text = "Payment Date";
             // 
@@ -930,19 +933,16 @@ namespace Student_Log_In.DesignLayer
 
         }
 
-        private void LogoutButtonClick(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
+        
 
         #endregion
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2Button StudentButton;
-        private Guna.UI2.WinForms.Guna2Button ButtonRoom;
-        private Guna.UI2.WinForms.Guna2Button ExpenseBuuton;
+        private Guna.UI2.WinForms.Guna2Button Studentadd;
+        private Guna.UI2.WinForms.Guna2Button Buttonadd;
+        private Guna.UI2.WinForms.Guna2Button Expenseadd;
         private Guna.UI2.WinForms.Guna2PictureBox EmojiButton;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;

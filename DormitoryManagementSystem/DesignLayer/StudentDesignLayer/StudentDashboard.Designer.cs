@@ -31,6 +31,7 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
         {
             this.components = new System.ComponentModel.Container();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.EmojiBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -46,13 +47,14 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             this.guna2PictureBox12 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.EmojiBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiBox)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogOutBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -61,7 +63,6 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EmojiBox)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel2
@@ -77,6 +78,20 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(1125, 67);
             this.guna2Panel2.TabIndex = 47;
+            // 
+            // EmojiBox
+            // 
+            this.EmojiBox.BackColor = System.Drawing.Color.Transparent;
+            this.EmojiBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.EmojiBox.Image = global::Student_Log_In.Properties.Resources.Group__1_;
+            this.EmojiBox.Location = new System.Drawing.Point(1038, 6);
+            this.EmojiBox.Name = "EmojiBox";
+            this.EmojiBox.ShadowDecoration.Parent = this.EmojiBox;
+            this.EmojiBox.Size = new System.Drawing.Size(18, 18);
+            this.EmojiBox.TabIndex = 4;
+            this.EmojiBox.TabStop = false;
+            this.EmojiBox.UseTransparentBackground = true;
+            this.EmojiBox.Click += new System.EventHandler(this.EmojiBox_Click);
             // 
             // guna2ControlBox2
             // 
@@ -294,20 +309,6 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             this.guna2PictureBox4.TabIndex = 0;
             this.guna2PictureBox4.TabStop = false;
             // 
-            // EmojiBox
-            // 
-            this.EmojiBox.BackColor = System.Drawing.Color.Transparent;
-            this.EmojiBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.EmojiBox.Image = global::Student_Log_In.Properties.Resources.Group__1_;
-            this.EmojiBox.Location = new System.Drawing.Point(1038, 6);
-            this.EmojiBox.Name = "EmojiBox";
-            this.EmojiBox.ShadowDecoration.Parent = this.EmojiBox;
-            this.EmojiBox.Size = new System.Drawing.Size(18, 18);
-            this.EmojiBox.TabIndex = 4;
-            this.EmojiBox.TabStop = false;
-            this.EmojiBox.UseTransparentBackground = true;
-            this.EmojiBox.Click += new System.EventHandler(this.EmojiBox_Click);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -358,7 +359,7 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Location = new System.Drawing.Point(369, 88);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(6);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Transparent;
@@ -369,6 +370,20 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Size = new System.Drawing.Size(691, 70);
             this.guna2TextBox1.TabIndex = 154;
+            // 
+            // guna2ContextMenuStrip1
+            // 
+            this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
+            this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.ColorTable = null;
+            this.guna2ContextMenuStrip1.RenderStyle.RoundedEdges = true;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // StudentDashboard
             // 
@@ -386,6 +401,7 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StudentDashboard";
             this.guna2Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiBox)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LogOutBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
@@ -394,7 +410,6 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EmojiBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -424,5 +439,6 @@ namespace Student_Log_In.DesignLayer.StudentDesignLayer
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
     }
 }

@@ -41,7 +41,6 @@ namespace Student_Log_In
             this.donothaveLabel = new System.Windows.Forms.Label();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ResizeForm1 = new Guna.UI2.WinForms.Guna2ResizeForm(this.components);
             this.signupLinkLabel = new System.Windows.Forms.LinkLabel();
@@ -50,7 +49,9 @@ namespace Student_Log_In
             this.clickhereLabel = new System.Windows.Forms.Label();
             this.btnSignin = new Guna.UI2.WinForms.Guna2Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.EmojiPictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // welcomeLabel
@@ -203,19 +204,6 @@ namespace Student_Log_In
             this.guna2ControlBox1.Size = new System.Drawing.Size(29, 29);
             this.guna2ControlBox1.TabIndex = 18;
             // 
-            // guna2ControlBox2
-            // 
-            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
-            this.guna2ControlBox2.Location = new System.Drawing.Point(710, 2);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.Size = new System.Drawing.Size(29, 29);
-            this.guna2ControlBox2.TabIndex = 19;
-            // 
             // guna2ControlBox3
             // 
             this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -223,7 +211,7 @@ namespace Student_Log_In
             this.guna2ControlBox3.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox3.HoverState.Parent = this.guna2ControlBox3;
             this.guna2ControlBox3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(40)))));
-            this.guna2ControlBox3.Location = new System.Drawing.Point(675, 2);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(708, 2);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.ShadowDecoration.Parent = this.guna2ControlBox3;
             this.guna2ControlBox3.Size = new System.Drawing.Size(29, 29);
@@ -302,18 +290,32 @@ namespace Student_Log_In
             this.checkBox1.Text = "Remember me";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
+            // EmojiPictureBox
+            // 
+            this.EmojiPictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.EmojiPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.EmojiPictureBox.Image = global::Student_Log_In.Properties.Resources.Group__1_;
+            this.EmojiPictureBox.Location = new System.Drawing.Point(682, 7);
+            this.EmojiPictureBox.Name = "EmojiPictureBox";
+            this.EmojiPictureBox.ShadowDecoration.Parent = this.EmojiPictureBox;
+            this.EmojiPictureBox.Size = new System.Drawing.Size(18, 18);
+            this.EmojiPictureBox.TabIndex = 27;
+            this.EmojiPictureBox.TabStop = false;
+            this.EmojiPictureBox.UseTransparentBackground = true;
+            this.EmojiPictureBox.Click += new System.EventHandler(this.EmojiPictureBox_Click);
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.EmojiPictureBox);
             this.Controls.Add(this.btnSignin);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.clickhereLabel);
             this.Controls.Add(this.forgetPasswordLinkLabel);
             this.Controls.Add(this.signupLinkLabel);
             this.Controls.Add(this.guna2ControlBox3);
-            this.Controls.Add(this.guna2ControlBox2);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.donothaveLabel);
             this.Controls.Add(this.userPasswordTextBox);
@@ -330,6 +332,7 @@ namespace Student_Log_In
             this.Text = "Student Log In";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.studentlogin_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -349,7 +352,6 @@ namespace Student_Log_In
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ResizeForm guna2ResizeForm1;
         private System.Windows.Forms.LinkLabel signupLinkLabel;
         private System.Windows.Forms.LinkLabel forgetPasswordLinkLabel;
@@ -357,6 +359,7 @@ namespace Student_Log_In
         private System.Windows.Forms.Label clickhereLabel;
         private Guna.UI2.WinForms.Guna2Button btnSignin;
         private System.Windows.Forms.CheckBox checkBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox EmojiPictureBox;
     }
 }
 

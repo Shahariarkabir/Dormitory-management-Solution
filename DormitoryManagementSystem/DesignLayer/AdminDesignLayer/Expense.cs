@@ -153,5 +153,47 @@ namespace Student_Log_In.DesignLayer
             txtDuesAmmount.Clear();
             txtRoomNumber.Clear();
         }
+
+        private void ExpenseBuuton_Click(object sender, EventArgs e)
+        {
+            Expense expense = new Expense();
+            expense.Show();
+            this.Hide();
+        }
+
+       
+        private void Roomadd_Click(object sender, EventArgs e)
+        {
+            Room room = new Room();
+            room.Show();
+            this.Hide();
+        }
+
+        private void StudentAdd_Click(object sender, EventArgs e)
+        {
+            CreateStudentProfile CreateStudentProfile = new CreateStudentProfile();
+            CreateStudentProfile.Show();
+            this.Hide();
+        }
+        private void LogoutButtonClick(object sender, EventArgs e)
+        {
+            HomePage home = new HomePage();
+            home.Show();
+            this.Hide();
+        }
+
+        private void Studentadd_Click_1(object sender, EventArgs e)
+        {
+            CreateStudentProfile CreateStudentProfile = new CreateStudentProfile();
+            CreateStudentProfile.Show();
+            this.Hide();
+        }
+
+        private void Buttonadd_Click(object sender, EventArgs e)
+        {
+            Room room = new Room();
+            room.Show();
+            this.Hide();
+        }
     }
 }

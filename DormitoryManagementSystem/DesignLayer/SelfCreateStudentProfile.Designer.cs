@@ -32,6 +32,7 @@ namespace Student_Log_In.DesignLayer
             this.components = new System.ComponentModel.Container();
             this.RoomNumberLabel = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.ConfirmPasswordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.RoomNoComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -40,11 +41,20 @@ namespace Student_Log_In.DesignLayer
             this.GenderLabel = new System.Windows.Forms.Label();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.BackButton = new Guna.UI2.WinForms.Guna2Button();
+            this.EmojiBox = new System.Windows.Forms.PictureBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.DateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.GenderComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox14 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox13 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox12 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.DateOfBirthLabel = new System.Windows.Forms.Label();
             this.CreateProfileButton = new Guna.UI2.WinForms.Guna2Button();
@@ -71,28 +81,18 @@ namespace Student_Log_In.DesignLayer
             this.EmergencyPhoneNumberTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox12 = new Guna.UI2.WinForms.Guna2TextBox();
             this.IdNumberTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.ConfirmPasswordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.PasswordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TextBoxFullName = new Guna.UI2.WinForms.Guna2TextBox();
             this.AddressTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.EmailTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.PhoneNumberTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.userNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.BackButton = new Guna.UI2.WinForms.Guna2Button();
-            this.EmojiBox = new System.Windows.Forms.PictureBox();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox14 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox13 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox12 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EmojiBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox13)).BeginInit();
@@ -114,6 +114,36 @@ namespace Student_Log_In.DesignLayer
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this.ConfirmPasswordTextBox;
+            // 
+            // ConfirmPasswordTextBox
+            // 
+            this.ConfirmPasswordTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.ConfirmPasswordTextBox.BorderRadius = 4;
+            this.ConfirmPasswordTextBox.BorderThickness = 2;
+            this.ConfirmPasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ConfirmPasswordTextBox.DefaultText = "";
+            this.ConfirmPasswordTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.ConfirmPasswordTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.ConfirmPasswordTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ConfirmPasswordTextBox.DisabledState.Parent = this.ConfirmPasswordTextBox;
+            this.ConfirmPasswordTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ConfirmPasswordTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ConfirmPasswordTextBox.FocusedState.Parent = this.ConfirmPasswordTextBox;
+            this.ConfirmPasswordTextBox.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
+            this.ConfirmPasswordTextBox.ForeColor = System.Drawing.Color.Black;
+            this.ConfirmPasswordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ConfirmPasswordTextBox.HoverState.Parent = this.ConfirmPasswordTextBox;
+            this.ConfirmPasswordTextBox.Location = new System.Drawing.Point(757, 343);
+            this.ConfirmPasswordTextBox.Margin = new System.Windows.Forms.Padding(6);
+            this.ConfirmPasswordTextBox.Name = "ConfirmPasswordTextBox";
+            this.ConfirmPasswordTextBox.PasswordChar = '*';
+            this.ConfirmPasswordTextBox.PlaceholderText = "";
+            this.ConfirmPasswordTextBox.SelectedText = "";
+            this.ConfirmPasswordTextBox.ShadowDecoration.Parent = this.ConfirmPasswordTextBox;
+            this.ConfirmPasswordTextBox.Size = new System.Drawing.Size(258, 51);
+            this.ConfirmPasswordTextBox.TabIndex = 112;
+            this.ConfirmPasswordTextBox.UseSystemPasswordChar = true;
+            this.ConfirmPasswordTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.ConfirmPasswordTextBox_Validating);
             // 
             // guna2Elipse1
             // 
@@ -219,6 +249,50 @@ namespace Student_Log_In.DesignLayer
             this.guna2Panel2.Size = new System.Drawing.Size(1115, 67);
             this.guna2Panel2.TabIndex = 140;
             // 
+            // BackButton
+            // 
+            this.BackButton.BorderColor = System.Drawing.Color.DarkBlue;
+            this.BackButton.BorderRadius = 4;
+            this.BackButton.BorderThickness = 2;
+            this.BackButton.CheckedState.Parent = this.BackButton;
+            this.BackButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BackButton.CustomImages.Parent = this.BackButton;
+            this.BackButton.FillColor = System.Drawing.Color.Transparent;
+            this.BackButton.Font = new System.Drawing.Font("JetBrains Mono", 11.25F);
+            this.BackButton.ForeColor = System.Drawing.Color.Black;
+            this.BackButton.HoverState.Parent = this.BackButton;
+            this.BackButton.Image = global::Student_Log_In.Properties.Resources.BackButton;
+            this.BackButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.BackButton.Location = new System.Drawing.Point(34, 12);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.ShadowDecoration.Parent = this.BackButton;
+            this.BackButton.Size = new System.Drawing.Size(232, 40);
+            this.BackButton.TabIndex = 140;
+            this.BackButton.Text = "Back To Log in Page";
+            this.BackButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            // 
+            // EmojiBox
+            // 
+            this.EmojiBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EmojiBox.Image = global::Student_Log_In.Properties.Resources.Group__1_;
+            this.EmojiBox.Location = new System.Drawing.Point(1038, 5);
+            this.EmojiBox.Name = "EmojiBox";
+            this.EmojiBox.Size = new System.Drawing.Size(20, 20);
+            this.EmojiBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.EmojiBox.TabIndex = 54;
+            this.EmojiBox.TabStop = false;
+            this.EmojiBox.Click += new System.EventHandler(this.EmojiBox_Click);
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Location = new System.Drawing.Point(1038, 6);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
+            this.guna2PictureBox2.Size = new System.Drawing.Size(18, 18);
+            this.guna2PictureBox2.TabIndex = 4;
+            this.guna2PictureBox2.TabStop = false;
+            // 
             // guna2ControlBox2
             // 
             this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -298,6 +372,62 @@ namespace Student_Log_In.DesignLayer
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(135, 682);
             this.guna2Panel1.TabIndex = 141;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Location = new System.Drawing.Point(2, 137);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(10, 28);
+            this.guna2PictureBox1.TabIndex = 140;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // guna2PictureBox14
+            // 
+            this.guna2PictureBox14.Location = new System.Drawing.Point(50, 590);
+            this.guna2PictureBox14.Name = "guna2PictureBox14";
+            this.guna2PictureBox14.ShadowDecoration.Parent = this.guna2PictureBox14;
+            this.guna2PictureBox14.Size = new System.Drawing.Size(26, 5);
+            this.guna2PictureBox14.TabIndex = 19;
+            this.guna2PictureBox14.TabStop = false;
+            // 
+            // guna2PictureBox13
+            // 
+            this.guna2PictureBox13.Location = new System.Drawing.Point(0, 518);
+            this.guna2PictureBox13.Name = "guna2PictureBox13";
+            this.guna2PictureBox13.ShadowDecoration.Parent = this.guna2PictureBox13;
+            this.guna2PictureBox13.Size = new System.Drawing.Size(135, 2);
+            this.guna2PictureBox13.TabIndex = 17;
+            this.guna2PictureBox13.TabStop = false;
+            // 
+            // guna2PictureBox12
+            // 
+            this.guna2PictureBox12.Location = new System.Drawing.Point(67, 582);
+            this.guna2PictureBox12.Name = "guna2PictureBox12";
+            this.guna2PictureBox12.ShadowDecoration.Parent = this.guna2PictureBox12;
+            this.guna2PictureBox12.Size = new System.Drawing.Size(15, 21);
+            this.guna2PictureBox12.TabIndex = 16;
+            this.guna2PictureBox12.TabStop = false;
+            // 
+            // guna2PictureBox11
+            // 
+            this.guna2PictureBox11.Location = new System.Drawing.Point(42, 572);
+            this.guna2PictureBox11.Name = "guna2PictureBox11";
+            this.guna2PictureBox11.ShadowDecoration.Parent = this.guna2PictureBox11;
+            this.guna2PictureBox11.Size = new System.Drawing.Size(19, 39);
+            this.guna2PictureBox11.TabIndex = 15;
+            this.guna2PictureBox11.TabStop = false;
+            // 
+            // guna2PictureBox4
+            // 
+            this.guna2PictureBox4.Image = global::Student_Log_In.Properties.Resources.Group_186;
+            this.guna2PictureBox4.Location = new System.Drawing.Point(7, 20);
+            this.guna2PictureBox4.Name = "guna2PictureBox4";
+            this.guna2PictureBox4.ShadowDecoration.Parent = this.guna2PictureBox4;
+            this.guna2PictureBox4.Size = new System.Drawing.Size(118, 114);
+            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox4.TabIndex = 0;
+            this.guna2PictureBox4.TabStop = false;
             // 
             // DateOfBirthLabel
             // 
@@ -704,36 +834,6 @@ namespace Student_Log_In.DesignLayer
             this.IdNumberTextBox.Size = new System.Drawing.Size(258, 51);
             this.IdNumberTextBox.TabIndex = 113;
             // 
-            // ConfirmPasswordTextBox
-            // 
-            this.ConfirmPasswordTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.ConfirmPasswordTextBox.BorderRadius = 4;
-            this.ConfirmPasswordTextBox.BorderThickness = 2;
-            this.ConfirmPasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ConfirmPasswordTextBox.DefaultText = "";
-            this.ConfirmPasswordTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.ConfirmPasswordTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.ConfirmPasswordTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.ConfirmPasswordTextBox.DisabledState.Parent = this.ConfirmPasswordTextBox;
-            this.ConfirmPasswordTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.ConfirmPasswordTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ConfirmPasswordTextBox.FocusedState.Parent = this.ConfirmPasswordTextBox;
-            this.ConfirmPasswordTextBox.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
-            this.ConfirmPasswordTextBox.ForeColor = System.Drawing.Color.Black;
-            this.ConfirmPasswordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ConfirmPasswordTextBox.HoverState.Parent = this.ConfirmPasswordTextBox;
-            this.ConfirmPasswordTextBox.Location = new System.Drawing.Point(757, 343);
-            this.ConfirmPasswordTextBox.Margin = new System.Windows.Forms.Padding(6);
-            this.ConfirmPasswordTextBox.Name = "ConfirmPasswordTextBox";
-            this.ConfirmPasswordTextBox.PasswordChar = '*';
-            this.ConfirmPasswordTextBox.PlaceholderText = "";
-            this.ConfirmPasswordTextBox.SelectedText = "";
-            this.ConfirmPasswordTextBox.ShadowDecoration.Parent = this.ConfirmPasswordTextBox;
-            this.ConfirmPasswordTextBox.Size = new System.Drawing.Size(258, 51);
-            this.ConfirmPasswordTextBox.TabIndex = 112;
-            this.ConfirmPasswordTextBox.UseSystemPasswordChar = true;
-            this.ConfirmPasswordTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.ConfirmPasswordTextBox_Validating);
-            // 
             // PasswordTextBox
             // 
             this.PasswordTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
@@ -763,33 +863,33 @@ namespace Student_Log_In.DesignLayer
             this.PasswordTextBox.TabIndex = 111;
             this.PasswordTextBox.UseSystemPasswordChar = true;
             // 
-            // guna2TextBox7
+            // TextBoxFullName
             // 
-            this.guna2TextBox7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.guna2TextBox7.BorderRadius = 4;
-            this.guna2TextBox7.BorderThickness = 2;
-            this.guna2TextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox7.DefaultText = "";
-            this.guna2TextBox7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.DisabledState.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.FocusedState.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
-            this.guna2TextBox7.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.HoverState.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.Location = new System.Drawing.Point(465, 173);
-            this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(6);
-            this.guna2TextBox7.Name = "guna2TextBox7";
-            this.guna2TextBox7.PasswordChar = '\0';
-            this.guna2TextBox7.PlaceholderText = "";
-            this.guna2TextBox7.SelectedText = "";
-            this.guna2TextBox7.ShadowDecoration.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.Size = new System.Drawing.Size(258, 51);
-            this.guna2TextBox7.TabIndex = 110;
+            this.TextBoxFullName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.TextBoxFullName.BorderRadius = 4;
+            this.TextBoxFullName.BorderThickness = 2;
+            this.TextBoxFullName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxFullName.DefaultText = "";
+            this.TextBoxFullName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBoxFullName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBoxFullName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxFullName.DisabledState.Parent = this.TextBoxFullName;
+            this.TextBoxFullName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxFullName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxFullName.FocusedState.Parent = this.TextBoxFullName;
+            this.TextBoxFullName.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
+            this.TextBoxFullName.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxFullName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxFullName.HoverState.Parent = this.TextBoxFullName;
+            this.TextBoxFullName.Location = new System.Drawing.Point(465, 173);
+            this.TextBoxFullName.Margin = new System.Windows.Forms.Padding(6);
+            this.TextBoxFullName.Name = "TextBoxFullName";
+            this.TextBoxFullName.PasswordChar = '\0';
+            this.TextBoxFullName.PlaceholderText = "";
+            this.TextBoxFullName.SelectedText = "";
+            this.TextBoxFullName.ShadowDecoration.Parent = this.TextBoxFullName;
+            this.TextBoxFullName.Size = new System.Drawing.Size(258, 51);
+            this.TextBoxFullName.TabIndex = 110;
             // 
             // AddressTextBox
             // 
@@ -915,106 +1015,6 @@ namespace Student_Log_In.DesignLayer
             this.userNameTextBox.Size = new System.Drawing.Size(258, 51);
             this.userNameTextBox.TabIndex = 105;
             // 
-            // BackButton
-            // 
-            this.BackButton.BorderColor = System.Drawing.Color.DarkBlue;
-            this.BackButton.BorderRadius = 4;
-            this.BackButton.BorderThickness = 2;
-            this.BackButton.CheckedState.Parent = this.BackButton;
-            this.BackButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BackButton.CustomImages.Parent = this.BackButton;
-            this.BackButton.FillColor = System.Drawing.Color.Transparent;
-            this.BackButton.Font = new System.Drawing.Font("JetBrains Mono", 11.25F);
-            this.BackButton.ForeColor = System.Drawing.Color.Black;
-            this.BackButton.HoverState.Parent = this.BackButton;
-            this.BackButton.Image = global::Student_Log_In.Properties.Resources.BackButton;
-            this.BackButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BackButton.Location = new System.Drawing.Point(34, 12);
-            this.BackButton.Name = "BackButton";
-            this.BackButton.ShadowDecoration.Parent = this.BackButton;
-            this.BackButton.Size = new System.Drawing.Size(232, 40);
-            this.BackButton.TabIndex = 140;
-            this.BackButton.Text = "Back To Log in Page";
-            this.BackButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
-            // 
-            // EmojiBox
-            // 
-            this.EmojiBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EmojiBox.Image = global::Student_Log_In.Properties.Resources.Group__1_;
-            this.EmojiBox.Location = new System.Drawing.Point(1038, 5);
-            this.EmojiBox.Name = "EmojiBox";
-            this.EmojiBox.Size = new System.Drawing.Size(20, 20);
-            this.EmojiBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.EmojiBox.TabIndex = 54;
-            this.EmojiBox.TabStop = false;
-            this.EmojiBox.Click += new System.EventHandler(this.EmojiBox_Click);
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.Location = new System.Drawing.Point(1038, 6);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
-            this.guna2PictureBox2.Size = new System.Drawing.Size(18, 18);
-            this.guna2PictureBox2.TabIndex = 4;
-            this.guna2PictureBox2.TabStop = false;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Location = new System.Drawing.Point(2, 137);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(10, 28);
-            this.guna2PictureBox1.TabIndex = 140;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // guna2PictureBox14
-            // 
-            this.guna2PictureBox14.Location = new System.Drawing.Point(50, 590);
-            this.guna2PictureBox14.Name = "guna2PictureBox14";
-            this.guna2PictureBox14.ShadowDecoration.Parent = this.guna2PictureBox14;
-            this.guna2PictureBox14.Size = new System.Drawing.Size(26, 5);
-            this.guna2PictureBox14.TabIndex = 19;
-            this.guna2PictureBox14.TabStop = false;
-            // 
-            // guna2PictureBox13
-            // 
-            this.guna2PictureBox13.Location = new System.Drawing.Point(0, 518);
-            this.guna2PictureBox13.Name = "guna2PictureBox13";
-            this.guna2PictureBox13.ShadowDecoration.Parent = this.guna2PictureBox13;
-            this.guna2PictureBox13.Size = new System.Drawing.Size(135, 2);
-            this.guna2PictureBox13.TabIndex = 17;
-            this.guna2PictureBox13.TabStop = false;
-            // 
-            // guna2PictureBox12
-            // 
-            this.guna2PictureBox12.Location = new System.Drawing.Point(67, 582);
-            this.guna2PictureBox12.Name = "guna2PictureBox12";
-            this.guna2PictureBox12.ShadowDecoration.Parent = this.guna2PictureBox12;
-            this.guna2PictureBox12.Size = new System.Drawing.Size(15, 21);
-            this.guna2PictureBox12.TabIndex = 16;
-            this.guna2PictureBox12.TabStop = false;
-            // 
-            // guna2PictureBox11
-            // 
-            this.guna2PictureBox11.Location = new System.Drawing.Point(42, 572);
-            this.guna2PictureBox11.Name = "guna2PictureBox11";
-            this.guna2PictureBox11.ShadowDecoration.Parent = this.guna2PictureBox11;
-            this.guna2PictureBox11.Size = new System.Drawing.Size(19, 39);
-            this.guna2PictureBox11.TabIndex = 15;
-            this.guna2PictureBox11.TabStop = false;
-            // 
-            // guna2PictureBox4
-            // 
-            this.guna2PictureBox4.Image = global::Student_Log_In.Properties.Resources.Group_186;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(7, 20);
-            this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.ShadowDecoration.Parent = this.guna2PictureBox4;
-            this.guna2PictureBox4.Size = new System.Drawing.Size(118, 114);
-            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox4.TabIndex = 0;
-            this.guna2PictureBox4.TabStop = false;
-            // 
             // SelfCreateStudentProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1056,7 +1056,7 @@ namespace Student_Log_In.DesignLayer
             this.Controls.Add(this.IdNumberTextBox);
             this.Controls.Add(this.ConfirmPasswordTextBox);
             this.Controls.Add(this.PasswordTextBox);
-            this.Controls.Add(this.guna2TextBox7);
+            this.Controls.Add(this.TextBoxFullName);
             this.Controls.Add(this.AddressTextBox);
             this.Controls.Add(this.EmailTextBox);
             this.Controls.Add(this.PhoneNumberTextBox);
@@ -1066,12 +1066,13 @@ namespace Student_Log_In.DesignLayer
             this.Name = "SelfCreateStudentProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SelfCreateStudentProfile";
+            this.Load += new System.EventHandler(this.SelfCreateStudentProfile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
-            this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.EmojiBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox13)).EndInit();
@@ -1131,7 +1132,7 @@ namespace Student_Log_In.DesignLayer
         private Guna.UI2.WinForms.Guna2TextBox IdNumberTextBox;
         private Guna.UI2.WinForms.Guna2TextBox ConfirmPasswordTextBox;
         private Guna.UI2.WinForms.Guna2TextBox PasswordTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
+        private Guna.UI2.WinForms.Guna2TextBox TextBoxFullName;
         private Guna.UI2.WinForms.Guna2TextBox AddressTextBox;
         private Guna.UI2.WinForms.Guna2TextBox EmailTextBox;
         private Guna.UI2.WinForms.Guna2TextBox PhoneNumberTextBox;

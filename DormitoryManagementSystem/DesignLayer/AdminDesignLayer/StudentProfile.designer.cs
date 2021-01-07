@@ -68,16 +68,17 @@ namespace Student_Profile
             this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.EmojiBox = new System.Windows.Forms.PictureBox();
+            this.ExpenseBox = new Guna.UI2.WinForms.Guna2Button();
+            this.RoomBox = new Guna.UI2.WinForms.Guna2Button();
+            this.StudentButton = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.DateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.GenderComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.BloodGroupComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.RoomNoComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.LogoutButton = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.AboutUsButton = new Guna.UI2.WinForms.Guna2Button();
@@ -91,12 +92,13 @@ namespace Student_Profile
             this.guna2PictureBox12 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.EmojiBox = new System.Windows.Forms.PictureBox();
-            this.ExpenseBox = new Guna.UI2.WinForms.Guna2Button();
-            this.RoomBox = new Guna.UI2.WinForms.Guna2Button();
-            this.StudentButton = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.DateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.GenderComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.BloodGroupComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.RoomNoComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoutButton)).BeginInit();
@@ -106,8 +108,6 @@ namespace Student_Profile
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EmojiBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // userNameTextBox
@@ -792,6 +792,81 @@ namespace Student_Profile
             this.guna2Panel2.TabIndex = 46;
             this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
             // 
+            // EmojiBox
+            // 
+            this.EmojiBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EmojiBox.Image = global::Student_Log_In.Properties.Resources.Group__1_;
+            this.EmojiBox.Location = new System.Drawing.Point(1038, 5);
+            this.EmojiBox.Name = "EmojiBox";
+            this.EmojiBox.Size = new System.Drawing.Size(20, 20);
+            this.EmojiBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.EmojiBox.TabIndex = 54;
+            this.EmojiBox.TabStop = false;
+            this.EmojiBox.Click += new System.EventHandler(this.EmojiBox_Click);
+            // 
+            // ExpenseBox
+            // 
+            this.ExpenseBox.CheckedState.Parent = this.ExpenseBox;
+            this.ExpenseBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExpenseBox.CustomImages.Parent = this.ExpenseBox;
+            this.ExpenseBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(237)))));
+            this.ExpenseBox.Font = new System.Drawing.Font("JetBrains Mono", 15.75F);
+            this.ExpenseBox.ForeColor = System.Drawing.Color.Black;
+            this.ExpenseBox.HoverState.Parent = this.ExpenseBox;
+            this.ExpenseBox.Image = global::Student_Log_In.Properties.Resources.Group_129__1_;
+            this.ExpenseBox.Location = new System.Drawing.Point(557, 35);
+            this.ExpenseBox.Name = "ExpenseBox";
+            this.ExpenseBox.ShadowDecoration.Parent = this.ExpenseBox;
+            this.ExpenseBox.Size = new System.Drawing.Size(116, 22);
+            this.ExpenseBox.TabIndex = 53;
+            this.ExpenseBox.Text = "Expense";
+            this.ExpenseBox.Click += new System.EventHandler(this.ExpenseBox_Click);
+            // 
+            // RoomBox
+            // 
+            this.RoomBox.CheckedState.Parent = this.RoomBox;
+            this.RoomBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RoomBox.CustomImages.Parent = this.RoomBox;
+            this.RoomBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(237)))));
+            this.RoomBox.Font = new System.Drawing.Font("JetBrains Mono", 15.75F);
+            this.RoomBox.ForeColor = System.Drawing.Color.Black;
+            this.RoomBox.HoverState.Parent = this.RoomBox;
+            this.RoomBox.Image = global::Student_Log_In.Properties.Resources.Group_129__1_;
+            this.RoomBox.Location = new System.Drawing.Point(693, 35);
+            this.RoomBox.Name = "RoomBox";
+            this.RoomBox.ShadowDecoration.Parent = this.RoomBox;
+            this.RoomBox.Size = new System.Drawing.Size(116, 22);
+            this.RoomBox.TabIndex = 13;
+            this.RoomBox.Text = "Room";
+            this.RoomBox.Click += new System.EventHandler(this.RoomBox_Click);
+            // 
+            // StudentButton
+            // 
+            this.StudentButton.CheckedState.Parent = this.StudentButton;
+            this.StudentButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.StudentButton.CustomImages.Parent = this.StudentButton;
+            this.StudentButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(237)))));
+            this.StudentButton.Font = new System.Drawing.Font("JetBrains Mono", 15.75F);
+            this.StudentButton.ForeColor = System.Drawing.Color.Black;
+            this.StudentButton.HoverState.Parent = this.StudentButton;
+            this.StudentButton.Image = global::Student_Log_In.Properties.Resources.Group_129__1_;
+            this.StudentButton.Location = new System.Drawing.Point(815, 37);
+            this.StudentButton.Name = "StudentButton";
+            this.StudentButton.ShadowDecoration.Parent = this.StudentButton;
+            this.StudentButton.Size = new System.Drawing.Size(147, 22);
+            this.StudentButton.TabIndex = 12;
+            this.StudentButton.Text = "Student";
+            this.StudentButton.Click += new System.EventHandler(this.StudentButton_Click);
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Location = new System.Drawing.Point(1038, 6);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
+            this.guna2PictureBox2.Size = new System.Drawing.Size(18, 18);
+            this.guna2PictureBox2.TabIndex = 4;
+            this.guna2PictureBox2.TabStop = false;
+            // 
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -836,106 +911,6 @@ namespace Student_Profile
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(135, 682);
             this.guna2Panel1.TabIndex = 55;
-            // 
-            // DateTimePicker
-            // 
-            this.DateTimePicker.BorderColor = System.Drawing.Color.MediumBlue;
-            this.DateTimePicker.BorderRadius = 4;
-            this.DateTimePicker.BorderThickness = 2;
-            this.DateTimePicker.CheckedState.Parent = this.DateTimePicker;
-            this.DateTimePicker.FillColor = System.Drawing.Color.White;
-            this.DateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.DateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.DateTimePicker.HoverState.Parent = this.DateTimePicker;
-            this.DateTimePicker.Location = new System.Drawing.Point(484, 253);
-            this.DateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.DateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.DateTimePicker.Name = "DateTimePicker";
-            this.DateTimePicker.ShadowDecoration.Parent = this.DateTimePicker;
-            this.DateTimePicker.Size = new System.Drawing.Size(258, 51);
-            this.DateTimePicker.TabIndex = 56;
-            this.DateTimePicker.Value = new System.DateTime(2021, 1, 1, 0, 5, 14, 451);
-            // 
-            // GenderComboBox
-            // 
-            this.GenderComboBox.BackColor = System.Drawing.Color.Transparent;
-            this.GenderComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.GenderComboBox.BorderRadius = 4;
-            this.GenderComboBox.BorderThickness = 2;
-            this.GenderComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.GenderComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.GenderComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.GenderComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.GenderComboBox.FocusedState.Parent = this.GenderComboBox;
-            this.GenderComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.GenderComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.GenderComboBox.HoverState.Parent = this.GenderComboBox;
-            this.GenderComboBox.ItemHeight = 45;
-            this.GenderComboBox.Items.AddRange(new object[] {
-            "Male",
-            "Female",
-            "Other"});
-            this.GenderComboBox.ItemsAppearance.Parent = this.GenderComboBox;
-            this.GenderComboBox.Location = new System.Drawing.Point(484, 331);
-            this.GenderComboBox.Name = "GenderComboBox";
-            this.GenderComboBox.ShadowDecoration.Parent = this.GenderComboBox;
-            this.GenderComboBox.Size = new System.Drawing.Size(258, 51);
-            this.GenderComboBox.StartIndex = 0;
-            this.GenderComboBox.TabIndex = 101;
-            // 
-            // BloodGroupComboBox
-            // 
-            this.BloodGroupComboBox.BackColor = System.Drawing.Color.Transparent;
-            this.BloodGroupComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.BloodGroupComboBox.BorderRadius = 4;
-            this.BloodGroupComboBox.BorderThickness = 2;
-            this.BloodGroupComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.BloodGroupComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.BloodGroupComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.BloodGroupComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.BloodGroupComboBox.FocusedState.Parent = this.BloodGroupComboBox;
-            this.BloodGroupComboBox.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F);
-            this.BloodGroupComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.BloodGroupComboBox.HoverState.Parent = this.BloodGroupComboBox;
-            this.BloodGroupComboBox.ItemHeight = 45;
-            this.BloodGroupComboBox.Items.AddRange(new object[] {
-            "A+",
-            "A-",
-            "B+",
-            "B-",
-            "O+",
-            "O-",
-            "AB+",
-            "AB-"});
-            this.BloodGroupComboBox.ItemsAppearance.Parent = this.BloodGroupComboBox;
-            this.BloodGroupComboBox.Location = new System.Drawing.Point(776, 166);
-            this.BloodGroupComboBox.Name = "BloodGroupComboBox";
-            this.BloodGroupComboBox.ShadowDecoration.Parent = this.BloodGroupComboBox;
-            this.BloodGroupComboBox.Size = new System.Drawing.Size(258, 51);
-            this.BloodGroupComboBox.StartIndex = 0;
-            this.BloodGroupComboBox.TabIndex = 103;
-            // 
-            // RoomNoComboBox
-            // 
-            this.RoomNoComboBox.BackColor = System.Drawing.Color.Transparent;
-            this.RoomNoComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.RoomNoComboBox.BorderRadius = 4;
-            this.RoomNoComboBox.BorderThickness = 2;
-            this.RoomNoComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.RoomNoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.RoomNoComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.RoomNoComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.RoomNoComboBox.FocusedState.Parent = this.RoomNoComboBox;
-            this.RoomNoComboBox.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F);
-            this.RoomNoComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.RoomNoComboBox.HoverState.Parent = this.RoomNoComboBox;
-            this.RoomNoComboBox.ItemHeight = 45;
-            this.RoomNoComboBox.ItemsAppearance.Parent = this.RoomNoComboBox;
-            this.RoomNoComboBox.Location = new System.Drawing.Point(776, 415);
-            this.RoomNoComboBox.Name = "RoomNoComboBox";
-            this.RoomNoComboBox.ShadowDecoration.Parent = this.RoomNoComboBox;
-            this.RoomNoComboBox.Size = new System.Drawing.Size(258, 51);
-            this.RoomNoComboBox.TabIndex = 104;
             // 
             // LogoutButton
             // 
@@ -994,7 +969,7 @@ namespace Student_Profile
             this.SettingsButton.ShadowDecoration.Parent = this.SettingsButton;
             this.SettingsButton.Size = new System.Drawing.Size(127, 22);
             this.SettingsButton.TabIndex = 140;
-            this.SettingsButton.Text = "Settings";
+            this.SettingsButton.Text = "New Emp.";
             this.SettingsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
             // 
@@ -1126,80 +1101,105 @@ namespace Student_Profile
             this.guna2PictureBox4.TabIndex = 0;
             this.guna2PictureBox4.TabStop = false;
             // 
-            // EmojiBox
+            // DateTimePicker
             // 
-            this.EmojiBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EmojiBox.Image = global::Student_Log_In.Properties.Resources.Group__1_;
-            this.EmojiBox.Location = new System.Drawing.Point(1038, 5);
-            this.EmojiBox.Name = "EmojiBox";
-            this.EmojiBox.Size = new System.Drawing.Size(20, 20);
-            this.EmojiBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.EmojiBox.TabIndex = 54;
-            this.EmojiBox.TabStop = false;
-            this.EmojiBox.Click += new System.EventHandler(this.EmojiBox_Click);
+            this.DateTimePicker.BorderColor = System.Drawing.Color.MediumBlue;
+            this.DateTimePicker.BorderRadius = 4;
+            this.DateTimePicker.BorderThickness = 2;
+            this.DateTimePicker.CheckedState.Parent = this.DateTimePicker;
+            this.DateTimePicker.FillColor = System.Drawing.Color.White;
+            this.DateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DateTimePicker.HoverState.Parent = this.DateTimePicker;
+            this.DateTimePicker.Location = new System.Drawing.Point(484, 253);
+            this.DateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DateTimePicker.Name = "DateTimePicker";
+            this.DateTimePicker.ShadowDecoration.Parent = this.DateTimePicker;
+            this.DateTimePicker.Size = new System.Drawing.Size(258, 51);
+            this.DateTimePicker.TabIndex = 56;
+            this.DateTimePicker.Value = new System.DateTime(2021, 1, 1, 0, 5, 14, 451);
             // 
-            // ExpenseBox
+            // GenderComboBox
             // 
-            this.ExpenseBox.CheckedState.Parent = this.ExpenseBox;
-            this.ExpenseBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ExpenseBox.CustomImages.Parent = this.ExpenseBox;
-            this.ExpenseBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(237)))));
-            this.ExpenseBox.Font = new System.Drawing.Font("JetBrains Mono", 15.75F);
-            this.ExpenseBox.ForeColor = System.Drawing.Color.Black;
-            this.ExpenseBox.HoverState.Parent = this.ExpenseBox;
-            this.ExpenseBox.Image = global::Student_Log_In.Properties.Resources.Group_129__1_;
-            this.ExpenseBox.Location = new System.Drawing.Point(557, 35);
-            this.ExpenseBox.Name = "ExpenseBox";
-            this.ExpenseBox.ShadowDecoration.Parent = this.ExpenseBox;
-            this.ExpenseBox.Size = new System.Drawing.Size(116, 22);
-            this.ExpenseBox.TabIndex = 53;
-            this.ExpenseBox.Text = "Expense";
-            this.ExpenseBox.Click += new System.EventHandler(this.ExpenseBox_Click);
+            this.GenderComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.GenderComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.GenderComboBox.BorderRadius = 4;
+            this.GenderComboBox.BorderThickness = 2;
+            this.GenderComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.GenderComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.GenderComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.GenderComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.GenderComboBox.FocusedState.Parent = this.GenderComboBox;
+            this.GenderComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.GenderComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.GenderComboBox.HoverState.Parent = this.GenderComboBox;
+            this.GenderComboBox.ItemHeight = 45;
+            this.GenderComboBox.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Other"});
+            this.GenderComboBox.ItemsAppearance.Parent = this.GenderComboBox;
+            this.GenderComboBox.Location = new System.Drawing.Point(484, 331);
+            this.GenderComboBox.Name = "GenderComboBox";
+            this.GenderComboBox.ShadowDecoration.Parent = this.GenderComboBox;
+            this.GenderComboBox.Size = new System.Drawing.Size(258, 51);
+            this.GenderComboBox.StartIndex = 0;
+            this.GenderComboBox.TabIndex = 101;
             // 
-            // RoomBox
+            // BloodGroupComboBox
             // 
-            this.RoomBox.CheckedState.Parent = this.RoomBox;
-            this.RoomBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.RoomBox.CustomImages.Parent = this.RoomBox;
-            this.RoomBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(237)))));
-            this.RoomBox.Font = new System.Drawing.Font("JetBrains Mono", 15.75F);
-            this.RoomBox.ForeColor = System.Drawing.Color.Black;
-            this.RoomBox.HoverState.Parent = this.RoomBox;
-            this.RoomBox.Image = global::Student_Log_In.Properties.Resources.Group_129__1_;
-            this.RoomBox.Location = new System.Drawing.Point(693, 35);
-            this.RoomBox.Name = "RoomBox";
-            this.RoomBox.ShadowDecoration.Parent = this.RoomBox;
-            this.RoomBox.Size = new System.Drawing.Size(116, 22);
-            this.RoomBox.TabIndex = 13;
-            this.RoomBox.Text = "Room";
-            this.RoomBox.Click += new System.EventHandler(this.RoomBox_Click);
+            this.BloodGroupComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.BloodGroupComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.BloodGroupComboBox.BorderRadius = 4;
+            this.BloodGroupComboBox.BorderThickness = 2;
+            this.BloodGroupComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.BloodGroupComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.BloodGroupComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.BloodGroupComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.BloodGroupComboBox.FocusedState.Parent = this.BloodGroupComboBox;
+            this.BloodGroupComboBox.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F);
+            this.BloodGroupComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.BloodGroupComboBox.HoverState.Parent = this.BloodGroupComboBox;
+            this.BloodGroupComboBox.ItemHeight = 45;
+            this.BloodGroupComboBox.Items.AddRange(new object[] {
+            "A+",
+            "A-",
+            "B+",
+            "B-",
+            "O+",
+            "O-",
+            "AB+",
+            "AB-"});
+            this.BloodGroupComboBox.ItemsAppearance.Parent = this.BloodGroupComboBox;
+            this.BloodGroupComboBox.Location = new System.Drawing.Point(776, 166);
+            this.BloodGroupComboBox.Name = "BloodGroupComboBox";
+            this.BloodGroupComboBox.ShadowDecoration.Parent = this.BloodGroupComboBox;
+            this.BloodGroupComboBox.Size = new System.Drawing.Size(258, 51);
+            this.BloodGroupComboBox.StartIndex = 0;
+            this.BloodGroupComboBox.TabIndex = 103;
             // 
-            // StudentButton
+            // RoomNoComboBox
             // 
-            this.StudentButton.CheckedState.Parent = this.StudentButton;
-            this.StudentButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.StudentButton.CustomImages.Parent = this.StudentButton;
-            this.StudentButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(237)))));
-            this.StudentButton.Font = new System.Drawing.Font("JetBrains Mono", 15.75F);
-            this.StudentButton.ForeColor = System.Drawing.Color.Black;
-            this.StudentButton.HoverState.Parent = this.StudentButton;
-            this.StudentButton.Image = global::Student_Log_In.Properties.Resources.Group_129__1_;
-            this.StudentButton.Location = new System.Drawing.Point(815, 37);
-            this.StudentButton.Name = "StudentButton";
-            this.StudentButton.ShadowDecoration.Parent = this.StudentButton;
-            this.StudentButton.Size = new System.Drawing.Size(147, 22);
-            this.StudentButton.TabIndex = 12;
-            this.StudentButton.Text = "Student";
-            this.StudentButton.Click += new System.EventHandler(this.StudentButton_Click);
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.Location = new System.Drawing.Point(1038, 6);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
-            this.guna2PictureBox2.Size = new System.Drawing.Size(18, 18);
-            this.guna2PictureBox2.TabIndex = 4;
-            this.guna2PictureBox2.TabStop = false;
+            this.RoomNoComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.RoomNoComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.RoomNoComboBox.BorderRadius = 4;
+            this.RoomNoComboBox.BorderThickness = 2;
+            this.RoomNoComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.RoomNoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.RoomNoComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.RoomNoComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.RoomNoComboBox.FocusedState.Parent = this.RoomNoComboBox;
+            this.RoomNoComboBox.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F);
+            this.RoomNoComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.RoomNoComboBox.HoverState.Parent = this.RoomNoComboBox;
+            this.RoomNoComboBox.ItemHeight = 45;
+            this.RoomNoComboBox.ItemsAppearance.Parent = this.RoomNoComboBox;
+            this.RoomNoComboBox.Location = new System.Drawing.Point(776, 415);
+            this.RoomNoComboBox.Name = "RoomNoComboBox";
+            this.RoomNoComboBox.ShadowDecoration.Parent = this.RoomNoComboBox;
+            this.RoomNoComboBox.Size = new System.Drawing.Size(258, 51);
+            this.RoomNoComboBox.TabIndex = 104;
             // 
             // CreateStudentProfile
             // 
@@ -1256,6 +1256,8 @@ namespace Student_Profile
             this.Load += new System.EventHandler(this.CreateStudentProfile_Load);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EmojiBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LogoutButton)).EndInit();
@@ -1265,8 +1267,6 @@ namespace Student_Profile
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EmojiBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -33,9 +33,9 @@ namespace Student_Log_In.DesignLayer
             if (userNameTextBox.Text != "" && EmailTextBox.Text != " " && PasswordTextBox.Text != "" && BloodGroupComboBox.Text != "" && DateTimePicker.Text != "" && GenderComboBox.Text != "" && AddressTextBox.Text != "")
 
             {
-                query = "INSERT INTO New_student(UserName,FullName,Password,BloodGroup,DateOfBirth,PhoneNumber,Email,Gender,Address,EmergencyContact,EmergencyPhoneNumber,EmergencyRelation,VerficationId,RoomNumber)VALUES('" + userNameTextBox.Text + "','" + FullNameTextBox.Text + "','" + PasswordTextBox.Text + "','" + BloodGroupComboBox.Text + "','" + DateTimePicker.Text + "'," + PhoneNumberTextBox.Text + ",'" + EmailTextBox.Text + "','" + GenderComboBox.Text + "','" + AddressTextBox.Text + "','" + EmergencyFullNameTextBox.Text + "'," + EmergencyPhoneNumberTextBox.Text + ",'" + emergencyRelationTextBox.Text + "','" + IdNumberTextBox.Text + "'," + RoomNoComboBox.Text + ") UPDATE rooms SET Booked='Yes' Where RoomNumber=" + RoomNoComboBox.Text + "";
+                query = "INSERT INTO New_student(UserName,FullName,Password,BloodGroup,DateOfBirth,PhoneNumber,Email,Gender,Address,EmergencyContact,EmergencyPhoneNumber,EmergencyRelation,VerficationId,RoomNumber)VALUES('" + userNameTextBox.Text + "','" + TextBoxFullName.Text + "','" + PasswordTextBox.Text + "','" + BloodGroupComboBox.Text + "','" + DateTimePicker.Text + "'," + PhoneNumberTextBox.Text + ",'" + EmailTextBox.Text + "','" + GenderComboBox.Text + "','" + AddressTextBox.Text + "','" + EmergencyFullNameTextBox.Text + "'," + EmergencyPhoneNumberTextBox.Text + ",'" + emergencyRelationTextBox.Text + "','" + IdNumberTextBox.Text + "'," + RoomNoComboBox.Text + ") UPDATE rooms SET Booked='Yes' Where RoomNumber=" + RoomNoComboBox.Text + "";
                 fn.setData(query, "Student Added Successfully!!!");
-                userNameTextBox.Text = FullNameTextBox.Text = PasswordTextBox.Text = BloodGroupComboBox.Text = DateTimePicker.Text = PhoneNumberTextBox.Text = EmailTextBox.Text = GenderComboBox.Text = AddressTextBox.Text = EmergencyContactTextBox.Text = EmergencyPhoneNumberTextBox.Text = emergencyRelationTextBox.Text = IdNumberTextBox.Text = RoomNoComboBox.Text = string.Empty;
+                userNameTextBox.Text = TextBoxFullName.Text = PasswordTextBox.Text = BloodGroupComboBox.Text = DateTimePicker.Text = PhoneNumberTextBox.Text = EmailTextBox.Text = GenderComboBox.Text = AddressTextBox.Text = EmergencyContactTextBox.Text = EmergencyPhoneNumberTextBox.Text = emergencyRelationTextBox.Text = IdNumberTextBox.Text = RoomNoComboBox.Text = string.Empty;
             }
 
             else
@@ -65,6 +65,17 @@ namespace Student_Log_In.DesignLayer
             HomePage homePage = new HomePage();
             homePage.Show();
             this.Show();
+        }
+
+        private void SelfCreateStudentProfile_Load(object sender, EventArgs e)
+        {
+            query = "SELECT RoomNumber FROM rooms where Booked='No'";
+            DataSet ds = fn.getData(query);
+            for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+            {
+                Int64 room = Int64.Parse(ds.Tables[0].Rows[i][0].ToString());
+                RoomNoComboBox.Items.Add(room);
+            }
         }
     }
 }
